@@ -1,0 +1,12 @@
+Index: lang/hugs/Makefile
+===================================================================
+--- lang/hugs/Makefile	(revision 352106)
++++ lang/hugs/Makefile	(working copy)
+@@ -17,6 +17,7 @@
+ 
+ #OPTIONS=	HUGS_OPENGL "OpenGL/GLUT support" off
+ HUGS_DATE=	Sep2006
++USE_GCC=	any
+ USES=		bison
+ USE_GMAKE=	yes
+ GNU_CONFIGURE=	yes

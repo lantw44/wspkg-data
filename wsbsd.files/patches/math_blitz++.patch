@@ -1,0 +1,16 @@
+Index: math/blitz++/Makefile
+===================================================================
+--- math/blitz++/Makefile	(revision 352106)
++++ math/blitz++/Makefile	(working copy)
+@@ -11,7 +11,10 @@
+ MAINTAINER=	bf@FreeBSD.org
+ COMMENT=	A C++ class library for scientific computing
+ 
+-.ifndef NOPORTDOCS
++OPTIONS_DEFINE= DOCS
++.include <bsd.port.options.mk>
++
++.if ${PORT_OPTIONS:MDOCS}
+ BUILD_DEPENDS=	dvips:${PORTSDIR}/print/dvipsk-tetex \
+ 		texi2dvi:${PORTSDIR}/print/texinfo
+ INFO=		blitz

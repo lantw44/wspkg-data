@@ -1,0 +1,13 @@
+Index: multimedia/smpeg/Makefile
+===================================================================
+--- multimedia/smpeg/Makefile	(revision 352106)
++++ multimedia/smpeg/Makefile	(working copy)
+@@ -18,7 +18,7 @@
+ USE_SDL=	sdl
+ USE_LDCONFIG=	yes
+ CONFIGURE_ENV=	GLBASE="${LOCALBASE}" \
+-		CC="${CXX}" REAL_CC="${CC}" \
++		CC="${CXX}" REAL_CC="${CXX}" \
+ 		SDL_CONFIG="${SDL_CONFIG}"
+ CPPFLAGS+=	-I${LOCALBASE}/include
+ 

@@ -1,0 +1,35 @@
+Index: editors/hte/Makefile
+===================================================================
+--- editors/hte/Makefile	(revision 352106)
++++ editors/hte/Makefile	(working copy)
+@@ -15,7 +15,7 @@
+ USE_BZIP2=	yes
+ GNU_CONFIGURE=	yes
+ 
+-PLIST_FILES=	bin/ht
++PLIST_FILES=	bin/hte
+ 
+ OPTIONS_DEFINE=		DOCS LZO2 X11
+ OPTIONS_DEFAULT=	X11
+@@ -34,7 +34,7 @@
+ X11_CONFIGURE_ENABLE=	x11-textmode
+ 
+ PORTDOCS=	README
+-INFO=		ht
++INFO=		hte
+ 
+ post-patch:
+ 	@${REINPLACE_CMD} -e 's|^CXXFLAGS=.*$$|CXXFLAGS="$$CXXFLAGS"|g ; \
+@@ -43,10 +43,10 @@
+ 			${WRKSRC}/configure
+ 
+ do-install:
+-	${INSTALL_PROGRAM} ${WRKSRC}/ht ${STAGEDIR}${PREFIX}/bin
++	${INSTALL_PROGRAM} ${WRKSRC}/ht ${STAGEDIR}${PREFIX}/bin/hte
+ 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+ 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+ 	${INSTALL_DATA} ${WRKSRC}/doc/hthelp.info \
+-		${STAGEDIR}${PREFIX}/${INFO_PATH}/ht.info
++		${STAGEDIR}${PREFIX}/${INFO_PATH}/hte.info
+ 
+ .include <bsd.port.mk>
