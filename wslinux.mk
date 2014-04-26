@@ -23,7 +23,7 @@ DEBIAN_OUT_PKG=         $(OUTDIR)/217-meta.deb
 # Repository
 DEBIAN_OUT_REPO=        $(OUTDIR)/repo
 
-include $(WSPKGDIR)/$(WSPKG_MK)/packages.mk
+include $(WSPKGDIR)/wspkg-mk/packages.mk
 
 clean:
 	rm -rf $(OUTDIR)

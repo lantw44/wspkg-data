@@ -29,7 +29,7 @@ FREEBSD_OUT_PORTS_CATEGORY_MAKEFILE=     $(INDIR)/$(NAME).local.Makefile
 FREEBSD_OUT_PORTS_CATEGORY_MAKEFILE_INC= $(INDIR)/$(NAME).local.Makefile.inc
 FREEBSD_OUT_PORTS_CATEGORY=              local
 
-include $(WSPKGDIR)/$(WSPKG_MK)/packages.mk
+include $(WSPKGDIR)/wspkg-mk/packages.mk
 
 clean:
 	rm -rf $(OUTDIR)
