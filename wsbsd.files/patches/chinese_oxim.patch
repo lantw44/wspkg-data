@@ -1,0 +1,12 @@
+Index: Makefile
+===================================================================
+--- Makefile	(revision 352385)
++++ Makefile	(working copy)
+@@ -79,5 +79,7 @@
+ post-patch:
+ 	${REINPLACE_CMD} 's|%%PREFIX%%|${PREFIX}|' \
+ 			${WRKSRC}/src/gtk-immodule/gtkintl.h
++	${REINPLACE_CMD} -e '/XFT_LIBS =/s/$$/ -lfontconfig -lXext/' \
++			${WRKSRC}/src/xim/Makefile.in
+ 
+ .include <bsd.port.mk>
