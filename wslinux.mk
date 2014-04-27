@@ -8,7 +8,7 @@ OUTDIR=                 $(NAME)/out
 
 # Platform-independent settings
 USE_MACRO=              cpp
-WSPKG_IN_COMMON=        packages.h
+WSPKG_IN_COMMON=        wscommon.h
 WSPKG_IN_PLATFORM_PKG=  $(INDIR)/$(NAME).pkg
 WSPKG_IN_PLATFORM_SED=  $(INDIR)/$(NAME).sed
 WSPKG_OUT_LIST=         $(OUTDIR)/$(NAME).list
