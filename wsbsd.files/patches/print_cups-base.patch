@@ -1,0 +1,25 @@
+Index: print/cups-base/Makefile
+===================================================================
+--- print/cups-base/Makefile	(revision 352424)
++++ print/cups-base/Makefile	(working copy)
+@@ -162,7 +162,6 @@
+ 			--with-dnssd-libs=${LOCALBASE}/lib/
+ LIB_DEPENDS+=		libdns_sd.so:${PORTSDIR}/net/avahi-libdns
+ CONFIGURE_ARGS+=	--with-dnssd-includes=${LOCALBASE}/include/avahi-compat-libdns_sd/
+-BROKEN=			missing function, see http://www.avahi.org/ticket/303
+ .else
+ CONFIGURE_ARGS+=	--disable-dnssd
+ PLIST_SUB+=		WITH_MDNSRESPONDER="@comment "
+Index: print/cups-base/pkg-plist
+===================================================================
+--- print/cups-base/pkg-plist	(revision 352424)
++++ print/cups-base/pkg-plist	(working copy)
+@@ -83,8 +83,6 @@
+ libexec/cups/backend/snmp
+ libexec/cups/backend/socket
+ libexec/cups/backend/usb
+-%%WITH_MDNSRESPONDER%%libexec/cups/backend/dnssd
+-%%WITH_MDNSRESPONDER%%libexec/cups/backend/mdns
+ libexec/cups/cgi-bin/admin.cgi
+ libexec/cups/cgi-bin/classes.cgi
+ libexec/cups/cgi-bin/help.cgi
