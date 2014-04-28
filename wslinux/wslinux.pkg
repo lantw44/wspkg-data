@@ -325,10 +325,13 @@
 #define MENUMAKER           NULL // FIXME: not available from repository
 #define MKISOFS             genisoimage
 #define PATCHELF            NULL // FIXME: not available from repository
+#define PSTREE              psmisc
+#define RANGER              ranger
 #define QEMU                qemu qemu-user qemu-system qemu-utils
 #define UNAR                unar
 #define UIM_FEP             uim-fep
 #define UNIX2DOS            dos2unix
+#define WATCH               procps
 
 // Video
 #define MPLAYER             mplayer2 gnome-mplayer

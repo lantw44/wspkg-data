@@ -314,10 +314,13 @@
 #define MENUMAKER           menumaker
 #define MKISOFS             cdrtools
 #define PATCHELF            patchelf
+#define PSTREE              pstree
+#define RANGER              py27-ranger
 #define QEMU                qemu-devel
 #define UNAR                NULL // FIXME: not found in ports
 #define UIM_FEP             uim
 #define UNIX2DOS            unix2dos
+#define WATCH               cmdwatch
 
 // Video
 #define MPLAYER             mplayer mplayer-fonts gnome-mplayer \
