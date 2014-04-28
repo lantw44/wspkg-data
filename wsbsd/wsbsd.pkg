@@ -42,6 +42,7 @@
 #define MCELOG              mcelog
 #define MUNIN               munin-node
 #define PARTED              NULL
+#define PAM_LDAPD           nss-pam-ldapd
 #define SYSSTAT             NULL
 #define PORTS_MGMT          portupgrade portmaster portconf porttools \
                             portlint pkg_rmleaves pkg_cutleaves

@@ -44,6 +44,7 @@
 #define MCELOG              mcelog
 #define MUNIN               munin-node munin-plugins-extra
 #define PARTED              parted
+#define PAM_LDAPD           libpam-ldapd
 #define SYSSTAT             sysstat
 #define PORTS_MGMT          NULL // FreeBSD-specific things
 #define NET_SNMP            snmpd
