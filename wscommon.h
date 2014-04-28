@@ -309,6 +309,8 @@ xpdf            html2ps         zh-autoconvert
 C2PS            DJVULIBRE       ENSCRIPT        pstotext        wv
 XPDF_ZH_FONTS
 pdftk           // Added by lydian on 2011/8/3, requested by cjlin
+// added by b01902062@csie.ntu.edu.tw
+asciidoc        discount        markdown        PANDOC
 #endif
 
 // Utils
