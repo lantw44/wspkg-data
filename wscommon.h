@@ -327,9 +327,9 @@ netpbm          OXIM            SCIM_PINYIN     SCIM_TABLES     TIDY
 BSDCPIO         BSDTAR          bochs           CDIALOG         cgdb
 chrpath         convmv          DEV86           diffstat        FAKECHROOT
 fdupes          HTE             htop            meld            MENUMAKER
-MKISOFS         ncdu            PATCHELF        PSTREE          QEMU
-RANGER          rpm2cpio        socat           tig             UIM_FEP
-UNAR            UNIX2DOS        upx             WATCH
+MKISOFS         ncdu            PATCHELF        pax-utils       PSTREE
+QEMU            RANGER          rpm2cpio        socat           tig
+UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 #endif
 
 // Video
