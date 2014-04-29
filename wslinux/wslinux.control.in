@@ -1,5 +1,5 @@
 Package: 217-meta
-Version: 0.0.114
+Version: @TODAY@
 Section: admin
 Priority: required
 Architecture: all
