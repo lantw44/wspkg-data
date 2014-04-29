@@ -358,7 +358,7 @@ afterstep       DESKTOP_BASE    fvwm            IM_SWITCH       mlterm
 MLTERM_TOOLS    rxvt            RXVT_ML         VNCSERVER       xchm
 xorg            xscreensaver    xterm           XVFB
 // freebsd local-217
-enlightenment   icewm           synergy         wdm             xfig
+ENLIGHTENMENT   icewm           synergy         wdm             xfig
 xlockmore
 // added by b01902062@csie.ntu.edu.tw
 fbpanel         obconf          openbox         XEPHYR          xrestop

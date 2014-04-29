@@ -173,6 +173,7 @@
                             libavutil-dev libswscale-dev libavfilter-dev
 #define SDL_DEV             libsdl1.2-dev libsdl2-dev \
                             libsdl-mixer1.2-dev libsdl2-mixer-dev
+#define POPPLER_DEV         libpoppler-dev
 
 // Lisp
 // Lua
@@ -361,4 +362,5 @@
 #define RXVT_ML             rxvt-ml
 #define VNCSERVER           vnc4server tightvncserver
 #define XVFB                xvfb
+#define ENLIGHTENMENT       e17
 #define XEPHYR              xserver-xephyr
