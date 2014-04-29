@@ -6,6 +6,4 @@
 /^xlockmore$/d
 # not available in testing
 /^ns2$/d
-/^tcl8.4-dev$/d
-/^tk8.4-dev$/d
 /^xserver-xspice$/d

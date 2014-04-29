@@ -86,8 +86,8 @@
 #define PERL_DOC            perl-doc
 #define PYTHON2_DOC         python-doc
 #define PYTHON3_DOC         python3-doc
-#define TCL_DOC             tcl8.4-dev
-#define TK_DOC              tk8.4-dev
+#define TCL_DOC             tcl-dev
+#define TK_DOC              tk-dev
 #define GCC_DOC             gcc-doc libstdc++-4.8-doc
 
 // Editors
