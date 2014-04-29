@@ -1,0 +1,17 @@
+Index: textproc/markdown/Makefile
+===================================================================
+--- textproc/markdown/Makefile	(revision 352565)
++++ textproc/markdown/Makefile	(working copy)
+@@ -22,10 +22,10 @@
+ 
+ PORTDOCS=	Markdown-Readme.text
+ 
+-PLIST_FILES=	bin/markdown
++PLIST_FILES=	bin/markdown.pl
+ 
+ do-install:
+-	${INSTALL_SCRIPT} ${WRKSRC}/Markdown.pl ${STAGEDIR}${PREFIX}/bin/markdown
++	${INSTALL_SCRIPT} ${WRKSRC}/Markdown.pl ${STAGEDIR}${PREFIX}/bin/markdown.pl
+ 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+ 	${INSTALL_DATA} "${WRKSRC}/Markdown Readme.text" ${STAGEDIR}${DOCSDIR}/Markdown-Readme.text
+ 
