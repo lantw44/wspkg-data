@@ -301,6 +301,7 @@
 #define DJVULIBRE           libdjvulibre-dev djvulibre-bin
 #define ENSCRIPT            enscript
 #define XPDF_ZH_FONTS       NULL
+#define MARKDOWN            discount
 #define PANDOC              pandoc
 
 // Utils
