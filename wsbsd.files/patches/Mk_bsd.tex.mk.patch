@@ -1,0 +1,19 @@
+Index: Mk/bsd.tex.mk
+===================================================================
+--- Mk/bsd.tex.mk	(revision 352565)
++++ Mk/bsd.tex.mk	(working copy)
+@@ -447,11 +447,13 @@
+ 	${TEXMFVARDIR}/web2c/pdftex/etex.fmt \
+ 	${TEXMFVARDIR}/web2c/pdftex/pdfetex.log \
+ 	${TEXMFVARDIR}/web2c/pdftex/pdfetex.fmt \
+-	bin/pdfetex
++	bin/pdfetex \
++	bin/etex
+ TEX_FORMAT_PDFTEX_DIRS= \
+ 	${TEXMFVARDIR}/web2c/pdftex
+ post-install-pdftex:
+ 	${LN} -sf pdftex ${PREFIX}/bin/pdfetex
++	${LN} -sf pdftex ${PREFIX}/bin/etex
+ 
+ TEX_FORMAT_PTEX?= \
+ 	"ptex ptex - ptex.ini" \

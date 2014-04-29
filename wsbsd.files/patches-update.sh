@@ -11,7 +11,7 @@ patchdir="${shdir}/patches"
 
 cd ${PORTSDIR}
 echo "==> Running svn status ..."
-svn status | sed -e '/^?/d' -e 's#^[A-Z]* *\([^/]*\/[^/]*\)/.*$#\1#' | \
+svn status | sed -e '/^?/d' -e 's#^[A-Z]* *\([^/]*\/[^/]*\)\(/.*\)*$#\1#' | \
     sort | uniq | (
     while read oneline; do
         echo "==> Generating patch for ${oneline}"
