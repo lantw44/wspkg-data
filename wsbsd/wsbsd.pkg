@@ -63,7 +63,7 @@
 #define GIT                 git gitg
 #define INDENT              NULL
 #define MAKE                gmake bmake
-#define MINGW               NULL
+#define MINGW               mingw32-gcc
 #define OPENJDK6            openjdk6
 #define OPENJDK7            openjdk
 #define SUBVERSION          subversion svk psvn-emacs24
@@ -115,7 +115,7 @@
 #define GTK2_ENGINES        gtk-engines2
 #define GVFS                gvfs
 #define REMMINA             remmina remmina-plugins
-#define MUTTER              // XXX: Not available - need GNOME 3 import
+#define MUTTER              mutter
 #define GNOME_META_PKG      gnome2-lite // XXX: GNOME 3 may be imported recently
 #define BAOBAB              gnome-utils
 #define GLADE               glade3
@@ -150,7 +150,7 @@
 #define LTDL_DEV            libltdl
 #define NCURSES_DEV         ncurses
 #define QT4_DEV             qt4
-#define QT5_DEV             NULL // TODO: Add Qt 5
+#define QT5_DEV             qt5
 #define PERL_DEV            NULL // provided by default perl installation
 #define MYSQLXX_DEV         mysql++-mysql55
 #define OPENMPI_DEV         openmpi
@@ -266,7 +266,7 @@
 #define RUBY_MYSQL          ruby19-mysql
 
 // Science
-#define BLAST2              NULL // FIXME: not found in ports
+#define BLAST2              NULL // included in ncbi-toolkit
 #define BLITZ               blitz++
 
 // Sound
@@ -282,7 +282,7 @@
 #define LATEX_PGF           latex-pgf
 
 // Text
-#define ASPELL_EN           en-aspell // FIXME: not found in ports
+#define ASPELL_EN           en-aspell
 #define GS_CJK_RESOURCE     poppler-data
 #define SPELL               NULL
 #define C2PS                c2ps
