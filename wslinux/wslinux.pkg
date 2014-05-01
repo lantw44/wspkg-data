@@ -77,6 +77,8 @@
 #define JIKES               NULL // FIXME: not available from repository
 #define BIOJAVA             libbiojava-java
 #define NCBI_TOOLKIT        libncbi6-dev ncbi-tools-bin ncbi-tools-x11
+#define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
+                            android-tools-fsutils androidsdk-ddms
 
 // Doc
 #define LIBC_DOC            glibc-doc glibc-doc-reference // reference manual

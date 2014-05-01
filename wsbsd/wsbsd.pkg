@@ -73,6 +73,7 @@
 #define JIKES               jikes
 #define BIOJAVA             biojava
 #define NCBI_TOOLKIT        ncbi-toolkit
+#define ANDROID_TOOLS       android-tools-adb
 
 // Doc
 #define LIBC_DOC            NULL

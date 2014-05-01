@@ -104,7 +104,8 @@ ECLIPSE         expect          JIKES           mit-scheme
 spim // 計算機結構
 sdcc // 微算機實驗? (8051)
 BIOJAVA         NCBI_TOOLKIT    doxygen         ocaml
-mercurial       bzr             // added by b01902062@csie.ntu.edu.tw
+// added by b01902062@csie.ntu.edu.tw
+ANDROID_TOOLS   bzr             mercurial       ltrace
 #endif
 
 // Doc
@@ -210,6 +211,7 @@ alpine          fetchmail       mpack           mutt            MAILX
 // freebsd local-217
 tin             metamail        newmail
 VM              // requested by cj
+abook           // added by b01902062@csie.ntu.edu.tw
 #endif
 
 // Math
