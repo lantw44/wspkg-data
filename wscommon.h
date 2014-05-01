@@ -253,6 +253,7 @@ PERL_DBI        PERL_MAIL_SENDER
 PERL_SET_INTSPAN                PERL_SET_WINDOW PERL_SET_INFINITE
 PERL_PAR                        PERL_PERL_TIDY  PERL_WWW_MECHANIZE
 PERL_WWW_MECHANIZE_SHELL        PERL_WWW_ROBOT  PERL_XML_SAX_EXPAT
+PERL_SWITCH     // required by /root/wsmon
 #endif
 
 // Python
@@ -276,7 +277,7 @@ PYTHON_NUMERIC
 
 // Ruby
 #ifdef WSPKG_RUBY
-RUBY            RUBY_MYSQL
+RUBY            RUBY_BUNDLER    RUBY_MYSQL      RUBY_RAKE       RUBY_RAILS
 #endif
 
 // Science

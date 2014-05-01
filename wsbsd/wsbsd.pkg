@@ -221,6 +221,7 @@
 #define PERL_WWW_MECHANIZE_SHELL        p5-WWW-Mechanize-Shell
 #define PERL_WWW_ROBOT                  p5-WWW-Robot
 #define PERL_XML_SAX_EXPAT              p5-XML-SAX-Expat
+#define PERL_SWITCH                     p5-Switch
 
 // Python
 #define PYTHON2                 python2
@@ -263,7 +264,10 @@
 
 // Ruby
 #define RUBY                ruby
+#define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          ruby19-mysql
+#define RUBY_RAKE           rubygem-rake
+#define RUBY_RAILS          rubygem-rails
 
 // Science
 #define BLAST2              NULL // included in ncbi-toolkit
