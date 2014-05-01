@@ -261,7 +261,7 @@ PERL_SWITCH     // required by /root/wsmon
 // Python
 #ifdef WSPKG_PYTHON
 IPYTHON         // PYTHON2 and PYTHON3 are included in standard section
-PYPY            // added by b01902062@csie.ntu.edu.tw
+PYPY            PYTHON_PIP      // added by b01902062@csie.ntu.edu.tw
 PYTHON_BSDDB3   PYTHON_IMAGING  PYTHON_NUMPY    PYTHON_SETUPTOOLS
 PYTHON_LIBSVM   PYTHON_GSL
 // request by d97009@csie.ntu.edu.tw
