@@ -97,7 +97,7 @@ ANT             autoconf        automake        bison           ccache
 CLANG           cmake           cvs             ddd             f2c
 flex            GCC             GDB             GOLANG          gperf
 GIT             gprolog         INDENT          libtool         MAKE
-MINGW           nasm            OPENJDK6        OPENJDK7        scala
+MINGW           nasm            OPENJDK         scala
 scons           SUBVERSION      TCL             TK              valgrind
 // freebsd local-217
 ECLIPSE         expect          JIKES           mit-scheme
