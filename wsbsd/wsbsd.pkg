@@ -19,7 +19,7 @@
 #define PCI                 NULL
 #define PERL                perl5
 #define PYTHON2             python2
-#define PYTHON3             python3
+#define PYTHON3             python3 python34
 #define SHARUTILS           NULL
 #define SSH                 NULL
 #define STRACE              NULL
@@ -225,8 +225,6 @@
 #define PERL_SWITCH                     p5-Switch
 
 // Python
-#define PYTHON2                 python2
-#define PYTHON3                 python3
 #define IPYTHON                 py27-ipython
 #define PYPY                    pypy
 #define PYTHON_PIP              py27-pip
@@ -265,7 +263,7 @@
 #define PYTHON_NUMERIC          py27-numeric
 
 // Ruby
-#define RUBY                ruby
+#define RUBY                ruby ruby20 ruby21
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          ruby19-mysql
 #define RUBY_RAKE           rubygem-rake
