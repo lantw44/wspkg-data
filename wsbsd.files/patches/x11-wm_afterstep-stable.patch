@@ -1,44 +1,6 @@
-Index: x11-wm/afterstep-stable/files/patch-configure
-===================================================================
---- x11-wm/afterstep-stable/files/patch-configure	(revision 352106)
-+++ x11-wm/afterstep-stable/files/patch-configure	(working copy)
-@@ -2,6 +2,33 @@
- 
- --- configure	Sat Jun 24 21:55:24 2006
- +++ configure.orig	Sat Jun 24 21:54:41 2006
-+@@ -7955,7 +7955,7 @@
-+ fi
-+ 
-+ if test "x$enable_staticlibs" = "xyes"; then
-+-   AFTERBASE_LIB="../../libAfterBase/libAfterBase.a"
-++   AFTERBASE_LIB="../../libAfterBase/libAfterBase.a /usr/lib/libexecinfo.a"
-+    AFTERIMAGE_LIB="../../libAfterImage/libAfterImage.a"
-+    AFTERSTEP_LIB="../../libAfterStep/libAfterStep.a"
-+    AFTERCONF_LIB="../../libAfterConf/libAfterConf.a"
-+@@ -7974,7 +7974,7 @@
-+    		LIBPROG='$(LIB_SHARED_CYG)'
-+    		LIBINSTALL="install.cyg"
-+ 	else
-+-   		AFTERBASE_LIB="../../libAfterBase/libAfterBase.so"
-++   		AFTERBASE_LIB="../../libAfterBase/libAfterBase.so /usr/lib/libexecinfo.a"
-+    		AFTERIMAGE_LIB="../../libAfterImage/libAfterImage.so"
-+    		AFTERSTEP_LIB="../../libAfterStep/libAfterStep.so"
-+    		AFTERCONF_LIB="../../libAfterConf/libAfterConf.so"
-+@@ -7985,7 +7985,7 @@
-+ 	fi
-+ fi
-+ 
-+-AFTERBASE_STATIC_LIB="../../libAfterBase/libAfterBase.a"
-++AFTERBASE_STATIC_LIB="../../libAfterBase/libAfterBase.a /usr/lib/libexecinfo.a"
-+ AFTERIMAGE_STATIC_LIB="../../libAfterImage/libAfterImage.a"
-+ AFTERSTEP_STATIC_LIB="../../libAfterStep/libAfterStep.a"
-+ AFTERCONF_STATIC_LIB="../../libAfterConf/libAfterConf.a"
- @@ -7660,7 +7660,7 @@
-  
-  fi
 Index: x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(revision 355603)
 +++ x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(working copy)
 @@ -1,13 +1,11 @@
 -$FreeBSD$

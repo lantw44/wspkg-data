@@ -1,8 +1,8 @@
 Index: chinese/oxim/Makefile
 ===================================================================
---- chinese/oxim/Makefile	(revision 352385)
+--- chinese/oxim/Makefile	(revision 355603)
 +++ chinese/oxim/Makefile	(working copy)
-@@ -79,5 +79,7 @@
+@@ -80,5 +80,7 @@
  post-patch:
  	${REINPLACE_CMD} 's|%%PREFIX%%|${PREFIX}|' \
  			${WRKSRC}/src/gtk-immodule/gtkintl.h
