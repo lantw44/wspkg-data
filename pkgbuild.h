@@ -1,6 +1,6 @@
 // Basic packages
  bash bash-completion bind-tools cmdwatch git ldapvi
- lighttpd lsof ncdu portlint pstree py27-ranger screen
+ lighttpd lsof ncdu portlint pstree py27-ranger rsync screen
  subversion sudo tig tree vim-lite w3m wget
 
 // Poudriere
