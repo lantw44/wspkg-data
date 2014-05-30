@@ -165,7 +165,7 @@
 
 // Lisp
 // Lua
-#define LUA51               lua
+#define LUA51               lua51
 #define LUA52               lua52
 
 // Machine Learning
