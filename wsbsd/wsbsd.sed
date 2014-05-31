@@ -8,5 +8,3 @@
 /^ns$/d
 # Mark as broken in ports
 /^wmmemload$/d
-# Mark as broken in ports
-/^p5-bioperl$/d
