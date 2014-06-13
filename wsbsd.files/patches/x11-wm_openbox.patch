@@ -1,0 +1,13 @@
+Index: x11-wm/openbox/Makefile
+===================================================================
+--- x11-wm/openbox/Makefile	(revision 357645)
++++ x11-wm/openbox/Makefile	(working copy)
+@@ -19,7 +19,7 @@
+ USE_LDCONFIG=	yes
+ 
+ CFLAGS+=	-I${LOCALBASE}/include
+-LDFLAGS+=	-L${LOCALBASE}/lib
++LDFLAGS+=	-L${LOCALBASE}/lib -lXext
+ 
+ PLIST_SUB=	VERSION=${PORTVERSION:C/.[0-9]+\$//}
+ 
