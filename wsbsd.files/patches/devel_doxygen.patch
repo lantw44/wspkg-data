@@ -1,18 +1,17 @@
 Index: devel/doxygen/Makefile
 ===================================================================
---- devel/doxygen/Makefile	(revision 357645)
+--- devel/doxygen/Makefile	(revision 359137)
 +++ devel/doxygen/Makefile	(working copy)
-@@ -2,8 +2,7 @@
+@@ -2,7 +2,7 @@
  # $FreeBSD$
  
  PORTNAME=	doxygen
 -PORTVERSION=	1.8.3.1
--PORTREVISION=	1
 +PORTVERSION=	1.8.7
+ PORTREVISION=	1
+ PORTEPOCH=	1
  CATEGORIES=	devel
- MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/ \
- 		http://ftp.stack.nl/pub/users/dimitri/
-@@ -15,8 +14,9 @@
+@@ -16,8 +16,9 @@
  LICENSE=	GPLv2
  LICENSE_FILE=	${WRKSRC}/LICENSE
  
