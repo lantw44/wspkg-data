@@ -304,6 +304,7 @@
 #define SCIM_CHEWING        NULL // FIXME: not found in ports
 #define TOFRODOS            NULL
 #define GCIN                zh-gcin
+#define GKRELLM             gkrellm2
 #define GNULS               gnuls
 #define OXIM                zh-oxim
 #define SCIM_CHINESE        zh-scim-tables

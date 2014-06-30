@@ -324,7 +324,7 @@ PROCINFO        scim            SCIM_CHEWING    pv              rar
 tree            TOFRODOS        unrar           unzip           xdg-utils
 zip
 // freebsd local-217
-GCIN            gkrellm         GNULS           keychain        mc
+GCIN            GKRELLM         GNULS           keychain        mc
 netpbm          OXIM            SCIM_PINYIN     SCIM_TABLES     TIDY
 // added by b01902062@csie.ntu.edu.tw
 BSDCPIO         BSDTAR          bochs           CDIALOG         cgdb

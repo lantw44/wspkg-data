@@ -320,6 +320,7 @@
 #define SCIM_CHEWING        scim-chewing
 #define TOFRODOS            tofrodos
 #define GCIN                gcin gcin-gtk3-immodule gcin-qt4-immodule
+#define GKRELLM             gkrellm
 #define GNULS               NULL
 #define OXIM                NULL
 #define SCIM_PINYIN         scim-pinyin
