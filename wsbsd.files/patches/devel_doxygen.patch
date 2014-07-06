@@ -1,6 +1,6 @@
 Index: devel/doxygen/Makefile
 ===================================================================
---- devel/doxygen/Makefile	(revision 359137)
+--- devel/doxygen/Makefile	(revision 360535)
 +++ devel/doxygen/Makefile	(working copy)
 @@ -2,7 +2,7 @@
  # $FreeBSD$
@@ -11,19 +11,17 @@ Index: devel/doxygen/Makefile
  PORTREVISION=	1
  PORTEPOCH=	1
  CATEGORIES=	devel
-@@ -16,8 +16,9 @@
- LICENSE=	GPLv2
- LICENSE_FILE=	${WRKSRC}/LICENSE
+@@ -18,6 +18,9 @@
  
--BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake
--LIB_DEPENDS=	png15:${PORTSDIR}/graphics/png
+ BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake
+ LIB_DEPENDS=	libpng15.so:${PORTSDIR}/graphics/png
 +BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake \
 +		python:${PORTSDIR}/lang/python
 +LIB_DEPENDS=	libpng15.so:${PORTSDIR}/graphics/png
  
  USES=		bison iconv perl5 gmake
  ALL_TARGET=	all
-@@ -72,6 +72,10 @@
+@@ -73,6 +76,10 @@
  PLIST_FILES+=	bin/doxywizard
  .endif # QT4
  
@@ -36,7 +34,7 @@ Index: devel/doxygen/Makefile
  		${ECHO} "unix:LIBS += ${ICONV_LIB}" >> $$pro; done
 Index: devel/doxygen/distinfo
 ===================================================================
---- devel/doxygen/distinfo	(revision 357645)
+--- devel/doxygen/distinfo	(revision 360535)
 +++ devel/doxygen/distinfo	(working copy)
 @@ -1,2 +1,2 @@
 -SHA256 (doxygen-1.8.3.1.src.tar.gz) = 0c749f68101b6c04ccb0d9696dd37836a6ba62cd8002add275058a975ee72b55
@@ -45,7 +43,7 @@ Index: devel/doxygen/distinfo
 +SIZE (doxygen-1.8.7.src.tar.gz) = 4796875
 Index: devel/doxygen/files/patch-addon-doxywizard-Makefile.in
 ===================================================================
---- devel/doxygen/files/patch-addon-doxywizard-Makefile.in	(revision 357645)
+--- devel/doxygen/files/patch-addon-doxywizard-Makefile.in	(revision 360535)
 +++ devel/doxygen/files/patch-addon-doxywizard-Makefile.in	(working copy)
 @@ -1,11 +0,0 @@
 ---- addon/doxywizard/Makefile.in.orig	2010-05-23 10:51:31.000000000 -0400
@@ -61,7 +59,7 @@ Index: devel/doxygen/files/patch-addon-doxywizard-Makefile.in
 - 	$(MAKE) -f Makefile.doxywizard 
 Index: devel/doxygen/files/patch-examples-Makefile.in
 ===================================================================
---- devel/doxygen/files/patch-examples-Makefile.in	(revision 357645)
+--- devel/doxygen/files/patch-examples-Makefile.in	(revision 360535)
 +++ devel/doxygen/files/patch-examples-Makefile.in	(working copy)
 @@ -1,16 +0,0 @@
 -Disables tests to avoid hang on stable/9 and head.
@@ -82,7 +80,7 @@ Index: devel/doxygen/files/patch-examples-Makefile.in
 -+#endif
 Index: devel/doxygen/files/patch-md5
 ===================================================================
---- devel/doxygen/files/patch-md5	(revision 357645)
+--- devel/doxygen/files/patch-md5	(revision 360535)
 +++ devel/doxygen/files/patch-md5	(working copy)
 @@ -1,221 +0,0 @@
 ---- src/definition.cpp.orig	2011-08-19 15:34:17.000000000 +0800
