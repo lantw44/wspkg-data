@@ -280,7 +280,7 @@
 #define RUBY_BUNDLER        bundler
 #define RUBY_MYSQL          ruby-mysql
 #define RUBY_RAKE           rake
-#define RUBY_RAILS          ruby-rails-4.0
+#define RUBY_RAILS          ruby-rails-3.2
 
 // Science
 #define BLAST2              blast2
