@@ -260,6 +260,7 @@
 #define PYTHON_NETWORKX         py27-networkx
 #define PYTHON_VIRTUALENV       py27-virtualenv
 #define PYTHON_NUMERIC          py27-numeric
+#define PYTHON_PANDAS           py27-pandas
 
 // Ruby
 #define RUBY                ruby ruby20 ruby21

@@ -274,6 +274,7 @@
 #define PYTHON_NETWORKX         python-networkx python3-networkx
 #define PYTHON_VIRTUALENV       python-virtualenv
 #define PYTHON_NUMERIC          NULL
+#define PYTHON_PANDAS           python-pandas python3-pandas
 
 // Ruby
 #define RUBY                ruby ruby-dev
