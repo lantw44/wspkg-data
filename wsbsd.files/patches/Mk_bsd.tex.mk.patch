@@ -1,11 +1,11 @@
 Index: Mk/bsd.tex.mk
 ===================================================================
---- Mk/bsd.tex.mk	(revision 360535)
+--- Mk/bsd.tex.mk	(revision 361736)
 +++ Mk/bsd.tex.mk	(working copy)
-@@ -464,11 +464,13 @@
- 	${TEXMFVARDIR}/web2c/pdftex/etex.fmt \
+@@ -471,11 +471,13 @@
  	${TEXMFVARDIR}/web2c/pdftex/pdfetex.log \
- 	${TEXMFVARDIR}/web2c/pdftex/pdfetex.fmt \
+ 	${TEXMFVARDIR}/web2c/pdftex/pdfetex.fmt
+ TEX_FORMAT_PDFTEX_BIN= \
 -	bin/pdfetex
 +	bin/pdfetex \
 +	bin/etex
