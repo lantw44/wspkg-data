@@ -128,7 +128,7 @@
 // Graphics
 #define IMAGEMAGICK         ImageMagick
 #define JPEG                jpeg
-#define BMEPS               bmeps
+#define BMEPS               bmpp
 #define XGRAPH              xgraph
 
 // Haskell
