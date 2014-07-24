@@ -23,7 +23,7 @@ export WRKDIR="/tmp/wspkg-build"
 export WSPKGDIR="${WRKDIR}/wspkg"
 export REPODIR="/usr/local/git/repositories"
 export PORTSDIR="/usr/local/poudriere/ports/default"
-
+unset  GIT_DIR
 
 # Update sources
 for repo in wspkg wspkg-data; do
