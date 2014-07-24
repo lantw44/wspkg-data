@@ -301,7 +301,7 @@ AUCTEX          bibtool         LATEX_CJK       latex2html      BIBER
 TEXLIVE
 texlive-full    // Added by Artoo on 2008.12.14, requested by cjlin@csie.ntu.edu.tw
 // freebsd local-217
-BG5PS           HYPERLATEX      ipe             LATEX_PGF       transfig
+BG5PS           HYPERLATEX      ipe             transfig
 #endif
 
 // Text

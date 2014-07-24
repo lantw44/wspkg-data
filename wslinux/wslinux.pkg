@@ -299,7 +299,6 @@
                             texlive-metapost // Added, by, Artoo, on, 2008.12.13,, requested, by, r95073@csie.ntu.edu.tw,
 #define BG5PS               NULL
 #define HYPERLATEX          NULL
-#define LATEX_PGF           pgf
 
 // Text
 #define ASPELL_EN           aspell-en

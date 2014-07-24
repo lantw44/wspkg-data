@@ -283,7 +283,6 @@
 #define TEXLIVE             NULL // texlive-full already provides all packages
 #define BG5PS               zh-bg5ps
 #define HYPERLATEX          Hyperlatex
-#define LATEX_PGF           latex-pgf
 
 // Text
 #define ASPELL_EN           en-aspell
