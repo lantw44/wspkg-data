@@ -1,0 +1,12 @@
+Index: chinese/CJKUnifonts/Makefile
+===================================================================
+--- chinese/CJKUnifonts/Makefile	(revision 362973)
++++ chinese/CJKUnifonts/Makefile	(working copy)
+@@ -23,6 +23,7 @@
+ 
+ do-install:
+ 	@${MKDIR} ${STAGEDIR}${FONTSDIR}
++	@${MKDIR} ${STAGEDIR}${XFONTSDIR}
+ 	${INSTALL_DATA} ${WRKDIR}/ukai.ttc ${STAGEDIR}${FONTSDIR}
+ 	${INSTALL_DATA} ${WRKDIR}/uming.ttc ${STAGEDIR}${FONTSDIR}
+ 
