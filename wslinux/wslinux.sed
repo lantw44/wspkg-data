@@ -5,5 +5,6 @@
 /^metamail$/d
 /^xlockmore$/d
 # not available in testing
-/^ns2$/d
 /^xserver-xspice$/d
+/^geeqie/d
+/^ruby-rails-3\.2/d
