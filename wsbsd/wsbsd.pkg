@@ -169,6 +169,9 @@
 #define LUA52               lua52
 
 // Machine Learning
+#define LIBSVM              libsvm libsvm-python
+#define LIBLINEAR           liblinear
+
 // Mail
 #define MAILX               NULL
 #define VM                  vm-emacs24
@@ -231,7 +234,6 @@
 #define PYTHON_IMAGING          py27-imaging
 #define PYTHON_NUMPY            py27-numpy
 #define PYTHON_SETUPTOOLS       py27-setuptools27
-#define PYTHON_LIBSVM           libsvm-python
 #define PYTHON_GSL              py27-gsl
 #define PYTHON_MARKDOWN         py27-markdown
 #define PYTHON_MEMPROF          NULL
