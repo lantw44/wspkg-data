@@ -4,7 +4,7 @@ Section: admin
 Priority: required
 Architecture: all
 Pre-Depends: debconf (>= 0.5) | debconf-2.0
-Depends: @DEBIAN_DOT_LIST@
+Depends: @DEPS@
 Replaces: dict
 Maintainer: 217TA <217ta@csie.ntu.edu.tw>
 Description: 217 meta package
