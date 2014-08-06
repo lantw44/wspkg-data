@@ -64,6 +64,7 @@
 #define INDENT              NULL
 #define MAKE                gmake bmake
 #define MINGW               mingw32-gcc
+#define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8
 #define SUBVERSION          subversion svk psvn-emacs24
 #define TCL                 tcl84 tcl85 tcl86

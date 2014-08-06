@@ -65,6 +65,7 @@
 #define INDENT              indent
 #define MAKE                make pmake bmake
 #define MINGW               mingw-w64  // mingw32 is obsolete
+#define NODEJS              nodejs nodejs-dev npm
 #define OPENJDK             openjdk-7-jdk // TODO: openjdk-8-jdk
 #define SUBVERSION          subversion
 #define TCL                 tcl-dev
