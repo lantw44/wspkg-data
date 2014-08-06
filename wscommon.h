@@ -40,6 +40,7 @@
 # define WSPKG_NET
 # define WSPKG_PARALLEL
 # define WSPKG_PERL
+# define WSPKG_PHP
 # define WSPKG_PYTHON
 # define WSPKG_RUBY
 # define WSPKG_SCIENCE
@@ -257,6 +258,11 @@ PERL_SET_INTSPAN                PERL_SET_WINDOW PERL_SET_INFINITE
 PERL_PAR                        PERL_PERL_TIDY  PERL_WWW_MECHANIZE
 PERL_WWW_MECHANIZE_SHELL        PERL_WWW_ROBOT  PERL_XML_SAX_EXPAT
 PERL_SWITCH     // required by /root/wsmon
+#endif
+
+// PHP
+#ifdef WSPKG_PHP
+PHP_CLI         PHP_MYSQL       // request by b92093@csie.ntu.edu.tw
 #endif
 
 // Python

@@ -240,6 +240,10 @@
 #define PERL_XML_SAX_EXPAT              libxml-sax-expat-perl
 #define PERL_SWITCH                     libswitch-perl
 
+// PHP
+#define PHP_CLI                 php5-cli
+#define PHP_MYSQL               php5-mysql
+
 // Python
 #define IPYTHON                 ipython
 #define PYPY                    pypy

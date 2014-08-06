@@ -226,6 +226,10 @@
 #define PERL_XML_SAX_EXPAT              p5-XML-SAX-Expat
 #define PERL_SWITCH                     p5-Switch
 
+// PHP
+#define PHP_CLI                 php5
+#define PHP_MYSQL               php5-mysql
+
 // Python
 #define IPYTHON                 py27-ipython
 #define PYPY                    pypy
