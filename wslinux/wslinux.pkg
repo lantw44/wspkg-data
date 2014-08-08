@@ -246,7 +246,7 @@
 #define PHP_MYSQL               php5-mysql
 
 // Python
-#define IPYTHON                 ipython
+#define IPYTHON                 ipython ipython3
 #define PYPY                    pypy
 #define PYTHON_PIP              python-pip python3-pip
 #define PYTHON_BSDDB3           python-bsddb3 python3-bsddb3
@@ -268,14 +268,14 @@
 #define PYTHON_LXML             python-lxml python3-lxml
 #define PYTHON_OPENCV           python-opencv
 #define PYTHON_COGENT           python-cogent
-#define PYTHON_REDIS            python-redis
+#define PYTHON_REDIS            python-redis python3-redis
 #define PYTHON_YAML             python-yaml python3-yaml
 #define PYTHON_GDATA            python-gdata
-#define PYTHON_CURL             python-pycurl
+#define PYTHON_CURL             python-pycurl python3-pycurl
 #define PYTHON_LDAP             python-ldap
 #define PYTHON_SMBPASSWD        python-smbpasswd
 #define PYTHON_SPHINX           python-sphinx python3-sphinx
-#define PYTHON_SCIKITS_LEARN    python-scikits-learn
+#define PYTHON_SCIKITS_LEARN    python-sklearn
 #define PYTHON_IGRAPH           python-igraph
 #define PYTHON_PSYCOPG2         python-psycopg2 python3-psycopg2
 #define PYTHON_NETWORKX         python-networkx python3-networkx
