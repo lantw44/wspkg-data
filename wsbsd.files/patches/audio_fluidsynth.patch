@@ -1,0 +1,20 @@
+Index: audio/fluidsynth/files/patch-src__drivers__fluid_alsa.c
+===================================================================
+--- audio/fluidsynth/files/patch-src__drivers__fluid_alsa.c	(revision 0)
++++ audio/fluidsynth/files/patch-src__drivers__fluid_alsa.c	(working copy)
+@@ -0,0 +1,15 @@
++--- src/drivers/fluid_alsa.c.orig       2014-08-12 21:42:07.000000000 +0000
+++++ src/drivers/fluid_alsa.c    2014-08-12 21:42:21.000000000 +0000
++@@ -354,12 +354,6 @@
++       return FLUID_FAILED;
++     }
++     break;
++-  case -ESTRPIPE:
++-    if ((snd_pcm_resume(pcm) != 0) && (snd_pcm_prepare(pcm) != 0)) {
++-      FLUID_LOG(FLUID_ERR, "Failed to resume the audio device");
++-      return FLUID_FAILED;
++-    }
++-    break;
++   default:
++     FLUID_LOG(FLUID_ERR, "The audio device error: %s", snd_strerror(errval));
++     return FLUID_FAILED;
