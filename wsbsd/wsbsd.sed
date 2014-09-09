@@ -8,3 +8,5 @@
 /^ns$/d
 # Mark as broken in ports
 /^wmmemload$/d
+# Removed because of not staged
+/^vm-emacs24$/d
