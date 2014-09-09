@@ -90,7 +90,7 @@
 #define PYTHON3_DOC         python3-doc
 #define TCL_DOC             tcl-dev
 #define TK_DOC              tk-dev
-#define GCC_DOC             gcc-doc libstdc++-4.8-doc
+#define GCC_DOC             gcc-doc libstdc++-4.9-doc
 
 // Editors
 #define CTAGS               exuberant-ctags
