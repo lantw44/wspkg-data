@@ -7,4 +7,3 @@
 # not available in testing
 /^xserver-xspice$/d
 /^geeqie/d
-/^ruby-rails-3\.2/d

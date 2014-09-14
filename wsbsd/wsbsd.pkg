@@ -274,7 +274,7 @@
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          ruby19-mysql
 #define RUBY_RAKE           rubygem-rake
-#define RUBY_RAILS          rubygem-rails
+#define RUBY_RAILS          rubygem-rails4
 
 // Science
 #define BLAST2              NULL // included in ncbi-toolkit
