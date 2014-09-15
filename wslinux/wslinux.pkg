@@ -79,6 +79,7 @@
 #define NCBI_TOOLKIT        libncbi6-dev ncbi-tools-bin ncbi-tools-x11
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
+#define LLVM                llvm llvm-dev llvm-runtime
 
 // Doc
 #define LIBC_DOC            glibc-doc glibc-doc-reference // reference manual
