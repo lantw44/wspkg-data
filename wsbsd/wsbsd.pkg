@@ -342,8 +342,8 @@
 #define X264                x264
 
 // Web
-#define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-f10 \
-                            linux-f10-flashplugin
+#define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
+                            linux-c6-flashplugin
 #define FIREFOX             firefox firefox-i18n
 #define W3M_EL              emacs-w3m-emacs24
 #define JAVA_PLUGIN         icedtea-web
