@@ -240,6 +240,7 @@ rrdtool         tcptraceroute   TRAFSHOW        urlview
 // added by b01902062@csie.ntu.edu.tw
 x11vnc          SPICE_CLIENT    XSPICE          ldapvi
 PCMANX
+LOUDMOUTH       // requested by b01902109
 #endif
 
 // Parallel Programming

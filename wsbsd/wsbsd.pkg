@@ -203,6 +203,7 @@
 #define SPICE_CLIENT        NULL // FIXME: not found in ports
 #define XSPICE              NULL // FIXME: not found in ports
 #define PCMANX              zh-pcmanx
+#define LOUDMOUTH           loudmouth
 
 // Parallel Programming
 // Perl

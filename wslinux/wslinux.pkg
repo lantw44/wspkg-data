@@ -217,6 +217,7 @@
                             spice-client-glib-usb-acl-helper
 #define XSPICE              xserver-xspice
 #define PCMANX              pcmanx-gtk2
+#define LOUDMOUTH           libloudmouth1-dev
 
 // Parallel Programming
 // Perl
