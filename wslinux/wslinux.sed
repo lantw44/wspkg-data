@@ -6,4 +6,5 @@
 /^xlockmore$/d
 # not available in testing
 /^xserver-xspice$/d
-/^geeqie/d
+/^eclipse-cdt-valgrind/d
+/^swfdec-mozilla/d
