@@ -105,6 +105,8 @@ ECLIPSE         expect          JIKES           mit-scheme
 spim // 計算機結構
 sdcc // 微算機實驗? (8051)
 BIOJAVA         NCBI_TOOLKIT    doxygen         ocaml
+// required by Wei-Sheng Chin d01944006
+MONO
 // added by b01902062@csie.ntu.edu.tw
 ANDROID_TOOLS   bzr             mercurial       LLVM            ltrace
 #endif
