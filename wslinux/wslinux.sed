@@ -6,7 +6,6 @@
 /^xlockmore$/d
 # not available in testing
 /^xserver-xspice$/d
-/^eclipse-cdt-valgrind/d
 /^swfdec-mozilla/d
 # strange dependency problem
 /^libjpeg8-dev/d
