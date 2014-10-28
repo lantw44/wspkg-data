@@ -160,7 +160,7 @@
 #define LIBEVENT_DEV        libevent-dev
 #define FFTW_DEV            libfftw3-dev fftw-dev
 #define GSL_DEV             libgsl0-dev
-#define JPEG_DEV            libjpeg8-dev
+#define JPEG_DEV            libjpeg-dev
 #define LTDL_DEV            libltdl-dev
 #define NCURSES_DEV         libncurses5-dev libncursesw5-dev
 #define QT4_DEV             libqt4-dev

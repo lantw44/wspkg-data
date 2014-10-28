@@ -7,5 +7,3 @@
 # not available in testing
 /^xserver-xspice$/d
 /^swfdec-mozilla/d
-# strange dependency problem
-/^libjpeg8-dev/d
