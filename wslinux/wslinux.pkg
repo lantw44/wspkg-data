@@ -141,7 +141,7 @@
 
 // Graphics
 #define IMAGEMAGICK         imagemagick
-#define JPEG                libjpeg-progs
+#define JPEG                libjpeg-turbo-progs
 #define BMEPS               NULL // FIXME: not available from repository
 #define XGRAPH              NULL
 
