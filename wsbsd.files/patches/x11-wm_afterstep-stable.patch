@@ -1,6 +1,6 @@
 Index: x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(revision 355603)
+--- x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c	(working copy)
 @@ -1,13 +1,11 @@
 -$FreeBSD$
@@ -48,7 +48,7 @@ Index: x11-wm/afterstep-stable/files/patch-libAfterBase-asvector.c
 +     /* word copying is usually faster then raw memory copying */
 Index: x11-wm/afterstep-stable/files/patch-libAfterBase-parse.h
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-libAfterBase-parse.h	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-libAfterBase-parse.h	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-libAfterBase-parse.h	(working copy)
 @@ -1,13 +1,11 @@
 -$FreeBSD$
@@ -69,7 +69,7 @@ Index: x11-wm/afterstep-stable/files/patch-libAfterBase-parse.h
   char *hex_to_buffer(void *data, size_t bytes, char* buffer);
 Index: x11-wm/afterstep-stable/files/patch-libAfterStep-functions.h
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-libAfterStep-functions.h	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-libAfterStep-functions.h	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-libAfterStep-functions.h	(working copy)
 @@ -1,13 +1,11 @@
 -$FreeBSD$
@@ -90,7 +90,7 @@ Index: x11-wm/afterstep-stable/files/patch-libAfterStep-functions.h
   void destroy_func_data( FunctionData **pdata );
 Index: x11-wm/afterstep-stable/files/patch-libAfterStep-mylook.h
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-libAfterStep-mylook.h	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-libAfterStep-mylook.h	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-libAfterStep-mylook.h	(working copy)
 @@ -1,7 +1,5 @@
 -$FreeBSD$
@@ -118,7 +118,7 @@ Index: x11-wm/afterstep-stable/files/patch-libAfterStep-mylook.h
 +
 Index: x11-wm/afterstep-stable/files/patch-src-afterstep-asinternals.h
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-src-afterstep-asinternals.h	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-src-afterstep-asinternals.h	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-src-afterstep-asinternals.h	(working copy)
 @@ -1,7 +1,5 @@
 -$FreeBSD$
@@ -143,7 +143,7 @@ Index: x11-wm/afterstep-stable/files/patch-src-afterstep-asinternals.h
   				int pointer_mode, int keyboard_mode, Window confine_to, Cursor cursor);
 Index: x11-wm/afterstep-stable/files/patch-src-afterstep-misc.c
 ===================================================================
---- x11-wm/afterstep-stable/files/patch-src-afterstep-misc.c	(revision 352106)
+--- x11-wm/afterstep-stable/files/patch-src-afterstep-misc.c	(revision 372681)
 +++ x11-wm/afterstep-stable/files/patch-src-afterstep-misc.c	(working copy)
 @@ -1,13 +1,11 @@
 -$FreeBSD$

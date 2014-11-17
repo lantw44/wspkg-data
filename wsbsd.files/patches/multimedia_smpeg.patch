@@ -1,6 +1,6 @@
 Index: multimedia/smpeg/Makefile
 ===================================================================
---- multimedia/smpeg/Makefile	(revision 352106)
+--- multimedia/smpeg/Makefile	(revision 372681)
 +++ multimedia/smpeg/Makefile	(working copy)
 @@ -18,7 +18,7 @@
  USE_SDL=	sdl

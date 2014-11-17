@@ -1,6 +1,6 @@
 Index: chinese/gcin/Makefile
 ===================================================================
---- chinese/gcin/Makefile	(revision 352106)
+--- chinese/gcin/Makefile	(revision 372681)
 +++ chinese/gcin/Makefile	(working copy)
 @@ -14,8 +14,8 @@
  LICENSE=	LGPL21

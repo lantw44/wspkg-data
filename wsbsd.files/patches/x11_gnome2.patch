@@ -1,6 +1,6 @@
 Index: x11/gnome2/Makefile
 ===================================================================
---- x11/gnome2/Makefile	(revision 361736)
+--- x11/gnome2/Makefile	(revision 372681)
 +++ x11/gnome2/Makefile	(working copy)
 @@ -103,12 +103,4 @@
  .endif

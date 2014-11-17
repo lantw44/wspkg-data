@@ -1,6 +1,6 @@
 Index: chinese/CJKUnifonts/Makefile
 ===================================================================
---- chinese/CJKUnifonts/Makefile	(revision 362973)
+--- chinese/CJKUnifonts/Makefile	(revision 372681)
 +++ chinese/CJKUnifonts/Makefile	(working copy)
 @@ -23,6 +23,7 @@
  

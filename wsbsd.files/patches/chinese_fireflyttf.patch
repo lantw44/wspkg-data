@@ -1,6 +1,6 @@
 Index: chinese/fireflyttf/Makefile
 ===================================================================
---- chinese/fireflyttf/Makefile	(revision 368042)
+--- chinese/fireflyttf/Makefile	(revision 372681)
 +++ chinese/fireflyttf/Makefile	(working copy)
 @@ -45,6 +45,7 @@
  

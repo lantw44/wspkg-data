@@ -1,6 +1,6 @@
 Index: math/py-igraph/Makefile
 ===================================================================
---- math/py-igraph/Makefile	(revision 352565)
+--- math/py-igraph/Makefile	(revision 372681)
 +++ math/py-igraph/Makefile	(working copy)
 @@ -13,6 +13,7 @@
  COMMENT=	High performance graph data structures and algorithms
@@ -8,5 +8,5 @@ Index: math/py-igraph/Makefile
  BUILD_DEPENDS=	${LOCALBASE}/lib/libigraph.so:${PORTSDIR}/math/igraph
 +RUN_DEPENDS=	${LOCALBASE}/lib/libigraph.so:${PORTSDIR}/math/igraph
  
- USE_PYTHON=	yes
- USE_PYDISTUTILS=	yes
+ USES=		python
+ USE_PYTHON=	distutils autoplist

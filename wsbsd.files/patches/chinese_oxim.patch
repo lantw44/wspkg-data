@@ -1,6 +1,6 @@
 Index: chinese/oxim/Makefile
 ===================================================================
---- chinese/oxim/Makefile	(revision 355603)
+--- chinese/oxim/Makefile	(revision 372681)
 +++ chinese/oxim/Makefile	(working copy)
 @@ -80,5 +80,7 @@
  post-patch:
