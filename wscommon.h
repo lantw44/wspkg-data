@@ -142,17 +142,18 @@ TERMINUS        URWFONTS        NONFREE_FONTS   KCFONTS         FIREFLYTTF
 // GNOME
 #ifdef WSPKG_GNOME
 // debian 217-meta
-alacarte        evince          file-roller     gcalctool       GDM
-gnome-backgrounds               gnome-keyring   gnome-nettool   gnome-screensaver
-gnome-themes    GNOME_USER_DOCS GTK2_ENGINES    GVFS            REMMINA
+alacarte        evince          file-roller     GDM             gnome-backgrounds
+gnome-calculator                gnome-keyring   gnome-nettool
+GNOME_THEMES    GNOME_USER_DOCS GTK2_ENGINES    GVFS            REMMINA
 seahorse        xdg-user-dirs   zenity          MUTTER
 // freebsd local-217
 GNOME_META_PKG
 // added by b01902062@linux5.csie.ntu.edu.tw
-BAOBAB          devhelp         epiphany        eog             gedit
-ghex            GLADE           GTK2            GTK3            gnome-terminal
-GNOME_SCREENSHOT                gnome-system-monitor            nautilus
-vinagre         GTK2_THEMES     GTK3_THEMES
+BAOBAB          devhelp         epiphany        eog             eog-plugins
+gedit           ghex            GLADE
+GTK2            GTK3            GTK2_THEMES     GTK3_THEMES
+gnome-terminal  GNOME_SCREENSHOT                gnome-tweak-tool
+gnome-system-monitor            gucharmap       nautilus        vinagre
 #endif
 
 // Graphics

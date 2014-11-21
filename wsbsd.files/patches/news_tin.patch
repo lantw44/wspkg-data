@@ -1,0 +1,13 @@
+Index: news/tin/Makefile
+===================================================================
+--- news/tin/Makefile	(revision 372984)
++++ news/tin/Makefile	(working copy)
+@@ -37,7 +37,7 @@
+ OPTIONS_SUB=		yes
+ NNTP_ONLY_DESC=		Only read news via NNTP (no spool dir support)
+ NNTP_ONLY_CONFIGURE_ENABLE=nntp-only
+-GNUPG_RUN_DEPENDS=	gpg:${PORTSDIR}/security/gnupg
++GNUPG_RUN_DEPENDS=	gpg:${PORTSDIR}/security/gnupg20
+ GNUPG_CONFIGURE_ON=	--with-gpg=${PREFIX}/bin/gpg \
+ 			--without-pgp --without-pgpk
+ GNUPG_CONFIGURE_OFF=	--disable-pgp-gpg

@@ -114,14 +114,15 @@
 
 // GNOME
 #define GDM                 gdm
+#define GNOME_THEMES        NULL // conflict with gnome-themes-standard
 #define GNOME_USER_DOCS     gnome-user-docs
 #define GTK2_ENGINES        gtk-engines2
 #define GVFS                gvfs
 #define REMMINA             remmina remmina-plugins
 #define MUTTER              mutter
-#define GNOME_META_PKG      gnome2-lite // XXX: GNOME 3 may be imported recently
+#define GNOME_META_PKG      gnome3-lite
 #define BAOBAB              gnome-utils
-#define GLADE               glade3
+#define GLADE               glade glade2 glade3
 #define GTK2                gtk2 gtk2-reference gtkmm24 gtkmm24-reference
 #define GTK3                gtk3 gtk3-reference gtkmm30 gtkmm30-reference
 #define GNOME_SCREENSHOT    gnome-utils
@@ -187,7 +188,7 @@
 
 // Misc
 #define BIG5WIDTH           zh-big5width
-#define GNUPG               gnupg1 gnupg
+#define GNUPG               gnupg1 gnupg20
 #define KERNEL_PACKAGE      NULL // Debian-specific package
 #define XSLTPROC            libxslt
 #define PROTOBUF            protobuf
