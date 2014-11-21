@@ -1,0 +1,12 @@
+Index: security/gnupg/Makefile
+===================================================================
+--- security/gnupg/Makefile	(revision 372984)
++++ security/gnupg/Makefile	(working copy)
+@@ -72,5 +72,7 @@
+ 		${WRKSRC}/acinclude.m4 ${WRKSRC}/aclocal.m4 ${WRKSRC}/configure
+ 	@${REINPLACE_CMD} -e "/#include <utmp.h>/d" \
+ 		${WRKSRC}/tools/symcryptrun.c
++	@${REINPLACE_CMD} -e "/dirmngr_ldap_LDADD =/s/\(.\)$$/-llber \1/" \
++		${WRKSRC}/dirmngr/Makefile.in
+ 
+ .include <bsd.port.mk>
