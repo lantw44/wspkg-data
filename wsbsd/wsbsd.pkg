@@ -188,7 +188,7 @@
 
 // Misc
 #define BIG5WIDTH           zh-big5width
-#define GNUPG               gnupg1 gnupg20
+#define GNUPG               gnupg1 gnupg
 #define KERNEL_PACKAGE      NULL // Debian-specific package
 #define XSLTPROC            libxslt
 #define PROTOBUF            protobuf
