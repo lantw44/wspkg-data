@@ -9,4 +9,7 @@
 /^xlockmore$/d
 # not available in testing
 /^xserver-xspice$/d
-/^swfdec-mozilla/d
+/^swfdec-mozilla$/d
+/^clisp$/d
+/^python-igraph$/d
+/^wmweather+$/d
