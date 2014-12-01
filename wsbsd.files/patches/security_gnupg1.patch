@@ -12,18 +12,5 @@ Index: security/gnupg1/Makefile
 +	${MV} ${WRKSRC}/doc/gnupg.7 ${WRKSRC}/doc/gnupg1.7
 +
  post-install:
- 
  	${MKDIR} ${STAGEDIR}${DOCSDIR}
-Index: security/gnupg1/pkg-plist
-===================================================================
---- security/gnupg1/pkg-plist	(revision 373126)
-+++ security/gnupg1/pkg-plist	(working copy)
-@@ -9,7 +9,7 @@
- man/man1/gpg-zip.1.gz
- man/man1/gpg.1.gz
- man/man1/gpgv.1.gz
--man/man7/gnupg.7.gz
-+man/man7/gnupg1.7.gz
- %%NLS%%share/locale/be/LC_MESSAGES/gnupg.mo
- %%NLS%%share/locale/ca/LC_MESSAGES/gnupg.mo
- %%NLS%%share/locale/cs/LC_MESSAGES/gnupg.mo
+ .for i in DETAILS FAQ HACKING OpenPGP
