@@ -54,6 +54,7 @@
 
 // Database
 #define MYSQL_CLIENT        mysql-client
+#define PYMONGO             pymongo python3-pymongo
 
 // Devel
 #define ANT                 ant

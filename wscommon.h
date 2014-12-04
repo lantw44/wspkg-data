@@ -89,6 +89,8 @@ FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw
 // Database
 #ifdef WSPKG_DATABASE
 MYSQL_CLIENT    sqlite3
+// required by 林俊宏 d01922030
+PYMONGO
 #endif
 
 // Devel
