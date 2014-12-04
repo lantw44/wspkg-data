@@ -180,6 +180,7 @@
 #define SDL_DEV             libsdl1.2-dev libsdl2-dev \
                             libsdl-mixer1.2-dev libsdl2-mixer-dev
 #define POPPLER_DEV         libpoppler-dev
+#define PWQUALITY_DEV       libpwquality-dev python-pwquality cracklib-runtime
 
 // Lisp
 // Lua

@@ -193,6 +193,7 @@ OPENCV_DEV      // opencv suite
 FFMPEG_DEV      // ffmpeg suite
 SDL_DEV
 POPPLER_DEV
+PWQUALITY_DEV   // check password quality on workstations
 #endif
 
 // Lisp
