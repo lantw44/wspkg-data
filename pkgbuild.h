@@ -4,7 +4,7 @@
  subversion sudo tig tree vim-lite w3m wget
 
 // Poudriere
- poudriere-devel dialog4ports
+ poudriere dialog4ports
 
 // CGit and gitolite
  cgit gitolite highlight
