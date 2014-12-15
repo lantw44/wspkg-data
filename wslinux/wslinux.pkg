@@ -289,6 +289,7 @@
 #define PYTHON_VIRTUALENV       python-virtualenv
 #define PYTHON_NUMERIC          NULL
 #define PYTHON_PANDAS           python-pandas python3-pandas
+#define PYTHON_PYQUERY          python-pyquery
 
 // Ruby
 #define RUBY                ruby ruby-dev

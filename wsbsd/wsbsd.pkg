@@ -274,6 +274,7 @@
 #define PYTHON_VIRTUALENV       py27-virtualenv
 #define PYTHON_NUMERIC          py27-numeric
 #define PYTHON_PANDAS           py27-pandas
+#define PYTHON_PYQUERY          py27-pyquery
 
 // Ruby
 #define RUBY                ruby ruby21
