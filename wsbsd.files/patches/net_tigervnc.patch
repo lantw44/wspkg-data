@@ -1,0 +1,16 @@
+Index: net/tigervnc/files/patch-unix_xserver_include_regionstr.h
+===================================================================
+--- net/tigervnc/files/patch-unix_xserver_include_regionstr.h	(revision 0)
++++ net/tigervnc/files/patch-unix_xserver_include_regionstr.h	(working copy)
+@@ -0,0 +1,11 @@
++--- unix/xserver/include/regionstr.h 2014-12-16 08:04:03.000000000 +0000
+++++ unix/xserver/include/regionstr.h     2014-12-16 08:05:11.000000000 +0000
++@@ -144,7 +144,7 @@
++         size_t rgnSize;
++         (_pReg)->extents = RegionEmptyBox;
++         if (((_size) > 1) && ((rgnSize = RegionSizeof(_size)) > 0) &&
++-            (((_pReg)->data = malloc(rgnSize)) != NULL)) {
+++            (((_pReg)->data = ((pixman_region16_data_t*)malloc(rgnSize))) != NULL)) {
++             (_pReg)->data->size = (_size);
++             (_pReg)->data->numRects = 0;
++         }
