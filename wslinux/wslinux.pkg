@@ -208,6 +208,7 @@
 #define KERNEL_PACKAGE      kernel-package
 #define XSLTPROC            xsltproc
 #define PROTOBUF            protobuf-compiler libprotobuf-dev
+#define LINUXTOOL           linux-tools
 
 // Net
 #define MTR                 mtr-tiny

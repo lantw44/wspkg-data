@@ -232,6 +232,7 @@ R_BASE
 #ifdef WSPKG_MISC
 BIG5WIDTH       GNUPG           KERNEL_PACKAGE  poppler-data    screen
 tmux            XSLTPROC        PROTOBUF
+LINUXTOOL       // 計算機結構
 #endif
 
 // Net
