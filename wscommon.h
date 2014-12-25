@@ -356,6 +356,8 @@ UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 pigz            pbzip2          pxz
 lzip            lrzip           rzip
 squashfs-tools
+// added by b01902104@csie.ntu.edu.tw
+rlwrap
 #endif
 
 // Video
