@@ -182,6 +182,11 @@
 #define POPPLER_DEV         libpoppler-dev
 #define PWQUALITY_DEV       libpwquality-dev libpwquality-tools \
                             python-pwquality cracklib-runtime
+#define LEVELDB_DEV         libleveldb-dev
+#define SNAPPY_DEV          libsnappy-dev
+#define HDF5_DEV            libhdf5-dev
+#define GOOGLE_GLOG_DEV     libgoogle-glog-dev
+#define LMDB_DEV            liblmdb-dev
 
 // Lisp
 // Lua

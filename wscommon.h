@@ -194,6 +194,8 @@ FFMPEG_DEV      // ffmpeg suite
 SDL_DEV
 POPPLER_DEV
 PWQUALITY_DEV   // check password quality on workstations
+// requested by b01902082@csie.ntu.edu.tw
+LEVELDB_DEV     SNAPPY_DEV      HDF5_DEV        GOOGLE_GLOG_DEV LMDB_DEV
 #endif
 
 // Lisp
