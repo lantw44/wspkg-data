@@ -212,6 +212,7 @@ LUA51           LUA52
 #ifdef WSPKG_MACHINE_LEARNING
 weka
 LIBSVM          LIBLINEAR // requested by b01902066
+LIBOPENBLAS	// requested by b01902082
 #endif
 
 // Mail and News

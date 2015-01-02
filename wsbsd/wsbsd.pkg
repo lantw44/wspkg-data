@@ -182,6 +182,7 @@
 // Machine Learning
 #define LIBSVM              libsvm libsvm-python
 #define LIBLINEAR           liblinear
+#define LIBOPENBLAS         openblas
 
 // Mail
 #define MAILX               NULL

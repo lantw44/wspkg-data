@@ -196,6 +196,7 @@
 // Machine Learning
 #define LIBSVM              libsvm-dev libsvm-tools python-libsvm
 #define LIBLINEAR           liblinear-dev liblinear-tools python-liblinear
+#define LIBOPENBLAS         libopenblas-base
 
 // Mail
 #define MAILX               bsd-mailx
