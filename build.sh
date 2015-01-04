@@ -2,13 +2,13 @@
 
 if [ -z "$WSPKGDIR" ]; then
     printf "\033[1;31mWSPKGDIR is not defined so I cannot build package for you :(\033[m\n"
-    if [ -f "../wspkg/packages.mk" ]; then
+    if [ -f "../wspkg/wspkg-mk/packages.mk" ]; then
         echo "You may want to try WSPKGDIR=\"$(dirname "`pwd`")/wspkg\" $0"
-    elif [ -f "/usr/share/wspkg/packages.mk" ]; then
+    elif [ -f "/usr/share/wspkg/wspkg-mk/packages.mk" ]; then
         echo "You may want to try WSPKGDIR=/usr/share/wspkg $0"
-    elif [ -f "/usr/pkg/share/wspkg/packages.mk" ]; then
+    elif [ -f "/usr/pkg/share/wspkg/wspkg-mk/packages.mk" ]; then
         echo "You may want to try WSPKGDIR=/usr/pkg/share/wspkg $0"
-    elif [ -f "/usr/local/share/wspkg/packages.mk" ]; then
+    elif [ -f "/usr/local/share/wspkg/wspkg-mk/packages.mk" ]; then
         echo "You may want to try WSPKGDIR=/usr/local/share/wspkg $0"
     fi
     exit 1
