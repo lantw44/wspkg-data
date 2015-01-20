@@ -82,7 +82,7 @@ bash            bash-completion KSH             TCSH            zsh
 ACPI            CPUFREQ         CUPS            IOTOP           MENU
 MCELOG          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
 // freebsd local-217
-PORTS_MGMT      NET_SNMP        SSHIT           nagios-plugins  nsca-client
+PKG_MGMT        NET_SNMP        SSHIT           nagios-plugins  nsca-client
 FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw
 #endif
 

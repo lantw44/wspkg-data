@@ -46,7 +46,7 @@
 #define PARTED              parted
 #define PAM_LDAPD           libpam-ldapd
 #define SYSSTAT             sysstat
-#define PORTS_MGMT          NULL // FreeBSD-specific things
+#define PKG_MGMT            aptitude apt-file
 #define NET_SNMP            snmpd
 #define SSHIT               NULL // does not work with iptables
 #define FDISK               util-linux
