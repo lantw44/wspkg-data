@@ -207,6 +207,7 @@
 #define OCTAVE_DEV          liboctave-dev
 #define QHULL               libqhull-dev
 #define R_BASE              r-base
+#define SYMPY               python-sympy
 
 // Misc
 #define BIG5WIDTH           NULL

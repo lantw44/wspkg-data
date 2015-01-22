@@ -229,6 +229,7 @@ abook           // added by b01902062@csie.ntu.edu.tw
 #ifdef WSPKG_MATH
 GSL             gnuplot         octave          OCTAVE_DEV      QHULL
 R_BASE
+SYMPY           // added by b01902066
 #endif
 
 // Misc

@@ -193,6 +193,7 @@
 #define OCTAVE_DEV          octave
 #define QHULL               qhull5
 #define R_BASE              R
+#define SYMPY               py27-sympy
 
 // Misc
 #define BIG5WIDTH           zh-big5width
