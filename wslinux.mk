@@ -8,4 +8,8 @@ BACKEND=                debian
 PKGNAME=                217-meta
 
 include $(WSPKGDIR)/wspkg-mk/defaults.mk
+
+DEBIAN_SIGN=            yes
+DEBIAN_KEY_PKGSIGN=     DF9831FA
+
 include $(WSPKGDIR)/wspkg-mk/packages.mk
