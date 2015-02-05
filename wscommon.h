@@ -81,6 +81,7 @@ bash            bash-completion KSH             TCSH            zsh
 #ifdef WSPKG_ADMIN
 ACPI            CPUFREQ         CUPS            IOTOP           MENU
 MCELOG          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
+DEBSUMS
 // freebsd local-217
 PKG_MGMT        NET_SNMP        SSHIT           nagios-plugins  nsca-client
 FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw

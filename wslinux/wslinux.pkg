@@ -46,6 +46,7 @@
 #define PARTED              parted
 #define PAM_LDAPD           libpam-ldapd
 #define SYSSTAT             sysstat
+#define DEBSUMS             debsums
 #define PKG_MGMT            aptitude apt-file
 #define NET_SNMP            snmpd
 #define SSHIT               NULL // does not work with iptables
