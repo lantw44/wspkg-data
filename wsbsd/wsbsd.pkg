@@ -53,7 +53,7 @@
 #define GDISK               gdisk
 
 // Database
-#define MYSQL_CLIENT        mariadb55-client
+#define MYSQL_CLIENT        mariadb100-client
 #define PYMONGO             pymongo
 
 // Devel
