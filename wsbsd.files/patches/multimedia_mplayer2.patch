@@ -1,6 +1,6 @@
 Index: multimedia/mplayer2/Makefile
 ===================================================================
---- multimedia/mplayer2/Makefile	(revision 372681)
+--- multimedia/mplayer2/Makefile	(revision 378936)
 +++ multimedia/mplayer2/Makefile	(working copy)
 @@ -26,7 +26,7 @@
  		TMPDIR="${WRKSRC}"
@@ -48,7 +48,7 @@ Index: multimedia/mplayer2/Makefile
  .include <bsd.port.mk>
 Index: multimedia/mplayer2/files/pkg-message.in
 ===================================================================
---- multimedia/mplayer2/files/pkg-message.in	(revision 372681)
+--- multimedia/mplayer2/files/pkg-message.in	(revision 378936)
 +++ multimedia/mplayer2/files/pkg-message.in	(working copy)
 @@ -2,7 +2,7 @@
  ==================================================================
@@ -61,18 +61,16 @@ Index: multimedia/mplayer2/files/pkg-message.in
  If seeking in streams causes the playback volume to be reset to
 Index: multimedia/mplayer2/pkg-plist
 ===================================================================
---- multimedia/mplayer2/pkg-plist	(revision 372681)
+--- multimedia/mplayer2/pkg-plist	(revision 378936)
 +++ multimedia/mplayer2/pkg-plist	(working copy)
-@@ -1,6 +1,6 @@
+@@ -1,5 +1,5 @@
 -bin/mplayer
 -etc/mplayer/codecs.conf.sample
 -etc/mplayer/input.conf.sample
 -etc/mplayer/mplayer.conf.sample
 -man/man1/mplayer.1.gz
--@dirrmtry etc/mplayer
 +bin/mplayer2
 +etc/mplayer2/codecs.conf.sample
 +etc/mplayer2/input.conf.sample
 +etc/mplayer2/mplayer.conf.sample
 +man/man1/mplayer2.1.gz
-+@dirrmtry etc/mplayer2

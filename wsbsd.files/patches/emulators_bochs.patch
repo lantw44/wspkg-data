@@ -1,8 +1,8 @@
 Index: emulators/bochs/Makefile
 ===================================================================
---- emulators/bochs/Makefile	(revision 372681)
+--- emulators/bochs/Makefile	(revision 378936)
 +++ emulators/bochs/Makefile	(working copy)
-@@ -267,6 +267,7 @@
+@@ -264,6 +264,7 @@
  .endfor
  .if ${PORT_OPTIONS:MPLUGINS}
  	@${FIND} ${STAGEDIR}${PREFIX}/lib/bochs ! -type d | \
