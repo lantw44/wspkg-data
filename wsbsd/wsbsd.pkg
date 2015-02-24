@@ -243,8 +243,8 @@
 #define PERL_SWITCH                     p5-Switch
 
 // PHP
-#define PHP_CLI                 php5
-#define PHP_MYSQL               php5-mysql
+#define PHP_CLI                 php56
+#define PHP_MYSQL               php56-mysql
 
 // Python
 #define IPYTHON                 py27-ipython
