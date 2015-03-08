@@ -368,7 +368,7 @@
 #define WATCH               procps
 
 // Video
-#define MPLAYER             mplayer2 gnome-mplayer
+#define MPLAYER             gnome-mplayer
 #define X264                libx264-dev
 
 // Web

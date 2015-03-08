@@ -352,7 +352,7 @@
 #define WATCH               cmdwatch
 
 // Video
-#define MPLAYER             mplayer gnome-mplayer mencoder mplayer2
+#define MPLAYER             mplayer gnome-mplayer mencoder
 #define X264                x264
 
 // Web
