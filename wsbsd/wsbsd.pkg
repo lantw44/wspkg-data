@@ -58,7 +58,7 @@
 
 // Devel
 #define ANT                 apache-ant
-#define CLANG               clang35 // get libclang.so
+#define CLANG               clang35 clang36 // get libclang.so
 #define GCC                 gcc gcc49 gcc5
 #define GDB                 gdb
 #define GOLANG              NULL
@@ -77,7 +77,7 @@
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb
-#define LLVM                llvm35
+#define LLVM                llvm35 llvm36
 
 // Doc
 #define LIBC_DOC            NULL
