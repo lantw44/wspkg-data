@@ -209,6 +209,7 @@
 #define QHULL               libqhull-dev
 #define R_BASE              r-base
 #define SYMPY               python-sympy
+#define LAPACKE             liblapacke-dev
 
 // Misc
 #define BIG5WIDTH           NULL

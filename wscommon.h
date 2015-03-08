@@ -231,6 +231,7 @@ abook           // added by b01902062@csie.ntu.edu.tw
 GSL             gnuplot         octave          OCTAVE_DEV      QHULL
 R_BASE
 SYMPY           // added by b01902066
+LAPACKE         // added by b01902066
 #endif
 
 // Misc

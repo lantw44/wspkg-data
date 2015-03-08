@@ -195,6 +195,7 @@
 #define QHULL               qhull5
 #define R_BASE              R
 #define SYMPY               py27-sympy
+#define LAPACKE             lapacke
 
 // Misc
 #define BIG5WIDTH           zh-big5width
