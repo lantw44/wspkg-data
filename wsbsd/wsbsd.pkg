@@ -19,7 +19,7 @@
 #define PCI                 NULL
 #define PERL                perl5
 #define PYTHON2             python2
-#define PYTHON3             python3 python34
+#define PYTHON3             python3
 #define SHARUTILS           NULL
 #define SSH                 NULL
 #define STRACE              NULL
