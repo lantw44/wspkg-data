@@ -286,9 +286,9 @@
 #define PYTHON_PYQUERY          py27-pyquery
 
 // Ruby
-#define RUBY                ruby ruby21
+#define RUBY                ruby ruby22
 #define RUBY_BUNDLER        rubygem-bundler
-#define RUBY_MYSQL          ruby20-mysql
+#define RUBY_MYSQL          ruby21-mysql
 #define RUBY_RAKE           rubygem-rake
 #define RUBY_RAILS          rubygem-rails4
 
