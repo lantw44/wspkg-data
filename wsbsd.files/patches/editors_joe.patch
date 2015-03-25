@@ -1,0 +1,21 @@
+Index: editors/joe/pkg-plist
+===================================================================
+--- editors/joe/pkg-plist	(revision 382199)
++++ editors/joe/pkg-plist	(working copy)
+@@ -5,11 +5,11 @@
+ bin/rjoe
+ bin/termidx
+ %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
+-%%PORTDOCS%%%%DOCSDIR%%/HACKING
+-%%PORTDOCS%%%%DOCSDIR%%/HINTS
+-%%PORTDOCS%%%%DOCSDIR%%/LIST
+-%%PORTDOCS%%%%DOCSDIR%%/NEWS
+-%%PORTDOCS%%%%DOCSDIR%%/README
++%%PORTDOCS%%%%DOCSDIR%%/NEWS.md
++%%PORTDOCS%%%%DOCSDIR%%/README.md
++%%PORTDOCS%%%%DOCSDIR%%/README.old
++%%PORTDOCS%%%%DOCSDIR%%/hacking.md
++%%PORTDOCS%%%%DOCSDIR%%/man.md
+ %%ETCDIR%%/ftyperc
+ %%ETCDIR%%/jicerc.ru
+ @unexec if cmp -s %D/%%ETCDIR%%/jmacsrc.dist %D/%%ETCDIR%%/jmacsrc; then rm -f %D/%%ETCDIR%%/jmacsrc; fi
