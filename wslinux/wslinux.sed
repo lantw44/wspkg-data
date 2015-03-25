@@ -6,7 +6,7 @@
 /^xlockmore$/d
 # not available in testing
 /^xserver-xspice$/d
-/^swfdec-mozilla$/d
+/^browser-plugin-gnash$/d
 /^clisp$/d
 /^python-igraph$/d
 /^wmweather+$/d

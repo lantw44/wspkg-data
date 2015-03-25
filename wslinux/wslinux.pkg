@@ -375,7 +375,7 @@
 #define X264                libx264-dev
 
 // Web
-#define FLASH_PLUGIN        flashplugin-nonfree swfdec-mozilla
+#define FLASH_PLUGIN        flashplugin-nonfree browser-plugin-gnash
 #define FIREFOX             iceweasel iceweasel-l10n-zh-tw
 #define W3M_EL              w3m-el
 #define JAVA_PLUGIN         icedtea-plugin
