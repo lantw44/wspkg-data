@@ -190,6 +190,8 @@
 #define LMDB_DEV            liblmdb-dev
 
 // Lisp
+#define CLISP               clisp
+
 // Lua
 #define LUA51               lua5.1 liblua5.1-dev
 #define LUA52               lua5.2 liblua5.2-dev
@@ -381,6 +383,7 @@
 // WindowMaker
 #define PCLOCK              wmdate
 #define WINDOWMAKER         wmaker
+#define WMMEMLOAD           wmmemload
 #define WMTOP               NULL // FIXME: not available from repository
 #define WMTIMER             NULL // FIXME: not available from repository
 #define WMCLIPHIST          NULL // FIXME: not available from repository

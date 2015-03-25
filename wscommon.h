@@ -201,7 +201,7 @@ LEVELDB_DEV     SNAPPY_DEV      HDF5_DEV        GOOGLE_GLOG_DEV LMDB_DEV
 
 // Lisp
 #ifdef WSPKG_LISP
-clisp
+CLISP
 #endif
 
 // Lua
@@ -221,7 +221,7 @@ LIBOPENBLAS	// requested by b01902082
 // debian 217-meta
 alpine          fetchmail       mpack           mutt            MAILX
 // freebsd local-217
-tin             metamail        newmail
+tin             metamail
 VM              // requested by cj
 abook           // added by b01902062@csie.ntu.edu.tw
 #endif
@@ -380,7 +380,7 @@ JAVA_PLUGIN     // added by b01902062@csie.ntu.edu.tw
 // WindowMaker
 #ifdef WSPKG_WINDOWMAKER
 PCLOCK          WINDOWMAKER     wmbiff	    	wmweather+		wmnd
-wmcpuload       wmmemload       WMTOP           wmCalClock      wmclock
+wmcpuload       WMMEMLOAD       WMTOP           wmCalClock      wmclock
 wmclockmon      wmtime          WMTIMER         WMCLIPHIST      TEMPERATURE_APP
 ASBUTTON
 #endif

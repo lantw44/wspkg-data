@@ -176,6 +176,8 @@
 #define LMDB_DEV            lmdb
 
 // Lisp
+#define CLISP               NULL // Removed in r363198
+
 // Lua
 #define LUA51               lua51
 #define LUA52               lua52
@@ -209,7 +211,7 @@
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
 #define VNCVIEWER           tigervnc
-#define NS2                 ns
+#define NS2                 NULL // Removed in r367590
 #define NS3                 NULL // FIXME: currently not available?
 #define BSDFTPD_SSL         bsdftpd-ssl
 #define OMNITTY             omnitty
@@ -366,6 +368,7 @@
 // WindowMaker
 #define PCLOCK              pclock
 #define WINDOWMAKER         windowmaker
+#define WMMEMLOAD           NULL // Removed in r352941
 #define WMTOP               wmtop
 #define WMTIMER             wmtimer
 #define WMCLIPHIST          wmcliphist
