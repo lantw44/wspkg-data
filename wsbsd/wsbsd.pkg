@@ -54,7 +54,7 @@
 
 // Database
 #define MYSQL_CLIENT        mariadb100-client
-#define PYMONGO             pymongo
+#define PYMONGO             py27-pymongo
 
 // Devel
 #define ANT                 apache-ant
