@@ -55,6 +55,7 @@
 // Database
 #define MYSQL_CLIENT        mariadb100-client
 #define PYMONGO             py27-pymongo
+#define LIBSQLITE3          libsqlite3-dev libsqlite3-tcl
 
 // Devel
 #define ANT                 apache-ant
