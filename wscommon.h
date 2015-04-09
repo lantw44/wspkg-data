@@ -92,6 +92,8 @@ FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw
 MYSQL_CLIENT    sqlite3
 // required by 林俊宏 d01922030
 PYMONGO
+// required by d97024@csie.ntu.edu.tw
+LIBSQLITE3
 #endif
 
 // Devel
