@@ -92,8 +92,6 @@ FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw
 MYSQL_CLIENT    sqlite3
 // required by 林俊宏 d01922030
 PYMONGO
-// required by d97024@csie.ntu.edu.tw
-LIBSQLITE3
 #endif
 
 // Devel
@@ -199,6 +197,8 @@ POPPLER_DEV
 PWQUALITY_DEV   // check password quality on workstations
 // requested by b01902082@csie.ntu.edu.tw
 LEVELDB_DEV     SNAPPY_DEV      HDF5_DEV        GOOGLE_GLOG_DEV LMDB_DEV
+// required by d97024@csie.ntu.edu.tw
+LIBSQLITE3_DEV
 #endif
 
 // Lisp

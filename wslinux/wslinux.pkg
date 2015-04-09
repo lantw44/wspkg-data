@@ -56,7 +56,6 @@
 // Database
 #define MYSQL_CLIENT        mysql-client
 #define PYMONGO             python-pymongo python3-pymongo
-#define LIBSQLITE3          libsqlite3-dev libsqlite3-tcl
 
 // Devel
 #define ANT                 ant
@@ -189,6 +188,7 @@
 #define HDF5_DEV            libhdf5-dev
 #define GOOGLE_GLOG_DEV     libgoogle-glog-dev
 #define LMDB_DEV            liblmdb-dev
+#define LIBSQLITE3_DEV      libsqlite3-dev libsqlite3-tcl
 
 // Lisp
 #define CLISP               clisp

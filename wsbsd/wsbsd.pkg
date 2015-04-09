@@ -55,7 +55,6 @@
 // Database
 #define MYSQL_CLIENT        mariadb100-client
 #define PYMONGO             py27-pymongo
-#define LIBSQLITE3          NULL
 
 // Devel
 #define ANT                 apache-ant
@@ -175,6 +174,7 @@
 #define HDF5_DEV            hdf5
 #define GOOGLE_GLOG_DEV     glog
 #define LMDB_DEV            lmdb
+#define LIBSQLITE3_DEV      tcl-sqlite3
 
 // Lisp
 #define CLISP               NULL // Removed in r363198
