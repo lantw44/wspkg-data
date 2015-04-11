@@ -259,6 +259,7 @@
 #define PYTHON_NUMPY            py27-numpy
 #define PYTHON_SETUPTOOLS       py27-setuptools27
 #define PYTHON_GSL              py27-gsl
+#define PYTHON_SCIPY            py27-scipy
 #define PYTHON_MARKDOWN         py27-markdown
 #define PYTHON_MEMPROF          NULL
 #define PYTHON_PSUTIL           py27-psutil

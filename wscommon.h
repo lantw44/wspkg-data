@@ -286,7 +286,7 @@ PHP_CLI         PHP_MYSQL       // request by b92093@csie.ntu.edu.tw
 IPYTHON         // PYTHON2 and PYTHON3 are included in standard section
 PYPY            PYTHON_PIP      // added by b01902062@csie.ntu.edu.tw
 PYTHON_BSDDB3   PYTHON_IMAGING  PYTHON_NUMPY    PYTHON_SETUPTOOLS
-PYTHON_GSL
+PYTHON_GSL      PYTHON_SCIPY
 // request by d97009@csie.ntu.edu.tw
 PYTHON_MARKDOWN PYTHON_MEMPROF  PYTHON_PSUTIL   PYTHONTRACER
 // by request

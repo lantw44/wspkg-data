@@ -274,6 +274,7 @@
 #define PYTHON_NUMPY            python-numpy python3-numpy
 #define PYTHON_SETUPTOOLS       python-setuptools python3-setuptools
 #define PYTHON_GSL              NULL
+#define PYTHON_SCIPY            python-scipy python3-scipy
 #define PYTHON_MARKDOWN         python-markdown python3-markdown
 #define PYTHON_MEMPROF          python-memprof python3-memprof
 #define PYTHON_PSUTIL           python-psutil python3-psutil
