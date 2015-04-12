@@ -189,7 +189,7 @@
 #define GOOGLE_GLOG_DEV     libgoogle-glog-dev
 #define LMDB_DEV            liblmdb-dev
 #define LIBSQLITE3_DEV      libsqlite3-dev libsqlite3-tcl
-#define ZMQ_DEV             libzmq3
+#define ZMQ_DEV             libzmq3-dev
 
 // Lisp
 #define CLISP               clisp
