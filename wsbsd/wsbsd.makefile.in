@@ -6,19 +6,10 @@
 PORTNAME=	217
 PORTVERSION=	@TODAY@
 CATEGORIES=	local
-MASTER_SITES=	#
-DISTFILES=	#
-
 MAINTAINER=	ta217@csie.ntu.edu.tw
 COMMENT=	Meta-port for all packages in 217
-
 LICENSE=	BSD2CLAUSE
-
-NO_BUILD=	yes
-
+USES=		metaport
 RUN_DEPENDS+=	@DEPS@
-
-do-install:
-	@${DO_NADA}
 
 .include <bsd.port.mk>
