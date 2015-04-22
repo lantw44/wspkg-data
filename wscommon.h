@@ -217,7 +217,7 @@ LUA51           LUA52
 #ifdef WSPKG_MACHINE_LEARNING
 weka
 LIBSVM          LIBLINEAR // requested by b01902066
-LIBOPENBLAS	// requested by b01902082
+LIBOPENBLAS     // requested by b01902082
 #endif
 
 // Mail and News
@@ -385,7 +385,7 @@ JAVA_PLUGIN     // added by b01902062@csie.ntu.edu.tw
 
 // WindowMaker
 #ifdef WSPKG_WINDOWMAKER
-PCLOCK          WINDOWMAKER     wmbiff	    	wmweather+		wmnd
+PCLOCK          WINDOWMAKER     wmbiff          wmweather+      wmnd
 wmcpuload       WMMEMLOAD       WMTOP           wmCalClock      wmclock
 wmclockmon      wmtime          WMTIMER         WMCLIPHIST      TEMPERATURE_APP
 ASBUTTON
