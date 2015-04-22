@@ -200,7 +200,7 @@ LEVELDB_DEV     SNAPPY_DEV      HDF5_DEV        GOOGLE_GLOG_DEV LMDB_DEV
 // required by d97024@csie.ntu.edu.tw
 LIBSQLITE3_DEV
 // added by b01902066@csie.ntu.edu.tw
-ZMQ_DEV
+ZMQ_DEV         LIBXML2_DEV
 #endif
 
 // Lisp

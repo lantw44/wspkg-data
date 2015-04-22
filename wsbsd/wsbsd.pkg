@@ -176,6 +176,7 @@
 #define LMDB_DEV            lmdb
 #define LIBSQLITE3_DEV      tcl-sqlite3
 #define ZMQ_DEV             libzmq4
+#define LIBXML2_DEV         libxml2
 
 // Lisp
 #define CLISP               NULL // Removed in r363198

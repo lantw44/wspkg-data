@@ -190,6 +190,7 @@
 #define LMDB_DEV            liblmdb-dev
 #define LIBSQLITE3_DEV      libsqlite3-dev libsqlite3-tcl
 #define ZMQ_DEV             libzmq3-dev
+#define LIBXML2_DEV         libxml2-dev
 
 // Lisp
 #define CLISP               clisp
