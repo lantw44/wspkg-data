@@ -10,4 +10,3 @@
 /^clisp$/d
 /^python-igraph$/d
 /^wmweather+$/d
-/^oidentd$/d
