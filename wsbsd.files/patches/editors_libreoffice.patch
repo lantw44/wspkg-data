@@ -1,6 +1,6 @@
 Index: editors/libreoffice/Makefile
 ===================================================================
---- editors/libreoffice/Makefile	(revision 385165)
+--- editors/libreoffice/Makefile	(revision 385410)
 +++ editors/libreoffice/Makefile	(working copy)
 @@ -243,7 +243,8 @@
  		eeb2c7ddf0d302fba4bfc6e97eac9624-libbase-1.1.6.zip:src \
@@ -12,13 +12,3 @@ Index: editors/libreoffice/Makefile
  # XXX jni.h from GNU classpath causes ABI conflicts.
  JAVA_CONFLICTS_BUILD=	classpath-[0-9]*
  JAVA_CONFIGURE_ON=	--enable-ext-wiki-publisher \
-@@ -250,7 +251,8 @@
- 			--enable-report-builder \
- 			--with-ant-home=${LOCALBASE}/share/java/apache-ant \
- 			--with-jdk-home="${JAVA_HOME}" \
--			--with-junit=${JAVAJARDIR}/junit.jar
-+			--with-junit=${JAVAJARDIR}/junit.jar \
-+			--with-hamcrest=${JAVAJARDIR}/hamcrest.jar
- JAVA_CONFIGURE_OFF=	--without-java
- JAVA_BUILD=	yes
- JAVA_USE=	JAVA=yes
