@@ -112,6 +112,7 @@ BIOJAVA         NCBI_TOOLKIT    doxygen         ocaml
 MONO
 // added by b01902062@csie.ntu.edu.tw
 ANDROID_TOOLS   bzr             mercurial       LLVM            ltrace
+OPENCL          POCL
 #endif
 
 // Doc

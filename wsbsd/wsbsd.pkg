@@ -78,6 +78,8 @@
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb
 #define LLVM                llvm35 llvm36 llvm-devel
+#define OPENCL              NULL
+#define POCL                NULL
 
 // Doc
 #define LIBC_DOC            NULL

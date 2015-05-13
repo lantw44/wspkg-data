@@ -83,6 +83,8 @@
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
 #define LLVM                llvm llvm-dev llvm-runtime
+#define OPENCL              ocl-icd-opencl-dev opencl-headers
+#define POCL                pocl-opencl-icd
 
 // Doc
 #define LIBC_DOC            glibc-doc glibc-doc-reference // reference manual
