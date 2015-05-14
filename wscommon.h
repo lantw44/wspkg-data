@@ -64,12 +64,13 @@
 
 // Standard
 #ifdef WSPKG_STANDARD
-BC              BIND            FILE            FINGER          FTP
-INETD           ISPELL          LESS            LOCATE          lsof
-m4              mime-support    NCURSES_TERM    PATCH           PCI
-PERL            PYTHON2         PYTHON3         SHARUTILS       SSH
-STRACE          sudo            TELNET          TIME            USB
-WAMERICAN       wget            WHOIS
+ACL             ATTR            BC              BIND            CAP
+FILE            FINGER          FTP             INETD           ISPELL
+LESS            LOCATE          lsof            m4              mime-support
+NCURSES_TERM    PATCH           PCI             PERL            PYTHON2
+PYTHON3         SHARUTILS       SSH             STRACE          sudo
+TELNET          TIME            USB             WAMERICAN       wget
+WHOIS
 #endif
 
 // Shell

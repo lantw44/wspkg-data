@@ -5,8 +5,11 @@
 // ===========================================================================
 
 // Standard
+#define ACL                 NULL
+#define ATTR                NULL
 #define BC                  NULL
 #define BIND                bind-tools
+#define CAP                 NULL
 #define FILE                NULL
 #define FINGER              NULL
 #define FTP                 NULL

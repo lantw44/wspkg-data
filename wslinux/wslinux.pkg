@@ -7,8 +7,11 @@
 // Keyring
 
 // Standard
+#define ACL                 acl libacl1-dev nfs4-acl-tools
+#define ATTR                attr libattr1-dev
 #define BC                  bc
 #define BIND                bind9-host dnsutils
+#define CAP                 libcap2-bin libcap-dev
 #define FILE                file
 #define FINGER              finger
 #define FTP                 ftp
