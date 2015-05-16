@@ -62,8 +62,8 @@
 
 // Devel
 #define ANT                 ant
-#define CLANG               clang libclang-dev
-#define GCC                 g++ gfortran
+#define CLANG               clang libclang-dev clang-3.6 libclang-3.6-dev
+#define GCC                 gcc g++ gfortran gcc-5 g++-5 gfortran-5
 #define GDB                 gdb
 #define GOLANG              golang
 #define GIT                 git git-cvs git-svn git-gui gitk gitg // more plugins
@@ -71,7 +71,7 @@
 #define MAKE                make pmake bmake
 #define MINGW               mingw-w64  // mingw32 is obsolete
 #define NODEJS              nodejs nodejs-dev npm
-#define OPENJDK             openjdk-7-jdk // TODO: openjdk-8-jdk
+#define OPENJDK             openjdk-7-jdk openjdk-8-jdk
 #define SUBVERSION          subversion
 #define TCL                 tcl-dev
 #define TK                  tk-dev
@@ -85,7 +85,7 @@
 #define MONO                mono-complete
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
-#define LLVM                llvm llvm-dev llvm-runtime
+#define LLVM                llvm-dev llvm-runtime llvm-3.6-dev llvm-3.6-runtime
 #define OPENCL              ocl-icd-opencl-dev opencl-headers
 #define POCL                pocl-opencl-icd
 
@@ -99,7 +99,7 @@
 #define PYTHON3_DOC         python3-doc
 #define TCL_DOC             tcl-dev
 #define TK_DOC              tk-dev
-#define GCC_DOC             gcc-doc libstdc++-4.9-doc
+#define GCC_DOC             gcc-doc libstdc++-5-doc
 
 // Editors
 #define CTAGS               exuberant-ctags
