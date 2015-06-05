@@ -1,0 +1,13 @@
+Index: lang/pypy/Makefile
+===================================================================
+--- lang/pypy/Makefile	(revision 388574)
++++ lang/pypy/Makefile	(working copy)
+@@ -38,7 +38,7 @@
+ .endif
+ 
+ # Disable CFFI compilation and shared libraries temporarily
+-PLIST_SUB+=	CFFI="@comment"
++PLIST_SUB+=	CFFI="@comment "
+ 
+ CONFLICTS_INSTALL=	pypy-[0-9]*
+ 
