@@ -182,7 +182,7 @@
 #define GOOGLE_GLOG_DEV     glog
 #define LMDB_DEV            lmdb
 #define LIBSQLITE3_DEV      tcl-sqlite3
-#define ZMQ_DEV             libzmq4
+#define ZMQ_DEV             libzmq4 py27-pyzmq
 #define LIBXML2_DEV         libxml2
 
 // Lisp
