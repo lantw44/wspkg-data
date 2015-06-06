@@ -298,6 +298,7 @@
 #define PYTHON_NUMERIC          py27-numeric
 #define PYTHON_PANDAS           py27-pandas
 #define PYTHON_PYQUERY          py27-pyquery
+#define PYTHON_NLTK             py27-nltk
 
 // Ruby
 #define RUBY                ruby ruby22
