@@ -164,7 +164,7 @@ gnome-system-monitor            gucharmap       nautilus        vinagre
 // Graphics
 #ifdef WSPKG_GRAPHICS
 // debian 217-meta
-gimp            geeqie          IMAGEMAGICK     JPEG            graphviz
+gimp            IMAGEMAGICK     JPEG            graphviz
 // freebsd local-217
 BMEPS           XGRAPH          xloadimage
 #endif
