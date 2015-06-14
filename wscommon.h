@@ -352,7 +352,7 @@ asciidoc        MARKDOWN        PANDOC
 // Utils
 #ifdef WSPKG_UTILS
 // debian 217-meta
-BZIP2           fakeroot        GPW             GQVIEW          LM_SENSORS
+BZIP2           fakeroot        GPW             geeqie          LM_SENSORS
 PROCINFO        scim            SCIM_CHEWING    pv              rar
 tree            TOFRODOS        unrar           unzip           xdg-utils
 zip

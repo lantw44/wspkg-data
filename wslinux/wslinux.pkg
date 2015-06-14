@@ -351,7 +351,6 @@
 // Utils
 #define BZIP2               bzip2
 #define GPW                 gpw
-#define GQVIEW              NULL // FIXME: not available from repository
 #define LM_SENSORS          lm-sensors
 #define PROCINFO            procinfo
 #define SCIM_CHEWING        scim-chewing

@@ -336,7 +336,6 @@
 // Utils
 #define BZIP2               NULL
 #define GPW                 NULL // FIXME: not found in ports
-#define GQVIEW              gqview
 #define LM_SENSORS          NULL // Linux-specific package
 #define PROCINFO            NULL // Linux-specific package
 #define SCIM_CHEWING        NULL // FIXME: not found in ports
