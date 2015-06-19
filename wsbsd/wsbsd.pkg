@@ -287,7 +287,7 @@
 #define PYTHON_YAML             py27-yaml
 #define PYTHON_GDATA            py27-gdata
 #define PYTHON_CURL             py27-curl
-#define PYTHON_LDAP             py27-ldap2
+#define PYTHON_LDAP             py27-ldap
 #define PYTHON_SMBPASSWD        py27-smbpasswd
 #define PYTHON_SPHINX           py27-sphinx
 #define PYTHON_SCIKITS_LEARN    py27-scikit-learn
