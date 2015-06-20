@@ -367,7 +367,7 @@ MKISOFS         ncdu            PATCHELF        pax-utils       PSTREE
 QEMU            RANGER          rpm2cpio        socat           tig
 UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 // added by b01902062@csie.ntu.edu.tw
-parallel
+IBUS_CHEWING    parallel
 // added by b01902062@csie.ntu.edu.tw - several compressing utilities
 pigz            pbzip2          pxz
 lzip            lrzip           rzip

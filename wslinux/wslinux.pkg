@@ -378,6 +378,7 @@
 #define UIM_FEP             uim-fep
 #define UNIX2DOS            dos2unix
 #define WATCH               procps
+#define IBUS_CHEWING        ibus-chewing
 
 // Video
 #define MPLAYER             gnome-mplayer

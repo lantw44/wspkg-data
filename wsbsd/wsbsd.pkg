@@ -364,6 +364,7 @@
 #define UIM_FEP             uim
 #define UNIX2DOS            unix2dos
 #define WATCH               cmdwatch
+#define IBUS_CHEWING        zh-ibus-chewing
 
 // Video
 #define MPLAYER             mplayer gnome-mplayer mencoder
