@@ -83,6 +83,7 @@
 #define BIOJAVA             libbiojava-java
 #define NCBI_TOOLKIT        libncbi6-dev ncbi-tools-bin ncbi-tools-x11
 #define MONO                mono-complete
+#define JULIA               julia
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
 #define LLVM                llvm-dev llvm-runtime llvm-3.6-dev llvm-3.6-runtime

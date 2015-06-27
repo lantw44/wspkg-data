@@ -81,6 +81,7 @@
 #define BIOJAVA             biojava
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
+#define JULIA               NULL // https://wiki.freebsd.org/WantedPorts
 #define ANDROID_TOOLS       android-tools-adb
 #define LLVM                llvm35 llvm36 llvm-devel
 #define OPENCL              NULL
