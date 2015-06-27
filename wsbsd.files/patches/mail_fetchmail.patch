@@ -1,12 +1,13 @@
 Index: mail/fetchmail/Makefile
 ===================================================================
---- mail/fetchmail/Makefile	(revision 372681)
+--- mail/fetchmail/Makefile	(revision 390644)
 +++ mail/fetchmail/Makefile	(working copy)
-@@ -15,6 +15,7 @@
- LICENSE_COMB=	dual
+@@ -59,7 +59,7 @@
+ .endif
  
- RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:${PORTSDIR}/security/ca_root_nss
-+BUILD_DEPENDS=	${LOCALBASE}/bin/python2.7:${PORTSDIR}/lang/python27
- 
- # Note USERS can only contain a single word as parts below rely on that.
- USERS=		${PORTNAME}
+ .if ${PORT_OPTIONS:MX11}
+-USES+=		python:run
++USES+=		python
+ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:${PORTSDIR}/x11-toolkits/py-tkinter
+ PLIST_SUB+=	NOX11="@comment "
+ .else
