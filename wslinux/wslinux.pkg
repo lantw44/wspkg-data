@@ -126,6 +126,9 @@
 #define NONFREE_FONTS       NULL
 #define KCFONTS             NULL
 #define FIREFLYTTF          fonts-arphic-uming
+#define NOTO                fonts-noto
+#define SOURCESANSPRO       NULL
+#define SOURCECODEPRO       NULL
 
 // GNOME
 #define GDM                 gdm3

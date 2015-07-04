@@ -144,6 +144,8 @@ ARPHIC          BAEKMUK         CJKUNIFONTS     LIBERATION      IPAFONT
 WQY             XFONTS_CYRILLIC XFONTS_INTL_CHINESE             XFONTS_WQY
 // freebsd local-217
 TERMINUS        URWFONTS        NONFREE_FONTS   KCFONTS         FIREFLYTTF
+// added by b01902062@csie.ntu.edu.tw
+NOTO            SOURCESANSPRO   SOURCECODEPRO
 #endif
 
 // GNOME

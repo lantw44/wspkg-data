@@ -121,6 +121,9 @@
 #define NONFREE_FONTS       freefonts webfonts
 #define KCFONTS             zh-kcfonts
 #define FIREFLYTTF          zh-fireflyttf-LGJ
+#define NOTO                noto
+#define SOURCESANSPRO       sourcesanspro-ttf
+#define SOURCECODEPRO       sourcecodepro-ttf
 
 // GNOME
 #define GDM                 gdm
