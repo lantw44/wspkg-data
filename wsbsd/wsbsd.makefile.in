@@ -10,6 +10,9 @@ MAINTAINER=	ta217@csie.ntu.edu.tw
 COMMENT=	Meta-port for all packages in 217
 LICENSE=	BSD2CLAUSE
 USES=		metaport
-RUN_DEPENDS+=	@DEPS@
+
+@NOPKG_SETUP@
+
+RUN_DEPENDS+=	@NOPKG_DEPS@
 
 .include <bsd.port.mk>
