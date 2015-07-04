@@ -1,0 +1,13 @@
+Index: chinese/pcmanx/Makefile
+===================================================================
+--- chinese/pcmanx/Makefile	(revision 390918)
++++ chinese/pcmanx/Makefile	(working copy)
+@@ -56,7 +56,7 @@
+ 
+ .if ${PORT_OPTIONS:MLIBNOTIFY}
+ CONFIGURE_ARGS+=--enable-libnotify
+-LIB_DEPENDS+=	libnotifa.soy:${PORTSDIR}/devel/libnotify
++LIB_DEPENDS+=	libnotify.so:${PORTSDIR}/devel/libnotify
+ .endif
+ 
+ .if empty(PORT_OPTIONS:MNANCY)
