@@ -1,0 +1,10 @@
+Package: 204-meta
+Version: @TODAY@
+Section: admin
+Priority: required
+Architecture: all
+Depends: @DEPS@
+Maintainer: 204TA <204ta@csie.ntu.edu.tw>
+Description: 204 meta package
+ This package is a meta package for 204.
+ It includes packages for general use.
