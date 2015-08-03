@@ -18,6 +18,8 @@
 /^iceweasel/d
 # fix linux-tools package name
 s/^linux-tools$/linux-tools-generic/
+# not available for x86_64
+/^mit-scheme$/d
 # no such package
 /^metamail$/d
 /^xlockmore$/d
