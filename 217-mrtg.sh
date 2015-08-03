@@ -76,6 +76,21 @@ exec 3<&-
 exec 4>&-
 
 
+# Generate lists from pclab
+cd "${WRKDIR}/wspkg-data"
+echo_cmd ./build.sh pclab pclab/out/pclab.list
+
+exec 3< "pclab/out/pclab.list"
+exec 4> "${WRKDIR}/pclab.html"
+
+while read pkg 0<&3; do
+	write_string_to_fd 4 "<li><a href='http://packages.ubuntu.com/trusty/${pkg}'>${pkg}</a></li>"
+done
+
+exec 3<&-
+exec 4>&-
+
+
 # Copy to mrtg.csie.ntu.edu.tw
 echo_cmd scp -i /usr/local/git/ssh-keys/to-mrtg \
 	"${WRKDIR}/wslinux.html" \
@@ -84,3 +99,7 @@ echo_cmd scp -i /usr/local/git/ssh-keys/to-mrtg \
 echo_cmd scp -i /usr/local/git/ssh-keys/to-mrtg \
 	"${WRKDIR}/wsbsd.html" \
 	pkgbuild@mrtg.csie.ntu.edu.tw:/var/www/wsbsd.html
+
+echo_cmd scp -i /usr/local/git/ssh-keys/to-mrtg \
+	"${WRKDIR}/pclab.html" \
+	pkgbuild@mrtg.csie.ntu.edu.tw:/var/www/pclab.html
