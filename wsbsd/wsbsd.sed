@@ -7,4 +7,3 @@
 /^p5-bioperl/d
 /^zh-oxim/d
 /^zh-bg5ps/d
-/^ruby21/d
