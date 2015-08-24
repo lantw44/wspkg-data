@@ -176,7 +176,7 @@
 #define LTDL_DEV            libltdl-dev
 #define NCURSES_DEV         libncurses5-dev libncursesw5-dev
 #define QT4_DEV             libqt4-dev
-#define QT5_DEV             NULL // TODO: Add Qt 5
+#define QT5_DEV             qt5-default
 #define PERL_DEV            libperl-dev
 #define MYSQLXX_DEV         libmysql++-dev
 #define OPENMPI_DEV         libopenmpi-dev
