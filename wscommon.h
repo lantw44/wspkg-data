@@ -367,7 +367,7 @@ netpbm          OXIM            SCIM_PINYIN     SCIM_TABLES     TIDY
 BSDCPIO         BSDTAR          bochs           CDIALOG         cgdb
 chrpath         convmv          DEV86           diffstat        FAKECHROOT
 fdupes          HTE             htop            meld            MENUMAKER
-MKISOFS         ncdu            PATCHELF        pax-utils       PSTREE
+MKISOFS         ncdu            patchelf        pax-utils       PSTREE
 QEMU            RANGER          rpm2cpio        socat           tig
 UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 // added by b01902062@csie.ntu.edu.tw
