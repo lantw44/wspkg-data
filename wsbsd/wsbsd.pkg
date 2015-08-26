@@ -189,7 +189,7 @@
 #define IMLIB2_DEV          imlib2
 #define EXOSIP2_DEV         libeXosip2
 #define OPENCV_DEV          opencv
-#define FFMPEG_DEV          ffmpeg ffmpeg0
+#define FFMPEG_DEV          ffmpeg
 #define SDL_DEV             sdl sdl2 sdl_mixer sdl2_mixer
 #define POPPLER_DEV         poppler
 #define PWQUALITY_DEV       libpwquality
