@@ -153,7 +153,7 @@ NOTO            SOURCESANSPRO   SOURCECODEPRO
 // debian 217-meta
 alacarte        evince          file-roller     GDM             gnome-backgrounds
 gnome-calculator                gnome-keyring   gnome-nettool
-GNOME_THEMES    GNOME_USER_DOCS GTK2_ENGINES    GVFS            REMMINA
+GNOME_USER_DOCS GTK2_ENGINES    GVFS            REMMINA
 seahorse        xdg-user-dirs   zenity          MUTTER
 // freebsd local-217
 GNOME_META_PKG

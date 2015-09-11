@@ -9,7 +9,6 @@
 /^gfortran-5$/d
 # gnome packages that cannot be found
 /^gdm3$/d
-/^gnome-themes$/d
 # pocl not available
 /^pocl/d
 # openjdk 8 not available
