@@ -383,7 +383,7 @@
 #define IBUS_CHEWING        ibus-chewing
 
 // Video
-#define MPLAYER             gnome-mplayer
+#define MPLAYER             mplayer
 #define X264                libx264-dev
 
 // Web

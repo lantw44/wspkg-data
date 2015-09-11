@@ -58,6 +58,7 @@ gimp-help-en
 ginn
 gnome
 gnome-control-center
+gnome-mplayer
 gtk3-engines-xfce
 hexchat
 ibus-table-cangjie3
