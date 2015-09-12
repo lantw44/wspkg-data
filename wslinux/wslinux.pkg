@@ -240,6 +240,7 @@
 #define LINUXTOOL           linux-tools
 
 // Net
+#define DENYHOSTS           NULL
 #define MTR                 mtr-tiny
 #define STUNNEL             stunnel4
 #define VNCVIEWER           xvnc4viewer xtightvncviewer

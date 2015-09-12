@@ -235,6 +235,7 @@
 #define LINUXTOOL           NULL
 
 // Net
+#define DENYHOSTS           denyhosts
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
 #define VNCVIEWER           tigervnc

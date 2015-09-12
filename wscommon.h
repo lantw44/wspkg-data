@@ -253,7 +253,7 @@ LINUXTOOL       // 計算機結構
 
 // Net
 #ifdef WSPKG_NET
-denyhosts       filezilla       iftop           irssi           lftp
+DENYHOSTS       filezilla       iftop           irssi           lftp
 MTR             ncftp           nmap            oidentd         rsync
 STUNNEL         tcpdump         VNCVIEWER       curl            aria2
 mosh            NS2             NS3
