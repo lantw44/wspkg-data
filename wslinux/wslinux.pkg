@@ -212,6 +212,7 @@
 // Lua
 #define LUA51               lua5.1 liblua5.1-dev
 #define LUA52               lua5.2 liblua5.2-dev
+#define LUA53               lua5.3 liblua5.3-dev
 
 // Machine Learning
 #define LIBSVM              libsvm-dev libsvm-tools python-libsvm

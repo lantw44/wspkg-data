@@ -216,7 +216,7 @@ CLISP
 
 // Lua
 #ifdef WSPKG_LUA
-LUA51           LUA52
+LUA51           LUA52           LUA53
 #endif
 
 // Machine Learning
