@@ -63,7 +63,7 @@
 // Devel
 #define ANT                 ant
 #define CLANG               clang libclang-dev clang-3.6 libclang-3.6-dev
-#define GCC                 gcc g++ gfortran gcc-5 g++-5 gfortran-5
+#define GCC                 gcc g++ gfortran
 #define GDB                 gdb
 #define GOLANG              golang
 #define GIT                 git git-cvs git-svn git-gui gitk gitg // more plugins
