@@ -62,7 +62,10 @@
 
 // Devel
 #define ANT                 ant
-#define CLANG               clang libclang-dev clang-3.6 libclang-3.6-dev
+#define CLANG               clang libclang-dev \
+                            clang-3.6 libclang-3.6-dev \
+                            clang-3.7 libclang-3.7-dev \
+                            clang-3.8 libclang-3.8-dev
 #define GCC                 gcc g++ gfortran
 #define GDB                 gdb
 #define GOLANG              golang
@@ -86,7 +89,10 @@
 #define JULIA               julia
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
-#define LLVM                llvm-dev llvm-runtime llvm-3.6-dev llvm-3.6-runtime
+#define LLVM                llvm-dev llvm-runtime \
+                            llvm-3.6-dev llvm-3.6-runtime \
+                            llvm-3.7-dev llvm-3.7-runtime \
+                            llvm-3.8-dev llvm-3.8-runtime
 #define OPENCL              ocl-icd-opencl-dev opencl-headers
 #define POCL                pocl-opencl-icd
 
