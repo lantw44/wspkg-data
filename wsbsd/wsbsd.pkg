@@ -143,7 +143,7 @@
 
 // Graphics
 #define IMAGEMAGICK         ImageMagick
-#define JPEG                jpeg
+#define JPEG                jpeg-turbo
 #define BMEPS               bmpp
 #define XGRAPH              xgraph
 
@@ -175,7 +175,7 @@
 #define LIBEVENT_DEV        libevent2
 #define FFTW_DEV            fftw fftw3 fftw3-float fftw3-long fftw3-quad
 #define GSL_DEV             gsl
-#define JPEG_DEV            jpeg
+#define JPEG_DEV            jpeg-turbo
 #define LTDL_DEV            libltdl
 #define NCURSES_DEV         ncurses
 #define QT4_DEV             qt4
