@@ -145,7 +145,7 @@
                             remmina-plugin-rdp remmina-plugin-telepathy \
                             remmina-plugin-vnc remmina-plugin-xdmcp
 #define MUTTER              libmutter-dev
-#define GNOME_META_PKG      NULL // FIXME: use tasksel?
+#define GNOME_META_PKG      task-gnome-desktop gnome-core gnome-core-devel
 #define BAOBAB              baobab
 #define GLADE               glade
 #define GTK2                libgtk2.0-dev libgtk2.0-doc libgtk2.0-0-dbg \
@@ -169,7 +169,7 @@
 
 // Interpreters
 // KDE
-#define KDE_META_PKG        NULL // FIXME: use tasksel?
+#define KDE_META_PKG        task-kde-desktop kde-standard kde-workspace-dev
 #define KDE_GTK_CONFIG      kde-config-gtk-style
 
 // Lib
