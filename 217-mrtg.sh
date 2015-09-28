@@ -54,7 +54,14 @@ exec 3< "wslinux/out/wslinux.list"
 exec 4> "${WRKDIR}/wslinux.html"
 
 while read pkg 0<&3; do
-	write_string_to_fd 4 "<li><a href='https://packages.debian.org/testing/${pkg}'>${pkg}</a></li>"
+	case "${pkg}" in
+		tigervnc*)
+			write_string_to_fd 4 "<li><a href='http://neuro.debian.net/pkgs/${pkg}.html'>${pkg}</a></li>"
+			;;
+		*)
+			write_string_to_fd 4 "<li><a href='https://packages.debian.org/testing/${pkg}'>${pkg}</a></li>"
+			;;
+	esac
 done
 
 exec 3<&-
