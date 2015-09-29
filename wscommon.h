@@ -49,6 +49,7 @@
 # define WSPKG_TEXT
 # define WSPKG_UTILS
 # define WSPKG_VIDEO
+# define WSPKG_WAYLAND
 # define WSPKG_WEB
 # define WSPKG_WINDOWMAKER
 # define WSPKG_X11
@@ -383,6 +384,12 @@ rlwrap
 // Video
 #ifdef WSPKG_VIDEO
 MPLAYER         xmms2           gxmms2          X264
+#endif
+
+// Wayland
+#ifdef WSPKG_WAYLAND
+// added by b01902062@csie.ntu.edu.tw
+IBUS_WAYLAND    WESTON          XWAYLAND
 #endif
 
 // Web

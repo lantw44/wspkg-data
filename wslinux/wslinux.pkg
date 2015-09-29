@@ -396,6 +396,11 @@
 #define MPLAYER             mplayer
 #define X264                libx264-dev
 
+// Wayland
+#define IBUS_WAYLAND        ibus-wayland
+#define WESTON              weston
+#define XWAYLAND            xwayland
+
 // Web
 #define FLASH_PLUGIN        flashplugin-nonfree browser-plugin-gnash
 #define FIREFOX             iceweasel iceweasel-l10n-zh-tw

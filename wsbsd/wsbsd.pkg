@@ -387,6 +387,11 @@
 #define MPLAYER             mplayer gnome-mplayer mencoder
 #define X264                x264
 
+// Wayland
+#define IBUS_WAYLAND        NULL
+#define WESTON              NULL
+#define XWAYLAND            NULL
+
 // Web
 #define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
                             linux-c6-flashplugin
