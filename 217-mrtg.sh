@@ -56,10 +56,10 @@ exec 4> "${WRKDIR}/wslinux.html"
 while read pkg 0<&3; do
 	case "${pkg}" in
 		tigervnc*)
-			write_string_to_fd 4 "<li><a href='http://neuro.debian.net/pkgs/${pkg}.html'>${pkg}</a></li>"
+			write_string_to_fd 4 "<li><a target='_blank' href='http://neuro.debian.net/pkgs/${pkg}.html'>${pkg}</a></li>"
 			;;
 		*)
-			write_string_to_fd 4 "<li><a href='https://packages.debian.org/testing/${pkg}'>${pkg}</a></li>"
+			write_string_to_fd 4 "<li><a target='_blank' href='https://packages.debian.org/testing/${pkg}'>${pkg}</a></li>"
 			;;
 	esac
 done
@@ -76,7 +76,7 @@ exec 3< "wsbsd/out/wsbsd.ports"
 exec 4> "${WRKDIR}/wsbsd.html"
 
 while read pkg origin 0<&3; do
-	write_string_to_fd 4 "<li><a href='https://www.freshports.org/${origin}'>${pkg}</a></li>"
+	write_string_to_fd 4 "<li><a target='_blank' href='https://www.freshports.org/${origin}'>${pkg}</a></li>"
 done
 
 exec 3<&-
@@ -91,7 +91,7 @@ exec 3< "pclab/out/pclab.list"
 exec 4> "${WRKDIR}/pclab.html"
 
 while read pkg 0<&3; do
-	write_string_to_fd 4 "<li><a href='http://packages.ubuntu.com/trusty/${pkg}'>${pkg}</a></li>"
+	write_string_to_fd 4 "<li><a target='_blank' href='http://packages.ubuntu.com/trusty/${pkg}'>${pkg}</a></li>"
 done
 
 exec 3<&-
