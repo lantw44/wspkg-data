@@ -316,7 +316,7 @@
 #define PYTHON_LDAP             python-ldap
 #define PYTHON_SMBPASSWD        python-smbpasswd
 #define PYTHON_SPHINX           python-sphinx python3-sphinx
-#define PYTHON_SCIKITS_LEARN    python-sklearn
+#define PYTHON_SCIKITS_LEARN    python-sklearn python3-sklearn
 #define PYTHON_IGRAPH           python-igraph
 #define PYTHON_PSYCOPG2         python-psycopg2 python3-psycopg2
 #define PYTHON_NETWORKX         python-networkx python3-networkx
