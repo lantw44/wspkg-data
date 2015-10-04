@@ -246,6 +246,7 @@
 #define TRAFSHOW            trafshow
 #define SPICE_CLIENT        NULL // FIXME: not found in ports
 #define XSPICE              NULL // FIXME: not found in ports
+#define GNUTLS_CLI          gnutls
 #define PCMANX              zh-pcmanx
 #define LOUDMOUTH           loudmouth
 

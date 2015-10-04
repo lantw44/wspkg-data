@@ -262,7 +262,7 @@ mosh            NS2             NS3
 BSDFTPD_SSL     lrzsz           OMNITTY         pidgin          rdesktop
 rrdtool         tcptraceroute   TRAFSHOW        urlview
 // added by b01902062@csie.ntu.edu.tw
-x11vnc          SPICE_CLIENT    XSPICE          ldapvi
+x11vnc          SPICE_CLIENT    XSPICE          ldapvi          GNUTLS_CLI
 PCMANX
 LOUDMOUTH       // requested by b01902109
 #endif

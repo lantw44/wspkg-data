@@ -254,6 +254,7 @@
 #define SPICE_CLIENT        spice-client spice-client-gtk \
                             spice-client-glib-usb-acl-helper
 #define XSPICE              xserver-xspice
+#define GNUTLS_CLI          gnutls-bin
 #define PCMANX              pcmanx-gtk2
 #define LOUDMOUTH           libloudmouth1-dev
 
