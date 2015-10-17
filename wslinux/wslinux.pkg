@@ -428,3 +428,4 @@
 #define XVFB                xvfb
 #define ENLIGHTENMENT       e17
 #define XEPHYR              xserver-xephyr
+#define LXDE                lxde

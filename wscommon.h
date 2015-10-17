@@ -417,4 +417,6 @@ ENLIGHTENMENT   icewm           synergy         wdm             xfig
 xlockmore
 // added by b01902062@csie.ntu.edu.tw
 fbpanel         obconf          openbox         XEPHYR          xrestop
+// added by b03902048@csie.ntu.edu.tw
+LXDE
 #endif

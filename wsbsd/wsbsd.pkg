@@ -419,3 +419,4 @@
 #define XVFB                xorg-vfbserver
 #define ENLIGHTENMENT       enlightenment
 #define XEPHYR              xephyr
+#define LXDE                lxde-meta
