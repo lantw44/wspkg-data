@@ -115,8 +115,8 @@ MONO
 // requested by b01902066
 JULIA
 // added by b01902062@csie.ntu.edu.tw
-ANDROID_TOOLS   bzr             mercurial       LLVM            ltrace
-OPENCL          POCL
+ANDROID_TOOLS   bzr             mercurial       intltool        LLVM
+ltrace          OPENCL          POCL
 #endif
 
 // Doc
