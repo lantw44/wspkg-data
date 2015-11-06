@@ -175,7 +175,7 @@
 #define KDE_GTK_CONFIG      kde-config-gtk-style
 
 // Lib
-#define LIBC_DEV            libc6-dev libc6-pic libc6-dbg
+#define LIBC_DEV            libc6-dev libc6-pic libc6-dbg libc6-dev-i386
 #define LIBEVENT_DEV        libevent-dev
 #define FFTW_DEV            libfftw3-dev fftw-dev
 #define GSL_DEV             libgsl0-dev
