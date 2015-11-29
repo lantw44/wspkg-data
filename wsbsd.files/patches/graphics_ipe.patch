@@ -1,0 +1,13 @@
+Index: graphics/ipe/Makefile
+===================================================================
+--- graphics/ipe/Makefile	(revision 402584)
++++ graphics/ipe/Makefile	(working copy)
+@@ -10,8 +10,6 @@
+ MAINTAINER=	ports@FreeBSD.org
+ COMMENT=	Extensible vector graphics editor with LaTeX support
+ 
+-BROKEN=		unfetchable
+-
+ LICENSE=	GPLv3 # (or later)
+ 
+ RUN_DEPENDS=	xdg-open:${PORTSDIR}/devel/xdg-utils
