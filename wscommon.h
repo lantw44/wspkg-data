@@ -403,7 +403,7 @@ JAVA_PLUGIN     // added by b01902062@csie.ntu.edu.tw
 // WindowMaker
 #ifdef WSPKG_WINDOWMAKER
 PCLOCK          WINDOWMAKER     wmbiff          wmweather+      wmnd
-wmcpuload       WMMEMLOAD       WMTOP           wmCalClock      wmclock
+wmcpuload       WMMEMLOAD       WMTOP           WMCALCLOCK      wmclock
 wmclockmon      wmtime          WMTIMER         WMCLIPHIST      TEMPERATURE_APP
 ASBUTTON
 #endif

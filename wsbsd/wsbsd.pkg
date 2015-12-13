@@ -406,6 +406,7 @@
 #define WINDOWMAKER         windowmaker
 #define WMMEMLOAD           NULL // Removed in r352941
 #define WMTOP               wmtop
+#define WMCALCLOCK          wmCalClock
 #define WMTIMER             wmtimer
 #define WMCLIPHIST          wmcliphist
 #define TEMPERATURE_APP     temperature.app

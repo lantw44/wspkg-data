@@ -414,6 +414,7 @@
 #define WINDOWMAKER         wmaker
 #define WMMEMLOAD           wmmemload
 #define WMTOP               NULL // FIXME: not available from repository
+#define WMCALCLOCK          wmcalclock
 #define WMTIMER             NULL // FIXME: not available from repository
 #define WMCLIPHIST          NULL // FIXME: not available from repository
 #define TEMPERATURE_APP     NULL // FIXME: not available from repository
