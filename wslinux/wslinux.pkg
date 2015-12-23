@@ -254,8 +254,7 @@
 #define BSDFTPD_SSL         NULL
 #define OMNITTY             NULL // FIXME: not available from repository
 #define TRAFSHOW            netdiag
-#define SPICE_CLIENT        spice-client spice-client-gtk \
-                            spice-client-glib-usb-acl-helper
+#define SPICE_CLIENT        spice-client-gtk spice-client-glib-usb-acl-helper
 #define XSPICE              xserver-xspice
 #define GNUTLS_CLI          gnutls-bin
 #define PCMANX              pcmanx-gtk2
