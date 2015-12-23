@@ -171,7 +171,9 @@
 
 // Interpreters
 // KDE
-#define KDE_META_PKG        task-kde-desktop kde-standard kde-workspace-dev
+#define KDE_META_PKG        task-kde-desktop kde-standard \
+                            plasma-desktop-dev plasma-framework-dev \
+                            plasma-workspace-dev
 #define KDE_GTK_CONFIG      kde-config-gtk-style
 
 // Lib
