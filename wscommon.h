@@ -105,6 +105,7 @@ flex            GCC             GDB             GOLANG          gperf
 GIT             gprolog         INDENT          libtool         MAKE
 MINGW           nasm            NODEJS          OPENJDK         scala
 scons           SUBVERSION      TCL             TK              valgrind
+AARCH64_GCC
 // freebsd local-217
 ECLIPSE         expect          JIKES           mit-scheme
 spim // 計算機結構
