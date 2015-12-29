@@ -77,6 +77,7 @@
 #define TCL                 tcl84 tcl85 tcl86
 #define TK                  tk84 tk85 tk86
 #define AARCH64_GCC         aarch64-binutils
+#define GDB_MULTIARCH       NULL
 #define ECLIPSE             eclipse eclipse-cdt eclipse-langpack eclipse-pydev
 #define JIKES               jikes
 #define BIOJAVA             biojava

@@ -80,6 +80,7 @@
 #define TCL                 tcl-dev
 #define TK                  tk-dev
 #define AARCH64_GCC         aarch64-gnu-linux-gcc
+#define GDB_MULTIARCH       gdb-multiarch
 #define ECLIPSE             eclipse eclipse-jdt eclipse-platform eclipse-cdt \
                             eclipse-cdt-autotools eclipse-cdt-jni \
                             eclipse-cdt-qt eclipse-cdt-pkg-config \
