@@ -171,6 +171,9 @@
 // KDE
 #define KDE_META_PKG        kde zh_TW-kde-l10n
 #define KDE_GTK_CONFIG      kde-gtk-config
+#define ADWAITA_QT          adwaita-qt4 adwaita-qt5
+#define QT4_QTCONFIG        qt4-qtconfig
+#define QT5_QTCT            qt5ct
 
 // Lib
 #define LIBC_DEV            NULL

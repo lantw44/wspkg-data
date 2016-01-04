@@ -177,6 +177,9 @@
                             plasma-desktop-dev plasma-framework-dev \
                             plasma-workspace-dev
 #define KDE_GTK_CONFIG      kde-config-gtk-style
+#define ADWAITA_QT          NULL
+#define QT4_QTCONFIG        qt4-qtconfig
+#define QT5_QTCT            NULL
 
 // Lib
 #define LIBC_DEV            libc6-dev libc6-pic libc6-dbg libc6-dev-i386

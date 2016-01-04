@@ -191,6 +191,7 @@ gawk            swig
 // freebsd local-217
 KDE_META_PKG
 KDE_GTK_CONFIG  kchmviewer      okular          // added by b01902062@csie.ntu.edu.tw
+ADWAITA_QT      QT4_QTCONFIG    QT5_QTCT        // added by b01902062@csie.ntu.edu.tw
 #endif
 
 // Lib
