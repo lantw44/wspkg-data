@@ -323,6 +323,7 @@
 #define PYTHON_PANDAS           py27-pandas
 #define PYTHON_PYQUERY          py27-pyquery
 #define PYTHON_NLTK             py27-nltk
+#define PYTHON_JIEBA            NULL
 
 // Ruby
 #define RUBY                ruby ruby22 ruby23

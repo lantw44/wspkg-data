@@ -58,6 +58,9 @@ while read pkg 0<&3; do
 		tigervnc*)
 			write_string_to_fd 4 "<li><a target='_blank' href='http://neuro.debian.net/pkgs/${pkg}.html'>${pkg}</a></li>"
 			;;
+		python-jieba)
+			write_string_to_fd 4 "<li><a target='_blank' href='https://github.com/fxsjy/jieba'>${pkg}</a></li>"
+			;;
 		*)
 			write_string_to_fd 4 "<li><a target='_blank' href='https://packages.debian.org/testing/${pkg}'>${pkg}</a></li>"
 			;;

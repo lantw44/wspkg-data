@@ -317,7 +317,7 @@ PYTHON_PANDAS
 // request by b00902104@csie.ntu.edu.tw
 PYTHON_PYQUERY
 // request by d01922030@csie.ntu.edu.tw
-PYTHON_NLTK
+PYTHON_NLTK PYTHON_JIEBA
 #endif
 
 // Ruby
