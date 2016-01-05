@@ -330,6 +330,7 @@
 #define PYTHON_PANDAS           python-pandas python3-pandas
 #define PYTHON_PYQUERY          python-pyquery
 #define PYTHON_NLTK             python-nltk python3-nltk
+#define PYTHON_JIEBA            python-jieba
 
 // Ruby
 #define RUBY                ruby ruby-dev
