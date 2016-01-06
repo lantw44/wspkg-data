@@ -326,7 +326,7 @@
 #define PYTHON_NLTK             py27-nltk
 
 // Ruby
-#define RUBY                ruby ruby22
+#define RUBY                ruby ruby22 ruby23
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          ruby21-mysql
 #define RUBY_RAKE           rubygem-rake
