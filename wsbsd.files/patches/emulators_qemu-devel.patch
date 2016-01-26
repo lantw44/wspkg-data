@@ -1,18 +1,6 @@
-Index: emulators/qemu-devel/Makefile
-===================================================================
---- emulators/qemu-devel/Makefile	(revision 406159)
-+++ emulators/qemu-devel/Makefile	(working copy)
-@@ -3,6 +3,7 @@
- 
- PORTNAME=	qemu
- DISTVERSION=	2.5.0
-+PORTREVISION=	0.1
- CATEGORIES=	emulators
- MASTER_SITES=	http://wiki.qemu.org/download/
- PKGNAMESUFFIX=	-devel
 Index: emulators/qemu-devel/pkg-plist
 ===================================================================
---- emulators/qemu-devel/pkg-plist	(revision 406159)
+--- emulators/qemu-devel/pkg-plist	(revision 407264)
 +++ emulators/qemu-devel/pkg-plist	(working copy)
 @@ -4,34 +4,34 @@
  bin/qemu-img
