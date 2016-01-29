@@ -68,7 +68,7 @@
 #define GOLANG              NULL
 #define GIT                 git gitg
 #define INDENT              NULL
-#define MAKE                gmake bmake
+#define MAKE                gmake bmake fmake
 #define MINGW               mingw32-gcc
 #define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8

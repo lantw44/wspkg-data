@@ -71,7 +71,7 @@
 #define GOLANG              golang
 #define GIT                 git git-cvs git-svn git-gui gitk gitg // more plugins
 #define INDENT              indent
-#define MAKE                make pmake bmake
+#define MAKE                make bmake pmake
 #define MINGW               mingw-w64  // mingw32 is obsolete
 #define NODEJS              nodejs nodejs-dev npm
 #define OPENJDK             openjdk-7-jdk openjdk-8-jdk
