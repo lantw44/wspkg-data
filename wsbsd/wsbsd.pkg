@@ -44,7 +44,6 @@
 #define CUPS                cups-base cups-pstoraster
 #define IOTOP               NULL
 #define MENU                NULL
-#define MCELOG              mcelog
 #define MUNIN               munin-node
 #define PARTED              NULL
 #define PAM_LDAPD           nss-pam-ldapd

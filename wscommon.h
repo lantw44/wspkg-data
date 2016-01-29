@@ -82,7 +82,7 @@ bash            bash-completion KSH             TCSH            zsh
 // Admin
 #ifdef WSPKG_ADMIN
 ACPI            CPUFREQ         CUPS            IOTOP           MENU
-MCELOG          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
+mcelog          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
 DEBSUMS
 // freebsd local-217
 PKG_MGMT        NET_SNMP        SSHIT           nagios-plugins  nsca-client
