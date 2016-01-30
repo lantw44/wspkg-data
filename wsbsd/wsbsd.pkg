@@ -285,7 +285,7 @@
 
 // Python
 #define IPYTHON                 py27-ipython
-#define PYPY                    pypy
+#define PYPY                    pypy pypy3
 #define PYTHON_PIP              py27-pip
 #define PYTHON_BSDDB3           py27-bsddb3
 #define PYTHON_IMAGING          py27-imaging
