@@ -359,7 +359,6 @@
 
 // Text
 #define ASPELL_EN           aspell-en
-#define GS_CJK_RESOURCE     gs-cjk-resource
 #define SPELL               spell
 #define C2PS                NULL // FIXME: not available from repository
 #define DJVULIBRE           libdjvulibre-dev djvulibre-bin

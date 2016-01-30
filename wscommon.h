@@ -348,7 +348,7 @@ BG5PS           HYPERLATEX      ipe             transfig
 // Text
 #ifdef WSPKG_TEXT
 // debian 217-meta
-a2ps            ASPELL_EN       dict            GS_CJK_RESOURCE gv
+a2ps            ASPELL_EN       dict            poppler-data    gv
 mpage           poppler-utils   psutils         recode          SPELL
 xpdf            html2ps         zh-autoconvert
 // freebsd local-217

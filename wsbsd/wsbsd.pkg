@@ -348,7 +348,6 @@
 
 // Text
 #define ASPELL_EN           en-aspell
-#define GS_CJK_RESOURCE     poppler-data
 #define SPELL               NULL
 #define C2PS                c2ps
 #define DJVULIBRE           djvulibre
