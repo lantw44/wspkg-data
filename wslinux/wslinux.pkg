@@ -139,6 +139,7 @@
 #define SOURCECODEPRO       NULL
 
 // GNOME
+#define ALACARTE            alacarte
 #define GDM                 gdm3
 #define GNOME_USER_DOCS     gnome-user-guide
 #define GTK2_ENGINES        gtk2-engines

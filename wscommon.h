@@ -154,7 +154,7 @@ NOTO            SOURCESANSPRO   SOURCECODEPRO
 // GNOME
 #ifdef WSPKG_GNOME
 // debian 217-meta
-alacarte        evince          file-roller     GDM             gnome-backgrounds
+ALACARTE        evince          file-roller     GDM             gnome-backgrounds
 gnome-calculator                gnome-keyring   gnome-nettool
 GNOME_USER_DOCS GTK2_ENGINES    GVFS            REMMINA
 seahorse        xdg-user-dirs   zenity          MUTTER

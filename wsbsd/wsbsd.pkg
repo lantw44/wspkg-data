@@ -127,6 +127,7 @@
 #define SOURCECODEPRO       sourcecodepro-ttf
 
 // GNOME
+#define ALACARTE            NULL // Removed in r408881
 #define GDM                 gdm
 #define GNOME_USER_DOCS     gnome-user-docs
 #define GTK2_ENGINES        gtk-engines2
