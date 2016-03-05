@@ -1,11 +1,11 @@
 Index: emulators/qemu-devel/pkg-plist
 ===================================================================
---- emulators/qemu-devel/pkg-plist	(revision 407264)
+--- emulators/qemu-devel/pkg-plist	(revision 410176)
 +++ emulators/qemu-devel/pkg-plist	(working copy)
-@@ -4,34 +4,34 @@
- bin/qemu-img
- bin/qemu-io
- bin/qemu-nbd
+@@ -8,34 +8,34 @@
+ bin/qemu-sparc
+ bin/qemu-sparc64
+ bin/qemu-x86_64
 -%%X86_TARGETS%%bin/qemu-system-aarch64
 -%%X86_TARGETS%%bin/qemu-system-alpha
 -%%X86_TARGETS%%bin/qemu-system-arm
