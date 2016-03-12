@@ -41,7 +41,7 @@
 // Admin
 #define ACPI                NULL
 #define CPUFREQ             NULL
-#define CUPS                cups-base cups-pstoraster
+#define CUPS                cups cups-filters
 #define IOTOP               NULL
 #define MENU                NULL
 #define MUNIN               munin-node
