@@ -19,6 +19,7 @@
 #define ISPELL              aspell-ispell
 #define LESS                NULL
 #define LOCATE              NULL
+#define MIME_SUPPORT        mime-support
 #define NCURSES_TERM        NULL
 #define PATCH               NULL
 #define PCI                 NULL
@@ -170,6 +171,7 @@
 // KDE
 #define KDE_META_PKG        kde zh_TW-kde-l10n
 #define KDE_GTK_CONFIG      kde-gtk-config
+#define OKULAR              okular
 #define ADWAITA_QT          adwaita-qt4 adwaita-qt5
 #define QT4_QTCONFIG        qt4-qtconfig
 #define QT5_QTCT            qt5ct
@@ -221,6 +223,7 @@
 
 // Mail
 #define MAILX               NULL
+#define METAMAIL            metamail
 #define VM                  vm-emacs24
 
 // Math
@@ -344,11 +347,15 @@
 #define LATEX_CJK           NULL // FIXME: conflict with texlive
 #define BIBER               NULL // FIXME: not found in ports
 #define TEXLIVE             NULL // texlive-full already provides all packages
+#define TEXLIVE_FULL        texlive-full
 #define BG5PS               zh-bg5ps
 #define HYPERLATEX          Hyperlatex
 
 // Text
 #define ASPELL_EN           en-aspell
+#define DICT                dict
+#define MPAGE               mpage
+#define POPPLER_UTILS       poppler-utils
 #define SPELL               NULL
 #define C2PS                c2ps
 #define DJVULIBRE           djvulibre
@@ -388,9 +395,11 @@
 #define UNIX2DOS            unix2dos
 #define WATCH               cmdwatch
 #define IBUS_CHEWING        zh-ibus-chewing
+#define RZIP                rzip
 
 // Video
 #define MPLAYER             mplayer gnome-mplayer mencoder
+#define GXMMS2              gxmms2
 #define X264                x264
 
 // Wayland

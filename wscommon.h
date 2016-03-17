@@ -9,6 +9,8 @@
 # include "wslinux/wslinux.pkg"
 #elif (defined WSBSD)
 # include "wsbsd/wsbsd.pkg"
+#elif (defined WSARCH)
+# include "wsarch/wsarch.pkg"
 #else
 # define WSPKG_NO_DEFAULT
 # error "Neither WSLINUX nor WSBSD is defined!"
@@ -67,7 +69,7 @@
 #ifdef WSPKG_STANDARD
 ACL             ATTR            BC              BIND            CAP
 FILE            FINGER          FTP             INETD           ISPELL
-LESS            LOCATE          lsof            m4              mime-support
+LESS            LOCATE          lsof            m4              MIME_SUPPORT
 NCURSES_TERM    PATCH           PCI             PERL            PYTHON2
 PYTHON3         SHARUTILS       SSH             STRACE          sudo
 TELNET          TIME            USB             WAMERICAN       wget
@@ -190,7 +192,7 @@ gawk            swig
 #ifdef WSPKG_KDE
 // freebsd local-217
 KDE_META_PKG
-KDE_GTK_CONFIG  kchmviewer      okular          // added by b01902062@csie.ntu.edu.tw
+KDE_GTK_CONFIG  kchmviewer      OKULAR          // added by b01902062@csie.ntu.edu.tw
 ADWAITA_QT      QT4_QTCONFIG    QT5_QTCT        // added by b01902062@csie.ntu.edu.tw
 #endif
 
@@ -237,7 +239,7 @@ LIBOPENBLAS     // requested by b01902082
 // debian 217-meta
 alpine          fetchmail       mpack           mutt            MAILX
 // freebsd local-217
-tin             metamail
+tin             METAMAIL
 VM              // requested by cj
 abook           // added by b01902062@csie.ntu.edu.tw
 #endif
@@ -340,7 +342,7 @@ ALSA            alsa-utils      audacity
 // debian 217-meta
 AUCTEX          bibtool         LATEX_CJK       latex2html      BIBER
 TEXLIVE
-texlive-full    // Added by Artoo on 2008.12.14, requested by cjlin@csie.ntu.edu.tw
+TEXLIVE_FULL    // Added by Artoo on 2008.12.14, requested by cjlin@csie.ntu.edu.tw
 // freebsd local-217
 BG5PS           HYPERLATEX      ipe             transfig
 #endif
@@ -348,8 +350,8 @@ BG5PS           HYPERLATEX      ipe             transfig
 // Text
 #ifdef WSPKG_TEXT
 // debian 217-meta
-a2ps            ASPELL_EN       dict            poppler-data    gv
-mpage           poppler-utils   psutils         recode          SPELL
+a2ps            ASPELL_EN       DICT            poppler-data    gv
+MPAGE           POPPLER_UTILS   psutils         recode          SPELL
 xpdf            html2ps         zh-autoconvert
 // freebsd local-217
 C2PS            DJVULIBRE       ENSCRIPT        pstotext        wv
@@ -380,7 +382,7 @@ UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 IBUS_CHEWING    parallel
 // added by b01902062@csie.ntu.edu.tw - several compressing utilities
 pigz            pbzip2          pxz
-lzip            lrzip           rzip
+lzip            lrzip           RZIP
 squashfs-tools
 // added by b01902104@csie.ntu.edu.tw
 rlwrap
@@ -388,7 +390,7 @@ rlwrap
 
 // Video
 #ifdef WSPKG_VIDEO
-MPLAYER         xmms2           gxmms2          X264
+MPLAYER         xmms2           GXMMS2          X264
 #endif
 
 // Wayland

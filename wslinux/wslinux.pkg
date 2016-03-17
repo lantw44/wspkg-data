@@ -19,6 +19,7 @@
 #define ISPELL              ispell
 #define LESS                less
 #define LOCATE              mlocate
+#define MIME_SUPPORT        mime-support
 #define NCURSES_TERM        ncurses-term
 #define PATCH               patch
 #define PCI                 pciutils
@@ -176,6 +177,7 @@
                             plasma-desktop-dev plasma-framework-dev \
                             plasma-workspace-dev
 #define KDE_GTK_CONFIG      kde-config-gtk-style
+#define OKULAR              okular
 #define ADWAITA_QT          NULL
 #define QT4_QTCONFIG        qt4-qtconfig
 #define QT5_QTCT            NULL
@@ -230,6 +232,7 @@
 
 // Mail
 #define MAILX               bsd-mailx
+#define METAMAIL            metamail
 #define VM                  vm
 
 // Math
@@ -355,11 +358,15 @@
 #define TEXLIVE             texlive texlive-latex-extra texlive-pstricks \
                             texlive-science texlive-bibtex-extra \
                             texlive-metapost // Added, by, Artoo, on, 2008.12.13,, requested, by, r95073@csie.ntu.edu.tw,
+#define TEXLIVE_FULL        texlive-full
 #define BG5PS               NULL
 #define HYPERLATEX          NULL
 
 // Text
 #define ASPELL_EN           aspell-en
+#define DICT                dict
+#define MPAGE               mpage
+#define POPPLER_UTILS       poppler-utils
 #define SPELL               spell
 #define C2PS                NULL // FIXME: not available from repository
 #define DJVULIBRE           libdjvulibre-dev djvulibre-bin
@@ -398,9 +405,11 @@
 #define UNIX2DOS            dos2unix
 #define WATCH               procps
 #define IBUS_CHEWING        ibus-chewing
+#define RZIP                rzip
 
 // Video
 #define MPLAYER             mplayer
+#define GXMMS2              gxmms2
 #define X264                libx264-dev
 
 // Wayland

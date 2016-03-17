@@ -1,0 +1,445 @@
+// vim: ft=c: et
+
+// Standard
+#define  ACL                      acl lib32-acl nfs4-acl-tools
+#define  ATTR                     attr lib32-attr
+#define  BC                       bc
+#define  BIND                     bind-tools
+#define  CAP                      libcap libcap-ng lib32-libcap
+#define  FILE                     file
+#define  FINGER                   netkit-bsd-finger
+#define  FTP                      inetutils
+#define  INETD                    NULL
+#define  ISPELL                   ispell
+#define  LESS                     less
+#define  LOCATE                   mlocate
+#define  MIME_SUPPORT             mime-types
+#define  NCURSES_TERM             ncurses
+#define  PATCH                    patch
+#define  PCI                      pciutils
+#define  PERL                     perl
+#define  PYTHON2                  python2
+#define  PYTHON3                  python
+#define  SHARUTILS                sharutils
+#define  SSH                      openssh
+#define  STRACE                   strace
+#define  TELNET                   inetutils
+#define  TIME                     time
+#define  USB                      usbutils
+#define  WAMERICAN                words
+#define  WHOIS                    whois
+
+// Shell
+#define  KSH                      ksh
+#define  TCSH                     tcsh
+
+// Admin
+#define  ACPI                     acpi acpid
+#define  CPUFREQ                  NULL
+#define  CUPS                     cups cups-filters python-pycups \
+                                  python2-pycups
+#define  IOTOP                    iotop
+#define  MENU                     NULL
+#define  MUNIN                    munin-node
+#define  PARTED                   parted
+#define  PAM_LDAPD                nss-pam-ldapd
+#define  SYSSTAT                  sysstat
+#define  DEBSUMS                  NULL
+#define  PKG_MGMT                 arch-install-scripts devtools pkg-config
+#define  NET_SNMP                 net-snmp
+#define  SSHIT                    NULL
+#define  NSCA                     nsca
+#define  FDISK                    util-linux
+#define  GDISK                    gptfdisk
+
+// Database
+#define  MYSQL_CLIENT             mariadb-clients
+#define  PYMONGO                  python-pymongo python2-pymongo
+
+// Devel
+#define  ANT                      apache-ant
+#define  CLANG                    clang clang-analyzer clang-tools-extra
+#define  GCC                      gcc-multilib gcc-ada-multilib \
+                                  gcc-fortran-multilib gcc-objc-multilib
+#define  GDB                      gdb
+#define  GOLANG                   go
+#define  GIT                      git gitg
+#define  INDENT                   indent
+#define  MAKE                     make bmake
+#define  MINGW                    mingw-w64-toolchain
+#define  NODEJS                   nodejs npm
+#define  OPENJDK                  jdk7-openjdk openjdk7-src \
+                                  jdk8-openjdk openjdk8-src
+#define  SUBVERSION               subversion emacs-psvn
+#define  TCL                      tcl tcl85
+#define  TK                       tk tk85
+#define  AARCH64_GCC              aarch64-linux-gnu-gcc
+#define  GDB_MULTIARCH            NULL
+#define  ECLIPSE                  eclipse-java eclipse-pydev \
+                                  eclipse-egit eclipse-cpp \
+                                  eclipse-linuxtools
+#define  JIKES                    NULL
+#define  BIOJAVA                  biojava
+#define  NCBI_TOOLKIT             ncbi-toolkit
+#define  MONO                     mono
+#define  JULIA                    julia
+#define  ANDROID_TOOLS            android-tools
+#define  LLVM                     llvm lldb lib32-llvm-libs
+#define  OPENCL                   ocl-icd opencl-headers
+#define  POCL                     pocl
+
+// Doc
+#define  LIBC_DOC                 glibc
+#define  MAKE_DOC                 make
+#define  MANPAGES                 man-pages
+#define  MANPAGES_POSIX           NULL
+#define  PERL_DOC                 perl-docs
+#define  PYTHON2_DOC              python2-docs
+#define  PYTHON3_DOC              python-docs
+#define  TCL_DOC                  tcl
+#define  TK_DOC                   tk
+#define  GCC_DOC                  gcc-docs libstdc++-doc
+
+// Editors
+#define  CTAGS                    ctags
+#define  EMACS                    emacs emacs-python-mode
+#define  LIBREOFFICE              libreoffice-fresh libreoffice-fresh-sdk \
+                                  libreoffice-fresh-zh-TW
+#define  VIM_GTK                  gvim
+
+// Electronics
+// Fonts
+#define  ARPHIC                   ttf-arphic
+#define  BAEKMUK                  ttf-baekmuk
+#define  CJKUNIFONTS              ttf-arphic-ukai ttf-arphic-uming
+#define  LIBERATION               ttf-liberation
+#define  IPAFONT                  otf-ipafont otf-ipaexfont ttf-migmix
+#define  WQY                      wqy-zenhei wqy-microhei
+#define  XFONTS_CYRILLIC          xorg-fonts-cyrillic
+#define  XFONTS_INTL_CHINESE      NULL
+#define  XFONTS_WQY               NULL
+#define  TERMINUS                 terminus-font
+#define  URWFONTS                 NULL
+#define  NONFREE_FONTS            NULL
+#define  KCFONTS                  NULL
+#define  FIREFLYTTF               opendesktop-fonts
+#define  NOTO                     noto-fonts noto-fonts-cjk noto-fonts-emoji
+#define  SOURCESANSPRO            adobe-source-sans-pro-fonts
+#define  SOURCECODEPRO            adobe-source-code-pro-fonts
+
+// GNOME
+#define  ALACARTE                 alacarte
+#define  GDM                      gdm
+#define  GNOME_USER_DOCS          gnome-user-docs
+#define  GTK2_ENGINES             gtk-engines
+#define  GVFS                     gvfs gvfs-afc gvfs-goa gvfs-google \
+                                  gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb
+#define  REMMINA                  remmina
+#define  MUTTER                   mutter
+#define  GNOME_META_PKG           gnome gnome-extra
+#define  BAOBAB                   baobab
+#define  GLADE                    glade glade-gtk2
+#define  GTK2                     gtk2 gtkmm-docs lib32-gtk2
+#define  GTK3                     gtk3 gtkmm3-docs glibmm-docs lib32-gtk3
+#define  GNOME_SCREENSHOT         gnome-screenshot
+#define  GTK2_THEMES              NULL
+#define  GTK3_THEMES              NULL
+
+// Graphics
+#define  IMAGEMAGICK              imagemagick
+#define  JPEG                     libjpeg-turbo lib32-libjpeg-turbo
+#define  BMEPS                    NULL
+#define  XGRAPH                   xgraph
+
+// Haskell
+#define  HUGS                     hugs
+#define  HASKELL_PLATFORM         ghc haskell-async  haskell-attoparsec \
+                                  haskell-case-insensitive  \
+                                  haskell-exceptions  haskell-hashable \
+                                  haskell-src-exts  haskell-html \
+                                  haskell-hunit  haskell-mtl \
+                                  haskell-network  haskell-old-locale \
+                                  haskell-old-time  haskell-parallel \
+                                  haskell-parsec  haskell-primitive \
+                                  haskell-quickcheck  haskell-random  \
+                                  haskell-regex-base  haskell-regex-compat \
+                                  haskell-regex-posix  haskell-scientific \
+                                  haskell-split   haskell-statevar \
+                                  haskell-stm  haskell-syb  haskell-text \
+                                  haskell-text-binary  haskell-tf-random \
+                                  haskell-transformers-base \
+                                  haskell-transformers-compat \
+                                  haskell-unordered-containers haskell-vector \
+                                  haskell-zlib  alex  cabal-install  haddock \
+                                  haskell-haddock-library  happy \
+                                  haskell-hscolour haskell-http \
+                                  haskell-network-uri haskell-objectname
+#define  HASKELL_OPENGL           haskell-opengl
+
+// Interpreters
+// KDE
+#define  KDE_META_PKG             plasma-meta
+#define  KDE_GTK_CONFIG           kde-gtk-config
+#define  OKULAR                   kdegraphics-okular
+#define  ADWAITA_QT               adwaita-qt4 adwaita-qt5
+#define  QT4_QTCONFIG             qt4
+#define  QT5_QTCT                 qt5ct
+
+// Lib
+#define  LIBC_DEV                 glibc lib32-glibc
+#define  LIBEVENT_DEV             libevent
+#define  FFTW_DEV                 fftw fftw2
+#define  GSL_DEV                  gsl
+#define  JPEG_DEV                 libjpeg-turbo
+#define  LTDL_DEV                 libtool lib32-libltdl
+#define  NCURSES_DEV              ncurses lib32-ncurses
+#define  QT4_DEV                  qt4
+#define  QT5_DEV                  qt5
+#define  PERL_DEV                 perl
+#define  MYSQLXX_DEV              mysql++
+#define  OPENMPI_DEV              openmpi
+#define  GFLAGS_DEV               gflags
+#define  BOOST_DEV                boost
+#define  IMLIB2_DEV               imlib2
+#define  EXOSIP2_DEV              libexosip2
+#define  OPENCV_DEV               opencv
+#define  FFMPEG_DEV               ffmpeg
+#define  SDL_DEV                  sdl sdl2 sdl_mixer sdl2_mixer
+#define  POPPLER_DEV              poppler
+#define  PWQUALITY_DEV            libpwquality cracklib
+#define  LEVELDB_DEV              leveldb
+#define  SNAPPY_DEV               snappy
+#define  HDF5_DEV                 hdf5
+#define  GOOGLE_GLOG_DEV          google-glog
+#define  LMDB_DEV                 lmdb
+#define  LIBSQLITE3_DEV           sqlite sqlite-tcl lib32-sqlite
+#define  ZMQ_DEV                  zeromq python-pyzmq python2-pyzmq
+#define  LIBXML2_DEV              libxml2
+#define  LIBDB_CXX_DEV            db
+
+// Lisp
+#define  CLISP                    clisp
+
+// Lua
+#define  LUA51                    lua51
+#define  LUA52                    lua52
+#define  LUA53                    lua
+
+// Machine Learning
+#define  LIBSVM                   libsvm
+#define  LIBLINEAR                liblinear
+#define  LIBOPENBLAS              openblas
+
+// Mail
+#define  MAILX                    s-nail
+#define  METAMAIL                 NULL
+#define  VM                       vm-bzr
+
+// Math
+#define  GSL                      gsl
+#define  OCTAVE_DEV               octave
+#define  QHULL                    qhull
+#define  R_BASE                   r
+#define  SYMPY                    python-sympy python2-sympy
+#define  LAPACKE                  lapacke
+
+// Misc
+#define  BIG5WIDTH                NULL
+#define  GNUPG                    gnupg
+#define  KERNEL_PACKAGE           NULL
+#define  XSLTPROC                 libxslt
+#define  PROTOBUF                 protobuf python2-protobuf
+#define  LINUXTOOL                linux-tools linux-tools-meta
+
+// Net
+#define  DENYHOSTS                NULL
+#define  MTR                      mtr mtr-gtk
+#define  STUNNEL                  stunnel
+#define  VNCVIEWER                tigervnc gtk-vnc
+#define  NS2                      ns
+#define  NS3                      ns3
+#define  BSDFTPD_SSL              NULL
+#define  OMNITTY                  NULL
+#define  TRAFSHOW                 trafshow
+#define  SPICE_CLIENT             spice-gtk3
+#define  XSPICE                   xf86-video-qxl
+#define  GNUTLS_CLI               gnutls
+#define  PCMANX                   pcmanx-gtk2
+#define  LOUDMOUTH                loudmouth
+
+// Parallel Programming
+// Perl
+#define  PERL_BDB                 perl-berkeleydb
+#define  PERL_DATA_SERIALIZER     perl-data-serializer
+#define  PERL_DBD_MYSQL           perl-dbd-mysql
+#define  PERL_DBD_SQLITE3         perl-dbd-sqlite
+#define  PERL_IO_ALL              perl-io-all
+#define  PERL_JSON                perl-json
+#define  PERL_LIBWWW              perl-libwww
+#define  PERL_ARRAY_INTSPAN       NULL
+#define  PERL_BIOPERL             bioperl-live-git
+#define  PERL_DBI                 perl-dbi
+#define  PERL_MAIL_SENDER         perl-email-sender
+#define  PERL_SET_INTSPAN         perl-set-intspan
+#define  PERL_SET_WINDOW          NULL
+#define  PERL_SET_INFINITE        perl-set-infinite
+#define  PERL_PAR                 perl-par
+#define  PERL_PERL_TIDY           perl-tidy
+#define  PERL_WWW_MECHANIZE       perl-www-mechanize
+#define  PERL_WWW_MECHANIZE_SHELL NULL
+#define  PERL_WWW_ROBOT           NULL
+#define  PERL_XML_SAX_EXPAT       perl-xml-sax-expat
+#define  PERL_SWITCH              perl-switch
+
+// PHP
+#define  PHP_CLI                  php
+#define  PHP_MYSQL                php
+
+// Python
+#define  IPYTHON                  ipython ipython2
+#define  PYPY                     pypy pypy3
+#define  PYTHON_PIP               python-pip python2-pip
+#define  PYTHON_BSDDB3            python-bsddb python2-bsddb
+#define  PYTHON_IMAGING           python-pillow
+#define  PYTHON_NUMPY             python-numpy python2-numpy
+#define  PYTHON_SETUPTOOLS        python-setuptools python2-setuptools
+#define  PYTHON_GSL               NULL
+#define  PYTHON_SCIPY             python-scipy python2-scipy
+#define  PYTHON_MARKDOWN          python-markdown python2-markdown
+#define  PYTHON_MEMPROF           python2-memprof
+#define  PYTHON_PSUTIL            python-psutil python2-psutil
+#define  PYTHONTRACER             NULL
+#define  PYTHON_MYSQLDB           mysql-python
+#define  PYTHON_CJSON             python2-cjson
+#define  PYTHON_SQLITE            python2-pysqlite
+#define  PYTHON_BEAUTIFULSOUP     python-beautifulsoup4 \
+                                  python2-beautifulsoup4 python2-beautifulsoup3
+#define  PYTHON_TK                tk
+#define  PYTHON_SIMPLEJSON        python-simplejson python2-simplejson
+#define  PYTHON_MATPLOTLIB        python-matplotlib python2-matplotlib
+#define  PYTHON_LXML              python-lxml python2-lxml
+#define  PYTHON_OPENCV            opencv
+#define  PYTHON_COGENT            NULL
+#define  PYTHON_REDIS             python-redis python2-redis
+#define  PYTHON_YAML              python-yaml python2-yaml
+#define  PYTHON_GDATA             python2-gdata
+#define  PYTHON_CURL              python2-pycurl python-pycurl
+#define  PYTHON_LDAP              python2-ldap
+#define  PYTHON_SMBPASSWD         python-smbpasswd python2-smbpasswd
+#define  PYTHON_SPHINX            python-sphinx python2-sphinx
+#define  PYTHON_SCIKITS_LEARN     python-scikit-learn python2-scikit-learn
+#define  PYTHON_IGRAPH            python-igraph python2-igraph
+#define  PYTHON_PSYCOPG2          python-psycopg2 python2-psycopg2
+#define  PYTHON_NETWORKX          python-networkx python2-networkx
+#define  PYTHON_VIRTUALENV        python-virtualenv python2-virtualenv
+#define  PYTHON_NUMERIC           NULL
+#define  PYTHON_PANDAS            python-pandas python2-pandas
+#define  PYTHON_PYQUERY           python-pyquery python2-pyquery
+#define  PYTHON_NLTK              python-nltk python2-nltk
+#define  PYTHON_JIEBA             NULL
+
+// Ruby
+#define  RUBY                     ruby
+#define  RUBY_BUNDLER             ruby-bundler
+#define  RUBY_MYSQL               NULL
+#define  RUBY_RAKE                ruby
+#define  RUBY_RAILS               ruby-rails
+
+// Science
+#define  BLAST2                   blast+
+#define  BLITZ                    blitz-cppqed-hg
+
+// Sound
+#define  ALSA                     alsa-utils alsa-lib
+
+// TeX
+#define  AUCTEX                   auctex
+#define  LATEX_CJK                NULL
+#define  BIBER                    NULL
+#define  TEXLIVE                  texlive-most texlive-lang
+#define  TEXLIVE_FULL             NULL
+#define  BG5PS                    NULL
+#define  HYPERLATEX               NULL
+
+// Text
+#define  ASPELL_EN                aspell-en
+#define  DICT                     words
+#define  MPAGE                    NULL
+#define  POPPLER_UTILS            poppler
+#define  SPELL                    NULL
+#define  C2PS                     NULL
+#define  DJVULIBRE                djvulibre
+#define  ENSCRIPT                 enscript
+#define  XPDF_ZH_FONTS            NULL
+#define  MARKDOWN                 markdown
+#define  PANDOC                   pandoc haskell-pandoc
+
+// Utils
+#define  BZIP2                    bzip2 lib32-bzip2
+#define  GPW                      NULL
+#define  LM_SENSORS               lm_sensors
+#define  PROCINFO                 procinfo-ng
+#define  SCIM_CHEWING             scim-chewing
+#define  TOFRODOS                 tofrodos
+#define  GCIN                     gcin
+#define  GKRELLM                  gkrellm
+#define  GNULS                    NULL
+#define  OXIM                     NULL
+#define  SCIM_PINYIN              scim-pinyin
+#define  SCIM_TABLES              scim-tables
+#define  TIDY                     tidy
+#define  BSDCPIO                  libarchive
+#define  BSDTAR                   libarchive
+#define  CDIALOG                  dialog
+#define  DEV86                    bin86 dev86
+#define  FAKECHROOT               fakechroot
+#define  HTE                      ht
+#define  MENUMAKER                menumaker
+#define  MKISOFS                  cdrtools
+#define  PSTREE                   psmisc
+#define  RANGER                   ranger
+#define  QEMU                     qemu qemu-arch-extra
+#define  UNAR                     unarchiver
+#define  UIM_FEP                  uim
+#define  UNIX2DOS                 dos2unix
+#define  WATCH                    procps-ng
+#define  IBUS_CHEWING             ibus-chewing
+#define  RZIP                     NULL
+
+// Video
+#define  MPLAYER                  mplayer smplayer gnome-mplayer
+#define  GXMMS2                   NULL
+#define  X264                     x264
+
+// Wayland
+#define  IBUS_WAYLAND             ibus
+#define  WESTON                   weston
+#define  XWAYLAND                 xorg-server-xwayland
+
+// Web
+#define  FLASH_PLUGIN             flashplugin lib32-flashplugin swfdec gnash
+#define  FIREFOX                  firefox firefox-i18n-zh-tw
+#define  W3M_EL                   emacs-w3m-cvs
+#define  JAVA_PLUGIN              icedtea-web
+
+// WindowMaker
+#define  PCLOCK                   pclock
+#define  WINDOWMAKER              windowmaker
+#define  WMMEMLOAD                wmmemload
+#define  WMTOP                    wmtop
+#define  WMCALCLOCK               wmcalclock
+#define  WMTIMER                  wmtimer
+#define  WMCLIPHIST               wmcliphist
+#define  TEMPERATURE_APP          temperature.app
+#define  ASBUTTON                 NULL
+
+// X11
+#define  DESKTOP_BASE             NULL
+#define  IM_SWITCH                NULL
+#define  MLTERM_TOOLS             mlterm
+#define  RXVT_ML                  rxvt-unicode
+#define  VNCSERVER                tigervnc
+#define  XVFB                     xorg-server-xvfb
+#define  ENLIGHTENMENT            enlightenment
+#define  XEPHYR                   xorg-server-xephyr
+#define  LXDE                     lxde

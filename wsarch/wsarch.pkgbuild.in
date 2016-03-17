@@ -1,0 +1,7 @@
+pkgname=217-meta
+pkgver=@TODAY@
+pkgrel=1
+pkgdesc='217 meta package'
+arch=(any)
+url='https://wslab.csie.ntu.edu.tw/'
+depends=(@DEPS@)
