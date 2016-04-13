@@ -1,0 +1,13 @@
+Index: devel/gvfs/Makefile
+===================================================================
+--- devel/gvfs/Makefile	(revision 413216)
++++ devel/gvfs/Makefile	(working copy)
+@@ -53,7 +53,7 @@
+ FUSE_USES=	fuse
+ FUSE_CONFIGURE_ENABLE=	fuse
+ 
+-SAMBA_LIB_DEPENDS=	libsmbclient.so:net/samba-libsmbclient
++SAMBA_LIB_DEPENDS=	libsmbclient.so:net/samba43
+ SAMBA_CONFIGURE_ENABLE=	samba
+ 
+ CDDA_LIB_DEPENDS=	libcdio_paranoia.so:sysutils/libcdio-paranoia

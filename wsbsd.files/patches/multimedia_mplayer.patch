@@ -1,0 +1,13 @@
+Index: multimedia/mplayer/Makefile.optvars
+===================================================================
+--- multimedia/mplayer/Makefile.optvars	(revision 413216)
++++ multimedia/mplayer/Makefile.optvars	(working copy)
+@@ -102,7 +102,7 @@
+ SDL_LIB_DEPENDS=	libaa.so:graphics/aalib
+ SDL_CONFIGURE_OFF=	--disable-sdl
+ 
+-SMB_LIB_DEPENDS=	libsmbclient.so:net/samba-libsmbclient
++SMB_LIB_DEPENDS=	libsmbclient.so:net/samba43
+ SMB_CONFIGURE_OFF=	--disable-smb
+ 
+ SPEEX_LIB_DEPENDS=	libspeex.so:audio/speex

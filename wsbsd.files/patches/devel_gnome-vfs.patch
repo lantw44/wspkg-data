@@ -1,0 +1,13 @@
+Index: devel/gnome-vfs/Makefile
+===================================================================
+--- devel/gnome-vfs/Makefile	(revision 413216)
++++ devel/gnome-vfs/Makefile	(working copy)
+@@ -61,7 +61,7 @@
+ .endif
+ 
+ .if ${PORT_OPTIONS:MSAMBA}
+-LIB_DEPENDS+=	libsmbclient.so:net/samba-libsmbclient
++LIB_DEPENDS+=	libsmbclient.so:net/samba43
+ PLIST_SUB+=	SAMBA=""
+ .else
+ PLIST_SUB+=	SAMBA="@comment "

@@ -1,0 +1,50 @@
+Index: net/samba43/Makefile
+===================================================================
+--- net/samba43/Makefile	(revision 413216)
++++ net/samba43/Makefile	(working copy)
+@@ -155,7 +155,7 @@
+ 			--with-winbind \
+ 			--without-gettext \
+ 			--with-sendfile-support \
+-			--builtin-libraries=smbclient \
++			--disable-rpath \
+ 			${ICONV_CONFIGURE_BASE}
+ 
+ # for libexecinfo: (so that __builtin_frame_address() finds the top of the stack)
+@@ -504,6 +504,7 @@
+ 
+ post-install:
+ 			@${LN} -sf smb.conf.5.gz ${STAGEDIR}${PREFIX}/man/man5/smb4.conf.5.gz
++			@${LN} -sf samba4/libsmbclient.h ${STAGEDIR}${PREFIX}/include/libsmbclient.h
+ .if ${PORT_OPTIONS:MDOCS}
+ 			@${MKDIR} ${STAGEDIR}${DOCSDIR}
+ .	for doc in ${PORTDOCS}
+Index: net/samba43/pkg-plist
+===================================================================
+--- net/samba43/pkg-plist	(revision 413216)
++++ net/samba43/pkg-plist	(working copy)
+@@ -41,6 +41,7 @@
+ %%AD_DC%%sbin/samba_upgradedns
+ sbin/smbd
+ sbin/winbindd
++include/libsmbclient.h
+ include/samba4/charset.h
+ include/samba4/core/doserr.h
+ include/samba4/core/error.h
+@@ -203,6 +204,8 @@
+ lib/libsamba-util.so.0
+ lib/libsamdb.so
+ lib/libsamdb.so.0
++lib/libsmbclient.so
++lib/libsmbclient.so.0
+ lib/libsmbclient-raw.so
+ lib/libsmbclient-raw.so.0
+ lib/libsmbconf.so
+@@ -498,6 +501,7 @@
+ %%PKGCONFIGDIR%%/samba-policy.pc
+ %%PKGCONFIGDIR%%/samba-util.pc
+ %%PKGCONFIGDIR%%/samdb.pc
++%%PKGCONFIGDIR%%/smbclient.pc
+ %%PKGCONFIGDIR%%/smbclient-raw.pc
+ %%PKGCONFIGDIR%%/torture.pc
+ %%PKGCONFIGDIR%%/wbclient.pc
