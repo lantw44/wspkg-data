@@ -1,8 +1,8 @@
 Index: lang/gcc/Makefile
 ===================================================================
---- lang/gcc/Makefile	(revision 403517)
+--- lang/gcc/Makefile	(revision 413216)
 +++ lang/gcc/Makefile	(working copy)
-@@ -168,10 +168,5 @@
+@@ -163,10 +163,5 @@
  	fi
  .endfor
  	cd ${WRKDIR} ; ${SED} -i -e "/PLIST.lib/ r PLIST.lib" ${TMPPLIST}
