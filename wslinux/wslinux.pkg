@@ -74,7 +74,7 @@
 #define MAKE                make bmake pmake
 #define MINGW               mingw-w64  // mingw32 is obsolete
 #define NODEJS              nodejs nodejs-dev npm
-#define OPENJDK             openjdk-7-jdk openjdk-8-jdk
+#define OPENJDK             openjdk-8-jdk
 #define SUBVERSION          subversion
 #define TCL                 tcl-dev
 #define TK                  tk-dev
