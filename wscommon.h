@@ -85,7 +85,7 @@ ACPI            CPUFREQ         CUPS            IOTOP           MENU
 mcelog          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
 DEBSUMS
 // freebsd local-217
-PKG_MGMT        NET_SNMP        SSHIT           nagios-plugins  nsca-client
+PKG_MGMT        NET_SNMP        nagios-plugins  nsca-client
 FDISK           GDISK           // added by b01902062@csie.ntu.edu.tw
 #endif
 

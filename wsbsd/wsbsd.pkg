@@ -52,7 +52,6 @@
 #define PKG_MGMT            portupgrade portmaster portconf porttools \
                             portlint pkg_rmleaves pkg_cutleaves bsdadminscripts
 #define NET_SNMP            net-snmp
-#define SSHIT               sshit
 #define FDISK               linuxfdisk
 #define GDISK               gdisk
 

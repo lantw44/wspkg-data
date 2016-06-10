@@ -52,7 +52,6 @@
 #define PKG_MGMT            aptitude apt-file cdbs dpkg-dev git-buildpackage \
                             quilt sbuild
 #define NET_SNMP            snmpd
-#define SSHIT               NULL // does not work with iptables
 #define FDISK               util-linux
 #define GDISK               gdisk
 
