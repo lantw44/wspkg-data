@@ -1,0 +1,20 @@
+Index: archivers/lrzip/pkg-plist
+===================================================================
+--- archivers/lrzip/pkg-plist	(revision 416870)
++++ archivers/lrzip/pkg-plist	(working copy)
+@@ -20,7 +20,6 @@
+ %%DOCSDIR%%/magic.header.txt
+ bin/lrunzip
+ bin/lrzcat
+-bin/lrz
+ bin/lrzip
+ bin/lrztar
+ bin/lrzuntar
+@@ -31,7 +30,6 @@
+ lib/liblrzip.so.0.0.0
+ libdata/pkgconfig/lrzip.pc
+ man/man1/lrunzip.1.gz
+-man/man1/lrz.1.gz
+ man/man1/lrzcat.1.gz
+ man/man1/lrzip.1.gz
+ man/man1/lrztar.1.gz
