@@ -63,7 +63,7 @@
 // Devel
 #define ANT                 apache-ant
 #define CLANG               clang35 clang36 // get libclang.so
-#define GCC                 gcc gcc49 gcc5 gcc5-aux gcc6-devel gcc6-aux gcc7-devel
+#define GCC                 gcc gcc49 gcc5 gcc5-aux gcc6 gcc6-aux gcc7-devel
 #define GDB                 gdb
 #define GOLANG              NULL
 #define GIT                 git gitg
