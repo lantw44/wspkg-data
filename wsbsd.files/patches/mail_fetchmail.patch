@@ -1,12 +1,12 @@
-Index: mail/fetchmail/pkg-plist
-===================================================================
---- mail/fetchmail/pkg-plist	(revision 417659)
-+++ mail/fetchmail/pkg-plist	(working copy)
-@@ -2,7 +2,6 @@
+diff -ruN fetchmail.old/pkg-plist fetchmail/pkg-plist
+--- mail/fetchmail/pkg-plist 2016-07-12 18:05:00.546800064 -0500
++++ mail/fetchmail/pkg-plist 2016-07-12 18:42:04.187646344 -0500
+@@ -2,7 +2,7 @@
  bin/fetchmailconf
  man/man1/fetchmail.1.gz
  man/man1/fetchmailconf.1.gz
 -%%X11%%libexec/fetchmailconf.py
++%%NO_X11%%libexec/fetchmailconf.py
  %%NLS%%share/locale/ca/LC_MESSAGES/fetchmail.mo
  %%NLS%%share/locale/cs/LC_MESSAGES/fetchmail.mo
  %%NLS%%share/locale/da/LC_MESSAGES/fetchmail.mo
