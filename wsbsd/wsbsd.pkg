@@ -42,7 +42,7 @@
 // Admin
 #define ACPI                NULL
 #define CPUFREQ             NULL
-#define CUPS                cups cups-filters
+#define CUPS                cups cups-filters py27-pycups
 #define IOTOP               NULL
 #define MENU                NULL
 #define MUNIN               munin-node
