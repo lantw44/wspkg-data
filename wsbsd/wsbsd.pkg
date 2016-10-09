@@ -193,7 +193,7 @@
 #define BOOST_DEV           boost-all
 #define IMLIB2_DEV          imlib2
 #define EXOSIP2_DEV         libeXosip2
-#define OPENCV_DEV          opencv
+#define OPENCV_DEV          opencv2
 #define FFMPEG_DEV          ffmpeg
 #define SDL_DEV             sdl sdl2 sdl_mixer sdl2_mixer
 #define POPPLER_DEV         poppler
@@ -308,7 +308,7 @@
 #define PYTHON_SIMPLEJSON       py27-simplejson
 #define PYTHON_MATPLOTLIB       py27-matplotlib
 #define PYTHON_LXML             py27-lxml
-#define PYTHON_OPENCV           py27-opencv
+#define PYTHON_OPENCV           py27-opencv2
 #define PYTHON_COGENT           pycogent
 #define PYTHON_REDIS            py27-redis
 #define PYTHON_YAML             py27-yaml
