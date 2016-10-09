@@ -72,7 +72,7 @@
 #define MINGW               mingw32-gcc
 #define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8
-#define SUBVERSION          subversion svk psvn-emacs24
+#define SUBVERSION          subversion svk psvn-emacs25
 #define TCL                 tcl84 tcl85 tcl86
 #define TK                  tk84 tk85 tk86
 #define AARCH64_GCC         aarch64-binutils aarch64-none-elf-gcc
@@ -102,7 +102,7 @@
 
 // Editors
 #define CTAGS               ctags
-#define EMACS               emacs24 python-mode.el
+#define EMACS               emacs25 python-mode.el
 #define LIBREOFFICE         libreoffice zh_TW-libreoffice
 #define VIM_GTK             vim
 
@@ -224,7 +224,7 @@
 // Mail
 #define MAILX               NULL
 #define METAMAIL            metamail
-#define VM                  vm-emacs24
+#define VM                  vm-emacs25
 
 // Math
 #define GSL                 gsl
@@ -343,7 +343,7 @@
 #define ALSA                alsa-lib alsa-plugins
 
 // TeX
-#define AUCTEX              auctex-emacs24
+#define AUCTEX              auctex-emacs25
 #define LATEX_CJK           NULL // FIXME: conflict with texlive
 #define BIBER               NULL // FIXME: not found in ports
 #define TEXLIVE             NULL // texlive-full already provides all packages
@@ -411,7 +411,7 @@
 #define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
                             linux-c6-flashplugin
 #define FIREFOX             firefox firefox-i18n
-#define W3M_EL              emacs-w3m-emacs24
+#define W3M_EL              emacs-w3m-emacs25
 #define JAVA_PLUGIN         icedtea-web
 
 // WindowMaker
