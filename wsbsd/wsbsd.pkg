@@ -84,7 +84,7 @@
 #define MONO                mono
 #define JULIA               NULL // https://wiki.freebsd.org/WantedPorts
 #define ANDROID_TOOLS       android-tools-adb
-#define LLVM                llvm35 llvm36 llvm37 llvm38 llvm-devel
+#define LLVM                llvm35 llvm36 llvm37 llvm38 llvm39 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                NULL
 
