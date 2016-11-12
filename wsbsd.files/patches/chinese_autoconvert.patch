@@ -1,0 +1,13 @@
+Index: chinese/autoconvert/Makefile
+===================================================================
+--- chinese/autoconvert/Makefile	(revision 425950)
++++ chinese/autoconvert/Makefile	(working copy)
+@@ -12,8 +12,6 @@
+ MAINTAINER=	ports@FreeBSD.org
+ COMMENT=	Intelligent Chinese encoding converter
+ 
+-BROKEN=		Unfetchable (google code has gone away)
+-
+ LICENSE=	GPLv2 GPLv3
+ LICENSE_COMB=	dual
+ 
