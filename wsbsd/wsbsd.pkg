@@ -268,7 +268,7 @@
 #define PERL_JSON                       p5-JSON
 #define PERL_LIBWWW                     p5-libwww
 #define PERL_ARRAY_INTSPAN              p5-Array-IntSpan
-#define PERL_BIOPERL                    p5-bioperl
+#define PERL_BIOPERL                    p5-BioPerl
 #define PERL_DBI                        p5-DBI
 #define PERL_MAIL_SENDER                p5-Mail-Sender
 #define PERL_SET_INTSPAN                p5-Set-IntSpan
