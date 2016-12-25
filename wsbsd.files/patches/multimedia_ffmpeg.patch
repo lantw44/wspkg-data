@@ -1,9 +1,9 @@
 Index: multimedia/ffmpeg/Makefile
 ===================================================================
---- multimedia/ffmpeg/Makefile	(revision 413216)
+--- multimedia/ffmpeg/Makefile	(revision 429389)
 +++ multimedia/ffmpeg/Makefile	(working copy)
-@@ -279,7 +279,7 @@
- SDL_CONFIGURE_OFF=	--disable-outdev=sdl
+@@ -304,7 +304,7 @@
+ SDL_CONFIGURE_OFF=	--disable-outdev=sdl --disable-sdl2
  
  # smbclient
 -SMB_LIB_DEPENDS=	libsmbclient.so:net/samba-libsmbclient
