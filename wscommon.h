@@ -117,7 +117,7 @@ BIOJAVA         NCBI_TOOLKIT    doxygen         ocaml
 // required by Wei-Sheng Chin d01944006
 MONO
 // requested by b01902066
-JULIA
+julia
 // added by b01902062@csie.ntu.edu.tw
 ANDROID_TOOLS   bzr             mercurial       intltool        LLVM
 ltrace          OPENCL          POCL

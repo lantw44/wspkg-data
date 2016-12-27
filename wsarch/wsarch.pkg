@@ -82,7 +82,6 @@
 #define  BIOJAVA                  biojava
 #define  NCBI_TOOLKIT             ncbi-toolkit
 #define  MONO                     mono
-#define  JULIA                    julia
 #define  ANDROID_TOOLS            android-tools
 #define  LLVM                     llvm lldb lib32-llvm-libs
 #define  OPENCL                   ocl-icd opencl-headers
