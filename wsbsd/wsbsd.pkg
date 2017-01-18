@@ -388,7 +388,7 @@
 #define MKISOFS             cdrtools
 #define PSTREE              pstree
 #define RANGER              py27-ranger
-#define QEMU                qemu-devel
+#define QEMU                qemu
 #define UNAR                unar
 #define UIM_FEP             uim
 #define UNIX2DOS            unix2dos
