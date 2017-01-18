@@ -1,7 +1,7 @@
-Index: Makefile
+Index: emulators/qemu/Makefile
 ===================================================================
---- Makefile	(revision 431453)
-+++ Makefile	(working copy)
+--- emulators/qemu/Makefile	(revision 431778)
++++ emulators/qemu/Makefile	(working copy)
 @@ -65,7 +65,7 @@
  STATIC_LINK_PREVENTS=		GTK2 X11
  STATIC_LINK_PREVENTS_MSG=	X11 ui cannot be built static
