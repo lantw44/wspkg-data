@@ -1,0 +1,42 @@
+Index: lang/ruby24/pkg-plist
+===================================================================
+--- lang/ruby24/pkg-plist	(revision 433381)
++++ lang/ruby24/pkg-plist	(working copy)
+@@ -1862,8 +1862,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d48/nkf_8h__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d48/nkf_8h__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d48/nkf_8h__incl.png
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d49/etc_2constdefs_8h.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d49/etc_2constdefs_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d49/return__sc_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d49/return__sc_8c_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d4f/structtest__structure__4.html
+@@ -2191,8 +2189,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dca/strscan_8c__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dca/strscan_8c__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dca/strscan_8c__incl.png
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dd1/socket_2constdefs_8h.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dd1/socket_2constdefs_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dd7/ossl__config_8h.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dd7/ossl__config_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d5/dd9/reader_8c.html
+@@ -2334,9 +2330,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d60/nkf_2nkf-utf8_2config_8h__dep__incl.png
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d61/float3_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d61/float3_8c_source.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d64/etc_2constdefs_8h__dep__incl.map
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d64/etc_2constdefs_8h__dep__incl.md5
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d64/etc_2constdefs_8h__dep__incl.png
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d69/structstruct__108byte.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d6a/proc_8c__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d6/d6a/proc_8c__incl.md5
+@@ -3011,9 +3004,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d32/tcpserver_8c_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d34/resolv_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d34/resolv_8c_source.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d34/socket_2constdefs_8h__dep__incl.map
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d34/socket_2constdefs_8h__dep__incl.md5
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d34/socket_2constdefs_8h__dep__incl.png
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.png
