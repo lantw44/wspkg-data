@@ -1,17 +1,17 @@
 Index: net/samba43/Makefile
 ===================================================================
---- net/samba43/Makefile	(revision 416870)
+--- net/samba43/Makefile	(revision 433381)
 +++ net/samba43/Makefile	(working copy)
-@@ -152,7 +152,7 @@
+@@ -155,7 +155,7 @@
  			--with-winbind \
  			--without-gettext \
  			--with-sendfile-support \
 -			--builtin-libraries=smbclient \
 +			--disable-rpath \
  			${ICONV_CONFIGURE_BASE}
- 
  # for libexecinfo: (so that __builtin_frame_address() finds the top of the stack)
-@@ -503,6 +503,7 @@
+ .if ${ARCH} == "amd64"
+@@ -505,6 +505,7 @@
  
  post-install:
  			@${LN} -sf smb.conf.5.gz ${STAGEDIR}${PREFIX}/man/man5/smb4.conf.5.gz
@@ -21,7 +21,7 @@ Index: net/samba43/Makefile
  .	for doc in ${PORTDOCS}
 Index: net/samba43/pkg-plist
 ===================================================================
---- net/samba43/pkg-plist	(revision 416870)
+--- net/samba43/pkg-plist	(revision 433381)
 +++ net/samba43/pkg-plist	(working copy)
 @@ -42,6 +42,7 @@
  %%AD_DC%%sbin/samba_upgradedns
@@ -40,7 +40,7 @@ Index: net/samba43/pkg-plist
  lib/libsmbclient-raw.so
  lib/libsmbclient-raw.so.0
  lib/libsmbconf.so
-@@ -499,6 +502,7 @@
+@@ -496,6 +499,7 @@
  %%PKGCONFIGDIR%%/samba-policy.pc
  %%PKGCONFIGDIR%%/samba-util.pc
  %%PKGCONFIGDIR%%/samdb.pc

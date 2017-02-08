@@ -1,6 +1,6 @@
 Index: devel/gvfs/Makefile
 ===================================================================
---- devel/gvfs/Makefile	(revision 413216)
+--- devel/gvfs/Makefile	(revision 433381)
 +++ devel/gvfs/Makefile	(working copy)
 @@ -53,7 +53,7 @@
  FUSE_USES=	fuse

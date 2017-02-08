@@ -1,6 +1,6 @@
 Index: emulators/qemu/Makefile
 ===================================================================
---- emulators/qemu/Makefile	(revision 431778)
+--- emulators/qemu/Makefile	(revision 433381)
 +++ emulators/qemu/Makefile	(working copy)
 @@ -65,7 +65,7 @@
  STATIC_LINK_PREVENTS=		GTK2 X11

@@ -1,6 +1,6 @@
 Index: biology/biojava/Makefile
 ===================================================================
---- biology/biojava/Makefile	(revision 425950)
+--- biology/biojava/Makefile	(revision 433381)
 +++ biology/biojava/Makefile	(working copy)
 @@ -12,8 +12,6 @@
  MAINTAINER=	ports@FreeBSD.org

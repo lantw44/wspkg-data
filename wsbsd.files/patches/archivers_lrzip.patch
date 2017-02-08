@@ -1,6 +1,6 @@
 Index: archivers/lrzip/pkg-plist
 ===================================================================
---- archivers/lrzip/pkg-plist	(revision 416870)
+--- archivers/lrzip/pkg-plist	(revision 433381)
 +++ archivers/lrzip/pkg-plist	(working copy)
 @@ -20,7 +20,6 @@
  %%DOCSDIR%%/magic.header.txt

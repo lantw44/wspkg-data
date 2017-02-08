@@ -1,6 +1,6 @@
 Index: sysutils/gnome-control-center/Makefile
 ===================================================================
---- sysutils/gnome-control-center/Makefile	(revision 413216)
+--- sysutils/gnome-control-center/Makefile	(revision 433381)
 +++ sysutils/gnome-control-center/Makefile	(working copy)
 @@ -59,7 +59,7 @@
  OPTIONS_DEFINE_amd64=	CHEESE

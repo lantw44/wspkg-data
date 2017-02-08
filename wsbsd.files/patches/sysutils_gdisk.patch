@@ -1,8 +1,8 @@
 Index: sysutils/gdisk/Makefile
 ===================================================================
---- sysutils/gdisk/Makefile	(revision 382071)
+--- sysutils/gdisk/Makefile	(revision 433381)
 +++ sysutils/gdisk/Makefile	(working copy)
-@@ -24,7 +24,7 @@
+@@ -25,7 +25,7 @@
  CGDISK_DESC=	Curses-based interactive program
  UTF16_DESC=	Support for Unicode partition names
  UTF16_CPPFLAGS+=	-DUSE_UTF16

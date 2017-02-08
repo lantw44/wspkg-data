@@ -1,6 +1,6 @@
 Index: lang/gcc/Makefile
 ===================================================================
---- lang/gcc/Makefile	(revision 416870)
+--- lang/gcc/Makefile	(revision 433381)
 +++ lang/gcc/Makefile	(working copy)
 @@ -161,10 +161,5 @@
  	fi
@@ -15,7 +15,7 @@ Index: lang/gcc/Makefile
  .include <bsd.port.post.mk>
 Index: lang/gcc/pkg-plist
 ===================================================================
---- lang/gcc/pkg-plist	(revision 403517)
+--- lang/gcc/pkg-plist	(revision 433381)
 +++ lang/gcc/pkg-plist	(working copy)
 @@ -8,15 +8,12 @@
  bin/%%GNU_HOST%%-gfortran%%SUFFIX%%

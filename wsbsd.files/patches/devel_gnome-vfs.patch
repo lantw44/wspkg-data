@@ -1,6 +1,6 @@
 Index: devel/gnome-vfs/Makefile
 ===================================================================
---- devel/gnome-vfs/Makefile	(revision 413216)
+--- devel/gnome-vfs/Makefile	(revision 433381)
 +++ devel/gnome-vfs/Makefile	(working copy)
 @@ -61,7 +61,7 @@
  .endif
