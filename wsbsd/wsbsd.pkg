@@ -328,7 +328,7 @@
 #define PYTHON_JIEBA            NULL
 
 // Ruby
-#define RUBY                ruby ruby23
+#define RUBY                ruby ruby24
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          ruby22-mysql
 #define RUBY_RAKE           rubygem-rake
