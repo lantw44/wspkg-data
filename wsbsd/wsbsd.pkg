@@ -177,7 +177,7 @@
 
 // Lib
 #define LIBC_DEV            NULL
-#define LIBEVENT_DEV        libevent2
+#define LIBEVENT_DEV        libevent
 #define FFTW_DEV            fftw fftw3 fftw3-float fftw3-long fftw3-quad
 #define GSL_DEV             gsl
 #define JPEG_DEV            jpeg-turbo
