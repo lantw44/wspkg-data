@@ -1,5 +1,5 @@
 // Basic packages
- bash bash-completion bind-tools cmdwatch git ldapvi
+ bash bash-completion bind-tools cmdwatch git htop ldapvi
  lighttpd lsof ncdu portlint pstree py27-ranger rsync screen
  subversion sudo tig tree vim-lite w3m wget
 
