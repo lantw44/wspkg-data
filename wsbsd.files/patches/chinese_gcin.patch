@@ -1,0 +1,13 @@
+Index: chinese/gcin/Makefile
+===================================================================
+--- chinese/gcin/Makefile	(revision 435057)
++++ chinese/gcin/Makefile	(working copy)
+@@ -41,7 +41,7 @@
+ 		s,-ldl,,; \
+ 		s,mandir=$$datadir,mandir=$$prefix,; \
+ 		s,/usr/share,$$prefix/share,; \
+-		s,/usr/bin/moc,${LOCALBASE}/bin/moc-qt4,; \
++		s,/usr/bin/moc,${LOCALBASE}/bin/moc,; \
+ 		1, 300 s,gcc,$$CC,; s,gcin-$$GCIN_VERSION,gcin,; \
+ 		/GCIN_DEBUG/ d' ${WRKSRC}/configure
+ 	@${REINPLACE_CMD} -e 's,\/usr\/share,$$(prefix)\/share,; \
