@@ -1,6 +1,6 @@
 Index: lang/ruby24/pkg-plist
 ===================================================================
---- lang/ruby24/pkg-plist	(revision 433381)
+--- lang/ruby24/pkg-plist	(revision 435057)
 +++ lang/ruby24/pkg-plist	(working copy)
 @@ -1862,8 +1862,6 @@
  %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d48/nkf_8h__incl.map
@@ -40,3 +40,12 @@ Index: lang/ruby24/pkg-plist
  %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.map
  %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.md5
  %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d9/d3a/cls__12byte_8c__incl.png
+@@ -3444,8 +3434,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d31/structfpreg.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3a/tgamma_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3a/tgamma_8c_source.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/conftest_8c.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/conftest_8c_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/ossl__pkey_8h.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/ossl__pkey_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3f/cls__pointer_8c.html
