@@ -335,6 +335,7 @@
 #define PYTHON_PYQUERY          python-pyquery
 #define PYTHON_NLTK             python-nltk python3-nltk
 #define PYTHON_JIEBA            python-jieba
+#define PYTHON_CRYPTO           python-crypto
 
 // Ruby
 #define RUBY                ruby ruby-dev

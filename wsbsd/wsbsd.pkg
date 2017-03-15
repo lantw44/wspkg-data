@@ -326,6 +326,7 @@
 #define PYTHON_PYQUERY          py27-pyquery
 #define PYTHON_NLTK             py27-nltk
 #define PYTHON_JIEBA            NULL
+#define PYTHON_CRYPTO           py27-pycrypto
 
 // Ruby
 #define RUBY                ruby ruby24
