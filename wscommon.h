@@ -388,6 +388,8 @@ lzip            lrzip           RZIP
 squashfs-tools
 // added by b01902104@csie.ntu.edu.tw
 rlwrap
+//added by b03902074@csie.ntu.edu.tw
+SHELLCHECK
 #endif
 
 // Video

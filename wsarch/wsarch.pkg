@@ -405,6 +405,7 @@
 #define  WATCH                    procps-ng
 #define  IBUS_CHEWING             ibus-chewing
 #define  RZIP                     NULL
+#define  SHELLCHECK               shellcheck
 
 // Video
 #define  MPLAYER                  mplayer smplayer gnome-mplayer

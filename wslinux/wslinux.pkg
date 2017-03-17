@@ -406,6 +406,7 @@
 #define WATCH               procps
 #define IBUS_CHEWING        ibus-chewing
 #define RZIP                rzip
+#define SHELLCHECK          shellcheck
 
 // Video
 #define MPLAYER             mplayer

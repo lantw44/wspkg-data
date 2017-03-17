@@ -396,6 +396,7 @@
 #define WATCH               cmdwatch
 #define IBUS_CHEWING        zh-ibus-chewing
 #define RZIP                rzip
+#define SHELLCHECK          hs-ShellCheck
 
 // Video
 #define MPLAYER             mplayer gnome-mplayer mencoder
