@@ -406,6 +406,8 @@
 #define  IBUS_CHEWING             ibus-chewing
 #define  RZIP                     NULL
 #define  SHELLCHECK               shellcheck
+#define  ACK                      ack
+#define  SILVER_SEARCHER          the_silver_searcher
 
 // Video
 #define  MPLAYER                  mplayer smplayer gnome-mplayer

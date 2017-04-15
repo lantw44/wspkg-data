@@ -390,6 +390,8 @@ squashfs-tools
 rlwrap
 //added by b03902074@csie.ntu.edu.tw
 SHELLCHECK
+//added by b03902074@csie.ntu.edu.tw
+ACK             SILVER_SEARCHER
 #endif
 
 // Video

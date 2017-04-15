@@ -407,6 +407,8 @@
 #define IBUS_CHEWING        ibus-chewing
 #define RZIP                rzip
 #define SHELLCHECK          shellcheck
+#define ACK                 ack-grep
+#define SILVER_SEARCHER     silversearcher-ag
 
 // Video
 #define MPLAYER             mplayer

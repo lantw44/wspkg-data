@@ -397,6 +397,8 @@
 #define IBUS_CHEWING        zh-ibus-chewing
 #define RZIP                rzip
 #define SHELLCHECK          hs-ShellCheck
+#define ACK                 p5-ack
+#define SILVER_SEARCHER     the_silver_searcher
 
 // Video
 #define MPLAYER             mplayer gnome-mplayer mencoder
