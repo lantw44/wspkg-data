@@ -1,6 +1,6 @@
 Index: sysutils/gdisk/Makefile
 ===================================================================
---- sysutils/gdisk/Makefile	(revision 433381)
+--- sysutils/gdisk/Makefile	(revision 438568)
 +++ sysutils/gdisk/Makefile	(working copy)
 @@ -25,7 +25,7 @@
  CGDISK_DESC=	Curses-based interactive program

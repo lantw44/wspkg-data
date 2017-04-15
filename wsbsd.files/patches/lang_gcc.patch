@@ -1,23 +1,23 @@
 Index: lang/gcc/Makefile
 ===================================================================
---- lang/gcc/Makefile	(revision 433381)
+--- lang/gcc/Makefile	(revision 438568)
 +++ lang/gcc/Makefile	(working copy)
-@@ -161,10 +161,5 @@
+@@ -169,10 +169,5 @@
  	fi
  .endfor
  	cd ${WRKDIR} ; ${SED} -i -e "/PLIST.lib/ r PLIST.lib" ${TMPPLIST}
 -	# This is the canonical GCC port, so add key commands without
 -	# version numbers as part of their names.
--	for c in gfortran g++ gcc; do \
--	    ${LN} -s ${PREFIX}/bin/"$$c"${SUFFIX} ${STAGEDIR}${PREFIX}/bin/$$c ; \
--	done
+-.for c in gfortran g++ gcc
+-	    ${LN} -s ${c}${SUFFIX} ${STAGEDIR}${PREFIX}/bin/${c}
+-.endfor
  
  .include <bsd.port.post.mk>
 Index: lang/gcc/pkg-plist
 ===================================================================
---- lang/gcc/pkg-plist	(revision 433381)
+--- lang/gcc/pkg-plist	(revision 438568)
 +++ lang/gcc/pkg-plist	(working copy)
-@@ -8,15 +8,12 @@
+@@ -8,9 +8,7 @@
  bin/%%GNU_HOST%%-gfortran%%SUFFIX%%
  bin/c++%%SUFFIX%%
  bin/cpp%%SUFFIX%%
@@ -27,8 +27,10 @@ Index: lang/gcc/pkg-plist
  bin/gcc%%SUFFIX%%
  bin/gcc-ar%%SUFFIX%%
  bin/gcc-nm%%SUFFIX%%
+@@ -17,7 +15,6 @@
  bin/gcc-ranlib%%SUFFIX%%
  bin/gcov%%SUFFIX%%
+ bin/gcov-tool%%SUFFIX%%
 -bin/gfortran
  bin/gfortran%%SUFFIX%%
  @comment info/gcc%%SUFFIX%%/dir

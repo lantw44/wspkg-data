@@ -1,6 +1,6 @@
 Index: x11-fonts/wqy/files/85-wqy.conf
 ===================================================================
---- x11-fonts/wqy/files/85-wqy.conf	(revision 433381)
+--- x11-fonts/wqy/files/85-wqy.conf	(revision 438568)
 +++ x11-fonts/wqy/files/85-wqy.conf	(working copy)
 @@ -97,7 +97,8 @@
  			</test>

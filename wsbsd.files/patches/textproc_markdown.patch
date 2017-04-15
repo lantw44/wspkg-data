@@ -1,6 +1,6 @@
 Index: textproc/markdown/Makefile
 ===================================================================
---- textproc/markdown/Makefile	(revision 433381)
+--- textproc/markdown/Makefile	(revision 438568)
 +++ textproc/markdown/Makefile	(working copy)
 @@ -22,10 +22,10 @@
  

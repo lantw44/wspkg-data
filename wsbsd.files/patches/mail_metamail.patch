@@ -1,6 +1,6 @@
 Index: mail/metamail/files/patch-Makefile
 ===================================================================
---- mail/metamail/files/patch-Makefile	(revision 433381)
+--- mail/metamail/files/patch-Makefile	(revision 438568)
 +++ mail/metamail/files/patch-Makefile	(working copy)
 @@ -1,6 +1,6 @@
 ---- Makefile.orig	1994-01-26 17:32:33 UTC
@@ -88,7 +88,7 @@ Index: mail/metamail/files/patch-Makefile
 - 	-${RM} bin/metamail
 Index: mail/metamail/files/patch-bin_showaudio
 ===================================================================
---- mail/metamail/files/patch-bin_showaudio	(revision 433381)
+--- mail/metamail/files/patch-bin_showaudio	(revision 438568)
 +++ mail/metamail/files/patch-bin_showaudio	(working copy)
 @@ -1,5 +1,5 @@
 ---- bin/showaudio.orig	1994-02-02 23:21:26 UTC
@@ -127,7 +127,7 @@ Index: mail/metamail/files/patch-bin_showaudio
   endif
 Index: mail/metamail/files/patch-bin_showexternal
 ===================================================================
---- mail/metamail/files/patch-bin_showexternal	(revision 433381)
+--- mail/metamail/files/patch-bin_showexternal	(revision 438568)
 +++ mail/metamail/files/patch-bin_showexternal	(working copy)
 @@ -1,5 +1,5 @@
 ---- bin/showexternal.orig	1994-02-08 16:39:05 UTC
@@ -139,7 +139,7 @@ Index: mail/metamail/files/patch-bin_showexternal
   # 
 Index: mail/metamail/files/patch-bin_showpartial
 ===================================================================
---- mail/metamail/files/patch-bin_showpartial	(revision 433381)
+--- mail/metamail/files/patch-bin_showpartial	(revision 438568)
 +++ mail/metamail/files/patch-bin_showpartial	(working copy)
 @@ -1,5 +1,5 @@
 ---- bin/showpartial.orig	1994-02-02 23:21:29 UTC
@@ -169,7 +169,7 @@ Index: mail/metamail/files/patch-bin_showpartial
   endif
 Index: mail/metamail/files/patch-bin_showpicture
 ===================================================================
---- mail/metamail/files/patch-bin_showpicture	(revision 433381)
+--- mail/metamail/files/patch-bin_showpicture	(revision 438568)
 +++ mail/metamail/files/patch-bin_showpicture	(working copy)
 @@ -1,5 +1,5 @@
 ---- bin/showpicture.orig	1994-02-07 17:59:54 UTC
@@ -190,7 +190,7 @@ Index: mail/metamail/files/patch-bin_showpicture
       endif
 Index: mail/metamail/files/patch-bin_sun2mime
 ===================================================================
---- mail/metamail/files/patch-bin_sun2mime	(revision 433381)
+--- mail/metamail/files/patch-bin_sun2mime	(revision 438568)
 +++ mail/metamail/files/patch-bin_sun2mime	(working copy)
 @@ -1,6 +1,6 @@
 ---- bin/sun2mime.orig	1993-11-13 14:54:05 UTC
@@ -204,7 +204,7 @@ Index: mail/metamail/files/patch-bin_sun2mime
   
 Index: mail/metamail/files/patch-config.h
 ===================================================================
---- mail/metamail/files/patch-config.h	(revision 433381)
+--- mail/metamail/files/patch-config.h	(revision 438568)
 +++ mail/metamail/files/patch-config.h	(working copy)
 @@ -1,6 +1,6 @@
 ---- config.h.orig	1993-11-24 15:36:07 UTC
@@ -238,7 +238,7 @@ Index: mail/metamail/files/patch-config.h
 - #define PATH_SEPARATOR ';'
 Index: mail/metamail/files/patch-fonts_Makefile
 ===================================================================
---- mail/metamail/files/patch-fonts_Makefile	(revision 433381)
+--- mail/metamail/files/patch-fonts_Makefile	(revision 438568)
 +++ mail/metamail/files/patch-fonts_Makefile	(working copy)
 @@ -1,6 +1,6 @@
 ---- fonts/Makefile.orig	1993-05-31 20:49:27 UTC
@@ -267,7 +267,7 @@ Index: mail/metamail/files/patch-fonts_Makefile
   	rm -f heb6x13.${FONTSUFFIX} heb8x13.${FONTSUFFIX} heb8x13B.${FONTSUFFIX}  shownonascii mailto-hebrew fonts.dir
 Index: mail/metamail/files/patch-metamail__uue.c
 ===================================================================
---- mail/metamail/files/patch-metamail__uue.c	(revision 433381)
+--- mail/metamail/files/patch-metamail__uue.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail__uue.c	(working copy)
 @@ -1,20 +1,8 @@
 ---- metamail/uue.c.orig	1993-07-28 18:31:02 UTC
@@ -306,7 +306,7 @@ Index: mail/metamail/files/patch-metamail__uue.c
  +	    return(0);
 Index: mail/metamail/files/patch-metamail_codes.c
 ===================================================================
---- mail/metamail/files/patch-metamail_codes.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_codes.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_codes.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/codes.c.orig	1993-09-20 13:13:22 UTC
@@ -347,7 +347,7 @@ Index: mail/metamail/files/patch-metamail_codes.c
                    && PendingBoundary(Buf, boundaries, boundaryct)) {
 Index: mail/metamail/files/patch-metamail_mailto.c
 ===================================================================
---- mail/metamail/files/patch-metamail_mailto.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_mailto.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_mailto.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/mailto.c.orig	1994-02-09 20:30:26 UTC
@@ -505,7 +505,7 @@ Index: mail/metamail/files/patch-metamail_mailto.c
               EmitAddresses(fp, tmpalias->longname, hdr);
 Index: mail/metamail/files/patch-metamail_metamail.c
 ===================================================================
---- mail/metamail/files/patch-metamail_metamail.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_metamail.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_metamail.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/metamail.c.orig	1994-02-17 01:57:19 UTC
@@ -672,7 +672,7 @@ Index: mail/metamail/files/patch-metamail_metamail.c
   #if !defined(AMIGA) && !defined(MSDOS)
 Index: mail/metamail/files/patch-metamail_mmencode.c
 ===================================================================
---- mail/metamail/files/patch-metamail_mmencode.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_mmencode.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_mmencode.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/mmencode.c.orig	1994-01-26 18:47:37 UTC
@@ -686,7 +686,7 @@ Index: mail/metamail/files/patch-metamail_mmencode.c
   #include <stdio.h>
 Index: mail/metamail/files/patch-metamail_putenv.c
 ===================================================================
---- mail/metamail/files/patch-metamail_putenv.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_putenv.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_putenv.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/putenv.c.orig	1993-10-12 16:17:43 UTC
@@ -709,7 +709,7 @@ Index: mail/metamail/files/patch-metamail_putenv.c
   putenv (string)
 Index: mail/metamail/files/patch-metamail_shared.c
 ===================================================================
---- mail/metamail/files/patch-metamail_shared.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_shared.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_shared.c	(working copy)
 @@ -1,5 +1,5 @@
 ---- metamail/shared.c.orig	1993-05-16 18:19:32 UTC
@@ -721,7 +721,7 @@ Index: mail/metamail/files/patch-metamail_shared.c
  +#include <stdlib.h>
 Index: mail/metamail/files/patch-metamail_splitmail.c
 ===================================================================
---- mail/metamail/files/patch-metamail_splitmail.c	(revision 433381)
+--- mail/metamail/files/patch-metamail_splitmail.c	(revision 438568)
 +++ mail/metamail/files/patch-metamail_splitmail.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- metamail/splitmail.c.orig	1994-01-31 22:23:14 UTC
@@ -780,7 +780,7 @@ Index: mail/metamail/files/patch-metamail_splitmail.c
           *colon = ':';
 Index: mail/metamail/files/patch-richmail__iso2022.c
 ===================================================================
---- mail/metamail/files/patch-richmail__iso2022.c	(revision 433381)
+--- mail/metamail/files/patch-richmail__iso2022.c	(revision 438568)
 +++ mail/metamail/files/patch-richmail__iso2022.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- richmail/iso2022.c.orig	1992-12-22 17:50:21 UTC
@@ -794,7 +794,7 @@ Index: mail/metamail/files/patch-richmail__iso2022.c
       if (!name)
 Index: mail/metamail/files/patch-richmail_richlex.c
 ===================================================================
---- mail/metamail/files/patch-richmail_richlex.c	(revision 433381)
+--- mail/metamail/files/patch-richmail_richlex.c	(revision 438568)
 +++ mail/metamail/files/patch-richmail_richlex.c	(working copy)
 @@ -1,5 +1,5 @@
 ---- richmail/richlex.c.orig	1994-02-03 02:29:37 UTC
@@ -806,7 +806,7 @@ Index: mail/metamail/files/patch-richmail_richlex.c
   
 Index: mail/metamail/files/patch-richmail_richset.c
 ===================================================================
---- mail/metamail/files/patch-richmail_richset.c	(revision 433381)
+--- mail/metamail/files/patch-richmail_richset.c	(revision 438568)
 +++ mail/metamail/files/patch-richmail_richset.c	(working copy)
 @@ -1,5 +1,5 @@
 ---- richmail/richset.c.orig	1992-10-21 18:04:19 UTC
@@ -818,7 +818,7 @@ Index: mail/metamail/files/patch-richmail_richset.c
   
 Index: mail/metamail/files/patch-richmail_richtext.c
 ===================================================================
---- mail/metamail/files/patch-richmail_richtext.c	(revision 433381)
+--- mail/metamail/files/patch-richmail_richtext.c	(revision 438568)
 +++ mail/metamail/files/patch-richmail_richtext.c	(working copy)
 @@ -1,6 +1,6 @@
 ---- richmail/richtext.c.orig	1994-02-09 16:31:18 UTC
@@ -868,7 +868,7 @@ Index: mail/metamail/files/patch-richmail_richtext.c
   
 Index: mail/metamail/pkg-descr
 ===================================================================
---- mail/metamail/pkg-descr	(revision 433381)
+--- mail/metamail/pkg-descr	(revision 438568)
 +++ mail/metamail/pkg-descr	(working copy)
 @@ -1,4 +1,4 @@
 -Metamail is an implementation of MIME, the Multipurpose Internet

@@ -1,6 +1,6 @@
 Index: net/samba43/Makefile
 ===================================================================
---- net/samba43/Makefile	(revision 437276)
+--- net/samba43/Makefile	(revision 438568)
 +++ net/samba43/Makefile	(working copy)
 @@ -155,6 +155,7 @@
  			--with-winbind \
@@ -20,7 +20,7 @@ Index: net/samba43/Makefile
  .	for doc in ${PORTDOCS}
 Index: net/samba43/pkg-plist
 ===================================================================
---- net/samba43/pkg-plist	(revision 437276)
+--- net/samba43/pkg-plist	(revision 438568)
 +++ net/samba43/pkg-plist	(working copy)
 @@ -42,6 +42,7 @@
  %%AD_DC%%sbin/samba_upgradedns

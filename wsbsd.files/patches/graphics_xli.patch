@@ -1,6 +1,6 @@
 Index: graphics/xli/Makefile
 ===================================================================
---- graphics/xli/Makefile	(revision 433381)
+--- graphics/xli/Makefile	(revision 438568)
 +++ graphics/xli/Makefile	(working copy)
 @@ -19,16 +19,18 @@
  USE_XORG=	xi

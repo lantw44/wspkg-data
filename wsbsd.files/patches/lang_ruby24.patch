@@ -1,6 +1,6 @@
 Index: lang/ruby24/pkg-plist
 ===================================================================
---- lang/ruby24/pkg-plist	(revision 437276)
+--- lang/ruby24/pkg-plist	(revision 438568)
 +++ lang/ruby24/pkg-plist	(working copy)
 @@ -1863,8 +1863,6 @@
  %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/d48/nkf_8h__incl.map
