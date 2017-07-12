@@ -1,0 +1,32 @@
+Index: lang/ruby24/pkg-plist
+===================================================================
+--- lang/ruby24/pkg-plist	(revision 444958)
++++ lang/ruby24/pkg-plist	(working copy)
+@@ -1946,8 +1946,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/db4/fiddle_8c__incl.png
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc0/closure__simple_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc0/closure__simple_8c_source.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc4/constdefs_8h.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc4/constdefs_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc5/continuation_8c__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc5/continuation_8c__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/d4/dc5/continuation_8c__incl.png
+@@ -3366,9 +3364,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dda/generator_8c__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dda/generator_8c__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dda/generator_8c__incl.png
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/ddc/constdefs_8h__dep__incl.map
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/ddc/constdefs_8h__dep__incl.md5
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/ddc/constdefs_8h__dep__incl.png
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dde/id__table_8h__incl.map
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dde/id__table_8h__incl.md5
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/da/dde/id__table_8h__incl.png
+@@ -3439,8 +3434,6 @@
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d31/structfpreg.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3a/tgamma_8c.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3a/tgamma_8c_source.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/conftest_8c.html
+-%%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/conftest_8c_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/ossl__pkey_8h.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3c/ossl__pkey_8h_source.html
+ %%CAPIDOCS%%%%RUBY_DOCDIR%%/capi/html/db/d3f/cls__pointer_8c.html
