@@ -79,7 +79,7 @@
 #define GDB_MULTIARCH       NULL
 #define ECLIPSE             eclipse eclipse-cdt eclipse-langpack eclipse-pydev
 #define JIKES               jikes
-#define BIOJAVA             biojava
+#define BIOJAVA             NULL
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb
