@@ -1,0 +1,13 @@
+Index: www/qt5-webengine/Makefile
+===================================================================
+--- www/qt5-webengine/Makefile	(revision 451045)
++++ www/qt5-webengine/Makefile	(working copy)
+@@ -43,7 +43,7 @@
+ 		libwebp.so:graphics/webp
+ 
+ OPTIONS_SINGLE=		AUDIO
+-OPTIONS_SINGLE_AUDIO=	ALSA PULSEAUDIO
++OPTIONS_SINGLE_AUDIO=	ALSA
+ OPTIONS_DEFAULT=	ALSA
+ 
+ AUDIO_DESC=		Audio backend
