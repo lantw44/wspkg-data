@@ -86,7 +86,7 @@
 #define BIOJAVA             NULL
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
-#define ANDROID_TOOLS       android-tools-adb
+#define ANDROID_TOOLS       android-tools-adb android-tools-fastboot
 #define LLVM                llvm35 llvm38 llvm39 llvm40 llvm50 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                NULL // TODO: not supported on 10.x
