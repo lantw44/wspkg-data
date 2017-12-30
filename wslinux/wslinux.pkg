@@ -150,7 +150,7 @@
 #define REMMINA             remmina remmina-plugin-gnome remmina-plugin-nx \
                             remmina-plugin-rdp remmina-plugin-telepathy \
                             remmina-plugin-vnc remmina-plugin-xdmcp
-#define MUTTER              libmutter-dev
+#define MUTTER              libmutter-1-dev
 #define GNOME_META_PKG      task-gnome-desktop gnome-core gnome-api-docs \
                             gnome-devel gnome-platform-devel
 #define BAOBAB              baobab
