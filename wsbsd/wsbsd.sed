@@ -1,8 +1,6 @@
 # Removed because of not staged
 /^vm-emacs25$/d
 # Marked as broken in ports
-/^eclipse-cdt$/d
-/^eclipse-langpack$/d
 /^ruby24-mysql$/d
 # Unfetchable
 /^zh-oxim/d

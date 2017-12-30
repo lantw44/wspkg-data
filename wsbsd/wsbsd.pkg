@@ -81,7 +81,7 @@
 #define TK                  tk85 tk86 tk87
 #define AARCH64_GCC         aarch64-binutils aarch64-none-elf-gcc
 #define GDB_MULTIARCH       NULL
-#define ECLIPSE             eclipse eclipse-cdt eclipse-langpack eclipse-pydev
+#define ECLIPSE             eclipse eclipse-cdt eclipse-pydev
 #define JIKES               jikes
 #define BIOJAVA             NULL
 #define NCBI_TOOLKIT        ncbi-toolkit
