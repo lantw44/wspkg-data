@@ -176,6 +176,8 @@
 #define  HASKELL_OPENGL           haskell-opengl
 
 // Interpreters
+#define  SWIG                     swig
+
 // KDE
 #define  KDE_META_PKG             plasma-meta
 #define  KDE_GTK_CONFIG           kde-gtk-config

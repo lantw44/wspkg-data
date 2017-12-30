@@ -171,6 +171,8 @@
 #define HASKELL_OPENGL      hs-OpenGL
 
 // Interpreters
+#define SWIG                swig30
+
 // KDE
 #define KDE_META_PKG        kde zh_TW-kde-l10n
 #define KDE_GTK_CONFIG      kde-gtk-config

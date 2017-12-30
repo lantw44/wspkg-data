@@ -185,7 +185,7 @@ ghc             HUGS            HASKELL_PLATFORM                HASKELL_OPENGL
 
 // Interpreters
 #ifdef WSPKG_INTERPRETERS
-gawk            swig
+gawk            SWIG
 #endif
 
 // KDE
