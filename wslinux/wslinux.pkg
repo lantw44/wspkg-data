@@ -291,8 +291,8 @@
 #define PERL_SWITCH                     libswitch-perl
 
 // PHP
-#define PHP_CLI                 php7.0-cli
-#define PHP_MYSQL               php7.0-mysql
+#define PHP_CLI                 php7.1-cli
+#define PHP_MYSQL               php7.1-mysql
 
 // Python
 #define IPYTHON                 ipython ipython3
