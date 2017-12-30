@@ -305,9 +305,9 @@
 #define PYTHONTRACER            NULL
 #define PYTHON_MYSQLDB          NULL
 #define PYTHON_CJSON            PYTHON_2_PKG(cjson)
-#define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3)
+#define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) pypy-sqlite3
 #define PYTHON_BEAUTIFULSOUP    PYTHON_2_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
-#define PYTHON_TK               PYTHON_2_3_PKG(tkinter)
+#define PYTHON_TK               PYTHON_2_3_PKG(tkinter) pypy-tkinter
 #define PYTHON_SIMPLEJSON       PYTHON_2_3_PKG(simplejson)
 #define PYTHON_MATPLOTLIB       PYTHON_2_3_PKG(matplotlib)
 #define PYTHON_LXML             PYTHON_2_3_PKG(lxml)
