@@ -280,7 +280,7 @@
 #define  PERL_ARRAY_INTSPAN       NULL
 #define  PERL_BIOPERL             bioperl-live-git
 #define  PERL_DBI                 perl-dbi
-#define  PERL_MAIL_SENDER         perl-email-sender
+#define  PERL_MAIL_SENDER         perl-mail-sender
 #define  PERL_SET_INTSPAN         perl-set-intspan
 #define  PERL_SET_WINDOW          NULL
 #define  PERL_SET_INFINITE        perl-set-infinite
