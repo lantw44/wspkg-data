@@ -3,7 +3,7 @@
 # Marked as broken in ports
 /^eclipse-cdt$/d
 /^eclipse-langpack$/d
-/^ruby22-mysql$/d
+/^ruby24-mysql$/d
 # Unfetchable
 /^zh-oxim/d
 /^zh-bg5ps/d

@@ -329,9 +329,9 @@
 #define PYTHON_CRYPTO           py27-pycrypto
 
 // Ruby
-#define RUBY                ruby ruby24
+#define RUBY                ruby ruby25
 #define RUBY_BUNDLER        rubygem-bundler
-#define RUBY_MYSQL          ruby22-mysql
+#define RUBY_MYSQL          ruby24-mysql
 #define RUBY_RAKE           rubygem-rake
 #define RUBY_RAILS          rubygem-rails4
 
