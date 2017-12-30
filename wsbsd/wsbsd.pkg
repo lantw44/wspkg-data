@@ -414,7 +414,7 @@
 // Wayland
 #define IBUS_WAYLAND        NULL
 #define WESTON              NULL
-#define XWAYLAND            NULL
+#define XWAYLAND            xwayland
 
 // Web
 #define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
