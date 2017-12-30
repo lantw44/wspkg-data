@@ -4,6 +4,10 @@
 // Packages mapping started from here
 // ===========================================================================
 
+#define PYTHON_2_PKG(x)     py27-x@py27
+#define PYTHON_3_PKG(x)     py36-x@py36
+#define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
+
 // Keyring
 
 // Standard
@@ -42,7 +46,7 @@
 // Admin
 #define ACPI                NULL
 #define CPUFREQ             NULL
-#define CUPS                cups cups-filters py27-pycups
+#define CUPS                cups cups-filters PYTHON_2_3_PKG(pycups)
 #define IOTOP               NULL
 #define MENU                NULL
 #define MUNIN               munin-node
@@ -58,7 +62,7 @@
 
 // Database
 #define MYSQL_CLIENT        mariadb101-client
-#define PYMONGO             py27-pymongo
+#define PYMONGO             PYTHON_2_3_PKG(pymongo)
 
 // Devel
 #define ANT                 apache-ant
@@ -203,7 +207,7 @@
 #define GOOGLE_GLOG_DEV     glog
 #define LMDB_DEV            lmdb
 #define LIBSQLITE3_DEV      tcl-sqlite3
-#define ZMQ_DEV             libzmq4 py27-pyzmq
+#define ZMQ_DEV             libzmq4 PYTHON_2_3_PKG(pyzmq)
 #define LIBXML2_DEV         libxml2
 #define LIBDB_CXX_DEV       db5
 
@@ -230,7 +234,7 @@
 #define OCTAVE_DEV          octave
 #define QHULL               qhull5
 #define R_BASE              R
-#define SYMPY               py27-sympy
+#define SYMPY               PYTHON_2_3_PKG(sympy)
 #define LAPACKE             lapacke
 
 // Misc
@@ -286,47 +290,47 @@
 #define PHP_MYSQL               php72-mysqli php72-pdo_mysql
 
 // Python
-#define IPYTHON                 py27-ipython
+#define IPYTHON                 PYTHON_3_PKG(ipython) // FIXME: conflict with python2 version
 #define PYPY                    pypy pypy3
-#define PYTHON_PIP              py27-pip
-#define PYTHON_BSDDB3           py27-bsddb3
-#define PYTHON_IMAGING          py27-pillow
-#define PYTHON_NUMPY            py27-numpy
-#define PYTHON_SETUPTOOLS       py27-setuptools
-#define PYTHON_GSL              py27-gsl
-#define PYTHON_SCIPY            py27-scipy
-#define PYTHON_MARKDOWN         py27-markdown
+#define PYTHON_PIP              PYTHON_2_3_PKG(pip)
+#define PYTHON_BSDDB3           PYTHON_2_3_PKG(bsddb3)
+#define PYTHON_IMAGING          PYTHON_2_3_PKG(pillow)
+#define PYTHON_NUMPY            PYTHON_2_3_PKG(numpy)
+#define PYTHON_SETUPTOOLS       PYTHON_2_3_PKG(setuptools)
+#define PYTHON_GSL              PYTHON_2_3_PKG(gsl)
+#define PYTHON_SCIPY            PYTHON_2_3_PKG(scipy)
+#define PYTHON_MARKDOWN         PYTHON_2_3_PKG(markdown)
 #define PYTHON_MEMPROF          NULL
-#define PYTHON_PSUTIL           py27-psutil
+#define PYTHON_PSUTIL           PYTHON_2_3_PKG(psutil)
 #define PYTHONTRACER            NULL
 #define PYTHON_MYSQLDB          NULL
-#define PYTHON_CJSON            py27-cjson
-#define PYTHON_SQLITE           py27-sqlite3
-#define PYTHON_BEAUTIFULSOUP    py27-beautifulsoup py27-beautifulsoup32
-#define PYTHON_TK               NULL
-#define PYTHON_SIMPLEJSON       py27-simplejson
-#define PYTHON_MATPLOTLIB       py27-matplotlib
-#define PYTHON_LXML             py27-lxml
-#define PYTHON_OPENCV           py27-opencv
+#define PYTHON_CJSON            PYTHON_2_PKG(cjson)
+#define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3)
+#define PYTHON_BEAUTIFULSOUP    PYTHON_2_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
+#define PYTHON_TK               PYTHON_2_3_PKG(tkinter)
+#define PYTHON_SIMPLEJSON       PYTHON_2_3_PKG(simplejson)
+#define PYTHON_MATPLOTLIB       PYTHON_2_3_PKG(matplotlib)
+#define PYTHON_LXML             PYTHON_2_3_PKG(lxml)
+#define PYTHON_OPENCV           PYTHON_2_PKG(opencv)
 #define PYTHON_COGENT           pycogent
-#define PYTHON_REDIS            py27-redis
-#define PYTHON_YAML             py27-yaml
-#define PYTHON_GDATA            py27-gdata
-#define PYTHON_CURL             py27-pycurl
-#define PYTHON_LDAP             py27-ldap
-#define PYTHON_SMBPASSWD        py27-smbpasswd
-#define PYTHON_SPHINX           py27-sphinx
-#define PYTHON_SCIKITS_LEARN    py27-scikit-learn
-#define PYTHON_IGRAPH           py27-igraph
-#define PYTHON_PSYCOPG2         py27-psycopg2
-#define PYTHON_NETWORKX         py27-networkx
-#define PYTHON_VIRTUALENV       py27-virtualenv
-#define PYTHON_NUMERIC          py27-numeric
-#define PYTHON_PANDAS           py27-pandas
-#define PYTHON_PYQUERY          py27-pyquery
-#define PYTHON_NLTK             py27-nltk
+#define PYTHON_REDIS            PYTHON_2_3_PKG(redis)
+#define PYTHON_YAML             PYTHON_2_3_PKG(yaml)
+#define PYTHON_GDATA            PYTHON_2_PKG(gdata)
+#define PYTHON_CURL             PYTHON_2_3_PKG(pycurl)
+#define PYTHON_LDAP             PYTHON_2_PKG(ldap)
+#define PYTHON_SMBPASSWD        PYTHON_2_3_PKG(smbpasswd)
+#define PYTHON_SPHINX           PYTHON_2_3_PKG(sphinx)
+#define PYTHON_SCIKITS_LEARN    PYTHON_2_3_PKG(scikit-learn)
+#define PYTHON_IGRAPH           PYTHON_2_3_PKG(igraph)
+#define PYTHON_PSYCOPG2         PYTHON_2_3_PKG(psycopg2)
+#define PYTHON_NETWORKX         PYTHON_2_PKG(networkx)
+#define PYTHON_VIRTUALENV       PYTHON_2_3_PKG(virtualenv)
+#define PYTHON_NUMERIC          PYTHON_2_PKG(numeric)
+#define PYTHON_PANDAS           PYTHON_2_3_PKG(pandas)
+#define PYTHON_PYQUERY          PYTHON_2_PKG(pyquery)
+#define PYTHON_NLTK             PYTHON_2_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
-#define PYTHON_CRYPTO           py27-pycrypto
+#define PYTHON_CRYPTO           PYTHON_2_3_PKG(pycrypto)
 
 // Ruby
 #define RUBY                ruby ruby25
@@ -388,7 +392,7 @@
 #define MENUMAKER           menumaker
 #define MKISOFS             cdrtools
 #define PSTREE              pstree
-#define RANGER              py27-ranger
+#define RANGER              PYTHON_3_PKG(ranger) // FIXME: conflict with python2 version
 #define QEMU                qemu
 #define UNAR                unar
 #define UIM_FEP             uim
