@@ -258,7 +258,6 @@
 #define  STUNNEL                  stunnel
 #define  VNCVIEWER                tigervnc gtk-vnc
 #define  NS2                      ns
-#define  NS3                      ns3
 #define  BSDFTPD_SSL              NULL
 #define  OMNITTY                  NULL
 #define  TRAFSHOW                 trafshow
@@ -430,11 +429,8 @@
 // WindowMaker
 #define  PCLOCK                   pclock
 #define  WINDOWMAKER              windowmaker
-#define  WMMEMLOAD                wmmemload
-#define  WMTOP                    wmtop
 #define  WMCALCLOCK               wmcalclock
 #define  WMTIMER                  wmtimer
-#define  WMCLIPHIST               wmcliphist
 #define  TEMPERATURE_APP          temperature.app
 #define  ASBUTTON                 NULL
 

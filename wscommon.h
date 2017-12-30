@@ -264,7 +264,7 @@ LINUXTOOL       // 計算機結構
 DENYHOSTS       filezilla       iftop           irssi           lftp
 MTR             ncftp           nmap            oidentd         rsync
 STUNNEL         tcpdump         VNCVIEWER       curl            aria2
-mosh            NS2             NS3
+mosh            NS2             ns3
 // freebsd local-217
 BSDFTPD_SSL     lrzsz           OMNITTY         pidgin          rdesktop
 rrdtool         tcptraceroute   TRAFSHOW        urlview
@@ -414,8 +414,8 @@ JAVA_PLUGIN     // added by b01902062@csie.ntu.edu.tw
 // WindowMaker
 #ifdef WSPKG_WINDOWMAKER
 PCLOCK          WINDOWMAKER     wmbiff          wmweather+      wmnd
-wmcpuload       WMMEMLOAD       WMTOP           WMCALCLOCK      wmclock
-wmclockmon      wmtime          WMTIMER         WMCLIPHIST      TEMPERATURE_APP
+wmcpuload       wmmemload       wmtop           WMCALCLOCK      wmclock
+wmclockmon      wmtime          WMTIMER         wmcliphist      TEMPERATURE_APP
 ASBUTTON
 #endif
 

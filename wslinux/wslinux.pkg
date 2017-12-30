@@ -258,7 +258,6 @@
 #define STUNNEL             stunnel4
 #define VNCVIEWER           xvnc4viewer xtightvncviewer tigervnc-viewer
 #define NS2                 ns2
-#define NS3                 ns3
 #define BSDFTPD_SSL         NULL
 #define OMNITTY             NULL // FIXME: not available from repository
 #define TRAFSHOW            netdiag
@@ -431,11 +430,8 @@
 // WindowMaker
 #define PCLOCK              wmdate
 #define WINDOWMAKER         wmaker
-#define WMMEMLOAD           wmmemload
-#define WMTOP               NULL // FIXME: not available from repository
 #define WMCALCLOCK          wmcalclock
 #define WMTIMER             NULL // FIXME: not available from repository
-#define WMCLIPHIST          NULL // FIXME: not available from repository
 #define TEMPERATURE_APP     NULL // FIXME: not available from repository
 #define ASBUTTON            NULL // FIXME: not available from repository
 
