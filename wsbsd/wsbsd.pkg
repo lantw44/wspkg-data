@@ -69,7 +69,7 @@
 #define CLANG               clang35 // get libclang.so
 #define GCC                 gcc5 gcc6 gcc6-aux gcc7 gcc8-devel
 #define GDB                 gdb
-#define GOLANG              NULL
+#define GOLANG              go
 #define GIT                 git gitg
 #define INDENT              NULL
 #define MAKE                gmake bmake fmake
@@ -89,7 +89,7 @@
 #define ANDROID_TOOLS       android-tools-adb
 #define LLVM                llvm35 llvm38 llvm39 llvm40 llvm50 llvm-devel
 #define OPENCL              ocl-icd opencl
-#define POCL                NULL
+#define POCL                NULL // TODO: not supported on 10.x
 
 // Doc
 #define LIBC_DOC            NULL
@@ -256,7 +256,7 @@
 #define BSDFTPD_SSL         bsdftpd-ssl
 #define OMNITTY             omnitty
 #define TRAFSHOW            trafshow
-#define SPICE_CLIENT        NULL // FIXME: not found in ports
+#define SPICE_CLIENT        spice-gtk
 #define XSPICE              NULL // FIXME: not found in ports
 #define GNUTLS_CLI          gnutls
 #define PCMANX              zh-pcmanx
@@ -350,7 +350,7 @@
 // TeX
 #define AUCTEX              auctex-emacs25
 #define LATEX_CJK           NULL // FIXME: conflict with texlive
-#define BIBER               NULL // FIXME: not found in ports
+#define BIBER               latex-biber
 #define TEXLIVE             NULL // texlive-full already provides all packages
 #define TEXLIVE_FULL        texlive-full
 #define BG5PS               zh-bg5ps
