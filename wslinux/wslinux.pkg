@@ -185,7 +185,7 @@
                             plasma-workspace-dev
 #define KDE_GTK_CONFIG      kde-config-gtk-style
 #define OKULAR              okular
-#define ADWAITA_QT          NULL
+#define ADWAITA_QT          adwaita-qt4 adwaita-qt
 #define QT4_QTCONFIG        qt4-qtconfig
 #define QT5_QTCT            NULL
 
@@ -282,7 +282,7 @@
 #define PERL_IO_ALL                     libio-all-perl
 #define PERL_JSON                       libjson-perl
 #define PERL_LIBWWW                     libwww-perl
-#define PERL_ARRAY_INTSPAN              NULL // FIXME: not available from repository
+#define PERL_ARRAY_INTSPAN              libarray-intspan-perl
 #define PERL_BIOPERL                    bioperl
 #define PERL_DBI                        libdbi-perl
 #define PERL_MAIL_SENDER                libmail-sender-perl
