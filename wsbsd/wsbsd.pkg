@@ -79,7 +79,7 @@
 #define SUBVERSION          subversion svk psvn-emacs25
 #define TCL                 tcl85 tcl86 tcl87
 #define TK                  tk85 tk86 tk87
-#define AARCH64_GCC         aarch64-binutils aarch64-none-elf-gcc
+#define AARCH64_GCC         aarch64-binutils aarch64-gcc
 #define GDB_MULTIARCH       NULL
 #define ECLIPSE             eclipse eclipse-cdt eclipse-pydev
 #define JIKES               jikes
