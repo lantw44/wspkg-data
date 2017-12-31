@@ -1,0 +1,13 @@
+Index: chinese/xpdf/Makefile
+===================================================================
+--- chinese/xpdf/Makefile	(revision 457506)
++++ chinese/xpdf/Makefile	(working copy)
+@@ -16,8 +16,6 @@
+ MAINTAINER=	hrs@FreeBSD.org
+ COMMENT=	Chinese font support for xpdf
+ 
+-BROKEN=		No public distfiles
+-
+ RUN_DEPENDS=	xpdf:graphics/xpdf \
+ 		${ADOBECMAPDIR}/ai0/CMap/Identity-H:print/adobe-cmaps \
+ 		${FONTSDIR}/STHeiti-Regular:chinese/font-std \
