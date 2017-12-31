@@ -1,83 +1,349 @@
+Index: mail/metamail/Makefile
+===================================================================
+--- mail/metamail/Makefile	(revision 457506)
++++ mail/metamail/Makefile	(working copy)
+@@ -28,6 +28,8 @@
+ X11_RUN_DEPENDS=	xloadimage:x11/xloadimage \
+ 			mkfontdir:x11-fonts/mkfontdir
+ X11_USE=		XORG=x11
++X11_EXTRA_PATCHES=	${FILESDIR}/extra-patch-Makefile-x11
++X11_EXTRA_PATCHES_OFF=	${FILESDIR}/extra-patch-Makefile-nox11
+ 
+ post-patch-X11-off:
+ 	@${REINPLACE_CMD} -e '/fonts/d' ${WRKSRC}/Makefile
+Index: mail/metamail/files/extra-patch-Makefile-nox11
+===================================================================
+--- mail/metamail/files/extra-patch-Makefile-nox11	(nonexistent)
++++ mail/metamail/files/extra-patch-Makefile-nox11	(working copy)
+@@ -0,0 +1,108 @@
++--- Makefile.orig	1994-01-26 17:32:33 UTC
+++++ Makefile
++@@ -26,7 +26,7 @@ MAKE = make
++ CP = cp
++ 
++ # How to compile C programs
++-CC = cc
+++#CC = cc
++ 
++ # You may also want to change the CFLAGS variable, which will be passed on 
++ # to all subdirectories.    If you do that, the changes will only work right if you
++@@ -38,7 +38,7 @@ FOOBAR-sun4=-Bstatic
++ 
++ STATICFLAG=FOOBAR${HOST_ARCH}
++ 
++-CFLAGS = -g -I.  ${$(STATICFLAG)} 
+++CFLAGS += -I.  ${$(STATICFLAG)}
++ # The following is better if you want to make sure you run with SYSV defined
++ # CFLAGS = -g -I.  ${$(STATICFLAG)}  -DSYSV
++ # Also, for SGI Irix, compile in K&R mode
++@@ -49,9 +49,9 @@ CFLAGS = -g -I.  ${$(STATICFLAG)} 
++ # LDLIBS variable.
++ #
++ # For Sun and BSD systems, the following should work...
++-LDLIBS =
+++# LDLIBS =
++ # On BSD 4.4 systems, you will need the following
++-# LDLIBS = -lcompat
+++LDLIBS = -s -lcompat
++ # On SGI machines, we need -lsun for getpw...(), and -lc_s saves some space.
++ # LDLIBS = -lsun -lc_s
++ # ISC SysVr3.2.2 has a shared C library and requires libinet.a to resolve
++@@ -72,10 +72,10 @@ CONFIGDIR = .
++ #	install -s -c $(LOCALBINDIR) $$file
++ #
++ #INSTALL = cp
++-INSTALL = install -c -s
+++INSTALL = install -c
++ 
++ # Root of installation tree
++-INSTROOT = /usr/local
+++INSTROOT = ${PREFIX}
++ #
++ # This is where binaries should be copied
++ LOCALBINDIR = ${INSTROOT}/bin
++@@ -96,9 +96,9 @@ MAILCAPDIR = ${INSTROOT}/etc
++ # This helps with the "for" constructs below on some platforms:
++ SHELL=/bin/sh
++ 
++-install: basics
+++install: install-all
++ 
++-basics::
+++all basics::
++ 	(cd metamail ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"  LDLIBS="${LDLIBS}")
++ 	-${RM} bin/metamail
++ 	(cd bin; ${LN} ../metamail/metamail metamail)
++@@ -117,38 +117,33 @@ basics::
++ 	(cd bin; ${LN} ../richmail/richtext richtext)
++ 	-${RM} bin/richtoatk
++ 	(cd bin; ${LN} ../richmail/richtoatk richtoatk)
++-	(cd fonts ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
++ 	-${RM} bin/shownonascii
++-	(cd bin; ${LN} ../fonts/shownonascii shownonascii)
++ 	-${RM} bin/mailto-hebrew
++-	(cd bin; ${LN} ../fonts/mailto-hebrew mailto-hebrew)
++ 
++ install-all: basics 
++ 	@(cd bin; 				\
++ 	for file in *; 				\
++ 	do 					\
++-	    target=$(LOCALBINDIR)/$$file; 	\
+++	    target=$(DESTDIR)$(LOCALBINDIR)/$$file; 	\
++ 	    echo "installing binary $$target";	\
++ 	    ${INSTALL} $$file $$target; 	\
++ 	done)
++ 	@(cd man;				\
++ 	for file in *.1;			\
++ 	do 					\
++-	    target=$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
+++	    target=$(DESTDIR)$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
++ 	    echo "installing man page $$target";\
++ 	    ${CP} $$file $$target; 		\
++ 	done)
++ 	@(cd man;				\
++ 	for file in *.4;			\
++ 	do 					\
++-	    target=$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
+++	    target=$(DESTDIR)$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
++ 	    echo "installing man page $$target";\
++ 	    ${CP} $$file $$target; 		\
++ 	done)
++-	@echo "Renaming old mailcap file to $(MAILCAPDIR)/mailcap.old
++-	-mv $(MAILCAPDIR)/mailcap $(MAILCAPDIR)/mailcap.old
++ 	@echo "installing file $(MAILCAPDIR)/mailcap"
++-	${CP} mailcap $(MAILCAPDIR)
+++	${CP} mailcap $(DESTDIR)$(MAILCAPDIR)
++ 
++ uninstall-all:
++ 	@(cd bin; 				\
++@@ -179,7 +174,6 @@ clean:
++ 	-${RM} -rf *.BAK
++ 	(cd metamail ; $(MAKE) clean)
++ 	(cd richmail ; $(MAKE) clean)
++-	(cd fonts ; $(MAKE) FONTSUFFIX="${FONTSUFFIX}" clean)
++ 
++ cleanbin:
++ 	-${RM} bin/metamail
+Index: mail/metamail/files/extra-patch-Makefile-x11
+===================================================================
+--- mail/metamail/files/extra-patch-Makefile-x11	(nonexistent)
++++ mail/metamail/files/extra-patch-Makefile-x11	(working copy)
+@@ -0,0 +1,110 @@
++--- Makefile.orig	1994-01-26 17:32:33 UTC
+++++ Makefile
++@@ -26,7 +26,7 @@ MAKE = make
++ CP = cp
++ 
++ # How to compile C programs
++-CC = cc
+++#CC = cc
++ 
++ # You may also want to change the CFLAGS variable, which will be passed on 
++ # to all subdirectories.    If you do that, the changes will only work right if you
++@@ -38,7 +38,7 @@ FOOBAR-sun4=-Bstatic
++ 
++ STATICFLAG=FOOBAR${HOST_ARCH}
++ 
++-CFLAGS = -g -I.  ${$(STATICFLAG)} 
+++CFLAGS += -I.  ${$(STATICFLAG)}
++ # The following is better if you want to make sure you run with SYSV defined
++ # CFLAGS = -g -I.  ${$(STATICFLAG)}  -DSYSV
++ # Also, for SGI Irix, compile in K&R mode
++@@ -49,9 +49,9 @@ CFLAGS = -g -I.  ${$(STATICFLAG)} 
++ # LDLIBS variable.
++ #
++ # For Sun and BSD systems, the following should work...
++-LDLIBS =
+++# LDLIBS =
++ # On BSD 4.4 systems, you will need the following
++-# LDLIBS = -lcompat
+++LDLIBS = -s -lcompat
++ # On SGI machines, we need -lsun for getpw...(), and -lc_s saves some space.
++ # LDLIBS = -lsun -lc_s
++ # ISC SysVr3.2.2 has a shared C library and requires libinet.a to resolve
++@@ -72,10 +72,10 @@ CONFIGDIR = .
++ #	install -s -c $(LOCALBINDIR) $$file
++ #
++ #INSTALL = cp
++-INSTALL = install -c -s
+++INSTALL = install -c
++ 
++ # Root of installation tree
++-INSTROOT = /usr/local
+++INSTROOT = ${PREFIX}
++ #
++ # This is where binaries should be copied
++ LOCALBINDIR = ${INSTROOT}/bin
++@@ -96,9 +96,9 @@ MAILCAPDIR = ${INSTROOT}/etc
++ # This helps with the "for" constructs below on some platforms:
++ SHELL=/bin/sh
++ 
++-install: basics
+++install: install-all
++ 
++-basics::
+++all basics::
++ 	(cd metamail ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"  LDLIBS="${LDLIBS}")
++ 	-${RM} bin/metamail
++ 	(cd bin; ${LN} ../metamail/metamail metamail)
++@@ -115,9 +115,9 @@ basics::
++ 	(cd richmail ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"  LDLIBS="${LDLIBS}")
++ 	-${RM} bin/richtext
++ 	(cd bin; ${LN} ../richmail/richtext richtext)
+++	(cd fonts ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
++ 	-${RM} bin/richtoatk
++ 	(cd bin; ${LN} ../richmail/richtoatk richtoatk)
++-	(cd fonts ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
++ 	-${RM} bin/shownonascii
++ 	(cd bin; ${LN} ../fonts/shownonascii shownonascii)
++ 	-${RM} bin/mailto-hebrew
++@@ -127,28 +127,27 @@ install-all: basics 
++ 	@(cd bin; 				\
++ 	for file in *; 				\
++ 	do 					\
++-	    target=$(LOCALBINDIR)/$$file; 	\
+++	    target=$(DESTDIR)$(LOCALBINDIR)/$$file; 	\
++ 	    echo "installing binary $$target";	\
++ 	    ${INSTALL} $$file $$target; 	\
++ 	done)
++ 	@(cd man;				\
++ 	for file in *.1;			\
++ 	do 					\
++-	    target=$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
+++	    target=$(DESTDIR)$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
++ 	    echo "installing man page $$target";\
++ 	    ${CP} $$file $$target; 		\
++ 	done)
++ 	@(cd man;				\
++ 	for file in *.4;			\
++ 	do 					\
++-	    target=$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
+++	    target=$(DESTDIR)$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
++ 	    echo "installing man page $$target";\
++ 	    ${CP} $$file $$target; 		\
++ 	done)
++-	@echo "Renaming old mailcap file to $(MAILCAPDIR)/mailcap.old
++-	-mv $(MAILCAPDIR)/mailcap $(MAILCAPDIR)/mailcap.old
++ 	@echo "installing file $(MAILCAPDIR)/mailcap"
++-	${CP} mailcap $(MAILCAPDIR)
+++	${CP} mailcap $(DESTDIR)$(MAILCAPDIR)
+++	(cd fonts ; $(MAKE) PREFIX=${DESTDIR}${PREFIX} CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}" install)
++ 
++ uninstall-all:
++ 	@(cd bin; 				\
++@@ -179,7 +178,6 @@ clean:
++ 	-${RM} -rf *.BAK
++ 	(cd metamail ; $(MAKE) clean)
++ 	(cd richmail ; $(MAKE) clean)
++-	(cd fonts ; $(MAKE) FONTSUFFIX="${FONTSUFFIX}" clean)
++ 
++ cleanbin:
++ 	-${RM} bin/metamail
 Index: mail/metamail/files/patch-Makefile
 ===================================================================
---- mail/metamail/files/patch-Makefile	(revision 438568)
-+++ mail/metamail/files/patch-Makefile	(working copy)
-@@ -1,6 +1,6 @@
+--- mail/metamail/files/patch-Makefile	(revision 457506)
++++ mail/metamail/files/patch-Makefile	(nonexistent)
+@@ -1,108 +0,0 @@
 ---- Makefile.orig	1994-01-26 17:32:33 UTC
 -+++ Makefile
 -@@ -26,7 +26,7 @@ MAKE = make
-+--- Makefile.orig	1994-01-26 18:32:33.000000000 +0100
-++++ Makefile	2014-06-04 12:42:07.532697759 +0200
-+@@ -26,7 +26,7 @@
-  CP = cp
-  
-  # How to compile C programs
-@@ -9,7 +9,7 @@
-  
-  # You may also want to change the CFLAGS variable, which will be passed on 
-  # to all subdirectories.    If you do that, the changes will only work right if you
+- CP = cp
+- 
+- # How to compile C programs
+--CC = cc
+-+#CC = cc
+- 
+- # You may also want to change the CFLAGS variable, which will be passed on 
+- # to all subdirectories.    If you do that, the changes will only work right if you
 -@@ -38,7 +38,7 @@ FOOBAR-sun4=-Bstatic
-+@@ -38,7 +38,7 @@
-  
-  STATICFLAG=FOOBAR${HOST_ARCH}
-  
-@@ -18,7 +18,7 @@
-  # The following is better if you want to make sure you run with SYSV defined
-  # CFLAGS = -g -I.  ${$(STATICFLAG)}  -DSYSV
-  # Also, for SGI Irix, compile in K&R mode
+- 
+- STATICFLAG=FOOBAR${HOST_ARCH}
+- 
+--CFLAGS = -g -I.  ${$(STATICFLAG)} 
+-+CFLAGS += -I.  ${$(STATICFLAG)}
+- # The following is better if you want to make sure you run with SYSV defined
+- # CFLAGS = -g -I.  ${$(STATICFLAG)}  -DSYSV
+- # Also, for SGI Irix, compile in K&R mode
 -@@ -49,9 +49,9 @@ CFLAGS = -g -I.  ${$(STATICFLAG)} 
-+@@ -49,9 +49,9 @@
-  # LDLIBS variable.
-  #
-  # For Sun and BSD systems, the following should work...
-@@ -30,7 +30,7 @@
-  # On SGI machines, we need -lsun for getpw...(), and -lc_s saves some space.
-  # LDLIBS = -lsun -lc_s
-  # ISC SysVr3.2.2 has a shared C library and requires libinet.a to resolve
+- # LDLIBS variable.
+- #
+- # For Sun and BSD systems, the following should work...
+--LDLIBS =
+-+# LDLIBS =
+- # On BSD 4.4 systems, you will need the following
+--# LDLIBS = -lcompat
+-+LDLIBS = -s -lcompat
+- # On SGI machines, we need -lsun for getpw...(), and -lc_s saves some space.
+- # LDLIBS = -lsun -lc_s
+- # ISC SysVr3.2.2 has a shared C library and requires libinet.a to resolve
 -@@ -72,10 +72,10 @@ CONFIGDIR = .
-+@@ -72,10 +72,10 @@
-  #	install -s -c $(LOCALBINDIR) $$file
-  #
-  #INSTALL = cp
-@@ -43,7 +43,7 @@
-  #
-  # This is where binaries should be copied
-  LOCALBINDIR = ${INSTROOT}/bin
+- #	install -s -c $(LOCALBINDIR) $$file
+- #
+- #INSTALL = cp
+--INSTALL = install -c -s
+-+INSTALL = install -c
+- 
+- # Root of installation tree
+--INSTROOT = /usr/local
+-+INSTROOT = ${PREFIX}
+- #
+- # This is where binaries should be copied
+- LOCALBINDIR = ${INSTROOT}/bin
 -@@ -96,9 +96,9 @@ MAILCAPDIR = ${INSTROOT}/etc
-+@@ -96,9 +96,9 @@
-  # This helps with the "for" constructs below on some platforms:
-  SHELL=/bin/sh
-  
-@@ -55,17 +55,16 @@
-  	(cd metamail ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"  LDLIBS="${LDLIBS}")
-  	-${RM} bin/metamail
-  	(cd bin; ${LN} ../metamail/metamail metamail)
+- # This helps with the "for" constructs below on some platforms:
+- SHELL=/bin/sh
+- 
+--install: basics
+-+install: install-all
+- 
+--basics::
+-+all basics::
+- 	(cd metamail ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"  LDLIBS="${LDLIBS}")
+- 	-${RM} bin/metamail
+- 	(cd bin; ${LN} ../metamail/metamail metamail)
 -@@ -117,38 +117,33 @@ basics::
-+@@ -117,7 +117,7 @@
-  	(cd bin; ${LN} ../richmail/richtext richtext)
-  	-${RM} bin/richtoatk
-  	(cd bin; ${LN} ../richmail/richtoatk richtoatk)
- -	(cd fonts ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
-++	(cd fonts ; $(MAKE) PREFIX=${PREFIX} CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
-  	-${RM} bin/shownonascii
+- 	(cd bin; ${LN} ../richmail/richtext richtext)
+- 	-${RM} bin/richtoatk
+- 	(cd bin; ${LN} ../richmail/richtoatk richtoatk)
+--	(cd fonts ; $(MAKE)  CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}")
+- 	-${RM} bin/shownonascii
 --	(cd bin; ${LN} ../fonts/shownonascii shownonascii)
-+ 	(cd bin; ${LN} ../fonts/shownonascii shownonascii)
-  	-${RM} bin/mailto-hebrew
+- 	-${RM} bin/mailto-hebrew
 --	(cd bin; ${LN} ../fonts/mailto-hebrew mailto-hebrew)
 - 
 - install-all: basics 
-+@@ -127,28 +127,27 @@
-  	@(cd bin; 				\
-  	for file in *; 				\
-  	do 					\
-@@ -95,14 +94,7 @@
-  	@echo "installing file $(MAILCAPDIR)/mailcap"
- -	${CP} mailcap $(MAILCAPDIR)
- +	${CP} mailcap $(DESTDIR)$(MAILCAPDIR)
-++	(cd fonts ; $(MAKE) PREFIX=${DESTDIR}${PREFIX} CONFIGDIR=../${CONFIGDIR}  CFLAGS="${CFLAGS}" CC="${CC}"   LDLIBS="${LDLIBS}" FONTSUFFIX="${FONTSUFFIX}" install)
-  
-  uninstall-all:
-  	@(cd bin; 				\
+- 	@(cd bin; 				\
+- 	for file in *; 				\
+- 	do 					\
+--	    target=$(LOCALBINDIR)/$$file; 	\
+-+	    target=$(DESTDIR)$(LOCALBINDIR)/$$file; 	\
+- 	    echo "installing binary $$target";	\
+- 	    ${INSTALL} $$file $$target; 	\
+- 	done)
+- 	@(cd man;				\
+- 	for file in *.1;			\
+- 	do 					\
+--	    target=$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
+-+	    target=$(DESTDIR)$(MAN1DIR)/`basename $$file .1`.$(MAN1EXT); \
+- 	    echo "installing man page $$target";\
+- 	    ${CP} $$file $$target; 		\
+- 	done)
+- 	@(cd man;				\
+- 	for file in *.4;			\
+- 	do 					\
+--	    target=$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
+-+	    target=$(DESTDIR)$(MAN4DIR)/`basename $$file .4`.$(MAN4EXT); \
+- 	    echo "installing man page $$target";\
+- 	    ${CP} $$file $$target; 		\
+- 	done)
+--	@echo "Renaming old mailcap file to $(MAILCAPDIR)/mailcap.old
+--	-mv $(MAILCAPDIR)/mailcap $(MAILCAPDIR)/mailcap.old
+- 	@echo "installing file $(MAILCAPDIR)/mailcap"
+--	${CP} mailcap $(MAILCAPDIR)
+-+	${CP} mailcap $(DESTDIR)$(MAILCAPDIR)
+- 
+- uninstall-all:
+- 	@(cd bin; 				\
 -@@ -179,7 +174,6 @@ clean:
 - 	-${RM} -rf *.BAK
 - 	(cd metamail ; $(MAKE) clean)
@@ -86,793 +352,3 @@ Index: mail/metamail/files/patch-Makefile
 - 
 - cleanbin:
 - 	-${RM} bin/metamail
-Index: mail/metamail/files/patch-bin_showaudio
-===================================================================
---- mail/metamail/files/patch-bin_showaudio	(revision 438568)
-+++ mail/metamail/files/patch-bin_showaudio	(working copy)
-@@ -1,5 +1,5 @@
----- bin/showaudio.orig	1994-02-02 23:21:26 UTC
--+++ bin/showaudio
-+--- bin/showaudio.orig	Thu Feb  3 00:21:26 1994
-++++ bin/showaudio	Mon Dec 18 11:50:24 2006
- @@ -15,9 +15,35 @@
-  # WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-  #
-@@ -38,7 +38,7 @@
-  endif
-  
-  # First, figure out which machine to play it on!
--@@ -33,7 +59,7 @@ set AUDIOLOGMAIL=andrew@thumper.bellcore
-+@@ -33,7 +59,7 @@
-  set ORG="Bellcore"
-  set STDINPUT=0
-  if ("$1" == "-p") then
-@@ -47,7 +47,7 @@
-      shift
-      shift
-  endif
--@@ -173,7 +199,7 @@ if (-d $AUDIOBINDIR) then
-+@@ -173,7 +199,7 @@
-  	    set AUDIOPHONE=$<
-  	endif
-  	if ($thishost == $AUDIOPHONEHOST || $thishost == $AUDIOPHONEHOSTLONG) then
-@@ -56,7 +56,7 @@
-  	    echo "You MUST SAY HELLO when you answer the phone, or you will not hear the message."
-  	    mail -s "showaudio: `whoami` called $AUDIOPHONE" $AUDIOLOGMAIL < /dev/null
-  	    if ($STDINPUT) then
--@@ -206,7 +232,7 @@ else
-+@@ -206,7 +232,7 @@
-      echo -n "File name:"
-      set fname=$<
-  endif
-Index: mail/metamail/files/patch-bin_showexternal
-===================================================================
---- mail/metamail/files/patch-bin_showexternal	(revision 438568)
-+++ mail/metamail/files/patch-bin_showexternal	(working copy)
-@@ -1,5 +1,5 @@
----- bin/showexternal.orig	1994-02-08 16:39:05 UTC
--+++ bin/showexternal
-+--- bin/showexternal.orig	Tue Feb  8 17:39:05 1994
-++++ bin/showexternal	Mon Dec 18 11:50:24 2006
- @@ -15,9 +15,45 @@
-  # WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-  # 
-Index: mail/metamail/files/patch-bin_showpartial
-===================================================================
---- mail/metamail/files/patch-bin_showpartial	(revision 438568)
-+++ mail/metamail/files/patch-bin_showpartial	(working copy)
-@@ -1,5 +1,5 @@
----- bin/showpartial.orig	1994-02-02 23:21:29 UTC
--+++ bin/showpartial
-+--- bin/showpartial.orig	Thu Feb  3 00:21:29 1994
-++++ bin/showpartial	Mon Dec 18 11:50:24 2006
- @@ -2,8 +2,44 @@
-  # (The "-fb" might need to be changed to "-f" on some systems)
-  #
-@@ -46,7 +46,7 @@
-  endif
-  
-  set TREEROOT=${METAMAIL_TMPDIR}/m-prts-`whoami`
--@@ -11,14 +47,14 @@ if ($#argv < 3 || $#argv > 4) then
-+@@ -11,14 +47,14 @@
-      echo "Usage:  showpartial file id partnum totalnum"
-      exit -1
-  endif
-@@ -66,7 +66,7 @@
-  endif
-  
-  if (! -d  $TREEROOT)  then
--@@ -35,9 +71,9 @@ if (! -d ${TREEROOT}/$id) then 
-+@@ -35,9 +71,9 @@
-          exit -1
-      endif
-  endif
-Index: mail/metamail/files/patch-bin_showpicture
-===================================================================
---- mail/metamail/files/patch-bin_showpicture	(revision 438568)
-+++ mail/metamail/files/patch-bin_showpicture	(working copy)
-@@ -1,5 +1,5 @@
----- bin/showpicture.orig	1994-02-07 17:59:54 UTC
--+++ bin/showpicture
-+--- bin/showpicture.orig	Mon Feb  7 18:59:54 1994
-++++ bin/showpicture	Mon Dec 18 11:50:24 2006
- @@ -15,15 +15,42 @@
-  # WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-  #
-@@ -46,7 +46,7 @@
-      set X_VIEWER = "$2"
-      shift
-      shift
--@@ -57,7 +84,7 @@ if (! $?DISPLAY) then
-+@@ -57,7 +84,7 @@
-              endif
-          end
-      endif
-Index: mail/metamail/files/patch-bin_sun2mime
-===================================================================
---- mail/metamail/files/patch-bin_sun2mime	(revision 438568)
-+++ mail/metamail/files/patch-bin_sun2mime	(working copy)
-@@ -1,6 +1,6 @@
----- bin/sun2mime.orig	1993-11-13 14:54:05 UTC
--+++ bin/sun2mime
--@@ -11,7 +11,7 @@ if [ x$METAMAIL_TMPDIR = x ]; then
-+--- bin/sun2mime.orig	Sat Nov 13 15:54:05 1993
-++++ bin/sun2mime	Mon Dec 18 11:50:06 2006
-+@@ -11,7 +11,7 @@
-  fi
-  TMPFILE=${METAMAIL_TMPDIR}/suntomime.$$
-  
-Index: mail/metamail/files/patch-config.h
-===================================================================
---- mail/metamail/files/patch-config.h	(revision 438568)
-+++ mail/metamail/files/patch-config.h	(working copy)
-@@ -1,6 +1,6 @@
----- config.h.orig	1993-11-24 15:36:07 UTC
--+++ config.h
--@@ -73,7 +73,7 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+--- config.h.orig	Wed Nov 24 16:36:07 1993
-++++ config.h	Mon Dec 18 11:46:21 2006
-+@@ -73,7 +73,7 @@
-  #ifdef SYSV
-  #define RESET_PROGRAM "tput clear"
-  #else
-@@ -9,7 +9,7 @@
-  #define RESET_PROGRAM "/usr/bin/reset"
-  #else
-  #define RESET_PROGRAM "/usr/ucb/reset"
--@@ -155,9 +155,13 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+@@ -155,7 +155,11 @@
-  #ifdef NeXT
-  #define sigtype void
-  #else
-@@ -17,9 +17,7 @@
- +#define sigtype void
- +#else
-  #define sigtype int
-++#endif
-  #endif
-  #endif
--+#endif
-  
-- #ifdef MSDOS
-- #define PATH_SEPARATOR ';'
-Index: mail/metamail/files/patch-fonts_Makefile
-===================================================================
---- mail/metamail/files/patch-fonts_Makefile	(revision 438568)
-+++ mail/metamail/files/patch-fonts_Makefile	(working copy)
-@@ -1,6 +1,6 @@
----- fonts/Makefile.orig	1993-05-31 20:49:27 UTC
--+++ fonts/Makefile
--@@ -28,12 +28,18 @@ heb8x13B.${FONTSUFFIX}: heb8x13B.bdf
-+--- fonts/Makefile.orig	Mon May 31 22:49:27 1993
-++++ fonts/Makefile	Mon Dec 18 11:46:21 2006
-+@@ -28,12 +28,18 @@
-  	-${DIRBUILDER}
-  
-  shownonascii: Xshownonascii
-@@ -12,12 +12,12 @@
- -	sed -e s@/u/nsb/lib/fonts@`pwd`@ < Xmailto-hebrew > mailto-hebrew
- +	sed -e s@/u/nsb/lib/fonts@${PREFIX}/lib/metamail/fonts@ < Xmailto-hebrew > mailto-hebrew
-  	chmod +x mailto-hebrew
-- 
-++
- +install:
- +	mkdir -p ${PREFIX}/lib/metamail/fonts
- +	install -c heb6x13.${FONTSUFFIX} heb8x13.${FONTSUFFIX} \
- +		heb8x13B.${FONTSUFFIX} fonts.alias ${PREFIX}/lib/metamail/fonts
- +	mkfontdir ${PREFIX}/lib/metamail/fonts
--+
-+ 
-  clean:
-  	rm -f heb6x13.${FONTSUFFIX} heb8x13.${FONTSUFFIX} heb8x13B.${FONTSUFFIX}  shownonascii mailto-hebrew fonts.dir
-Index: mail/metamail/files/patch-metamail__uue.c
-===================================================================
---- mail/metamail/files/patch-metamail__uue.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail__uue.c	(working copy)
-@@ -1,20 +1,8 @@
----- metamail/uue.c.orig	1993-07-28 18:31:02 UTC
--+++ metamail/uue.c
--@@ -30,7 +30,7 @@ FILE *outfp;
-- }
-- 
-- 
---getline (buf, size, fp)
--+get_line (buf, size, fp)
-- char *buf;
-- int size;
-- FILE *fp;
--@@ -70,28 +70,28 @@ int *ctptr;
--     char buf[63];
-- 
-+--- metamail/uue.c.orig	1993-07-29 03:31:02.000000000 +0900
-++++ metamail/uue.c	2012-10-13 08:01:35.000000000 +0900
-+@@ -72,26 +72,26 @@
-      while (1) {
---	if (getline (buf, sizeof buf, infp) < 0) {
--+	if (get_line (buf, sizeof buf, infp) < 0) {
-+ 	if (getline (buf, sizeof buf, infp) < 0) {
-  	    fprintf (stderr, "Premature EOF!\n");
- -	    return;
- +	    return(0);
-@@ -28,8 +16,7 @@
-  	}
-      }	
-      while (1) {
---	if (getline (buf, sizeof buf, infp) < 0) {
--+	if (get_line (buf, sizeof buf, infp) < 0) {
-+ 	if (getline (buf, sizeof buf, infp) < 0) {
-  	    fprintf (stderr, "Premature EOF!\n");
- -	    return;
- +	    return(0);
-Index: mail/metamail/files/patch-metamail_codes.c
-===================================================================
---- mail/metamail/files/patch-metamail_codes.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_codes.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/codes.c.orig	1993-09-20 13:13:22 UTC
--+++ metamail/codes.c
--@@ -13,6 +13,7 @@ OF THIS MATERIAL FOR ANY PURPOSE.  IT IS
-+--- metamail/codes.c.orig	1993-09-20 22:13:22.000000000 +0900
-++++ metamail/codes.c	2012-10-13 07:59:21.000000000 +0900
-+@@ -13,6 +13,7 @@
-  WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-  */
-  #include <stdio.h>
-@@ -8,7 +8,7 @@
-  #include <ctype.h>
-  #include <config.h>
-  
--@@ -203,7 +204,7 @@ int PortableNewlines;
-+@@ -203,7 +204,7 @@
-                   && (Buf[0] == '-')
-                   && (Buf[1] == '-')
-                   && PendingBoundary(Buf, boundaries, boundaryct)) {
-@@ -17,7 +17,7 @@
-              }
-              fprintf(stderr, "Ignoring unrecognized boundary line: %s\n", Buf);
-              continue;
--@@ -221,7 +222,7 @@ int PortableNewlines;
-+@@ -221,7 +222,7 @@
-          } while (c4 != EOF && isspace(c4));
-          if (c2 == EOF || c3 == EOF || c4 == EOF) {
-              fprintf(stderr, "Warning: base64 decoder saw premature EOF!\n");
-@@ -26,7 +26,7 @@
-          }
-          if (c1 == '=' || c2 == '=') {
-              DataDone=1;
--@@ -371,7 +372,7 @@ int *boundaryct;
-+@@ -371,7 +372,7 @@
-                   && (Buf[0] == '-')
-                   && (Buf[1] == '-')
-                   && PendingBoundary(Buf, boundaries, boundaryct)) {
-Index: mail/metamail/files/patch-metamail_mailto.c
-===================================================================
---- mail/metamail/files/patch-metamail_mailto.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_mailto.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/mailto.c.orig	1994-02-09 20:30:26 UTC
--+++ metamail/mailto.c
--@@ -37,6 +37,8 @@ STILL NEED TO DO/SUPPORT:
-+--- metamail/mailto.c.orig	1994-02-10 05:30:26.000000000 +0900
-++++ metamail/mailto.c	2012-10-13 08:04:36.000000000 +0900
-+@@ -37,6 +37,8 @@
-  */
-  
-  #include <stdio.h>
-@@ -9,7 +9,7 @@
-  #include <ctype.h>
-  #include <config.h>
-  #include <pwd.h>
--@@ -60,7 +62,6 @@ extern char *getenv();
-+@@ -60,7 +62,6 @@
-  #include <unistd.h>
-  #endif
-  
-@@ -17,7 +17,7 @@
-  struct mailpart *CreateNewPart();
-  
-  /* The main data structure for the multiple parts of the mail */
--@@ -570,6 +571,7 @@ char **argv;
-+@@ -570,6 +571,7 @@
-          if (isupper(*sdum)) *sdum = tolower(*sdum);
-      }
-      if (strcmp(CharacterSet, "us-ascii")
-@@ -25,7 +25,7 @@
-           && strncmp(CharacterSet, "iso-8859-", 9)) {
-          fprintf(stderr, "mailto:  Unsupported character set: %s\n", CharacterSet);
-          exit(-1);
--@@ -1072,7 +1074,7 @@ struct mailpart *FirstPart;
-+@@ -1072,7 +1074,7 @@
-  #endif
-      }
-      fprintf(fp, "Message-ID: %s\n", newid());
-@@ -34,7 +34,7 @@
-      if (FirstPart->next) {
-          char boundary[120];
-  #ifdef AMIGA
--@@ -1130,6 +1132,7 @@ struct mailpart *part;
-+@@ -1130,6 +1132,7 @@
-          if (part->isrich) {
-              if (strcmp(CharacterSet, "us-ascii")
-                   && (strncmp(CharacterSet, "iso-8859-", 9) 
-@@ -42,7 +42,7 @@
-                        || part->encoding_type_needed != ENC_NONE)) {
-                  fprintf(fp, "Content-type: text/richtext; charset=\"%s\"\n", CharacterSet);
-              } else {
--@@ -1140,6 +1143,7 @@ struct mailpart *part;
-+@@ -1140,6 +1143,7 @@
-              WriteCtypeNicely(fp, part->content_type);
-              if (strcmp(CharacterSet, "us-ascii")
-                   && (strncmp(CharacterSet, "iso-8859-", 9) 
-@@ -50,7 +50,7 @@
-                        || part->encoding_type_needed != ENC_NONE)) {
-                  fprintf(fp, "; charset=\"%s\"\n", CharacterSet);
-              } else fputs("\n", fp);
--@@ -1346,7 +1350,7 @@ int EightBitMode, RightToLeftMode;
-+@@ -1346,7 +1350,7 @@
-          }
-          part->isrich = 1;
-          PartEndsWithNewline=1;
-@@ -59,7 +59,7 @@
-      }
-      InNewLineSequence = 0;
-      if (RightToLeftMode) {
--@@ -1745,6 +1749,7 @@ CreateNewPart() {
-+@@ -1745,6 +1749,7 @@
-      }
-      printf("\n\nEnter your choice as a number from 0 to %d: ", i);
-      fflush(stdout);
-@@ -67,7 +67,7 @@
-      fgets(LineBuf, sizeof(LineBuf), stdin);
-      ans = atoi(LineBuf);
-      if (ans == 0 || ans == 1) {
--@@ -1752,8 +1757,9 @@ CreateNewPart() {
-+@@ -1752,8 +1757,9 @@
-          FILE *fpi, *fpo;
-  	printf("\nIf you want to include non-textual data from a file, enter the file name.\nTo include the output of a command, enter \"|\" followed by the command.\nIf you do not want to include anything, just press ENTER (RETURN).\n> ");
-          fflush(stdout);
-@@ -78,7 +78,7 @@
-          while (sdum >= CTLineBuf && isspace((unsigned char) *sdum)) {
-              *sdum = '\0';
-              --sdum;
--@@ -1791,7 +1797,10 @@ CreateNewPart() {
-+@@ -1791,7 +1797,10 @@
-                  int ct;
-                  printf("\nEnter the MIME Content-type value for the data from file %s\n    (type '?' for a list of locally-valid content-types): ", sdum);
-                  fflush(stdout);
-@@ -90,7 +90,7 @@
-                  if (index(LineBuf, '/')) {
-                      char lc[100], *s, AnsBuf[100];
-                      strcpy(lc, LineBuf);
--@@ -1809,7 +1818,7 @@ CreateNewPart() {
-+@@ -1809,7 +1818,7 @@
-                      }
-                      if (mc) break;
-                      printf("The MIME content-type '%s' is not listed in your local mailcap files,\nand may not be a valid MIME type.  Do you want to use it anyway [no] ? ", LineBuf);
-@@ -99,7 +99,7 @@
-                      while (s && *s && isspace((unsigned char) *s)) ++s;
-                      if (s && (*s == 'y' || *s == 'Y')) break;
-                      continue;
--@@ -2109,7 +2118,7 @@ int UseVisual;
-+@@ -2109,7 +2118,7 @@
-          fpout = fopen(FirstPart->filename, "a");
-          free(CmdBuf);
-          free(CmdBuf2);
-@@ -108,7 +108,7 @@
-      }
-      lastmp = mp = FirstPart;
-      while (mp) {
--@@ -2137,6 +2146,7 @@ int UseVisual;
-+@@ -2137,6 +2146,7 @@
-              printf("2: %s\n", CmdBuf);
-              printf("\n\nEnter 1 or 2, or 0 to not edit it: ");
-              fflush(stdout);
-@@ -116,7 +116,7 @@
-              fgets(LineBuf, sizeof(LineBuf), stdin);
-              ans = atoi(LineBuf);
-          } else ans = 2;
--@@ -2221,7 +2231,7 @@ int IsAndrew;
-+@@ -2221,7 +2231,7 @@
-      int LineAlloced = 0, LineCount = 0;
-  
-      fp = fopen(fname, "r");
-@@ -125,7 +125,7 @@
-      do {
-          LineBuf=NextAliasLine(LineBuf, &LineAlloced, &LineCount, fp, IsAndrew);
-          if (LineCount == 0) continue;
--@@ -2310,7 +2320,7 @@ char *aliasline;
-+@@ -2310,7 +2320,7 @@
-          if (s != s2) printf("mailto: ignoring bad alias line in init file: %s\n", aliasline);
-          free(s);
-          free(tmpalias);
-@@ -134,7 +134,7 @@
-      }
-      *s2++ = '\0';
-      tmpalias->shortname = s;
--@@ -2364,7 +2374,7 @@ char *hdr;
-+@@ -2364,7 +2374,7 @@
-  {
-      char *firstnonascii, *firstascii;
-  
-@@ -143,7 +143,7 @@
-      firstnonascii=firstbad(s);
-      if (firstnonascii) {
-          if (!strcmp(CharacterSet, "us-ascii")) {
--@@ -2454,7 +2464,7 @@ char *hdr;
-+@@ -2454,7 +2464,7 @@
-  /*        if (!lc2strcmp(name, tmpalias->shortname)) { */
-              *end = savechar;
-              EmitAddresses(fp, tmpalias->longname, hdr);
-Index: mail/metamail/files/patch-metamail_metamail.c
-===================================================================
---- mail/metamail/files/patch-metamail_metamail.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_metamail.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/metamail.c.orig	1994-02-17 01:57:19 UTC
--+++ metamail/metamail.c
--@@ -20,6 +20,8 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+--- metamail/metamail.c.orig	1994-02-17 10:57:19.000000000 +0900
-++++ metamail/metamail.c	2012-10-16 01:27:14.000000000 +0900
-+@@ -20,6 +20,8 @@
-  
-   ******************************************************* */
-  #include <stdio.h>
-@@ -9,7 +9,7 @@
-  #include <ctype.h>
-  #include <sys/types.h>
-  #include <sys/stat.h>
--@@ -46,8 +48,8 @@ extern char *mktemp(char *);
-+@@ -46,8 +48,8 @@
-  #include <signal.h>
-  
-  #ifndef AMIGA
-@@ -20,7 +20,7 @@
-  #include <unistd.h>
-  #else /* SYSV */
-  #include <sgtty.h>
--@@ -83,7 +85,7 @@ extern char *MkRmScript();
-+@@ -83,7 +85,7 @@
-  #define MAX_FILE_NAME_SIZE 256
-  #define WRITE_BINARY	"w"
-  #else /* AMIGA */
-@@ -29,7 +29,7 @@
-  #define CATCOMMAND  "cat"
-  #define CATTEMPLATE "cat %s"
-  #define METAMAIL    "metamail"
--@@ -100,6 +102,7 @@ extern char **environ, *gets();
-+@@ -100,6 +102,7 @@
-  #define CMDSIZE 1200 /* Maximum size of command to execute */
-  
-  #define LINE_BUF_SIZE       2000
-@@ -37,7 +37,7 @@
-  #ifndef MICROSOFT
-  extern char *malloc();
-  extern char *realloc();
--@@ -107,10 +110,12 @@ extern char *realloc();
-+@@ -107,10 +110,12 @@
-  extern char *getenv();
-  extern char *index();
-  extern char *rindex();
-@@ -51,7 +51,7 @@
-  static char *nomem = "Out of memory!";
-  static char *mmversion = MM_VERSTRING;
-  static char *NoAskDefault = "text,text/plain,text/richtext";
--@@ -540,6 +545,7 @@ int nestingdepth;
-+@@ -540,6 +545,7 @@
-                      ans = 2;
-                  } else {
-                      printf("\nWhat do you want to do with the %s data?\n1 -- See it as text\n2 -- Write it to a file\n3 -- Just skip it\n\n", octetstream ? "raw" : ContentType);
-@@ -59,7 +59,7 @@
-                      fgets(Fname, sizeof(Fname), stdin);
-                      ans = atoi(Fname);
-                  }
--@@ -554,8 +560,10 @@ int nestingdepth;
-+@@ -554,8 +560,10 @@
-                              needname = 0;
-                              printf("Please enter the name of a file to which the data should be written\n(Default: %s) > ", suggestedname);
-                              fflush(stdout);
-@@ -71,7 +71,7 @@
-  #if !defined(AMIGA) && !defined(MSDOS)
-                              if (!Fname[0]) strcpy(Fname, suggestedname);
-                              if (Fname[0] == '~' && Fname[1] == '/') {
--@@ -579,10 +587,12 @@ int nestingdepth;
-+@@ -579,10 +587,12 @@
-                                  int overwriteans = -1;
-                                  do {
-                                      printf("File %s exists.  Do you want to overwrite it (y/n) ?\n", Fname);
-@@ -85,7 +85,7 @@
-                                          while (s && *s && isspace((unsigned char) *s)) ++s;
-                                          if (*s == 'y' || *s == 'Y' || !*s || *s == '\n') {
-                                              overwriteans = 1;
--@@ -1202,9 +1212,9 @@ char *SquirrelFile;
-+@@ -1202,9 +1212,9 @@
-      fprintf(outfp, "Content-type: %s", ContentType);
-      for (j=0; j<CParamsUsed; ++j) {
-          fprintf(outfp, " ; ");
-@@ -97,7 +97,7 @@
-      }
-      fprintf(outfp, "\n\n"); 
-      TranslateInputToOutput(InputFP, outfp, EncodingCode, ContentType);
--@@ -1823,8 +1833,9 @@ char *ctype, *progname, *label;
-+@@ -1823,8 +1833,9 @@
-          } else {
-              printf("This message contains '%s'-format data.\nDo you want to view it using the '%s' command (y/n) [y] ? ", ctype, ShortCommand(progname));
-          }
-@@ -108,7 +108,7 @@
-  	while (s && *s && isspace((unsigned char) *s)) ++s;
-  	if (*s == 'y' || *s == 'Y' || !*s || *s == '\n') return(1);
-  	if (*s == 'n' || *s == 'N' || *s == 'q' || *s == 'Q') {
--@@ -1915,18 +1926,18 @@ char *hdr;
-+@@ -1915,18 +1926,18 @@
-              if (!strcmp(KeyHeadList[numkeys], "*")
-                   || !lc2strncmp(hdr, KeyHeadList[numkeys], len)) {
-  		if (!KeyKeep) phead(hdr);
-@@ -130,7 +130,7 @@
-  	    }
-  	}
-  	if (KeyKeep) phead(hdr);
--@@ -2022,7 +2033,8 @@ int ShowLeadingWhitespace;
-+@@ -2022,7 +2033,8 @@
-      if (lc2strcmp(charset, PrevCharset)) {
-          char *s2, *charsetinuse;
-  
-@@ -140,7 +140,7 @@
-          for (s2=PrevCharset; *s2; ++s2) {
-              if (isupper((unsigned char) *s2)) *s2 = tolower((unsigned char) *s2);
-          }
--@@ -2032,7 +2044,7 @@ int ShowLeadingWhitespace;
-+@@ -2032,7 +2044,7 @@
-          }
-      }
-      if (ecode == ENCODING_NONE) {
-@@ -149,7 +149,7 @@
-      } else {
-          /* What follows is REALLY bogus, but all my encoding stuff is pipe-oriented right now... */
-          MkTmpFileName(TmpFile);
--@@ -2375,8 +2387,8 @@ char *Prefix;
-+@@ -2375,8 +2387,8 @@
-  
-  int HasSavedTtyState=0;
-  #if !defined(AMIGA) && !defined(MSDOS)
-@@ -160,7 +160,7 @@
-  #else
-  static struct sgttyb MyTtyStateIn, MyTtyStateOut;
-  #endif
--@@ -2385,9 +2397,9 @@ static struct sgttyb MyTtyStateIn, MyTty
-+@@ -2385,9 +2397,9 @@
-  SaveTtyState() {
-      /* Bogus -- would like a good portable way to reset the terminal state here */
-  #if !defined(AMIGA) && !defined(MSDOS)
-@@ -173,7 +173,7 @@
-  #else
-      gtty(fileno(stdin), &MyTtyStateIn);
-      gtty(fileno(stdout), &MyTtyStateOut);
--@@ -2398,10 +2410,10 @@ SaveTtyState() {
-+@@ -2398,10 +2410,10 @@
-  
-  RestoreTtyState() {
-  #if !defined(AMIGA) && !defined(MSDOS)
-@@ -187,7 +187,7 @@
-      }
-  #else
-      if (HasSavedTtyState) {
--@@ -2660,7 +2672,7 @@ PauseForUser() {
-+@@ -2660,7 +2672,7 @@
-      char Buf[100];
-  #endif
-  
-@@ -196,7 +196,7 @@
-  #if defined(MSDOS) || defined(AMIGA)
-      printf("Press RETURN to go on\n");
-      gets(Buf);
--@@ -2681,15 +2693,15 @@ PauseForUser() {
-+@@ -2681,15 +2693,15 @@
-  
-  StartRawStdin() {
-  #if !defined(AMIGA) && !defined(MSDOS)
-Index: mail/metamail/files/patch-metamail_mmencode.c
-===================================================================
---- mail/metamail/files/patch-metamail_mmencode.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_mmencode.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/mmencode.c.orig	1994-01-26 18:47:37 UTC
--+++ metamail/mmencode.c
--@@ -13,6 +13,7 @@ OF THIS MATERIAL FOR ANY PURPOSE.  IT IS
-+--- metamail/mmencode.c.orig	Wed Jan 26 19:47:37 1994
-++++ metamail/mmencode.c	Mon Dec 18 11:46:22 2006
-+@@ -13,6 +13,7 @@
-  WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-  */
-  #include <stdio.h>
-Index: mail/metamail/files/patch-metamail_putenv.c
-===================================================================
---- mail/metamail/files/patch-metamail_putenv.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_putenv.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/putenv.c.orig	1993-10-12 16:17:43 UTC
--+++ metamail/putenv.c
--@@ -17,6 +17,8 @@ not, write to the Free Software Foundati
-+--- metamail/putenv.c.orig	Tue Oct 12 17:17:43 1993
-++++ metamail/putenv.c	Sat Jul 14 17:35:44 2007
-+@@ -17,6 +17,8 @@
-  Cambridge, MA 02139, USA.  */
-  
-  #include <config.h>
-@@ -9,7 +9,7 @@
-  #include <sys/types.h>
-  #include <errno.h>
-  #ifdef STDC_HEADERS
--@@ -48,7 +50,11 @@ extern char **environ;
-+@@ -48,7 +50,11 @@
-  /* Put STRING, which is of the form "NAME=VALUE", in the environment.  */
-  int
-  putenv (string)
-Index: mail/metamail/files/patch-metamail_shared.c
-===================================================================
---- mail/metamail/files/patch-metamail_shared.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_shared.c	(working copy)
-@@ -1,5 +1,5 @@
----- metamail/shared.c.orig	1993-05-16 18:19:32 UTC
--+++ metamail/shared.c
-+--- metamail/shared.c.orig	Sun May 16 20:19:32 1993
-++++ metamail/shared.c	Mon Dec 18 11:46:22 2006
- @@ -1,4 +1,6 @@
-  #include <stdio.h>
- +#include <stdlib.h>
-Index: mail/metamail/files/patch-metamail_splitmail.c
-===================================================================
---- mail/metamail/files/patch-metamail_splitmail.c	(revision 438568)
-+++ mail/metamail/files/patch-metamail_splitmail.c	(working copy)
-@@ -1,6 +1,6 @@
----- metamail/splitmail.c.orig	1994-01-31 22:23:14 UTC
--+++ metamail/splitmail.c
--@@ -21,6 +21,8 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+--- metamail/splitmail.c.orig	Mon Jan 31 23:23:14 1994
-++++ metamail/splitmail.c	Mon Dec 18 11:46:22 2006
-+@@ -21,6 +21,8 @@
-   ******************************************************* */
-  
-  #include <stdio.h>
-@@ -9,7 +9,7 @@
-  #include <sys/types.h>
-  #include <sys/stat.h>
-  #include <config.h>
--@@ -28,7 +30,7 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+@@ -28,7 +30,7 @@
-  #include <time.h>
-  
-  #define MINCHUNKSIZE 20000 /* Better be enough to hold the headers, or we die! */
-@@ -18,7 +18,7 @@
-  
-  #ifdef AMIGA
-  #define Prototype   extern
--@@ -41,8 +43,8 @@ extern char *malloc(), *index(), *getmyn
-+@@ -41,8 +43,8 @@
-  #define VERBOSEDELIVERYCMD VerboseDeliveryCmd
-  #else
-  extern char *getenv();
-@@ -29,7 +29,7 @@
-  #endif
-  
-  usageexit() {
--@@ -194,7 +196,7 @@ char **argv;
-+@@ -194,7 +196,7 @@
-  	s = endofheader(from);  /* would be index(from, '\n'),
-  				 but need to check for continuation lines */
-          *s = '\0';
-@@ -38,7 +38,7 @@
-  	    strcat(SharedHeaders, from);
-  	    strcat(SharedHeaders, "\n");
-  	}
--@@ -339,9 +341,10 @@ static char *SharedHeads[] = {
-+@@ -339,9 +341,10 @@
-      NULL
-  };
-  
-@@ -50,7 +50,7 @@
-  char **OrigID;
-  {
-      int i;
--@@ -361,7 +364,8 @@ char **OrigID;
-+@@ -361,7 +364,8 @@
-      }
-      if (!ULstrcmp(s, "subject")) {
-          *colon = ':';
-Index: mail/metamail/files/patch-richmail__iso2022.c
-===================================================================
---- mail/metamail/files/patch-richmail__iso2022.c	(revision 438568)
-+++ mail/metamail/files/patch-richmail__iso2022.c	(working copy)
-@@ -1,6 +1,6 @@
----- richmail/iso2022.c.orig	1992-12-22 17:50:21 UTC
--+++ richmail/iso2022.c
--@@ -84,7 +84,7 @@ char	*name;
-+--- richmail/iso2022.c.orig	1992-12-23 02:50:21.000000000 +0900
-++++ richmail/iso2022.c	2012-10-13 08:09:11.000000000 +0900
-+@@ -84,7 +84,7 @@
-      OutCharSet = OUT_ASCII;
-      OutAsciiMode = RICH_ENC_US_ASCII;
-      if (!name)
-Index: mail/metamail/files/patch-richmail_richlex.c
-===================================================================
---- mail/metamail/files/patch-richmail_richlex.c	(revision 438568)
-+++ mail/metamail/files/patch-richmail_richlex.c	(working copy)
-@@ -1,5 +1,5 @@
----- richmail/richlex.c.orig	1994-02-03 02:29:37 UTC
--+++ richmail/richlex.c
-+--- richmail/richlex.c.orig	Thu Feb  3 03:29:37 1994
-++++ richmail/richlex.c	Mon Dec 18 11:46:22 2006
- @@ -42,6 +42,7 @@
-  -------------------------------------------------------------------------*/
-  
-Index: mail/metamail/files/patch-richmail_richset.c
-===================================================================
---- mail/metamail/files/patch-richmail_richset.c	(revision 438568)
-+++ mail/metamail/files/patch-richmail_richset.c	(working copy)
-@@ -1,5 +1,5 @@
----- richmail/richset.c.orig	1992-10-21 18:04:19 UTC
--+++ richmail/richset.c
-+--- richmail/richset.c.orig	Wed Oct 21 19:04:19 1992
-++++ richmail/richset.c	Mon Dec 18 11:46:22 2006
- @@ -34,6 +34,7 @@
-  -------------------------------------------------------------------------*/
-  
-Index: mail/metamail/files/patch-richmail_richtext.c
-===================================================================
---- mail/metamail/files/patch-richmail_richtext.c	(revision 438568)
-+++ mail/metamail/files/patch-richmail_richtext.c	(working copy)
-@@ -1,6 +1,6 @@
----- richmail/richtext.c.orig	1994-02-09 16:31:18 UTC
--+++ richmail/richtext.c
--@@ -14,6 +14,8 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIE
-+--- richmail/richtext.c.orig	1994-02-10 01:31:18.000000000 +0900
-++++ richmail/richtext.c	2012-10-13 08:07:01.000000000 +0900
-+@@ -14,6 +14,8 @@
-  */
-  
-  #include <stdio.h>
-@@ -9,7 +9,7 @@
-  #include <ctype.h>
-  #include <signal.h>
-  #include "richlex.h"
--@@ -155,6 +157,16 @@ static nomemabort() {
-+@@ -155,6 +157,16 @@
-      exit(-1);
-  #endif
-  }
-@@ -26,7 +26,7 @@
-  
-  #ifndef	RICHTEXT_LIBRARY
-  
--@@ -910,7 +922,7 @@ struct charsetmember *s;
-+@@ -910,7 +922,7 @@
-  FILE *fp;
-  {
-      int inmargin=1;
-@@ -35,7 +35,7 @@
-      while (s -> ch) {
-          if (inmargin && (s -> ch) == ' ') {
-              controloutput(MoveRight, 1);
--@@ -932,7 +944,7 @@ char *standoutbuf, *standendbuf, *StartU
-+@@ -932,7 +944,7 @@
-      *BoldOn, *BoldOff;
-  {
-      if (OverStrike)
-@@ -44,7 +44,7 @@
-  
-      /* We always turn back on the appropriate terminal modes, because
-        on some terminals one thing turns off all of them */
--@@ -989,16 +1001,6 @@ FILE *fp;
-+@@ -989,16 +1001,6 @@
-      while(*s) (*RichtextPutc)((int)(*s++),fp);
-  }
-  
-Index: mail/metamail/pkg-descr
-===================================================================
---- mail/metamail/pkg-descr	(revision 438568)
-+++ mail/metamail/pkg-descr	(working copy)
-@@ -1,4 +1,4 @@
--Metamail is an implementation of MIME, the Multipurpose Internet
-+Metamail is an implementation of MIME, the Multipurpose Internet 
- Mail Extensions, a proposed standard for multimedia mail on the Internet.
- Metamail implements MIME, and also implements extensibility and
- configuration via the "mailcap" mechanism described in an informational
