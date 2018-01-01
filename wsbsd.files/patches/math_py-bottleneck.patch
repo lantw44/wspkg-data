@@ -1,0 +1,21 @@
+Index: math/py-bottleneck/Makefile
+===================================================================
+--- math/py-bottleneck/Makefile	(revision 457506)
++++ math/py-bottleneck/Makefile	(working copy)
+@@ -3,6 +3,7 @@
+ 
+ PORTNAME=	bottleneck
+ PORTVERSION=	1.2.1
++PORTREVISION=	1
+ CATEGORIES=	math python
+ MASTER_SITES=	CHEESESHOP
+ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+@@ -21,7 +22,7 @@
+ USE_PYTHON=	distutils autoplist cython
+ 
+ OPTIONS_DEFINE=	DOCS
+-DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}
++DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
+ PORTDOCS=	*
+ 
+ regression-test: build
