@@ -78,7 +78,7 @@ echo_cmd ./build.sh wsbsd wsbsd/out/wsbsd.ports
 exec 3< "wsbsd/out/wsbsd.ports"
 exec 4> "${WRKDIR}/wsbsd.html"
 
-while read pkg origin 0<&3; do
+while read pkg origin flavor 0<&3; do
 	write_string_to_fd 4 "<li><a target='_blank' href='https://www.freshports.org/${origin}'>${pkg}</a></li>"
 done
 
