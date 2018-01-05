@@ -72,8 +72,8 @@ FILE            FINGER          FTP             INETD           ISPELL
 LESS            LOCATE          lsof            m4              MIME_SUPPORT
 NCURSES_TERM    PATCH           PCI             PERL            PYTHON2
 PYTHON3         SHARUTILS       SSH             STRACE          sudo
-TELNET          TIME            USB             WAMERICAN       wget
-WHOIS
+TELNET          texinfo         TIME            USB             WAMERICAN
+wget            WHOIS
 #endif
 
 // Shell
