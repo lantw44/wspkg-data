@@ -33,7 +33,7 @@
 #define SHARUTILS           NULL
 #define SSH                 NULL
 #define STRACE              NULL
-#define TELNET              zh-telnet
+#define TELNET              NULL
 #define TIME                NULL
 #define USB                 NULL
 #define WAMERICAN           NULL
@@ -240,7 +240,7 @@
 #define LAPACKE             lapacke
 
 // Misc
-#define BIG5WIDTH           zh-big5width
+#define BIG5WIDTH           NULL // Is this still relevant? Failed on FreeBSD 11
 #define GNUPG               gnupg1 gnupg
 #define KERNEL_PACKAGE      NULL // Debian-specific package
 #define XSLTPROC            libxslt
