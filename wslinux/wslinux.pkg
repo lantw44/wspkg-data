@@ -45,6 +45,7 @@
 #define CUPS                cups cups-bsd python-cups
 #define IOTOP               iotop
 #define MENU                menu menu-xdg
+#define MCELOG              mcelog
 #define MUNIN               munin-node munin-plugins-extra
 #define PARTED              parted
 #define PAM_LDAPD           libpam-ldapd
@@ -406,6 +407,7 @@
 #define MKISOFS             genisoimage
 #define PSTREE              psmisc
 #define RANGER              ranger
+#define RPM2CPIO            rpm2cpio
 #define QEMU                qemu qemu-user qemu-system qemu-utils
 #define UNAR                unar
 #define UIM_FEP             uim-fep

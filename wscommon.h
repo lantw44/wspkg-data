@@ -84,7 +84,7 @@ bash            bash-completion KSH             TCSH            zsh
 // Admin
 #ifdef WSPKG_ADMIN
 ACPI            CPUFREQ         CUPS            IOTOP           MENU
-mcelog          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
+MCELOG          MUNIN           PARTED          PAM_LDAPD       SYSSTAT
 DEBSUMS
 // freebsd local-217
 PKG_MGMT        NET_SNMP        nagios-plugins  nsca-client
@@ -378,7 +378,7 @@ BSDCPIO         BSDTAR          bochs           CDIALOG         cgdb
 chrpath         convmv          DEV86           diffstat        FAKECHROOT
 fdupes          HTE             htop            meld            MENUMAKER
 MKISOFS         ncdu            patchelf        pax-utils       PSTREE
-QEMU            RANGER          rpm2cpio        socat           tig
+QEMU            RANGER          RPM2CPIO        socat           tig
 UIM_FEP         UNAR            UNIX2DOS        upx             WATCH
 // added by b01902062@csie.ntu.edu.tw
 IBUS_CHEWING    parallel

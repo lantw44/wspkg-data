@@ -49,6 +49,7 @@
 #define CUPS                cups cups-filters PYTHON_2_3_PKG(pycups)
 #define IOTOP               NULL
 #define MENU                NULL
+#define MCELOG              mcelog
 #define MUNIN               munin-node
 #define PARTED              NULL
 #define PAM_LDAPD           nss-pam-ldapd
@@ -394,6 +395,7 @@
 #define MKISOFS             cdrtools
 #define PSTREE              pstree
 #define RANGER              PYTHON_3_PKG(ranger) // FIXME: conflict with python2 version
+#define RPM2CPIO            rpm2cpio
 #define QEMU                qemu
 #define UNAR                unar
 #define UIM_FEP             uim

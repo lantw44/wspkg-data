@@ -40,6 +40,7 @@
                                   python2-pycups
 #define  IOTOP                    iotop
 #define  MENU                     NULL
+#define  MCELOG                   rasdaemon
 #define  MUNIN                    munin-node
 #define  PARTED                   parted
 #define  PAM_LDAPD                nss-pam-ldapd
@@ -400,6 +401,7 @@
 #define  MKISOFS                  cdrtools
 #define  PSTREE                   psmisc
 #define  RANGER                   ranger
+#define  RPM2CPIO                 rpmextract
 #define  QEMU                     qemu qemu-arch-extra
 #define  UNAR                     unarchiver
 #define  UIM_FEP                  uim
