@@ -273,6 +273,7 @@
 #define GNUTLS_CLI          gnutls-bin
 #define PCMANX              pcmanx-gtk2
 #define LOUDMOUTH           libloudmouth1-dev
+#define SSHFS               sshfs
 
 // Parallel Programming
 // Perl
@@ -380,6 +381,7 @@
 #define DJVULIBRE           libdjvulibre-dev djvulibre-bin
 #define ENSCRIPT            enscript
 #define XPDF_ZH_FONTS       NULL
+#define ASCIIDOCTOR         asciidoctor
 #define MARKDOWN            discount
 #define PANDOC              pandoc
 
@@ -417,6 +419,7 @@
 #define RZIP                rzip
 #define SHELLCHECK          shellcheck
 #define ACK                 ack-grep
+#define RIPGREP             NULL
 #define SILVER_SEARCHER     silversearcher-ag
 
 // Video

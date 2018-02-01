@@ -262,6 +262,7 @@
 #define GNUTLS_CLI          gnutls
 #define PCMANX              zh-pcmanx
 #define LOUDMOUTH           loudmouth
+#define SSHFS               fusefs-sshfs
 
 // Parallel Programming
 // Perl
@@ -367,6 +368,7 @@
 #define DJVULIBRE           djvulibre
 #define ENSCRIPT            enscript-a4
 #define XPDF_ZH_FONTS       zh-xpdf-zhfont
+#define ASCIIDOCTOR         rubygem-asciidoctor
 #define MARKDOWN            discount markdown
 #define PANDOC              hs-pandoc
 
@@ -405,6 +407,7 @@
 #define RZIP                rzip
 #define SHELLCHECK          hs-ShellCheck
 #define ACK                 p5-ack
+#define RIPGREP             ripgrep
 #define SILVER_SEARCHER     the_silver_searcher
 
 // Video

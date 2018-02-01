@@ -120,7 +120,7 @@ MONO
 julia
 // added by b01902062@csie.ntu.edu.tw
 ANDROID_TOOLS   bzr             mercurial       intltool        LLVM
-ltrace          OPENCL          POCL
+ltrace          OPENCL          POCL            meson
 #endif
 
 // Doc
@@ -194,6 +194,7 @@ gawk            SWIG
 KDE_META_PKG
 KDE_GTK_CONFIG  kchmviewer      OKULAR          // added by b01902062@csie.ntu.edu.tw
 ADWAITA_QT      QT4_QTCONFIG    QT5_QTCT        // added by b01902062@csie.ntu.edu.tw
+kdiff3
 #endif
 
 // Lib
@@ -255,7 +256,7 @@ LAPACKE         // added by b01902066
 // Misc
 #ifdef WSPKG_MISC
 BIG5WIDTH       GNUPG           KERNEL_PACKAGE  poppler-data    screen
-tmux            XSLTPROC        PROTOBUF
+tmux            XSLTPROC        PROTOBUF        cloc
 LINUXTOOL       // 計算機結構
 #endif
 
@@ -267,10 +268,10 @@ STUNNEL         tcpdump         VNCVIEWER       curl            aria2
 mosh            NS2             ns3
 // freebsd local-217
 BSDFTPD_SSL     lrzsz           OMNITTY         pidgin          rdesktop
-rrdtool         tcptraceroute   TRAFSHOW        urlview
+rrdtool         tcptraceroute   TRAFSHOW        urlview         weechat
 // added by b01902062@csie.ntu.edu.tw
 x11vnc          SPICE_CLIENT    XSPICE          ldapvi          GNUTLS_CLI
-PCMANX
+PCMANX          SSHFS
 LOUDMOUTH       // requested by b01902109
 #endif
 
@@ -360,7 +361,7 @@ C2PS            DJVULIBRE       ENSCRIPT        pstotext        wv
 XPDF_ZH_FONTS
 pdftk           // Added by lydian on 2011/8/3, requested by cjlin
 // added by b01902062@csie.ntu.edu.tw
-asciidoc        MARKDOWN        PANDOC
+asciidoc        ASCIIDOCTOR     MARKDOWN        PANDOC          dblatex
 #endif
 
 // Utils
@@ -391,7 +392,7 @@ rlwrap
 //added by b03902074@csie.ntu.edu.tw
 SHELLCHECK
 //added by b03902074@csie.ntu.edu.tw
-ACK             SILVER_SEARCHER
+ACK             RIPGREP         SILVER_SEARCHER jq
 #endif
 
 // Video
