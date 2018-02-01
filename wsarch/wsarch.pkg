@@ -76,7 +76,7 @@
 #define  TCL                      tcl tcl85
 #define  TK                       tk tk85
 #define  AARCH64_GCC              aarch64-linux-gnu-gcc
-#define  GDB_MULTIARCH            NULL
+#define  GDB_MULTIARCH            gdb-multiarch
 #define  ECLIPSE                  eclipse-java eclipse-pydev \
                                   eclipse-egit eclipse-cpp \
                                   eclipse-linuxtools
