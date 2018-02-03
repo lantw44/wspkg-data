@@ -247,7 +247,6 @@
 #define  LAPACKE                  lapacke
 
 // Misc
-#define  BIG5WIDTH                NULL
 #define  GNUPG                    gnupg
 #define  KERNEL_PACKAGE           NULL
 #define  XSLTPROC                 libxslt

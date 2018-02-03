@@ -255,7 +255,7 @@ LAPACKE         // added by b01902066
 
 // Misc
 #ifdef WSPKG_MISC
-BIG5WIDTH       GNUPG           KERNEL_PACKAGE  poppler-data    screen
+GNUPG           KERNEL_PACKAGE  poppler-data    screen
 tmux            XSLTPROC        PROTOBUF        cloc
 LINUXTOOL       // 計算機結構
 #endif

@@ -252,7 +252,6 @@
 #define LAPACKE             liblapacke-dev
 
 // Misc
-#define BIG5WIDTH           NULL
 #define GNUPG               gnupg gnupg2
 #define KERNEL_PACKAGE      kernel-package
 #define XSLTPROC            xsltproc
