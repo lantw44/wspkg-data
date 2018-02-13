@@ -347,6 +347,7 @@
 #define  RUBY_MYSQL               NULL
 #define  RUBY_RAKE                ruby
 #define  RUBY_RAILS               ruby-rails
+#define  RUBY_RDOC                ruby-rdoc
 
 // Science
 #define  BLAST2                   blast+

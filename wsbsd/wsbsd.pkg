@@ -340,6 +340,7 @@
 #define RUBY_MYSQL          ruby24-mysql
 #define RUBY_RAKE           rubygem-rake
 #define RUBY_RAILS          rubygem-rails5
+#define RUBY_RDOC           rubygem-rdoc
 
 // Science
 #define BLAST2              NULL // included in ncbi-toolkit

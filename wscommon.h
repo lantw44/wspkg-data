@@ -328,6 +328,7 @@ PYTHON_CRYPTO
 // Ruby
 #ifdef WSPKG_RUBY
 RUBY            RUBY_BUNDLER    RUBY_MYSQL      RUBY_RAKE       RUBY_RAILS
+RUBY_RDOC
 #endif
 
 // Science
