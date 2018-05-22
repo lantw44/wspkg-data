@@ -106,7 +106,7 @@
 
 // Editors
 #define CTAGS               ctags
-#define EMACS               emacs25 python-mode.el
+#define EMACS               emacs python-mode.el
 #define LIBREOFFICE         libreoffice zh_TW-libreoffice
 #define VIM_GTK             vim
 
@@ -356,7 +356,7 @@
 #define TEXLIVE             NULL // texlive-full already provides all packages
 #define TEXLIVE_FULL        texlive-full
 #define BG5PS               zh-bg5ps
-#define HYPERLATEX          Hyperlatex
+#define HYPERLATEX          Hyperlatex-emacs25
 
 // Text
 #define ASPELL_EN           en-aspell
