@@ -1,0 +1,13 @@
+Index: databases/qt4-mysql-plugin/files/patch-src_sql_drivers_mysql_qsql__mysql.cpp
+===================================================================
+--- databases/qt4-mysql-plugin/files/patch-src_sql_drivers_mysql_qsql__mysql.cpp	(revision 470282)
++++ databases/qt4-mysql-plugin/files/patch-src_sql_drivers_mysql_qsql__mysql.cpp	(working copy)
+@@ -19,7 +19,7 @@
+ +// MYSQL 8.0.1 no longer uses the my_bool type:
+ +// https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-1.html
+ +#if MYSQL_VERSION_ID >= 80001
+-+typedef bool mysql_bool;
+++typedef my_bool mysql_bool;
+ +#else
+ +typedef my_bool mysql_bool;
+ +#endif
