@@ -1,0 +1,14 @@
+Index: sysutils/gnome-control-center/Makefile
+===================================================================
+--- sysutils/gnome-control-center/Makefile	(revision 470282)
++++ sysutils/gnome-control-center/Makefile	(working copy)
+@@ -17,7 +17,8 @@
+ BUILD_DEPENDS=	gnome-settings-daemon>=3.4.0:sysutils/gnome-settings-daemon \
+ 		gsettings-desktop-schemas>=3.2.2:devel/gsettings-desktop-schemas \
+ 		docbook-xsl>=0:textproc/docbook-xsl \
+-		iso-codes>=0:misc/iso-codes
++		iso-codes>=0:misc/iso-codes \
++		libgudev>=0:devel/libgudev
+ LIB_DEPENDS=	libcanberra-gtk3.so:audio/libcanberra-gtk3 \
+ 		libupower-glib.so:sysutils/upower \
+ 		libaccountsservice.so:sysutils/accountsservice \
