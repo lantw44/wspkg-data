@@ -380,7 +380,6 @@
 #define C2PS                NULL // FIXME: not available from repository
 #define DJVULIBRE           libdjvulibre-dev djvulibre-bin
 #define ENSCRIPT            enscript
-#define XPDF_ZH_FONTS       NULL
 #define ASCIIDOCTOR         asciidoctor
 #define MARKDOWN            discount
 #define PANDOC              pandoc

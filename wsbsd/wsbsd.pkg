@@ -373,7 +373,6 @@
 #define C2PS                c2ps
 #define DJVULIBRE           djvulibre
 #define ENSCRIPT            enscript-a4
-#define XPDF_ZH_FONTS       zh-xpdf-zhfont
 #define ASCIIDOCTOR         rubygem-asciidoctor
 #define MARKDOWN            discount markdown
 #define PANDOC              hs-pandoc

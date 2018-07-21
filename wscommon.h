@@ -359,7 +359,6 @@ MPAGE           POPPLER_UTILS   psutils         recode          SPELL
 xpdf            html2ps         zh-autoconvert
 // freebsd local-217
 C2PS            DJVULIBRE       ENSCRIPT        pstotext        wv
-XPDF_ZH_FONTS
 pdftk           // Added by lydian on 2011/8/3, requested by cjlin
 // added by b01902062@csie.ntu.edu.tw
 asciidoc        ASCIIDOCTOR     MARKDOWN        PANDOC          dblatex

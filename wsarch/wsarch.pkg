@@ -374,7 +374,6 @@
 #define  C2PS                     NULL
 #define  DJVULIBRE                djvulibre
 #define  ENSCRIPT                 enscript
-#define  XPDF_ZH_FONTS            NULL
 #define  ASCIIDOCTOR              asciidoctor
 #define  MARKDOWN                 markdown
 #define  PANDOC                   pandoc haskell-pandoc
