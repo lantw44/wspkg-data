@@ -5,3 +5,5 @@
 # Unfetchable
 /^zh-oxim/d
 /^zh-bg5ps/d
+# Conflicts with KDE 5
+/^subversion-kwallet$/d

@@ -179,9 +179,9 @@
 #define SWIG                swig30
 
 // KDE
-#define KDE_META_PKG        kde zh_TW-kde-l10n
-#define KDE_GTK_CONFIG      kde-gtk-config
-#define OKULAR              okular-kde4
+#define KDE_META_PKG        kde5
+#define KDE_GTK_CONFIG      plasma5-kde-gtk-config
+#define OKULAR              okular
 #define ADWAITA_QT          adwaita-qt4 adwaita-qt5
 #define QT4_QTCONFIG        qt4-qtconfig
 #define QT5_QTCT            qt5ct
