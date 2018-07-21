@@ -402,7 +402,7 @@
 #define PSTREE              pstree
 #define RANGER              PYTHON_3_PKG(ranger) // FIXME: conflict with python2 version
 #define RPM2CPIO            rpm2cpio
-#define QEMU                qemu
+#define QEMU                qemu qemu-user-static
 #define UNAR                unar
 #define UIM_FEP             uim
 #define UNIX2DOS            unix2dos
