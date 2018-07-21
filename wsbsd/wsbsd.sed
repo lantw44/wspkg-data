@@ -1,5 +1,5 @@
 # Removed because of not staged
-/^vm-emacs25$/d
+/^vm-emacs26@full$/d
 # Marked as broken in ports
 /^ruby24-mysql$/d
 # Unfetchable

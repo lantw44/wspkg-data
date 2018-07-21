@@ -4,6 +4,8 @@
 // Packages mapping started from here
 // ===========================================================================
 
+#define EMACS_FLAVOR        full
+#define EMACS_PKG(x)        x-emacs26@EMACS_FLAVOR
 #define PYTHON_2_PKG(x)     py27-x@py27
 #define PYTHON_3_PKG(x)     py36-x@py36
 #define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
@@ -81,7 +83,7 @@
 #define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8
 #define SUBVERSION          subversion subversion-gnome-keyring \
-                            subversion-kwallet svk psvn-emacs25
+                            subversion-kwallet svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87
 #define TK                  tk85 tk86 tk87
 #define AARCH64_GCC         aarch64-binutils aarch64-gcc
@@ -110,7 +112,7 @@
 
 // Editors
 #define CTAGS               ctags
-#define EMACS               emacs python-mode.el
+#define EMACS               emacs@EMACS_FLAVOR python-mode.el
 #define LIBREOFFICE         libreoffice zh_TW-libreoffice
 #define VIM_GTK             vim
 
@@ -234,7 +236,7 @@
 // Mail
 #define MAILX               NULL
 #define METAMAIL            metamail
-#define VM                  vm-emacs25
+#define VM                  EMACS_PKG(vm)
 
 // Math
 #define GSL                 gsl
@@ -354,13 +356,13 @@
 #define ALSA                alsa-lib alsa-plugins
 
 // TeX
-#define AUCTEX              auctex-emacs25
+#define AUCTEX              EMACS_PKG(auctex)
 #define LATEX_CJK           NULL // FIXME: conflict with texlive
 #define BIBER               latex-biber
 #define TEXLIVE             NULL // texlive-full already provides all packages
 #define TEXLIVE_FULL        texlive-full
 #define BG5PS               zh-bg5ps
-#define HYPERLATEX          Hyperlatex-emacs25
+#define HYPERLATEX          EMACS_PKG(Hyperlatex)
 
 // Text
 #define ASPELL_EN           en-aspell
@@ -428,7 +430,7 @@
 #define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
                             flashplayer
 #define FIREFOX             firefox firefox-i18n
-#define W3M_EL              emacs-w3m-emacs25
+#define W3M_EL              EMACS_PKG(emacs-w3m)
 #define JAVA_PLUGIN         icedtea-web
 
 // WindowMaker
