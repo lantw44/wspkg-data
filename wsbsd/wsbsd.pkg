@@ -184,7 +184,7 @@
 #define KDE_META_PKG        kde5
 #define KDE_GTK_CONFIG      plasma5-kde-gtk-config
 #define OKULAR              okular
-#define ADWAITA_QT          adwaita-qt4 adwaita-qt5
+#define ADWAITA_QT          adwaita-qt4@qt4 adwaita-qt5@qt5
 #define QT4_QTCONFIG        qt4-qtconfig
 #define QT5_QTCT            qt5ct
 
