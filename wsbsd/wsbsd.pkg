@@ -80,7 +80,8 @@
 #define MINGW               mingw32-gcc
 #define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8
-#define SUBVERSION          subversion svk psvn-emacs25
+#define SUBVERSION          subversion subversion-gnome-keyring \
+                            subversion-kwallet svk psvn-emacs25
 #define TCL                 tcl85 tcl86 tcl87
 #define TK                  tk85 tk86 tk87
 #define AARCH64_GCC         aarch64-binutils aarch64-gcc
