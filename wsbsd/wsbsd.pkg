@@ -7,6 +7,9 @@
 #define PYTHON_2_PKG(x)     py27-x@py27
 #define PYTHON_3_PKG(x)     py36-x@py36
 #define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
+#define PYPY_2_PKG(x)       pypy-x@pypy
+#define PYPY_3_PKG(x)       pypy3-x@pypy3
+#define PYPY_2_3_PKG(x)     PYPY_2_PKG(x) PYPY_3_PKG(x)
 
 // Keyring
 
@@ -307,9 +310,9 @@
 #define PYTHONTRACER            NULL
 #define PYTHON_MYSQLDB          NULL
 #define PYTHON_CJSON            PYTHON_2_PKG(cjson)
-#define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) pypy-sqlite3
+#define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) PYPY_2_3_PKG(sqlite3)
 #define PYTHON_BEAUTIFULSOUP    PYTHON_2_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
-#define PYTHON_TK               PYTHON_2_3_PKG(tkinter) pypy-tkinter
+#define PYTHON_TK               PYTHON_2_3_PKG(tkinter) PYPY_2_3_PKG(tkinter)
 #define PYTHON_SIMPLEJSON       PYTHON_2_3_PKG(simplejson)
 #define PYTHON_MATPLOTLIB       PYTHON_2_3_PKG(matplotlib)
 #define PYTHON_LXML             PYTHON_2_3_PKG(lxml)
