@@ -167,10 +167,10 @@
                             hs-HUnit hs-mtl hs-multipart hs-network \
                             hs-network-uri hs-ObjectName hs-old-locale \
                             hs-old-time hs-OpenGL hs-OpenGLRaw hs-parallel \
-                            hs-parsec hs-primitive hs-QuickCheck hs-random \
+                            hs-primitive hs-QuickCheck hs-random \
                             hs-regex-base hs-regex-compat hs-regex-posix \
-                            hs-scientific hs-split hs-StateVar hs-stm hs-syb \
-                            hs-text hs-tf-random hs-transformers-base \
+                            hs-scientific hs-split hs-StateVar hs-syb \
+                            hs-tf-random hs-transformers-base \
                             hs-transformers-compat hs-unordered-containers \
                             hs-vector hs-zlib \
                             hs-alex hs-cabal-install hs-haddock hs-happy \
