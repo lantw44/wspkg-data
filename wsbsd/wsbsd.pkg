@@ -96,7 +96,7 @@
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot
 #define LLVM                llvm40 llvm50 llvm60 llvm-devel
 #define OPENCL              ocl-icd opencl
-#define POCL                NULL // TODO: not supported on 10.x
+#define POCL                pocl
 
 // Doc
 #define LIBC_DOC            NULL
