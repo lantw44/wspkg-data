@@ -72,7 +72,7 @@
 
 // Devel
 #define ANT                 apache-ant
-#define CLANG               clang35 // get libclang.so
+#define CLANG               NULL
 #define GCC                 gcc5 gcc6 gcc6-aux gcc7 gcc8-devel
 #define GDB                 gdb
 #define GOLANG              go
@@ -94,7 +94,7 @@
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot
-#define LLVM                llvm35 llvm38 llvm40 llvm50 llvm-devel
+#define LLVM                llvm40 llvm50 llvm60 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                NULL // TODO: not supported on 10.x
 
