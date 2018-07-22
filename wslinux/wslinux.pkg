@@ -163,8 +163,8 @@
                             libgtkmm-3.0-dev libgtkmm-3.0-doc \
                             libgtkmm-3.0-1v5-dbgsym
 #define GNOME_SCREENSHOT    gnome-screenshot
-#define GTK2_THEMES
-#define GTK3_THEMES
+#define GTK2_THEMES         NULL
+#define GTK3_THEMES         NULL
 
 // Graphics
 #define IMAGEMAGICK         imagemagick
