@@ -1,14 +1,14 @@
 Index: x11-fonts/wqy/files/85-wqy.conf
 ===================================================================
---- x11-fonts/wqy/files/85-wqy.conf	(revision 438568)
+--- x11-fonts/wqy/files/85-wqy.conf	(revision 475071)
 +++ x11-fonts/wqy/files/85-wqy.conf	(working copy)
-@@ -97,7 +97,8 @@
- 			</test>
- 		</or>
+@@ -247,7 +247,8 @@
+ 			<string>WenQuanYi Bitmap Song</string>
+ 		</test>
                  <test name="size" compare="less_eq"><int>16</int></test>
 -                <edit name="antialias" mode="assign"><bool>false</bool></edit>
 +                <!-- b01902062@csie.ntu.edu.tw: 這會讓很多程式的字變得模糊，所以先拿掉 -->
 +                <edit name="antialias" mode="assign"><bool>true</bool></edit>
          </match>
  
- 	<!-- Prior use WenQuanYi Bitmap Song for Chinese Han -->
+ 	<match target="font">
