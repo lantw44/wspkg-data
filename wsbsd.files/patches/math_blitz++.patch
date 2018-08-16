@@ -1,0 +1,94 @@
+Index: math/blitz++/Makefile
+===================================================================
+--- math/blitz++/Makefile	(revision 477159)
++++ math/blitz++/Makefile	(working copy)
+@@ -21,12 +21,12 @@
+ DOCS_BUILD_DEPENDS=	texi2dvi:print/texinfo \
+ 			texi2html:textproc/texi2html
+ DOCS_MAKE_ARGS_OFF=	NOPORTDOCS=yes
++DOCS_EXTRA_PATCHES=	${FILESDIR}/extra-patch-doc-arrays-expr.texi \
++			${FILESDIR}/extra-patch-doc-blitz.texi
+ 
+ GNU_CONFIGURE=	yes
+-USES=	libtool pathfix gmake
++USES=		autoreconf gmake libtool pathfix
+ CONFIGURE_ARGS=	--with-cxx=gcc --disable-doxygen --enable-shared
+-MAKE_ARGS+=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOMAKE="${TRUE}" \
+-		AUTOHEADER="${TRUE}"
+ MAKE_JOBS_UNSAFE=	yes
+ INSTALL_TARGET=	install-strip
+ 
+Index: math/blitz++/files/extra-patch-doc-arrays-expr.texi
+===================================================================
+--- math/blitz++/files/extra-patch-doc-arrays-expr.texi	(nonexistent)
++++ math/blitz++/files/extra-patch-doc-arrays-expr.texi	(working copy)
+@@ -0,0 +1,16 @@
++--- doc/arrays-expr.texi.orig	2003-01-21 11:01:03 UTC
+++++ doc/arrays-expr.texi
++@@ -714,13 +714,8 @@ Computes the error function:  
++ @tex
++ $$ {\rm erf}(x) = {2\over\sqrt\pi}\int_{0}^{x} e^{-t^2} dt $$
++ @end tex
++-@html
++-@erf(x) = 2/sqrt(Pi) * integral(exp(-t^2), t=0..x)
++-@end html
++ @ifnottex
++-@ifnothtml
++ @math{@r{erf}(x) = 2/@r{sqrt}(Pi) * @r{integral}(@r{exp}(-t^2), t=0..x)}
++-@end ifnothtml
++ @end ifnottex
++ 
++ Note that for large values of the parameter, calculating can result in
+Index: math/blitz++/files/extra-patch-doc-blitz.texi
+===================================================================
+--- math/blitz++/files/extra-patch-doc-blitz.texi	(nonexistent)
++++ math/blitz++/files/extra-patch-doc-blitz.texi	(working copy)
+@@ -0,0 +1,11 @@
++--- doc/blitz.texi.orig	Sat Oct 16 08:05:00 2004
+++++ doc/blitz.texi	Tue Feb 22 23:32:57 2005
++@@ -13,7 +13,7 @@
++ 
++ @dircategory Blitz++ library
++ @direntry
++-* Blitz++: (blitz++).           High-performance C++ numeric library
+++* Blitz++: (blitz).           High-performance C++ numeric library
++ @end direntry
++ 
++ 
+Index: math/blitz++/files/patch-doc-arrays-expr.texi
+===================================================================
+--- math/blitz++/files/patch-doc-arrays-expr.texi	(revision 477159)
++++ math/blitz++/files/patch-doc-arrays-expr.texi	(nonexistent)
+@@ -1,16 +0,0 @@
+---- doc/arrays-expr.texi.orig	2003-01-21 11:01:03 UTC
+-+++ doc/arrays-expr.texi
+-@@ -714,13 +714,8 @@ Computes the error function:  
+- @tex
+- $$ {\rm erf}(x) = {2\over\sqrt\pi}\int_{0}^{x} e^{-t^2} dt $$
+- @end tex
+--@html
+--@erf(x) = 2/sqrt(Pi) * integral(exp(-t^2), t=0..x)
+--@end html
+- @ifnottex
+--@ifnothtml
+- @math{@r{erf}(x) = 2/@r{sqrt}(Pi) * @r{integral}(@r{exp}(-t^2), t=0..x)}
+--@end ifnothtml
+- @end ifnottex
+- 
+- Note that for large values of the parameter, calculating can result in
+Index: math/blitz++/files/patch-doc-blitz.texi
+===================================================================
+--- math/blitz++/files/patch-doc-blitz.texi	(revision 477159)
++++ math/blitz++/files/patch-doc-blitz.texi	(nonexistent)
+@@ -1,11 +0,0 @@
+---- doc/blitz.texi.orig	Sat Oct 16 08:05:00 2004
+-+++ doc/blitz.texi	Tue Feb 22 23:32:57 2005
+-@@ -13,7 +13,7 @@
+- 
+- @dircategory Blitz++ library
+- @direntry
+--* Blitz++: (blitz++).           High-performance C++ numeric library
+-+* Blitz++: (blitz).           High-performance C++ numeric library
+- @end direntry
+- 
+- 
