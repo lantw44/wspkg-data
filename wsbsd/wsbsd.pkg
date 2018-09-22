@@ -94,7 +94,7 @@
 #define NCBI_TOOLKIT        ncbi-toolkit
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot
-#define LLVM                llvm40 llvm50 llvm60 llvm-devel
+#define LLVM                llvm40 llvm50 llvm60 llvm70 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                pocl
 
