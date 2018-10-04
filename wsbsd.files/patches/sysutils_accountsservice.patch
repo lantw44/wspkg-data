@@ -1,0 +1,14 @@
+Index: sysutils/accountsservice/Makefile
+===================================================================
+--- sysutils/accountsservice/Makefile	(revision 481156)
++++ sysutils/accountsservice/Makefile	(working copy)
+@@ -25,9 +25,7 @@
+ 
+ # XXX HACK! this file isn't present on the pristine jails of the builders
+ # and configure breaks without it. Beter solutions welcome.
+-.if defined(PACKAGE_BUILDING)
+ CONFIGURE_ENV+=	ac_cv_file__var_log_utx_log=yes
+-.endif
+ 
+ post-patch:
+ 	@${REINPLACE_CMD} -e 's|/etc/gdm/custom.conf|${LOCALBASE}/etc/gdm/custom.conf|g' \
