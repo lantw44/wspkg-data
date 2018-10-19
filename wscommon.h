@@ -277,7 +277,7 @@ LOUDMOUTH       // requested by b01902109
 
 // Parallel Programming
 #ifdef WSPKG_PARALLEL
-mpich2
+mpich
 #endif
 
 // Perl
