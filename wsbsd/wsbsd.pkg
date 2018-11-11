@@ -154,7 +154,7 @@
 #define GTK3_THEMES         gtk3-unico-engine clearlooks-phenix-theme
 
 // Graphics
-#define IMAGEMAGICK         ImageMagick
+#define IMAGEMAGICK         ImageMagick6
 #define JPEG                jpeg-turbo
 #define BMEPS               bmpp
 #define XGRAPH              xgraph
