@@ -2,6 +2,7 @@
 /^vm-emacs26@full$/d
 # Marked as broken in ports
 /^ruby24-mysql$/d
+/^gprolog$/d
 # Unfetchable
 /^zh-oxim/d
 /^zh-bg5ps/d
