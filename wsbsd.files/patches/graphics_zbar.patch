@@ -1,0 +1,140 @@
+Index: graphics/zbar/Makefile
+===================================================================
+--- graphics/zbar/Makefile	(revision 490640)
++++ graphics/zbar/Makefile	(working copy)
+@@ -3,7 +3,7 @@
+ 
+ PORTNAME=	zbar
+ PORTVERSION=	0.10
+-PORTREVISION=	16
++PORTREVISION=	17
+ CATEGORIES=	graphics
+ MASTER_SITES=	SF
+ 
+@@ -12,15 +12,17 @@
+ 
+ LICENSE=	LGPL21
+ 
++USES=		iconv jpeg libtool gmake pathfix pkgconfig
++USE_LDCONFIG=	yes
++
+ GNU_CONFIGURE=	yes
+-USE_LDCONFIG=	yes
+-USES=		iconv jpeg libtool gmake pathfix pkgconfig
+ INSTALL_TARGET=	install-strip
+-
+ CONFIGURE_ARGS=	--with-jpeg=yes
+ 
+-OPTIONS_DEFINE=	X11 IMAGEMAGICK V4L PYTHON GTK2 QT4 DOCS
+-OPTIONS_DEFAULT=X11 IMAGEMAGICK
++OPTIONS_DEFINE=	X11 V4L PYTHON GTK2 QT4 DOCS
++OPTIONS_DEFAULT=X11 V7
++OPTIONS_RADIO=	IMAGEMAGICK
++OPTIONS_RADIO_IMAGEMAGICK=	V6 V7
+ OPTIONS_SUB=	yes
+ V4L_DESC=	Build zbarcam video scanner
+ 
+@@ -28,10 +30,18 @@
+ X11_CONFIGURE_ON=	--with-x=yes
+ X11_CONFIGURE_OFF=	--with-x=no --without-xshm --without-xv
+ 
+-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-7.so:graphics/ImageMagick7
+-IMAGEMAGICK_CONFIGURE_ON=	--with-imagemagick=yes
+-IMAGEMAGICK_CONFIGURE_OFF=	--with-imagemagick=no
++V6_DESC=	With ImageMagick6
++V6_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
++V6_CONFIGURE_ON=	--with-imagemagick=yes
+ 
++V7_DESC=	With ImageMagick7
++V7_LIB_DEPENDS=	libMagick++-7.so:graphics/ImageMagick7
++V7_CONFIGURE_ON=	--with-imagemagick=yes
++
++.if empty(VARIABLE:MV6) && empty(VARIABLE:MV7)
++CONFIGURE_ARGS+=	--with-imagemagick=no
++.endif
++
+ # To avoid patching configure even more:
+ CONFIGURE_ENV+=			ac_cv_header_wand_MagickWand_h=yes
+ 
+Index: graphics/zbar/files/patch-Makefile.in
+===================================================================
+--- graphics/zbar/files/patch-Makefile.in	(revision 490640)
++++ graphics/zbar/files/patch-Makefile.in	(working copy)
+@@ -1,8 +1,8 @@
+---- Makefile.in.orig	2010-12-09 17:52:23.862954369 +0000
+-+++ Makefile.in	2010-12-09 17:53:00.865045766 +0000
+-@@ -697,7 +697,7 @@
++--- Makefile.in.orig	2019-01-09 19:05:01 UTC
+++++ Makefile.in
++@@ -697,7 +697,7 @@ EXTRA_DIST = $(am__append_33) $(am__append_39) $(am__a
+  	perl/t/Scanner.t perl/t/pod.t perl/t/pod-coverage.t
+- pkgconfigdir = $(libdir)/pkgconfig
++ pkgconfigdir = $(prefix)/libdata/pkgconfig
+  pkgconfig_DATA = zbar.pc $(am__append_44) $(am__append_52)
+ -dist_doc_DATA = COPYING HACKING INSTALL LICENSE NEWS README TODO \
+ +dist_doc_DATA = HACKING INSTALL NEWS README TODO \
+Index: graphics/zbar/files/patch-configure
+===================================================================
+--- graphics/zbar/files/patch-configure	(revision 490640)
++++ graphics/zbar/files/patch-configure	(working copy)
+@@ -1,6 +1,6 @@
+---- configure.orig	2009-10-23 18:17:24.000000000 +0000
++--- configure.orig	2009-10-23 18:17:24 UTC
+ +++ configure
+-@@ -21369,6 +21369,7 @@ if test "x$ac_cv_lib_jpeg_jpeg_read_head
++@@ -21369,6 +21369,7 @@ if test "x$ac_cv_lib_jpeg_jpeg_read_header" = x""yes; 
+  #define HAVE_LIBJPEG 1
+  _ACEOF
+  
+@@ -8,9 +8,11 @@
+    LIBS="-ljpeg $LIBS"
+  
+  else
+-@@ -21736,4 +21737,5 @@
++@@ -21735,6 +21736,7 @@ $as_echo "yes" >&6; }
++ 	:
+  fi
+     MAGICK_VERSION=`$PKG_CONFIG MagickWand --modversion`
+ +   MAGICK_CFLAGS="$MAGICK_CFLAGS -DMAGICK_MAJOR=${MAGICK_VERSION%%.*}"
+     { $as_echo "$as_me:$LINENO: using ImageMagick version $MAGICK_VERSION" >&5
+  $as_echo "$as_me: using ImageMagick version $MAGICK_VERSION" >&6;}
++ 
+Index: graphics/zbar/files/patch-zbarimg.c
+===================================================================
+--- graphics/zbar/files/patch-zbarimg.c	(revision 490640)
++++ graphics/zbar/files/patch-zbarimg.c	(nonexistent)
+@@ -1,12 +0,0 @@
+---- zbarimg/zbarimg.c	2009-10-23 14:16:44.000000000 -0400
+-+++ zbarimg/zbarimg.c	2017-08-10 10:22:08.707599000 -0400
+-@@ -39,5 +39,9 @@
+- 
+- #include <zbar.h>
+-+#if MAGICK_MAJOR < 7
+- #include <wand/MagickWand.h>
+-+#else
+-+#include <MagickWand/MagickWand.h>
+-+#endif
+- 
+- /* in 6.4.5.4 MagickGetImagePixels changed to MagickExportImagePixels.
+Index: graphics/zbar/pkg-plist
+===================================================================
+--- graphics/zbar/pkg-plist	(revision 490640)
++++ graphics/zbar/pkg-plist	(working copy)
+@@ -1,5 +1,6 @@
+ %%V4L%%bin/zbarcam
+-%%IMAGEMAGICK%%bin/zbarimg
++%%V6%%bin/zbarimg
++%%V7%%bin/zbarimg
+ include/zbar.h
+ include/zbar/Decoder.h
+ include/zbar/Exception.h
+@@ -29,7 +30,8 @@
+ %%QT4%%libdata/pkgconfig/zbar-qt.pc
+ libdata/pkgconfig/zbar.pc
+ %%V4L%%man/man1/zbarcam.1.gz
+-%%IMAGEMAGICK%%man/man1/zbarimg.1.gz
++%%V6%%man/man1/zbarimg.1.gz
++%%V7%%man/man1/zbarimg.1.gz
+ %%PYTHON%%%%PYTHON_SITELIBDIR%%/zbar.so
+ %%PYTHON%%%%GTK2%%%%PYTHON_SITELIBDIR%%/zbarpygtk.so
+ %%PORTDOCS%%%%DOCSDIR%%/HACKING
