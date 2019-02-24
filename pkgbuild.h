@@ -10,4 +10,4 @@
  cgit gitolite highlight
 
 // Trac
- trac trac-accountmanager postgresql10-server py27-psycopg2
+ trac trac-accountmanager postgresql11-server py27-psycopg2
