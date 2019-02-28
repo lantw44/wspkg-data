@@ -1,22 +1,21 @@
 #!/bin/sh
 
 write_string_to_fd () {
-	fd="$1"
-	shift
-	echo "$@" 1>&"$fd"
+	printf '%s\n' "$2" 1>&"$1"
 }
 
 write_stdin_to_fd () {
-	fd="$1"
-	shift
-	cat 1>&"$fd"
+	cat 1>&"$1"
 }
 
 echo_cmd () {
-	printf "\033[1;33mRunning command => \033[m"
-	echo "$@"
+	printf '\033[1;33mRunning command =>\033[m'
+	for arg in "$@"; do
+		printf ' %s' "${arg}"
+	done
+	printf '\n'
 	"$@"
-	echo
+	printf '\n'
 }
 
 export WRKDIR="/tmp/wspkg-build"
