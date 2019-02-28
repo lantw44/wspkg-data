@@ -22,13 +22,13 @@ else
 fi
 shift
 
-: ${MAKE:="make"}
+: "${MAKE:="make"}"
 printf '\033[1;33mRunning\033[m: %s -f "%s" WSPKGDIR="%s"' "${MAKE}" "$makefile" "$WSPKGDIR"
 for arg in "$@"; do
     printf ' %s' "$arg"
 done
 printf '\n\n'
-if ${MAKE} -f "$makefile" WSPKGDIR="$WSPKGDIR" "$@"; then
+if "${MAKE}" -f "$makefile" WSPKGDIR="$WSPKGDIR" "$@"; then
     printf '\n\033[1;32mDone! ;-)\033[m\n'
 else
     printf '\n\033[1;31mSorry... :(\033[m\n'

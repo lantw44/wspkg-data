@@ -1,15 +1,15 @@
 #!/bin/sh
 
-: ${PORTSDIR:="/usr/ports"}
-[ '!' -d "${PORTSDIR}/.svn" ] && \
-    printf '%s is not a svn checkout\n' "${PORTSDIR}" && exit 1
+: "${PORTSDIR:="/usr/ports"}"
+[ ! -d "${PORTSDIR}/.svn" ] && \
+	printf '%s is not a svn checkout\n' "${PORTSDIR}" && exit 1
 
 shdir="$(realpath "$(dirname "$0")")"
-: ${shdir:="."}
+: "${shdir:="."}"
 
 patchdir="${shdir}/patches"
 
-cd ${PORTSDIR}
+cd "${PORTSDIR}" || exit
 for patch_file in "${patchdir}"/*; do
 	if patch -s -C -f -p0 < "${patch_file}"; then
 		printf '==> Applying %s\n' "${patch_file}"
