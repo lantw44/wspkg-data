@@ -18,20 +18,22 @@ echo_cmd () {
 	printf '\n'
 }
 
-export WRKDIR="/tmp/wspkg-build"
+cleanup () {
+	rm -r -- "${WRKDIR}"
+}
+
+# Create a workspace
+WRKDIR="$(mktemp -d)"
+trap cleanup EXIT
+
 export WSPKGDIR="${WRKDIR}/wspkg"
 export REPODIR="/usr/local/git/repositories"
 export PORTSDIR="/usr/local/poudriere/ports/default"
 unset  GIT_DIR
 
-# Update sources
+# Fetch sources
 for repo in wspkg wspkg-data; do
-	if [ ! -d "${WRKDIR}/${repo}" ]; then
-		echo_cmd git clone -- "${REPODIR}/${repo}.git" "${WRKDIR}/${repo}"
-	else
-		echo_cmd cd "${WRKDIR}/${repo}"
-		echo_cmd git pull -- "${REPODIR}/${repo}.git"
-	fi
+	echo_cmd git clone -- "${REPODIR}/${repo}.git" "${WRKDIR}/${repo}"
 done
 
 
