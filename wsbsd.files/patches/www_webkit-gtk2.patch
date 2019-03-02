@@ -1,0 +1,12 @@
+Index: www/webkit-gtk2/Makefile
+===================================================================
+--- www/webkit-gtk2/Makefile	(revision 494151)
++++ www/webkit-gtk2/Makefile	(working copy)
+@@ -32,7 +32,6 @@
+ 
+ DEPRECATED=	Known and unfixed security issues
+ EXPIRATION_DATE=2019-03-24
+-FORBIDDEN=	Known and unfixed security issues
+ 
+ PORTSCOUT=	limit:^2\.4\.
+ 
