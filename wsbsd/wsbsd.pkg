@@ -186,8 +186,8 @@
 #define KDE_META_PKG        kde5
 #define KDE_GTK_CONFIG      plasma5-kde-gtk-config
 #define OKULAR              okular
-#define ADWAITA_QT          adwaita-qt4@qt4 adwaita-qt5@qt5
-#define QT4_QTCONFIG        qt4-qtconfig
+#define ADWAITA_QT          adwaita-qt5
+#define QT4_QTCONFIG        NULL // Removed in r495967
 #define QT5_QTCT            qt5ct
 
 // Lib
@@ -198,7 +198,7 @@
 #define JPEG_DEV            jpeg-turbo
 #define LTDL_DEV            libltdl
 #define NCURSES_DEV         ncurses
-#define QT4_DEV             qt4
+#define QT4_DEV             NULL // Removed in r495967
 #define QT5_DEV             qt5
 #define PERL_DEV            NULL // provided by default perl installation
 #define MYSQLXX_DEV         mysql++-mysql56
