@@ -430,7 +430,7 @@
 // Web
 #define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
                             flashplayer
-#define FIREFOX             firefox firefox-i18n
+#define FIREFOX             firefox
 #define W3M_EL              EMACS_PKG(emacs-w3m)
 #define JAVA_PLUGIN         icedtea-web
 
