@@ -342,9 +342,9 @@
 #define PYTHON_CRYPTO           PYTHON_2_3_PKG(pycrypto)
 
 // Ruby
-#define RUBY                ruby ruby25
+#define RUBY                ruby
 #define RUBY_BUNDLER        rubygem-bundler
-#define RUBY_MYSQL          ruby24-mysql
+#define RUBY_MYSQL          ruby25-mysql
 #define RUBY_RAKE           rubygem-rake
 #define RUBY_RAILS          rubygem-rails5
 #define RUBY_RDOC           rubygem-rdoc

@@ -3,7 +3,7 @@
 # Removed because of glib12 removal
 /^wmclockmon$/d
 # Marked as broken in ports
-/^ruby24-mysql$/d
+/^ruby25-mysql$/d
 /^gprolog$/d
 /^hs-haddock$/d
 # Unfetchable
