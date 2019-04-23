@@ -221,7 +221,6 @@
 #define  LIBDB_CXX_DEV            db
 
 // Lisp
-#define  CLISP                    clisp
 
 // Lua
 #define  LUA51                    lua51

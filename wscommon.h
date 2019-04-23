@@ -220,7 +220,7 @@ LIBDB_CXX_DEV
 
 // Lisp
 #ifdef WSPKG_LISP
-CLISP
+clisp
 #endif
 
 // Lua

@@ -223,7 +223,6 @@
 #define LIBDB_CXX_DEV       db5
 
 // Lisp
-#define CLISP               NULL // Removed in r363198
 
 // Lua
 #define LUA51               lua51
