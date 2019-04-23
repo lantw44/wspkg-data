@@ -70,10 +70,10 @@
 ACL             ATTR            BC              BIND            CAP
 FILE            FINGER          FTP             INETD           ISPELL
 LESS            LOCATE          lsof            m4              MIME_SUPPORT
-NCURSES_TERM    PATCH           PCI             PERL            PYTHON2
-PYTHON3         SHARUTILS       SSH             STRACE          sudo
-TELNET          texinfo         TIME            USB             WAMERICAN
-wget            WHOIS
+NCURSES_TERM    PATCH           PCI             PERL            python
+PYTHON2         PYTHON3         SHARUTILS       SSH             STRACE
+sudo            TELNET          texinfo         TIME            USB
+WAMERICAN       wget            WHOIS
 #endif
 
 // Shell
