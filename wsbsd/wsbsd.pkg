@@ -61,7 +61,7 @@
 #define SYSSTAT             NULL
 #define DEBSUMS             NULL
 #define PKG_MGMT            portupgrade portmaster portconf portfind porttools \
-                            portlint pkg_rmleaves pkg_cutleaves bsdadminscripts
+                            portlint pkg_rmleaves pkg_cutleaves bsdadminscripts2
 #define NET_SNMP            net-snmp
 #define FDISK               linuxfdisk
 #define GDISK               gdisk
