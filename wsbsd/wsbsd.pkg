@@ -83,7 +83,7 @@
 #define NODEJS              node npm
 #define OPENJDK             openjdk6 openjdk openjdk8
 #define SUBVERSION          subversion subversion-gnome-keyring \
-                            subversion-kwallet svk EMACS_PKG(psvn)
+                            svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87
 #define TK                  tk85 tk86 tk87
 #define AARCH64_GCC         aarch64-binutils aarch64-gcc
@@ -237,7 +237,7 @@
 // Mail
 #define MAILX               NULL
 #define METAMAIL            metamail
-#define VM                  EMACS_PKG(vm)
+#define VM                  NULL // Removed in r366959
 
 // Math
 #define GSL                 gsl
@@ -344,7 +344,7 @@
 // Ruby
 #define RUBY                ruby
 #define RUBY_BUNDLER        rubygem-bundler
-#define RUBY_MYSQL          ruby25-mysql
+#define RUBY_MYSQL          NULL // Removed in r471892
 #define RUBY_RAKE           rubygem-rake
 #define RUBY_RAILS          rubygem-rails5
 #define RUBY_RDOC           rubygem-rdoc
