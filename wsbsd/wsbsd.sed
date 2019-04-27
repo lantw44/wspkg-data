@@ -10,5 +10,3 @@
 /^transfig$/d
 # Incompatible with OpenSSL 1.1
 /^bsdftpd-ssl$/d
-/^libeXosip2$/d
-/^rdesktop$/d
