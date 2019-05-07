@@ -33,8 +33,8 @@
 #define PATCH               NULL
 #define PCI                 NULL
 #define PERL                perl5
-#define PYTHON2             python2
-#define PYTHON3             python3
+#define PYTHON2             python2 python27
+#define PYTHON3             python3 python35 python36 python37
 #define SHARUTILS           NULL
 #define SSH                 NULL
 #define STRACE              NULL
