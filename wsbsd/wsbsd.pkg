@@ -161,23 +161,11 @@
 
 // Haskell
 #define HUGS                hugs98
-#define HASKELL_PLATFORM    hs-async hs-attoparsec hs-call-stack \
-                            hs-case-insensitive hs-cgi hs-exceptions hs-fgl \
-                            hs-fixed hs-GLURaw hs-GLUT hs-half \
-                            hs-hashable hs-haskell-src hs-html hs-HTTP \
-                            hs-HUnit hs-integer-logarithms \
-                            hs-mtl hs-multipart hs-network \
-                            hs-network-uri hs-ObjectName hs-old-locale \
-                            hs-old-time hs-OpenGL hs-OpenGLRaw hs-parallel \
-                            hs-primitive hs-QuickCheck hs-random \
-                            hs-regex-base hs-regex-compat hs-regex-posix \
-                            hs-scientific hs-split hs-StateVar hs-syb \
-                            hs-tf-random hs-transformers-base \
-                            hs-transformers-compat hs-unordered-containers \
-                            hs-vector hs-zlib \
-                            hs-alex hs-cabal-install hs-haddock hs-happy \
-                            hs-hscolour stack
-#define HASKELL_OPENGL      hs-OpenGL
+#define HASKELL_PLATFORM    hs-hashable hs-mtl hs-network hs-old-locale \
+                            hs-old-time hs-random hs-transformers-compat \
+                            hs-unordered-containers hs-alex hs-cabal-install \
+                            hs-haddock hs-happy hs-hscolour hs-stack
+#define HASKELL_OPENGL      NULL // Removed in r501084
 
 // Interpreters
 #define SWIG                swig30

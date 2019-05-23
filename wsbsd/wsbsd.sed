@@ -2,7 +2,6 @@
 /^wmclockmon$/d
 # Marked as broken in ports
 /^gprolog$/d
-/^hs-haddock$/d
 # Unfetchable
 /^zh-oxim/d
 /^zh-bg5ps/d
