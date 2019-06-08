@@ -393,6 +393,8 @@ rlwrap
 SHELLCHECK
 //added by b03902074@csie.ntu.edu.tw
 ACK             RIPGREP         SILVER_SEARCHER jq
+// PTT 上 oxen 在看板 b07902xxx 提到工作站缺少這個套件
+p7zip
 #endif
 
 // Video
