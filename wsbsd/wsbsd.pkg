@@ -189,7 +189,7 @@
 #define QT4_DEV             NULL // Removed in r495967
 #define QT5_DEV             qt5
 #define PERL_DEV            NULL // provided by default perl installation
-#define MYSQLXX_DEV         mysql++-mysql56
+#define MYSQLXX_DEV         mysql++-mysql57
 #define OPENMPI_DEV         openmpi
 #define GFLAGS_DEV          gflags
 #define BOOST_DEV           boost-all
