@@ -246,7 +246,7 @@
 #define DENYHOSTS           denyhosts
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
-#define VNCVIEWER           tigervnc
+#define VNCVIEWER           tigervnc-viewer
 #define NS2                 NULL // Removed in r367590
 #define BSDFTPD_SSL         bsdftpd-ssl
 #define OMNITTY             omnitty
@@ -434,7 +434,7 @@
 #define IM_SWITCH           NULL
 #define MLTERM_TOOLS        NULL
 #define RXVT_ML             rxvt-unicode
-#define VNCSERVER           tigervnc
+#define VNCSERVER           tigervnc-server
 #define XVFB                xorg-vfbserver
 #define ENLIGHTENMENT       enlightenment
 #define XEPHYR              xephyr
