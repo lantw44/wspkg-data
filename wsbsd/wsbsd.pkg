@@ -415,7 +415,7 @@
 #define XWAYLAND            xwayland
 
 // Web
-#define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c6 \
+#define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c7 \
                             flashplayer
 #define FIREFOX             firefox
 #define W3M_EL              EMACS_PKG(emacs-w3m)
