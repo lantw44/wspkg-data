@@ -9,3 +9,5 @@
 /^transfig$/d
 # Incompatible with OpenSSL 1.1
 /^bsdftpd-ssl$/d
+# Removed because it doesn't work with modern gdb
+/^ddd$/d
