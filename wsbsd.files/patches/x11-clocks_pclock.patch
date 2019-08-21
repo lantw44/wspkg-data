@@ -1,0 +1,13 @@
+Index: x11-clocks/pclock/Makefile
+===================================================================
+--- x11-clocks/pclock/Makefile	(revision 509234)
++++ x11-clocks/pclock/Makefile	(working copy)
+@@ -11,8 +11,6 @@
+ MAINTAINER=	ports@FreeBSD.org
+ COMMENT=	Simple analog clock program for the Window Maker dock
+ 
+-BROKEN=		unfetchable
+-
+ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}.orig/src
+ 
+ USE_XORG=	x11 xau xdmcp xext xpm
