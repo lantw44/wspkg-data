@@ -1,12 +1,14 @@
 Index: korean/baekmukfonts-ttf/Makefile
 ===================================================================
---- korean/baekmukfonts-ttf/Makefile	(revision 508258)
+--- korean/baekmukfonts-ttf/Makefile	(revision 512140)
 +++ korean/baekmukfonts-ttf/Makefile	(working copy)
-@@ -15,8 +15,6 @@
+@@ -15,10 +15,6 @@
  LICENSE=	MIT
  LICENSE_FILE=	${WRKSRC}/COPYRIGHT
  
 -BROKEN=		unfetchable
+-DEPRECATED=	Unfetchable, unmaintained
+-EXPIRATION_DATE=	2019-10-16
 -
  NO_BUILD=	yes
  
