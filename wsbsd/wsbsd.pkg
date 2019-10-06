@@ -243,7 +243,7 @@
 #define LINUXTOOL           NULL
 
 // Net
-#define DENYHOSTS           denyhosts
+#define DENYHOSTS           denyhosts-py36@py36
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
 #define VNCVIEWER           tigervnc-viewer
