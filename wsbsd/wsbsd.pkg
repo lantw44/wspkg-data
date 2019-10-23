@@ -415,14 +415,13 @@
 #define XWAYLAND            xwayland
 
 // Web
-#define FLASH_PLUGIN        swfdec-plugin nspluginwrapper linux_base-c7 \
-                            flashplayer
+#define FLASH_PLUGIN        nspluginwrapper linux_base-c7 flashplayer
 #define FIREFOX             firefox
 #define W3M_EL              EMACS_PKG(emacs-w3m)
 #define JAVA_PLUGIN         icedtea-web
 
 // WindowMaker
-#define PCLOCK              pclock
+#define PCLOCK              NULL // Removed in r514601
 #define WINDOWMAKER         windowmaker
 #define WMCALCLOCK          wmCalClock
 #define WMTIMER             wmtimer
