@@ -86,7 +86,7 @@
                             svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87
 #define TK                  tk85 tk86 tk87
-#define AARCH64_GCC         aarch64-binutils aarch64-gcc
+#define AARCH64_GCC         binutils@aarch64 aarch64-gcc
 #define GDB_MULTIARCH       NULL
 #define ECLIPSE             eclipse eclipse-cdt eclipse-pydev
 #define JIKES               jikes
