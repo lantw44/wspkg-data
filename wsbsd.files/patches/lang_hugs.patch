@@ -1,0 +1,13 @@
+Index: lang/hugs/Makefile
+===================================================================
+--- lang/hugs/Makefile	(revision 517746)
++++ lang/hugs/Makefile	(working copy)
+@@ -11,8 +11,6 @@
+ MAINTAINER=	haskell@FreeBSD.org
+ COMMENT=	Interpreter for the functional programming language Haskell 98
+ 
+-BROKEN=		unfetchable
+-
+ BROKEN_armv6=		fails to compile: cppinput.c: invalid preprocessing directive \#!
+ BROKEN_armv7=		fails to compile: cppinput.c: invalid preprocessing directive \#!
+ 
