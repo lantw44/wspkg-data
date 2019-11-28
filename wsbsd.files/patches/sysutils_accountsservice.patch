@@ -1,8 +1,8 @@
 Index: sysutils/accountsservice/Makefile
 ===================================================================
---- sysutils/accountsservice/Makefile	(revision 481156)
+--- sysutils/accountsservice/Makefile	(revision 518576)
 +++ sysutils/accountsservice/Makefile	(working copy)
-@@ -25,9 +25,7 @@
+@@ -26,9 +26,7 @@
  
  # XXX HACK! this file isn't present on the pristine jails of the builders
  # and configure breaks without it. Beter solutions welcome.
