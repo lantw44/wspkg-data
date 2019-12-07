@@ -1,6 +1,6 @@
 Index: devel/pydbus-common/Makefile
 ===================================================================
---- devel/pydbus-common/Makefile	(revision 518576)
+--- devel/pydbus-common/Makefile	(revision 519147)
 +++ devel/pydbus-common/Makefile	(working copy)
 @@ -35,7 +35,7 @@
  HTMLDOCS_DESC=	build html documentation
@@ -11,15 +11,3 @@ Index: devel/pydbus-common/Makefile
  
  post-patch-DOCS-on:
  	@${REINPLACE_CMD} -e 's|HEADERS install-dist_docDATA|HEADERS|g ; \
-Index: devel/pydbus-common/pkg-plist
-===================================================================
---- devel/pydbus-common/pkg-plist	(revision 518576)
-+++ devel/pydbus-common/pkg-plist	(working copy)
-@@ -2,7 +2,6 @@
- libdata/pkgconfig/dbus-python.pc
- %%HTMLDOCS%%%%PORTDOCS%%%%DOCSDIR%%/API_CHANGES.html
- %%PORTDOCS%%%%DOCSDIR%%/API_CHANGES.txt
--%%HTMLDOCS%%%%PORTDOCS%%%%DOCSDIR%%/HACKING.html
- %%PORTDOCS%%%%DOCSDIR%%/NEWS
- %%HTMLDOCS%%%%PORTDOCS%%%%DOCSDIR%%/PY3PORT.html
- %%PORTDOCS%%%%DOCSDIR%%/PY3PORT.txt
