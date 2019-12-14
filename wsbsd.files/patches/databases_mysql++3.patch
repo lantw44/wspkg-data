@@ -1,0 +1,13 @@
+Index: databases/mysql++3/Makefile
+===================================================================
+--- databases/mysql++3/Makefile	(revision 519661)
++++ databases/mysql++3/Makefile	(working copy)
+@@ -11,8 +11,6 @@
+ MAINTAINER=	dudu@dudu.ro
+ COMMENT=	Complex C++ API for MySQL${MYSQL_VER}
+ 
+-BROKEN=		unfetchable
+-
+ USES=		gmake mysql
+ GNU_CONFIGURE=	yes
+ CONFIGURE_ARGS+=--with-mysql=${LOCALBASE} --enable-thread-check
