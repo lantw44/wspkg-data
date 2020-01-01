@@ -146,7 +146,7 @@
 #define MUTTER              mutter
 #define GNOME_META_PKG      gnome3-lite
 #define BAOBAB              gnome-utils
-#define GLADE               glade glade2 glade3
+#define GLADE               glade
 #define GTK2                gtk2 gtk2-reference gtkmm24 gtkmm24-reference
 #define GTK3                gtk3 gtkmm30 gtkmm30-reference
 #define GNOME_SCREENSHOT    gnome-utils
