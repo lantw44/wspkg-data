@@ -7,7 +7,7 @@
 #define EMACS_FLAVOR        full
 #define EMACS_PKG(x)        x-emacs26@EMACS_FLAVOR
 #define PYTHON_2_PKG(x)     py27-x@py27
-#define PYTHON_3_PKG(x)     py36-x@py36
+#define PYTHON_3_PKG(x)     py37-x@py37
 #define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
 #define PYPY_2_PKG(x)       pypy-x@pypy
 #define PYPY_3_PKG(x)       pypy3-x@pypy3
@@ -243,7 +243,7 @@
 #define LINUXTOOL           NULL
 
 // Net
-#define DENYHOSTS           denyhosts-py36@py36
+#define DENYHOSTS           denyhosts-py37@py37
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
 #define VNCVIEWER           tigervnc-viewer
