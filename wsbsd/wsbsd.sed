@@ -11,3 +11,5 @@
 /^bsdftpd-ssl$/d
 # Removed because it doesn't work with modern gdb
 /^ddd$/d
+# Removed because it needs Python 2.7 to build
+/^sdcc$/d
