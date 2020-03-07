@@ -81,7 +81,7 @@
 #define MAKE                gmake bmake fmake
 #define MINGW               mingw32-gcc
 #define NODEJS              node npm
-#define OPENJDK             openjdk openjdk8 openjdk11 openjdk12
+#define OPENJDK             openjdk openjdk8 openjdk11 openjdk12 openjdk13
 #define SUBVERSION          subversion subversion-gnome-keyring \
                             svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87
