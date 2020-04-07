@@ -442,6 +442,7 @@
 #define  DESKTOP_BASE             NULL
 #define  IM_SWITCH                NULL
 #define  MLTERM_TOOLS             mlterm
+#define  RXVT                     rxvt
 #define  RXVT_ML                  rxvt-unicode
 #define  VNCSERVER                tigervnc
 #define  XVFB                     xorg-server-xvfb

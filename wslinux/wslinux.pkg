@@ -448,6 +448,7 @@
 #define DESKTOP_BASE        desktop-base
 #define IM_SWITCH           im-switch
 #define MLTERM_TOOLS        mlterm-tools
+#define RXVT_ML             rxvt
 #define RXVT_ML             rxvt-ml
 #define VNCSERVER           vnc4server tightvncserver xserver-xorg-dev \
                             tigervnc-scraping-server tigervnc-standalone-server

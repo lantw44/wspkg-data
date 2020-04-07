@@ -432,6 +432,7 @@
 #define DESKTOP_BASE        NULL
 #define IM_SWITCH           NULL
 #define MLTERM_TOOLS        NULL
+#define RXVT                NULL // Removed in r528758
 #define RXVT_ML             rxvt-unicode
 #define VNCSERVER           tigervnc-server
 #define XVFB                xorg-vfbserver

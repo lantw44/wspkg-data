@@ -426,7 +426,7 @@ ASBUTTON
 #ifdef WSPKG_X11
 // debian 217-meta
 afterstep       DESKTOP_BASE    fvwm            IM_SWITCH       mlterm
-MLTERM_TOOLS    rxvt            RXVT_ML         VNCSERVER       xchm
+MLTERM_TOOLS    RXVT            RXVT_ML         VNCSERVER       xchm
 xorg            xscreensaver    xterm           XVFB
 // freebsd local-217
 ENLIGHTENMENT   icewm           synergy         wdm             xfig
