@@ -1,12 +1,14 @@
 Index: databases/mysql++3/Makefile
 ===================================================================
---- databases/mysql++3/Makefile	(revision 519661)
+--- databases/mysql++3/Makefile	(revision 531763)
 +++ databases/mysql++3/Makefile	(working copy)
-@@ -11,8 +11,6 @@
+@@ -11,10 +11,6 @@
  MAINTAINER=	dudu@dudu.ro
  COMMENT=	Complex C++ API for MySQL${MYSQL_VER}
  
 -BROKEN=		unfetchable
+-DEPRECATED=	Broken for more than 6 months
+-EXPIRATION_DATE=	2020-05-05
 -
  USES=		gmake mysql
  GNU_CONFIGURE=	yes

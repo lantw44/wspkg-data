@@ -1,12 +1,14 @@
 Index: sysutils/wmcpuload/Makefile
 ===================================================================
---- sysutils/wmcpuload/Makefile	(revision 517746)
+--- sysutils/wmcpuload/Makefile	(revision 531763)
 +++ sysutils/wmcpuload/Makefile	(working copy)
-@@ -10,8 +10,6 @@
+@@ -10,10 +10,6 @@
  MAINTAINER=	xride@FreeBSD.org
  COMMENT=	"lcd" dockapp for windowmaker, which displays the current cpuload
  
 -BROKEN=		unfetchable
+-DEPRECATED=	Broken for more than 6 months
+-EXPIRATION_DATE=	2020-05-05
 -
  USES=		tar:bzip2 xorg
  USE_XORG=	xpm
