@@ -328,6 +328,7 @@
 #define PYTHON_NLTK             PYTHON_2_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
 #define PYTHON_CRYPTO           PYTHON_2_3_PKG(pycrypto)
+#define PYTHON_NTLM_AUTH        PYTHON_2_3_PKG(ntlm-auth)
 
 // Ruby
 #define RUBY                ruby rubygem-irb rubygem-rdoc ruby27

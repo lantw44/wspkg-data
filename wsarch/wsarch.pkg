@@ -339,6 +339,7 @@
 #define  PYTHON_NLTK              python-nltk python2-nltk
 #define  PYTHON_JIEBA             NULL
 #define  PYTHON_CRYPTO            python-crypto python2-crypto
+#define  PYTHON_NTLM_AUTH         python-ntlm-auth
 
 // Ruby
 #define  RUBY                     ruby

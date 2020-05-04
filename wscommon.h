@@ -323,6 +323,8 @@ PYTHON_PYQUERY
 PYTHON_NLTK PYTHON_JIEBA
 // request by d05922014@csie.ntu.edu.tw
 PYTHON_CRYPTO
+// passwd script
+PYTHON_NTLM_AUTH
 #endif
 
 // Ruby
