@@ -419,7 +419,7 @@ JAVA_PLUGIN     // added by b01902062@csie.ntu.edu.tw
 // WindowMaker
 #ifdef WSPKG_WINDOWMAKER
 PCLOCK          WINDOWMAKER     wmbiff          wmweather+      wmnd
-wmcpuload       wmmemload       wmtop           WMCALCLOCK      wmclock
+WMCPULOAD       wmmemload       wmtop           WMCALCLOCK      wmclock
 wmclockmon      wmtime          WMTIMER         wmcliphist      TEMPERATURE_APP
 ASBUTTON
 #endif
@@ -431,7 +431,7 @@ afterstep       DESKTOP_BASE    fvwm            IM_SWITCH       mlterm
 MLTERM_TOOLS    RXVT            RXVT_ML         VNCSERVER       xchm
 xorg            xscreensaver    xterm           XVFB
 // freebsd local-217
-ENLIGHTENMENT   icewm           synergy         wdm             xfig
+ENLIGHTENMENT   icewm           synergy         WDM             xfig
 xlockmore
 // added by b01902062@csie.ntu.edu.tw
 fbpanel         obconf          openbox         XEPHYR          xrestop

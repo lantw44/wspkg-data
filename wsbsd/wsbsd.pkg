@@ -160,7 +160,7 @@
 #define XGRAPH              xgraph
 
 // Haskell
-#define HUGS                hugs98
+#define HUGS                NULL // Removed in r534093
 #define HASKELL_PLATFORM    hs-hashable hs-mtl hs-network hs-old-locale \
                             hs-old-time hs-random hs-transformers-compat \
                             hs-unordered-containers hs-alex hs-cabal-install \
@@ -189,7 +189,7 @@
 #define QT4_DEV             NULL // Removed in r495967
 #define QT5_DEV             qt5
 #define PERL_DEV            NULL // provided by default perl installation
-#define MYSQLXX_DEV         mysql++-mysql57
+#define MYSQLXX_DEV         NULL // Removed in r534093
 #define OPENMPI_DEV         openmpi
 #define GFLAGS_DEV          gflags
 #define BOOST_DEV           boost-all
@@ -424,6 +424,7 @@
 // WindowMaker
 #define PCLOCK              NULL // Removed in r514601
 #define WINDOWMAKER         windowmaker
+#define WMCPULOAD           NULL // Removed in r534093
 #define WMCALCLOCK          wmCalClock
 #define WMTIMER             wmtimer
 #define TEMPERATURE_APP     temperature.app
@@ -438,5 +439,6 @@
 #define VNCSERVER           tigervnc-server
 #define XVFB                xorg-vfbserver
 #define ENLIGHTENMENT       enlightenment
+#define WDM                 NULL // Removed in r534093
 #define XEPHYR              xephyr
 #define LXDE                lxde-meta

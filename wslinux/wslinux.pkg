@@ -440,6 +440,7 @@
 // WindowMaker
 #define PCLOCK              wmdate
 #define WINDOWMAKER         wmaker
+#define WMCPULOAD           wmcpuload
 #define WMCALCLOCK          wmcalclock
 #define WMTIMER             NULL // FIXME: not available from repository
 #define TEMPERATURE_APP     NULL // FIXME: not available from repository
@@ -455,5 +456,6 @@
                             tigervnc-scraping-server tigervnc-standalone-server
 #define XVFB                xvfb
 #define ENLIGHTENMENT       e17
+#define WDM                 wdm
 #define XEPHYR              xserver-xephyr
 #define LXDE                lxde
