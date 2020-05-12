@@ -161,9 +161,7 @@
 
 // Haskell
 #define HUGS                NULL // Removed in r534093
-#define HASKELL_PLATFORM    hs-hashable hs-mtl hs-network hs-old-locale \
-                            hs-old-time hs-random hs-transformers-compat \
-                            hs-unordered-containers hs-alex hs-cabal-install \
+#define HASKELL_PLATFORM    hs-alex hs-cabal-install \
                             hs-haddock hs-happy hs-hscolour hs-stack
 #define HASKELL_OPENGL      NULL // Removed in r501084
 
