@@ -51,7 +51,7 @@
 // Admin
 #define ACPI                NULL
 #define CPUFREQ             NULL
-#define CUPS                cups cups-filters PYTHON_2_3_PKG(pycups)
+#define CUPS                cups cups-filters PYTHON_3_PKG(pycups)
 #define IOTOP               NULL
 #define MENU                NULL
 #define MCELOG              mcelog
