@@ -82,6 +82,7 @@
 #define MINGW               mingw32-gcc
 #define NODEJS              node npm
 #define OPENJDK             openjdk openjdk8 openjdk11 openjdk12 openjdk13 openjdk14
+#define SCONS               scons-py37@py37
 #define SUBVERSION          subversion subversion-gnome-keyring \
                             svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87

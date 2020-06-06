@@ -72,6 +72,7 @@
 #define  OPENJDK                  jdk7-openjdk openjdk7-src \
                                   jdk8-openjdk openjdk8-src \
                                   jdk9-openjdk openjdk9-src
+#define  SCONS                    scons
 #define  SUBVERSION               subversion emacs-psvn
 #define  TCL                      tcl tcl85
 #define  TK                       tk tk85

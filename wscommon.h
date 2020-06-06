@@ -106,7 +106,7 @@ CLANG           cmake           cvs             ddd             f2c
 flex            GCC             GDB             GOLANG          gperf
 GIT             gprolog         INDENT          libtool         MAKE
 MINGW           nasm            NODEJS          OPENJDK         scala
-scons           SUBVERSION      TCL             TK              valgrind
+SCONS           SUBVERSION      TCL             TK              valgrind
 // added by b01902104@csie.ntu.edu.tw
 AARCH64_GCC     GDB_MULTIARCH
 // freebsd local-217

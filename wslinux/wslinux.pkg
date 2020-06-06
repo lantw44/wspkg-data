@@ -78,6 +78,7 @@
 #define MINGW               mingw-w64  // mingw32 is obsolete
 #define NODEJS              nodejs nodejs-dev npm
 #define OPENJDK             openjdk-8-jdk openjdk-9-jdk
+#define SCONS               scons
 #define SUBVERSION          subversion
 #define TCL                 tcl-dev
 #define TK                  tk-dev
