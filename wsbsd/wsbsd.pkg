@@ -319,7 +319,7 @@
 #define PYTHON_SCIKITS_LEARN    PYTHON_3_PKG(scikit-learn)
 #define PYTHON_IGRAPH           PYTHON_2_3_PKG(igraph)
 #define PYTHON_PSYCOPG2         PYTHON_2_3_PKG(psycopg2)
-#define PYTHON_NETWORKX         PYTHON_3_PKG(networkx)
+#define PYTHON_NETWORKX         PYTHON_2_3_PKG(networkx)
 #define PYTHON_VIRTUALENV       PYTHON_2_3_PKG(virtualenv)
 #define PYTHON_NUMERIC          PYTHON_2_PKG(numeric)
 #define PYTHON_PANDAS           PYTHON_2_3_PKG(pandas)
