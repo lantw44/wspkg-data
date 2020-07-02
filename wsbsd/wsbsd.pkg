@@ -167,7 +167,7 @@
 #define HASKELL_OPENGL      NULL // Removed in r501084
 
 // Interpreters
-#define SWIG                swig30
+#define SWIG                swig
 
 // KDE
 #define KDE_META_PKG        kde5
