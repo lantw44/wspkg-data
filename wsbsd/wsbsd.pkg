@@ -231,7 +231,7 @@
 #define OCTAVE_DEV          octave
 #define QHULL               qhull5
 #define R_BASE              R
-#define SYMPY               PYTHON_2_3_PKG(sympy)
+#define SYMPY               PYTHON_3_PKG(sympy)
 #define LAPACKE             openblas
 
 // Misc
