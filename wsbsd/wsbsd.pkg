@@ -300,7 +300,7 @@
 #define PYTHON_PSUTIL           PYTHON_2_3_PKG(psutil)
 #define PYTHONTRACER            NULL
 #define PYTHON_MYSQLDB          NULL
-#define PYTHON_CJSON            PYTHON_2_PKG(cjson)
+#define PYTHON_CJSON            NULL // Removed in r544927
 #define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) PYPY_2_3_PKG(sqlite3)
 #define PYTHON_BEAUTIFULSOUP    PYTHON_2_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
 #define PYTHON_TK               PYTHON_2_3_PKG(tkinter) PYPY_2_3_PKG(tkinter)
@@ -323,7 +323,7 @@
 #define PYTHON_VIRTUALENV       PYTHON_2_3_PKG(virtualenv)
 #define PYTHON_NUMERIC          PYTHON_2_PKG(numeric)
 #define PYTHON_PANDAS           PYTHON_2_3_PKG(pandas)
-#define PYTHON_PYQUERY          PYTHON_2_PKG(pyquery)
+#define PYTHON_PYQUERY          NULL // Removed in r544927
 #define PYTHON_NLTK             PYTHON_2_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
 #define PYTHON_CRYPTO           PYTHON_2_3_PKG(pycrypto)
