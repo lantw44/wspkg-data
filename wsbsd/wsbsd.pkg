@@ -5,7 +5,7 @@
 // ===========================================================================
 
 #define EMACS_FLAVOR        full
-#define EMACS_PKG(x)        x-emacs26@EMACS_FLAVOR
+#define EMACS_PKG(x)        x-emacs27@EMACS_FLAVOR
 #define PYTHON_2_PKG(x)     py27-x@py27
 #define PYTHON_3_PKG(x)     py37-x@py37
 #define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
