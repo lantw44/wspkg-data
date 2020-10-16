@@ -12,5 +12,8 @@
 /^bsdftpd-ssl$/d
 # Removed because it doesn't work with modern gdb
 /^ddd$/d
+# Python 2 dependencies
+/^blitz++$/d
+/^eclipse-pydev$/d
 # Python 2 support is currently disabled
 /^py27-ipython5@py27$/d
