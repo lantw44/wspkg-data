@@ -145,7 +145,7 @@
 #define GVFS                gvfs
 #define REMMINA             remmina remmina-plugins
 #define MUTTER              mutter
-#define GNOME_META_PKG      gnome3-lite
+#define GNOME_META_PKG      gnome3@full
 #define BAOBAB              gnome-utils
 #define GLADE               glade
 #define GTK2                gtk2 gtkmm24
