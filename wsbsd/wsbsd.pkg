@@ -34,7 +34,7 @@
 #define PCI                 NULL
 #define PERL                perl5
 #define PYTHON2             python2 python27
-#define PYTHON3             python3 python35 python36 python37 python38
+#define PYTHON3             python3 python36 python37 python38
 #define SHARUTILS           NULL
 #define SSH                 NULL
 #define STRACE              NULL
@@ -148,8 +148,8 @@
 #define GNOME_META_PKG      gnome3-lite
 #define BAOBAB              gnome-utils
 #define GLADE               glade
-#define GTK2                gtk2 gtk2-reference gtkmm24 gtkmm24-reference
-#define GTK3                gtk3 gtkmm30 gtkmm30-reference
+#define GTK2                gtk2 gtkmm24
+#define GTK3                gtk3 gtkmm30
 #define GNOME_SCREENSHOT    gnome-utils
 #define GTK2_THEMES         NULL
 #define GTK3_THEMES         gtk3-unico-engine clearlooks-phenix-theme
