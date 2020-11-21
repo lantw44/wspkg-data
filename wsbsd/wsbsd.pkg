@@ -302,7 +302,7 @@
 #define PYTHON_MYSQLDB          NULL
 #define PYTHON_CJSON            NULL // Removed in r544927
 #define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) PYPY_2_3_PKG(sqlite3)
-#define PYTHON_BEAUTIFULSOUP    PYTHON_2_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
+#define PYTHON_BEAUTIFULSOUP    PYTHON_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
 #define PYTHON_TK               PYTHON_2_3_PKG(tkinter) PYPY_2_3_PKG(tkinter)
 #define PYTHON_SIMPLEJSON       PYTHON_2_3_PKG(simplejson)
 #define PYTHON_MATPLOTLIB       PYTHON_3_PKG(matplotlib)
