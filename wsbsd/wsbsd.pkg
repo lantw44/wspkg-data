@@ -311,7 +311,7 @@
 #define PYTHON_COGENT           NULL // Removed in r524263
 #define PYTHON_REDIS            PYTHON_2_3_PKG(redis)
 #define PYTHON_YAML             PYTHON_2_3_PKG(yaml)
-#define PYTHON_GDATA            PYTHON_2_PKG(gdata)
+#define PYTHON_GDATA            NULL // Removed in r553506
 #define PYTHON_CURL             PYTHON_2_3_PKG(pycurl)
 #define PYTHON_LDAP             PYTHON_2_3_PKG(ldap)
 #define PYTHON_SMBPASSWD        PYTHON_2_3_PKG(smbpasswd)
