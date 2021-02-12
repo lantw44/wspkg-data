@@ -308,7 +308,7 @@
 #define PYTHON_SIMPLEJSON       PYTHON_3_PKG(simplejson)
 #define PYTHON_MATPLOTLIB       PYTHON_3_PKG(matplotlib)
 #define PYTHON_LXML             PYTHON_3_PKG(lxml)
-#define PYTHON_OPENCV           PYTHON_2_3_PKG(opencv)
+#define PYTHON_OPENCV           opencv
 #define PYTHON_COGENT           NULL // Removed in r524263
 #define PYTHON_REDIS            PYTHON_3_PKG(redis)
 #define PYTHON_YAML             PYTHON_3_PKG(yaml)
