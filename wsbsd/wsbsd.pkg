@@ -144,7 +144,7 @@
 #define GNOME_USER_DOCS     gnome-user-docs
 #define GTK2_ENGINES        gtk-engines2
 #define GVFS                gvfs
-#define REMMINA             remmina remmina-plugins
+#define REMMINA             remmina@default
 #define MUTTER              mutter
 #define GNOME_META_PKG      gnome3@full
 #define BAOBAB              gnome-utils
