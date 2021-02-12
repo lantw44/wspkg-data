@@ -119,7 +119,7 @@ MONO
 // requested by b01902066
 julia
 // added by b01902062@csie.ntu.edu.tw
-ANDROID_TOOLS   bzr             mercurial       intltool        LLVM
+ANDROID_TOOLS   BREEZY          mercurial       intltool        LLVM
 ltrace          OPENCL          POCL            meson
 #endif
 

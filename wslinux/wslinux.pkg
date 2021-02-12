@@ -94,6 +94,7 @@
 #define MONO                mono-complete
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot \
                             android-tools-fsutils androidsdk-ddms
+#define BREEZY              brz
 #define LLVM                llvm-dev llvm-runtime \
                             llvm-3.8-dev llvm-3.8-runtime \
                             llvm-3.9-dev llvm-3.9-runtime \
