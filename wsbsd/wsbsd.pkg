@@ -68,7 +68,7 @@
 
 // Database
 #define MYSQL_CLIENT        mariadb105-client
-#define PYMONGO             PYTHON_2_3_PKG(pymongo)
+#define PYMONGO             PYTHON_3_PKG(pymongo)
 
 // Devel
 #define ANT                 apache-ant
@@ -205,7 +205,7 @@
 #define GOOGLE_GLOG_DEV     glog
 #define LMDB_DEV            lmdb
 #define LIBSQLITE3_DEV      tcl-sqlite3
-#define ZMQ_DEV             libzmq4 PYTHON_2_3_PKG(pyzmq)
+#define ZMQ_DEV             libzmq4 PYTHON_3_PKG(pyzmq)
 #define LIBXML2_DEV         libxml2
 #define LIBDB_CXX_DEV       db5
 
@@ -288,46 +288,46 @@
 // Python
 #define IPYTHON                 PYTHON_3_PKG(ipython) PYTHON_2_PKG(ipython5)
 #define PYPY                    pypy pypy3
-#define PYTHON_PIP              PYTHON_2_3_PKG(pip)
-#define PYTHON_BSDDB3           PYTHON_2_3_PKG(bsddb3)
-#define PYTHON_IMAGING          PYTHON_3_PKG(pillow) PYTHON_2_PKG(pillow6)
-#define PYTHON_NUMPY            PYTHON_2_3_PKG(numpy)
+#define PYTHON_PIP              PYTHON_3_PKG(pip)
+#define PYTHON_BSDDB3           PYTHON_3_PKG(bsddb3)
+#define PYTHON_IMAGING          PYTHON_3_PKG(pillow)
+#define PYTHON_NUMPY            PYTHON_3_PKG(numpy)
 #define PYTHON_SETUPTOOLS       PYTHON_2_3_PKG(setuptools)
-#define PYTHON_GSL              PYTHON_2_3_PKG(pygsl)
-#define PYTHON_SCIPY            PYTHON_2_3_PKG(scipy)
-#define PYTHON_MARKDOWN         PYTHON_2_3_PKG(markdown)
+#define PYTHON_GSL              PYTHON_3_PKG(pygsl)
+#define PYTHON_SCIPY            PYTHON_3_PKG(scipy)
+#define PYTHON_MARKDOWN         PYTHON_3_PKG(markdown)
 #define PYTHON_MEMPROF          NULL
-#define PYTHON_PSUTIL           PYTHON_2_3_PKG(psutil)
+#define PYTHON_PSUTIL           PYTHON_3_PKG(psutil)
 #define PYTHONTRACER            NULL
 #define PYTHON_MYSQLDB          NULL
 #define PYTHON_CJSON            NULL // Removed in r544927
 #define PYTHON_SQLITE           PYTHON_2_3_PKG(sqlite3) PYPY_2_3_PKG(sqlite3)
-#define PYTHON_BEAUTIFULSOUP    PYTHON_3_PKG(beautifulsoup) PYTHON_2_PKG(beautifulsoup32)
+#define PYTHON_BEAUTIFULSOUP    PYTHON_3_PKG(beautifulsoup)
 #define PYTHON_TK               PYTHON_2_3_PKG(tkinter) PYPY_2_3_PKG(tkinter)
-#define PYTHON_SIMPLEJSON       PYTHON_2_3_PKG(simplejson)
+#define PYTHON_SIMPLEJSON       PYTHON_3_PKG(simplejson)
 #define PYTHON_MATPLOTLIB       PYTHON_3_PKG(matplotlib)
-#define PYTHON_LXML             PYTHON_2_3_PKG(lxml)
+#define PYTHON_LXML             PYTHON_3_PKG(lxml)
 #define PYTHON_OPENCV           PYTHON_2_3_PKG(opencv)
 #define PYTHON_COGENT           NULL // Removed in r524263
-#define PYTHON_REDIS            PYTHON_2_3_PKG(redis)
-#define PYTHON_YAML             PYTHON_2_3_PKG(yaml)
+#define PYTHON_REDIS            PYTHON_3_PKG(redis)
+#define PYTHON_YAML             PYTHON_3_PKG(yaml)
 #define PYTHON_GDATA            NULL // Removed in r553506
-#define PYTHON_CURL             PYTHON_2_3_PKG(pycurl)
-#define PYTHON_LDAP             PYTHON_2_3_PKG(ldap)
-#define PYTHON_SMBPASSWD        PYTHON_2_3_PKG(smbpasswd)
+#define PYTHON_CURL             PYTHON_3_PKG(pycurl)
+#define PYTHON_LDAP             PYTHON_3_PKG(ldap)
+#define PYTHON_SMBPASSWD        PYTHON_3_PKG(smbpasswd)
 #define PYTHON_SPHINX           PYTHON_3_PKG(sphinx)
 #define PYTHON_SCIKITS_LEARN    PYTHON_3_PKG(scikit-learn)
-#define PYTHON_IGRAPH           PYTHON_2_3_PKG(python-igraph)
-#define PYTHON_PSYCOPG2         PYTHON_2_3_PKG(psycopg2)
+#define PYTHON_IGRAPH           PYTHON_3_PKG(python-igraph)
+#define PYTHON_PSYCOPG2         PYTHON_3_PKG(psycopg2)
 #define PYTHON_NETWORKX         PYTHON_3_PKG(networkx)
-#define PYTHON_VIRTUALENV       PYTHON_2_3_PKG(virtualenv)
-#define PYTHON_NUMERIC          PYTHON_2_PKG(numeric)
-#define PYTHON_PANDAS           PYTHON_2_3_PKG(pandas)
+#define PYTHON_VIRTUALENV       PYTHON_3_PKG(virtualenv)
+#define PYTHON_NUMERIC          NULL // Removed in r557820
+#define PYTHON_PANDAS           PYTHON_3_PKG(pandas)
 #define PYTHON_PYQUERY          NULL // Removed in r544927
-#define PYTHON_NLTK             PYTHON_2_3_PKG(nltk)
+#define PYTHON_NLTK             PYTHON_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
-#define PYTHON_CRYPTO           PYTHON_2_3_PKG(pycrypto)
-#define PYTHON_NTLM_AUTH        PYTHON_2_3_PKG(ntlm-auth)
+#define PYTHON_CRYPTO           PYTHON_3_PKG(pycrypto)
+#define PYTHON_NTLM_AUTH        PYTHON_3_PKG(ntlm-auth)
 
 // Ruby
 #define RUBY                ruby rubygem-irb rubygem-rdoc ruby27
