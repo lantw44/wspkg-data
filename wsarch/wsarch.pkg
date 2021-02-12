@@ -428,7 +428,7 @@
 #define  XWAYLAND                 xorg-server-xwayland
 
 // Web
-#define  FLASH_PLUGIN             flashplugin lib32-flashplugin swfdec gnash
+#define  FLASH_PLUGIN             swfdec gnash
 #define  FIREFOX                  firefox firefox-i18n-zh-tw
 #define  W3M_EL                   emacs-w3m-cvs
 #define  JAVA_PLUGIN              icedtea-web
