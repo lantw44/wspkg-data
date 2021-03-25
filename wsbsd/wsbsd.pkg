@@ -414,7 +414,7 @@
 // Wayland
 #define IBUS_WAYLAND        NULL
 #define WESTON              NULL
-#define XWAYLAND            xwayland
+#define XWAYLAND            xwayland-devel
 
 // Web
 #define FLASH_PLUGIN        gnash linux_base-c7
