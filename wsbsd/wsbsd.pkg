@@ -97,7 +97,7 @@
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools-adb android-tools-fastboot
 #define BREEZY              PYTHON_3_PKG(brz)
-#define LLVM                llvm70 llvm80 llvm90 llvm10 llvm11 llvm-devel
+#define LLVM                llvm70 llvm80 llvm90 llvm10 llvm11 llvm12 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                pocl
 
