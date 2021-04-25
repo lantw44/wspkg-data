@@ -1,7 +1,6 @@
 # Removed because of glib12 removal
 /^wmclockmon$/d
 # Marked as broken in ports
-/^gprolog$/d
 /^hs-haddock$/d
 # Unfetchable
 /^zh-oxim/d
