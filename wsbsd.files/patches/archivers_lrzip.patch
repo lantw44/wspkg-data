@@ -1,7 +1,7 @@
-Index: archivers/lrzip/pkg-plist
-===================================================================
---- archivers/lrzip/pkg-plist	(revision 438568)
-+++ archivers/lrzip/pkg-plist	(working copy)
+diff --git a/archivers/lrzip/pkg-plist b/archivers/lrzip/pkg-plist
+index 7ee179aa0a6e..cb157a4dd60c 100644
+--- a/archivers/lrzip/pkg-plist
++++ b/archivers/lrzip/pkg-plist
 @@ -20,7 +20,6 @@
  %%DOCSDIR%%/magic.header.txt
  bin/lrunzip
@@ -10,7 +10,7 @@ Index: archivers/lrzip/pkg-plist
  bin/lrzip
  bin/lrztar
  bin/lrzuntar
-@@ -31,7 +30,6 @@
+@@ -31,7 +30,6 @@ lib/liblrzip.so.0
  lib/liblrzip.so.0.0.0
  libdata/pkgconfig/lrzip.pc
  man/man1/lrunzip.1.gz

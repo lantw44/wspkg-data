@@ -1,8 +1,8 @@
 #!/bin/sh
 
 : "${PORTSDIR:="/usr/ports"}"
-[ ! -d "${PORTSDIR}/.svn" ] && \
-    printf '%s is not a svn checkout\n' "${PORTSDIR}" && exit 1
+[ ! -d "${PORTSDIR}/.git" ] && \
+    printf '%s is not a git checkout\n' "${PORTSDIR}" && exit 1
 
 shdir="$(realpath "$(dirname "$0")")"
 : "${shdir:="."}"
@@ -10,12 +10,11 @@ shdir="$(realpath "$(dirname "$0")")"
 patchdir="${shdir}/patches"
 
 cd "${PORTSDIR}" || exit
-echo '==> Running svn status ...'
-svn status | sed -e '/^?/d' -e 's#^[A-Z]* *\([^/]*\/[^/]*\)\(/.*\)*$#\1#' | \
+echo '==> Running git status ...'
+git status -s | sed -e '/^?/d' -e 's#^[A-Z ]* *\([^/]*/[^/]*\)\(/.*\)*$#\1#' | \
     sort | uniq | (
     while read -r oneline; do
         printf '==> Generating patch for %s\n' "${oneline}"
         patch_name="$(printf '%s\n' "${oneline}" | tr '/' '_')"
-        svn diff --patch-compatible -- "${oneline}" \
-            > "${patchdir}/${patch_name}.patch"
+        git diff -- "${oneline}" > "${patchdir}/${patch_name}.patch"
     done )

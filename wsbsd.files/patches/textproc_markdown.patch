@@ -1,8 +1,8 @@
-Index: textproc/markdown/Makefile
-===================================================================
---- textproc/markdown/Makefile	(revision 506402)
-+++ textproc/markdown/Makefile	(working copy)
-@@ -22,12 +22,12 @@
+diff --git a/textproc/markdown/Makefile b/textproc/markdown/Makefile
+index 4cea535a58f6..b00d9285126a 100644
+--- a/textproc/markdown/Makefile
++++ b/textproc/markdown/Makefile
+@@ -21,12 +21,12 @@ OPTIONS_DEFINE=	DOCS
  
  PORTDOCS=	Markdown-Readme.text
  

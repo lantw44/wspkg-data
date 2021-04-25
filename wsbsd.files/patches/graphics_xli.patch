@@ -1,8 +1,8 @@
-Index: graphics/xli/Makefile
-===================================================================
---- graphics/xli/Makefile	(revision 438568)
-+++ graphics/xli/Makefile	(working copy)
-@@ -19,16 +19,18 @@
+diff --git a/graphics/xli/Makefile b/graphics/xli/Makefile
+index a7730ea71149..859e9a118223 100644
+--- a/graphics/xli/Makefile
++++ b/graphics/xli/Makefile
+@@ -18,16 +18,18 @@ USES=		imake jpeg xorg
  USE_XORG=	xi
  WRKSRC=		${WRKDIR}/xli-${XLI_SNAPVER}
  

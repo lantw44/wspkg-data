@@ -1,8 +1,8 @@
-Index: x11-fonts/wqy/files/85-wqy.conf
-===================================================================
---- x11-fonts/wqy/files/85-wqy.conf	(revision 475071)
-+++ x11-fonts/wqy/files/85-wqy.conf	(working copy)
-@@ -247,7 +247,8 @@
+diff --git a/x11-fonts/wqy/files/85-wqy.conf b/x11-fonts/wqy/files/85-wqy.conf
+index ca5ab12c932f..86a3dc138674 100644
+--- a/x11-fonts/wqy/files/85-wqy.conf
++++ b/x11-fonts/wqy/files/85-wqy.conf
+@@ -246,7 +246,8 @@
  			<string>WenQuanYi Bitmap Song</string>
  		</test>
                  <test name="size" compare="less_eq"><int>16</int></test>

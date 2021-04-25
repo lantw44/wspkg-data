@@ -1,8 +1,8 @@
-Index: sysutils/accountsservice/Makefile
-===================================================================
---- sysutils/accountsservice/Makefile	(revision 518576)
-+++ sysutils/accountsservice/Makefile	(working copy)
-@@ -26,9 +26,7 @@
+diff --git a/sysutils/accountsservice/Makefile b/sysutils/accountsservice/Makefile
+index 86751efc375b..21fba0f5e942 100644
+--- a/sysutils/accountsservice/Makefile
++++ b/sysutils/accountsservice/Makefile
+@@ -25,9 +25,7 @@ INSTALL_TARGET=	install-strip
  
  # XXX HACK! this file isn't present on the pristine jails of the builders
  # and configure breaks without it. Beter solutions welcome.
