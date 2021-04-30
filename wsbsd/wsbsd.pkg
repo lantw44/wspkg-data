@@ -7,7 +7,7 @@
 #define EMACS_FLAVOR        full
 #define EMACS_PKG(x)        x-emacs27@EMACS_FLAVOR
 #define PYTHON_2_PKG(x)     py27-x@py27
-#define PYTHON_3_PKG(x)     py37-x@py37
+#define PYTHON_3_PKG(x)     py38-x@py38
 #define PYTHON_2_3_PKG(x)   PYTHON_2_PKG(x) PYTHON_3_PKG(x)
 #define PYPY_2_PKG(x)       pypy-x@pypy
 #define PYPY_3_PKG(x)       pypy3-x@pypy3
@@ -83,7 +83,7 @@
 #define NODEJS              node npm
 #define OPENJDK             openjdk openjdk8 openjdk11 openjdk12 openjdk13 \
                             openjdk14 openjdk15
-#define SCONS               scons-py37@py37
+#define SCONS               scons-py38@py38
 #define SUBVERSION          subversion subversion-gnome-keyring \
                             svk EMACS_PKG(psvn)
 #define TCL                 tcl85 tcl86 tcl87
@@ -244,7 +244,7 @@
 #define LINUXTOOL           NULL
 
 // Net
-#define DENYHOSTS           denyhosts-py37@py37
+#define DENYHOSTS           denyhosts-py38@py38
 #define MTR                 mtr-nox11
 #define STUNNEL             stunnel
 #define VNCVIEWER           tigervnc-viewer
