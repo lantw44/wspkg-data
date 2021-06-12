@@ -15,5 +15,3 @@
 /^blitz++$/d
 /^eclipse-pydev$/d
 /^julia$/d
-# Python 2 support is currently disabled
-/^py27-ipython5@py27$/d

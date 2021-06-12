@@ -288,7 +288,7 @@
 #define PHP_MYSQL               php74-mysqli php74-pdo_mysql
 
 // Python
-#define IPYTHON                 PYTHON_3_PKG(ipython) PYTHON_2_PKG(ipython5)
+#define IPYTHON                 PYTHON_3_PKG(ipython)
 #define PYPY                    pypy pypy3
 #define PYTHON_PIP              PYTHON_3_PKG(pip)
 #define PYTHON_BSDDB3           PYTHON_3_PKG(bsddb3)
