@@ -15,3 +15,4 @@
 /^blitz++$/d
 /^eclipse-pydev$/d
 /^julia$/d
+/^pypy/d
