@@ -16,3 +16,4 @@
 /^eclipse-pydev$/d
 /^julia$/d
 /^pypy/d
+/^g\{0,1\}xmms2$/d
