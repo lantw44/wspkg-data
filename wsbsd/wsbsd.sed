@@ -2,6 +2,7 @@
 /^wmclockmon$/d
 # Marked as broken in ports
 /^hs-haddock$/d
+/^openjdk$/d
 # Unfetchable
 /^zh-oxim/d
 /^zh-bg5ps/d
