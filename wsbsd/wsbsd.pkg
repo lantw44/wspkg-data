@@ -336,7 +336,7 @@
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          NULL // Removed in r471892
 #define RUBY_RAKE           rubygem-rake
-#define RUBY_RAILS          rubygem-rails60
+#define RUBY_RAILS          rubygem-rails61
 #define RUBY_RDOC           rubygem-rdoc
 
 // Science
