@@ -73,7 +73,7 @@
 // Devel
 #define ANT                 apache-ant
 #define CLANG               NULL
-#define GCC                 gcc6-aux gcc8 gcc9 gcc10 gcc11
+#define GCC                 gcc6-aux gcc10 gcc11
 #define GDB                 gdb
 #define GOLANG              go
 #define GIT                 git gitg
