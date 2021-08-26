@@ -142,8 +142,11 @@
 #define  GNOME_META_PKG           gnome gnome-extra
 #define  BAOBAB                   baobab
 #define  GLADE                    glade glade-gtk2
-#define  GTK2                     gtk2 gtkmm-docs lib32-gtk2
-#define  GTK3                     gtk3 gtkmm3-docs glibmm-docs lib32-gtk3
+#define  GTK2                     gtk2 gtkmm gtkmm-docs lib32-gtk2
+#define  GTK3                     gtk3 gtk3-demos gtk3-docs \
+                                  gtkmm3 gtkmm3-docs lib32-gtk3
+#define  GTK4                     gtk4 gtk4-demos gtk4-docs \
+                                  gtkmm-4.0 gtkmm-4.0-docs glibmm glibmm-docs
 #define  GNOME_SCREENSHOT         gnome-screenshot
 #define  GTK2_THEMES              NULL
 #define  GTK3_THEMES              NULL

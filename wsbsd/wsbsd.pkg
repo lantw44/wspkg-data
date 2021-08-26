@@ -153,6 +153,7 @@
 #define GLADE               glade
 #define GTK2                gtk2 gtkmm24
 #define GTK3                gtk3 gtkmm30
+#define GTK4                gtk4
 #define GNOME_SCREENSHOT    gnome-utils
 #define GTK2_THEMES         NULL
 #define GTK3_THEMES         gtk3-unico-engine clearlooks-phenix-theme

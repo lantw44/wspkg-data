@@ -165,7 +165,7 @@ GNOME_META_PKG
 // added by b01902062@linux5.csie.ntu.edu.tw
 BAOBAB          devhelp         epiphany        eog             eog-plugins
 gedit           ghex            GLADE
-GTK2            GTK3            GTK2_THEMES     GTK3_THEMES
+GTK2            GTK3            GTK4            GTK2_THEMES     GTK3_THEMES
 gnome-terminal  GNOME_SCREENSHOT                gnome-tweaks
 gnome-system-monitor            gucharmap       nautilus        vinagre
 #endif
