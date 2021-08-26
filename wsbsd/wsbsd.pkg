@@ -219,6 +219,7 @@
 #define LUA51               lua51
 #define LUA52               lua52
 #define LUA53               lua53
+#define LUA54               lua54
 
 // Machine Learning
 #define LIBSVM              libsvm libsvm-python
