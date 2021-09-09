@@ -108,6 +108,7 @@
 #define  EMACS                    emacs emacs-python-mode
 #define  LIBREOFFICE              libreoffice-fresh libreoffice-fresh-sdk \
                                   libreoffice-fresh-zh-TW
+#define  VIM                      vim
 #define  VIM_GTK                  gvim
 
 // Electronics

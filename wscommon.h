@@ -133,7 +133,7 @@ GCC_DOC         // added by b01902062@csie.ntu.edu.tw
 // Editors
 #ifdef WSPKG_EDITORS
 CTAGS           EMACS           joe             LIBREOFFICE     nano
-vim             VIM_GTK
+VIM             VIM_GTK
 cscope          global          // added by b01902062@csie.ntu.edu.tw
 #endif
 

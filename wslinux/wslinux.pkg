@@ -121,6 +121,7 @@
 #define EMACS               emacs python-mode
 #define LIBREOFFICE         libreoffice \
                             libreoffice-l10n-zh-tw libreoffice-help-zh-tw
+#define VIM                 vim
 #define VIM_GTK             vim-gtk
 
 // Electronics

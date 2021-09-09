@@ -118,7 +118,8 @@
 #define CTAGS               ctags
 #define EMACS               emacs@EMACS_FLAVOR python-mode.el
 #define LIBREOFFICE         libreoffice zh_TW-libreoffice
-#define VIM_GTK             vim
+#define VIM                 NULL // vim-gtk3 already provides the vim command
+#define VIM_GTK             vim-gtk3@gtk3
 
 // Electronics
 // Fonts
