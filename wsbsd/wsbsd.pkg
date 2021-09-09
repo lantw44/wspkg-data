@@ -352,7 +352,7 @@
 
 // TeX
 #define AUCTEX              EMACS_PKG(auctex)
-#define LATEX_CJK           NULL // FIXME: conflict with texlive
+#define LATEX_CJK           NULL
 #define BIBER               latex-biber
 #define TEXLIVE             NULL // texlive-full already provides all packages
 #define TEXLIVE_FULL        texlive-full
@@ -396,7 +396,7 @@
 #define MENUMAKER           menumaker
 #define MKISOFS             cdrtools
 #define PSTREE              pstree
-#define RANGER              PYTHON_3_PKG(ranger) // FIXME: conflict with python2 version
+#define RANGER              PYTHON_3_PKG(ranger)
 #define RPM2CPIO            rpm2cpio
 #define QEMU                qemu qemu-user-static
 #define UNAR                unar
