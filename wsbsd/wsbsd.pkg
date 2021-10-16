@@ -77,7 +77,7 @@
 #define GCC                 gcc6-aux gcc10 gcc11
 #define GDB                 gdb
 #define GOLANG              go
-#define GIT                 git gitg
+#define GIT                 git git-cvs git-gui git-p4 git-svn gitg
 #define INDENT              NULL
 #define MAKE                gmake bmake fmake
 #define MINGW               mingw32-gcc
