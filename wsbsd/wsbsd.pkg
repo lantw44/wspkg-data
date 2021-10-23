@@ -329,7 +329,7 @@
 #define PYTHON_VIRTUALENV       PYTHON_3_PKG(virtualenv)
 #define PYTHON_NUMERIC          NULL // Removed in r557820
 #define PYTHON_PANDAS           PYTHON_3_PKG(pandas)
-#define PYTHON_PYQUERY          NULL // Removed in r544927
+#define PYTHON_PYQUERY          PYTHON_3_PKG(pyquery)
 #define PYTHON_NLTK             PYTHON_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
 #define PYTHON_CRYPTO           PYTHON_3_PKG(pycrypto)
@@ -344,8 +344,8 @@
 #define RUBY_RDOC           rubygem-rdoc
 
 // Science
-#define BLAST2              NULL // included in ncbi-toolkit
-#define BLITZ               blitz++
+#define BLAST2              ncbi-blast+
+#define BLITZ               blitz
 
 // Sound
 #define ALSA                alsa-lib alsa-plugins
@@ -429,7 +429,7 @@
 // WindowMaker
 #define PCLOCK              NULL // Removed in r514601
 #define WINDOWMAKER         windowmaker
-#define WMCPULOAD           NULL // Removed in r534093
+#define WMCPULOAD           wmcpuload
 #define WMCALCLOCK          wmCalClock
 #define WMTIMER             wmtimer
 #define TEMPERATURE_APP     temperature.app
@@ -444,6 +444,6 @@
 #define VNCSERVER           tigervnc-server
 #define XVFB                xorg-vfbserver
 #define ENLIGHTENMENT       enlightenment
-#define WDM                 NULL // Removed in r534093
+#define WDM                 wdm
 #define XEPHYR              xephyr
 #define LXDE                lxde-meta

@@ -8,12 +8,9 @@
 /^zh-bg5ps/d
 # Conflicts with fig2dev
 /^transfig$/d
-# Incompatible with OpenSSL 1.1
-/^bsdftpd-ssl$/d
 # Removed because it doesn't work with modern gdb
 /^ddd$/d
 # Python 2 dependencies
-/^blitz++$/d
 /^julia$/d
 /^pypy/d
 /^g\{0,1\}xmms2$/d
