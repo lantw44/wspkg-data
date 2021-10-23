@@ -1,8 +1,8 @@
 diff --git a/graphics/xli/Makefile b/graphics/xli/Makefile
-index a7730ea71149..859e9a118223 100644
+index a1ebdb8eb585..14ed197cd471 100644
 --- a/graphics/xli/Makefile
 +++ b/graphics/xli/Makefile
-@@ -18,16 +18,18 @@ USES=		imake jpeg xorg
+@@ -18,16 +18,18 @@ USES=		cpe imake jpeg xorg
  USE_XORG=	xi
  WRKSRC=		${WRKDIR}/xli-${XLI_SNAPVER}
  

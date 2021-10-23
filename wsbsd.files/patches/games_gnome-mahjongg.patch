@@ -1,17 +1,12 @@
 diff --git a/games/gnome-mahjongg/Makefile b/games/gnome-mahjongg/Makefile
-index cf7b515c05db..3da00b341d3e 100644
+index 2116e54c72dc..0f79abd68282 100644
 --- a/games/gnome-mahjongg/Makefile
 +++ b/games/gnome-mahjongg/Makefile
-@@ -15,9 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
- BUILD_DEPENDS=	vala:lang/vala \
- 		itstool:textproc/itstool
+@@ -19,6 +19,7 @@ PORTSCOUT=	limitw:1,even
  
-+USES=		gettext gmake gnome localbase meson pathfix pkgconfig tar:xz
-+
- PORTSCOUT=	limitw:1,even
- 
--USES=		gettext gmake gnome localbase meson pathfix pkgconfig tar:xz
-+CONFIGURE_ARGS=	-Dcompile-schemas=disabled -Dupdate-icon-cache=disabled
- INSTALLS_ICONS=	yes
+ USES=		gettext gmake gnome localbase meson pathfix pkgconfig tar:xz
  USE_GNOME=	cairo gtk30 intlhack librsvg2 libxml2:build
++CONFIGURE_ARGS=	-Dcompile-schemas=disabled -Dupdate-icon-cache=disabled
+ 
+ GLIB_SCHEMAS=	org.gnome.Mahjongg.gschema.xml
  
