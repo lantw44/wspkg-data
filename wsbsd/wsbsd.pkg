@@ -81,7 +81,7 @@
 #define INDENT              NULL
 #define MAKE                gmake bmake fmake
 #define MINGW               mingw32-gcc
-#define NODEJS              node npm
+#define NODEJS              node16 npm
 #define OPENJDK             openjdk openjdk8 openjdk11 openjdk12 openjdk13 \
                             openjdk14 openjdk15 openjdk16 openjdk17
 #define SCONS               scons-py38@py38
