@@ -1,13 +1,13 @@
 diff --git a/print/html2ps/Makefile b/print/html2ps/Makefile
-index ade49fadc83e..68af8b5e93b6 100644
+index d03fe002ecfa..ec26ca0c88ce 100644
 --- a/print/html2ps/Makefile
 +++ b/print/html2ps/Makefile
-@@ -13,7 +13,7 @@ COMMENT=	HTML to PostScript converter
- LICENSE=	GPLv2
- LICENSE_FILE=	${WRKSRC}/COPYING
- 
--RUN_DEPENDS=	mogrify:graphics/ImageMagick6 \
-+RUN_DEPENDS=	mogrify:graphics/ImageMagick7 \
- 		p5-libwww>=0:www/p5-libwww \
- 		weblint++:www/weblint++ \
+@@ -18,7 +18,7 @@ RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
  		paperconf:print/libpaper
+ 
+ NO_BUILD=	yes
+-USES=		ghostscript:run magick:6,run perl5
++USES=		ghostscript:run magick:7,run perl5
+ 
+ SUB_FILES=	html2psrc
+ 
