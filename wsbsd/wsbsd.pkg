@@ -138,7 +138,7 @@
 #define KCFONTS             zh-kcfonts
 #define FIREFLYTTF          zh-fireflyttf-LGJ
 #define NOTO                noto
-#define SOURCESANSPRO       sourcesanspro-ttf
+#define SOURCESANSPRO       source-sans-ttf
 #define SOURCECODEPRO       sourcecodepro-ttf
 
 // GNOME
