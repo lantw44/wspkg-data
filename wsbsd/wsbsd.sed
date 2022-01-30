@@ -11,6 +11,5 @@
 # Removed because it doesn't work with modern gdb
 /^ddd$/d
 # Python 2 dependencies
-/^julia$/d
 /^pypy/d
 /^g\{0,1\}xmms2$/d
