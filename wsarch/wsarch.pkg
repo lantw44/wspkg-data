@@ -421,6 +421,7 @@
 #define  ACK                      ack
 #define  RIPGREP                  ripgrep
 #define  SILVER_SEARCHER          the_silver_searcher
+#define  SEVEN_ZIP                p7zip 7-zip
 
 // Video
 #define  MPLAYER                  mplayer smplayer gnome-mplayer

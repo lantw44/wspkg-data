@@ -425,6 +425,7 @@
 #define ACK                 ack-grep
 #define RIPGREP             NULL
 #define SILVER_SEARCHER     silversearcher-ag
+#define SEVEN_ZIP           p7zip 7zip
 
 // Video
 #define MPLAYER             mplayer
