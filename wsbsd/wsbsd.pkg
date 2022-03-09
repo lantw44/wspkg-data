@@ -162,7 +162,7 @@
 // Graphics
 #define IMAGEMAGICK         ImageMagick7
 #define JPEG                jpeg-turbo
-#define BMEPS               bmpp
+#define BMEPS               bitmap2pp
 #define XGRAPH              xgraph
 
 // Haskell
