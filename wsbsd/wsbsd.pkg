@@ -336,7 +336,7 @@
 #define PYTHON_NTLM_AUTH        PYTHON_3_PKG(ntlm-auth)
 
 // Ruby
-#define RUBY                ruby rubygem-irb rubygem-rdoc ruby30
+#define RUBY                ruby rubygem-irb rubygem-rdoc ruby31 ruby32
 #define RUBY_BUNDLER        rubygem-bundler
 #define RUBY_MYSQL          NULL // Removed in r471892
 #define RUBY_RAKE           rubygem-rake
