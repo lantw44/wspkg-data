@@ -82,8 +82,7 @@
 #define MAKE                gmake bmake fmake
 #define MINGW               mingw32-gcc
 #define NODEJS              node16 npm
-#define OPENJDK             openjdk openjdk8 openjdk11 openjdk12 openjdk13 \
-                            openjdk14 openjdk15 openjdk16 openjdk17
+#define OPENJDK             openjdk openjdk8 openjdk11 openjdk17 openjdk18
 #define SCONS               scons-py38@py38
 #define SUBVERSION          subversion subversion-gnome-keyring \
                             svk EMACS_PKG(psvn)
