@@ -1,6 +1,7 @@
 # Removed because of glib12 removal
 /^wmclockmon$/d
 # Marked as broken in ports
+/^bibtool$/d
 /^hs-haddock$/d
 /^openjdk$/d
 # Unfetchable
