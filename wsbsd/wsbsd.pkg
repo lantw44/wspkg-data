@@ -287,8 +287,8 @@
 #define PERL_SWITCH                     p5-Switch
 
 // PHP
-#define PHP_CLI                 php74
-#define PHP_MYSQL               php74-mysqli php74-pdo_mysql
+#define PHP_CLI                 php80
+#define PHP_MYSQL               php80-mysqli php80-pdo_mysql
 
 // Python
 #define IPYTHON                 PYTHON_3_PKG(ipython)
