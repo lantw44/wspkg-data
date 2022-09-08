@@ -97,7 +97,7 @@
 #define MONO                mono
 #define ANDROID_TOOLS       android-tools
 #define BREEZY              PYTHON_3_PKG(brz)
-#define LLVM                llvm11 llvm12 llvm13 llvm-devel
+#define LLVM                llvm11 llvm12 llvm13 llvm14 llvm15 llvm-devel
 #define OPENCL              ocl-icd opencl
 #define POCL                pocl
 
