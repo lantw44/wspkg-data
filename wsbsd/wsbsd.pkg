@@ -294,7 +294,7 @@
 #define IPYTHON                 PYTHON_3_PKG(ipython)
 #define PYPY                    pypy pypy3
 #define PYTHON_PIP              PYTHON_3_PKG(pip)
-#define PYTHON_BSDDB3           PYTHON_3_PKG(bsddb3)
+#define PYTHON_BSDDB3           PYTHON_3_PKG(berkeleydb)
 #define PYTHON_IMAGING          PYTHON_3_PKG(pillow)
 #define PYTHON_NUMPY            PYTHON_3_PKG(numpy)
 #define PYTHON_SETUPTOOLS       PYTHON_3_PKG(setuptools) PYTHON_2_PKG(setuptools44)
