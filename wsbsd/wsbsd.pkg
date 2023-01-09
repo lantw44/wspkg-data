@@ -331,7 +331,7 @@
 #define PYTHON_PYQUERY          PYTHON_3_PKG(pyquery)
 #define PYTHON_NLTK             PYTHON_3_PKG(nltk)
 #define PYTHON_JIEBA            NULL
-#define PYTHON_CRYPTO           PYTHON_3_PKG(pycrypto)
+#define PYTHON_CRYPTO           PYTHON_3_PKG(pycryptodome)
 #define PYTHON_NTLM_AUTH        PYTHON_3_PKG(ntlm-auth)
 
 // Ruby
