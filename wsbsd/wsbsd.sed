@@ -14,3 +14,5 @@
 # Python 2 dependencies
 /^pypy/d
 /^g\{0,1\}xmms2$/d
+# wxWidgets 2.8 dependencies
+/^xchm$/d
